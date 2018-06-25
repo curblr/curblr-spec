@@ -4,7 +4,7 @@ No Stopping is allowed by anyone at any time.
 
 ### **Sign**
 
-<img src="http://cdn.shopify.com/s/files/1/0544/7277/products/IMG_8490_5ed7374d-11f9-4667-8fbd-480f9e74bbfb_grande.JPG?v=1520789932" width="300">
+<img src="images/no_stopping.jpg" width="300">
 
 ### **CurbSpec**
 ```
@@ -21,7 +21,7 @@ No one may park during snow emergencies.
 
 ### **Sign**
 
-<img src="https://thumb1.shutterstock.com/display_pic_with_logo/60395/60395,1161046392,3/stock-photo-emergency-snow-route-sign-washington-dc-2008808.jpg" width="300">
+<img src="images/snow_emergency.jpg" width="300">
 
 ### **CurbSpec**
 
