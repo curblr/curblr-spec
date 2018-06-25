@@ -26,14 +26,14 @@ The pages below show real world curb regulations translated into CurbSpec.
 | Object | Description |
 | :--- | :--- |
 | ***[[Location]]*** | Specifies one or more sections of curb using a linear referencing model [NOT YET DEFINED - Build on existing LR system like [SharedStreets Reference System](https://github.com/sharedstreets/sharedstreets-ref-system)] |
-| ***[[Regulation]]*** | A [[Location]] may have one or more regulations that determine what is allowed or forbidden during a particular period of time |
-| ***[[Rule]]*** | A [[Regulation]] may have one or more rules that define what particular curb users can and cannot do when the [[Regulation]] is in effect |
-| ***[[Timespan]]*** | Defines the time period when a [[Regulation]] is in effect. |
-| ***[[UserClass]]*** | Defines a category of curb user. Can be used to denote permit holders, vehicle types, or vehicle function. |
+| ***[Regulation](Regulation.md)*** | A [Location](Location.md) may have one or more regulations that determine what is allowed or forbidden during a particular period of time |
+| ***[Rule](Rule.md)*** | A [Regulation](Regulation.md) may have one or more rules that define what particular curb users can and cannot do when the [Regulation](Regulaton.md) is in effect |
+| ***[Timespan](TimeSpan.md)*** | Defines the time period when a [Regulation](Regulation.md) is in effect. |
+| ***[UserClass](UserClass.md)*** | Defines a category of curb user. Can be used to denote permit holders, vehicle types, or vehicle function. |
 
 # Future Enhancements
-* **External referencing for designated periods**: Extend [[TimeSpan]] to allow arbitrarily designated periods (e.g. "Snow Emergency" or "School Days") to be specifically defined via a static or dynamic (API) referencing system.
+* **External referencing for designated periods**: Extend [TimeSpan](TimeSpan.md) to allow arbitrarily designated periods (e.g. "Snow Emergency" or "School Days") to be specifically defined via a static or dynamic (API) referencing system.
 
 * **Enhanced payment definition**: A schema to define payment requirements for a given use. Could support the publishing of dynamic parking pricing or complex fee structures such as peak period ride share pickup / drop-off fees.
 
-* **Cross-jurisdictional allowed use mapping**: A mechanism to translate [[Rules|Rule]] (which are locally defined in their meaning) into a standardized, cross-jurisdictional list of activities. This would, for example, allow automated interpretation of local rules to determine where activities like passenger loading could take place.
+* **Cross-jurisdictional allowed use mapping**: A mechanism to translate [Rules](Rule.md) (which are locally defined in their meaning) into a standardized, cross-jurisdictional list of activities. This would, for example, allow automated interpretation of local rules to determine where activities like passenger loading could take place.
