@@ -1,3 +1,5 @@
+<img src="images/cover_image.png">
+
 # What is CurbSpec?
 CurbSpec is a data standard for describing urban curb regulations. It exists to help government effectively manage and regulate the curb and to support public and private users of city streets.
 
