@@ -25,11 +25,19 @@ The pages below show real world curb regulations translated into CurbSpec.
 # Data Model
 | Object | Description |
 | :--- | :--- |
-| ***[[Location]]*** | Specifies one or more sections of curb using a linear referencing model [NOT YET DEFINED - Build on existing LR system like [SharedStreets Reference System](https://github.com/sharedstreets/sharedstreets-ref-system)] |
-| ***[Regulation](Regulation.md)*** | A [Location](Location.md) may have one or more regulations that determine what is allowed or forbidden during a particular period of time |
+| ***[Regulation](Regulation.md)*** | A given location or segment of curb may have one or more regulations that determine what is allowed or forbidden during a particular period of time |
 | ***[Rule](Rule.md)*** | A [Regulation](Regulation.md) may have one or more rules that define what particular curb users can and cannot do when the [Regulation](Regulaton.md) is in effect |
 | ***[Timespan](TimeSpan.md)*** | Defines the time period when a [Regulation](Regulation.md) is in effect. |
 | ***[UserClass](UserClass.md)*** | Defines a category of curb user. Can be used to denote permit holders, vehicle types, or vehicle function. |
+
+# About Location
+CurbSpec provides a mechanism to describe curb regulation, but it does not specify how to talk about location (e.g. how to identify a specific stretch of curb). Location is highly context dependent and CurbSpec is designed to work with various approaches and use cases, rather than to prescribe a one-size-fits-all solution.
+
+For example, a company might develop an API that takes a point location (lat/lon) and returns the applicable CurbSpec that applies to the stretch of curb on which the point falls. In this case, no external location referencing system is needed.
+
+Alternatively, a City might apply CurbSpec on top of its proprietary linear referencing system to keep an internal database of signage and regulations.
+
+However, it will be hard to unlock the full potential of digitizing urban curb regulation without a standard referencing system that works across jurisdictions. The [SharedStreets Reference System](https://github.com/sharedstreets/sharedstreets-ref-system) provides an open, non-proprietary method for identifying street segments and integrating multiple underlying basemaps into a single shared referencing system. CurbSpec can be used in conjunction with Shared Streets References to provide a truly common way to talk about both a place on the curb and the rules that apply in that place.
 
 # Future Enhancements
 * **External referencing for designated periods**: Extend [TimeSpan](TimeSpan.md) to allow arbitrarily designated periods (e.g. "Snow Emergency" or "School Days") to be specifically defined via a static or dynamic (API) referencing system.
