@@ -12,7 +12,7 @@ Conceptually, [Rules](Rule.md) have two parts:
 * _**who**:_ To whom does the regulation apply
 * _**what**:_ What use policies applies when the rule is in effect
 
-Once a full set of prioritized regulations is resolved, there should be only a single applicable [[Rule]] at a given location on the curb for any particular combination of _who_ and _when_. In some cases, there will be no applicable [[Rule]].
+Once a full set of prioritized regulations is resolved, there should be only a single applicable [[Rule]] at a given location on the curb for any particular combination of _who_ and _when_. In some cases, there will be no applicable [Rule](Rules.md).
 
 It is also possible to programmatically identify locations with conflicting or ambiguous regulations.
 
