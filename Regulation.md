@@ -5,7 +5,7 @@ A regulation has three parts:
 
 * _**when**:_ When is this regulation in effect ([TimeSpan](TimeSpan.md))
 * _**rules**:_ One or more [Rules](Rule.md) that may be applied when the regulation is in effect
-* _**[priority](RegulationPriorities.md)**:_ How should this regulation supersede or be superseded by others
+* _**[priority](regulation_priorities.md)**:_ How should this regulation supersede or be superseded by others
 
 Conceptually, [Rules](Rule.md) have two parts:
 
@@ -18,10 +18,10 @@ It is also possible to programmatically identify locations with conflicting or a
 
 # Definition
 | field name | format  | description |
-| :--- | :--- | :--- | 
+| :--- | :--- | :--- |
 | when | `object` | A [Timespan](Timespan.md) object that determines _when_ the regulation applies |
 | rules | `object` or `array` | One or more [Rule](Rule.md) objects that may apply when the regulation is in effect |
-| priority | `int` (values: `1-4`) | Determines when this regulation should supersede or be superseded per the list of [regulation priorities](RegulationPriorities.md) |
+| priority | `int` (values: `1-4`) | Determines when this regulation should supersede or be superseded per the list of [regulation priorities](regulation_priorities.md) |
 
 # Examples
 | | |
