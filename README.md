@@ -1,14 +1,23 @@
 <img src="images/cover_image.png">
 
+# Origins
+This is a fork of the [original CurbSpec](https://github.com/jfh01/CurbSpec). At SharedStreets, we spoke with a handful of cities across the US, reviewed their parking regulation datasets, conducted field mapping in a local area to experience data collection, and converted an initial dataset of ~35,000 LA parking zones into the CurbSpec format. To our knowledge, this was the first attempt to convert a curb regulation dataset into CurbSpec. When trying to convert GIS data into the spec, we realized that several modifications were needed. This fork contains those modifications, including: 
+- adding location information for the regulation (both geographic and with the [SharedStreets linear referencing system](https://github.com/sharedstreets/sharedstreets-ref-system).
+- structuring the JSON in a flatter manner (one regulation type per object)
+- using a well-known values approach to avoid free-form text where possible
+- adding a structured, but optional, place for non-essential data such as payment information and asset information
+
 # What is CurbSpec?
-CurbSpec is a data standard for describing urban curb regulations. It exists to help government effectively manage and regulate the curb and to support public and private users of city streets.
+CurbSpec is a data standard for describing urban curb regulations. It exists to help government effectively manage and regulate the curb and to support public and private users of city streets. 
+
+CurbSpec provides a structured, standardized format that can be used by government agencies, citizens, and companies who want to store and share information about curb regulations, regardless of whether the data are gathered through mapping, crowdsourcing, or machine learning techniques. 
 
 CurbSpec is a common language on which many things can be built, including rules engines, query APIs, consumer notification services, mapping tools, and analytic models.
 
 # Design Principles
 1. ***Machine-readable:*** From navigation apps to connected cars, urban mobility is increasingly digital. CurbSpec helps computers understand the curb, whether that's answering real-time questions like "where's the nearest place to drop off a passenger?" or modeling parking allocation scenarios for an entire neighborhood.
 
-1. ***Human-oriented:*** Curbs are managed and used by people, so CurbSpec must be useful to humans not just machines. CurbSpec is designed to be directly readable and writable by people with technical training, and to support tools that make it accessible to the non-technical.
+1. ***Human-oriented:*** Curbs are managed and used by people, so CurbSpec must be useful to humans and not just machines. CurbSpec is designed to be directly readable and writable by people with technical training, and to support tools that make it accessible to the non-technical.
 
 1. ***Reversible:*** Most curb management is not digitized today and this won't change overnight. To ease this transition, it must be possible to take existing signs and translate them into CurbSpec, and to use CurbSpec to generate a hypothetical physical signage plan.
 
@@ -27,6 +36,7 @@ The pages below show real world curb regulations translated into CurbSpec.
 # Data Model
 | Object | Description |
 | :--- | :--- |
+***[Location]*** | Describes the location where the regulation applies. Curb regulations are often mapped based on the location of physical assets, such as signs or curb paint. These markers are point-based data that applies to a segment of the street's edge. CurbSpec enables the location of a regulation to be stored as a point or as a street segment. |
 | ***[Regulation](Regulation.md)*** | A given location or segment of curb may have one or more regulations that determine what is allowed or forbidden during a particular period of time |
 | ***[Rule](Rule.md)*** | A [Regulation](Regulation.md) may have one or more rules that define what particular curb users can and cannot do when the [Regulation](Regulaton.md) is in effect |
 | ***[Timespan](TimeSpan.md)*** | Defines the time period when a [Regulation](Regulation.md) is in effect. |
