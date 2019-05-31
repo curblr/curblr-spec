@@ -30,17 +30,17 @@ CurbSpec is stored in JSON format.
 # Examples
 The links below show real world curb regulations translated into CurbSpec.
 
-| | |
+| Link | Description |
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic rules  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbSpec](/conversions/LA_CurbSpec.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbSpec-ready CSV](/conversions/prepped_data.csv), and converted into JSON format using [Jupyter](/conversions/CSV to JSON parking rules.ipynb).
+| Large dataset of [Los Angeles' parking regulations, translated into CurbSpec](/conversions/LA_CurbSpec.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbSpec-ready CSV](/conversions/prepped_data.csv), and converted into JSON format using [Jupyter](https://github.com/sharedstreets/CurbSpec/blob/master/conversions/CSV%20to%20JSON%20parking%20rules.ipynb).
 
 # Data model
 
 CurbSpec groups data into several categories, focusing on **where** the restriction occurs, **what** it restricts, **when**, **to whom**, and **how**, it applies, and how it relates to overlapping restrictions. Each object in the JSON may contain the following properties, organized in order of importance:
 
 | Category | Importance | Description |
-| :--- | :--- |
+| :---- | :---- |
 | ***[Location](Location.md)*** | Required | Describes the location (zone) **where** the restriction applies, using geographic information and linear referencing |
 | ***[Restriction](Restriction.md)*** | Required | Determines **what** is allowed or forbidden in the zone during a particular period of time |
 | ***[Priority](Priority.md)*** | Recommended | Defines how overlapping zone restrictions relate to one another (i.e. which one takes **priority**) |
@@ -48,7 +48,7 @@ CurbSpec groups data into several categories, focusing on **where** the restrict
 | ***[UserClass](UserClass.md)*** | If applicable | Defines **who** the restriction applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
 | Additional categories: (***[Payment](Payment.md)***) | Optional | Provides a structure to store additional information about **how** the rules are applied, such as payment profiles. Additional categories, such as asset information, could be added if needed |
 
-The [location](Location.md) fields are object-level properties of the JSON. The remaining fields form part of the (rule)[Rule.md] that applies to the object. The example below shows the structure of the JSON, using an example from the Los Angeles data:
+The [location](Location.md) fields are object-level properties of the JSON. The remaining fields form part of the [rule](Rule.md) that applies to the object. The example below shows the structure of the JSON, using an example from the Los Angeles data:
 
 <img src="images/data_model.png" width=500>
 
@@ -58,5 +58,4 @@ The [location](Location.md) fields are object-level properties of the JSON. The 
 
 * **Enhanced payment definition**: A schema to define payment requirements for a given use. Could support the publishing of dynamic parking pricing or complex fee structures such as peak period ride share pickup / drop-off fees.
 
-## not sure about this; please review: (defaults?)
-* **Cross-jurisdictional allowed use mapping**: A mechanism to translate [Rules](Rule.md) (which are locally defined in their meaning) into a standardized, cross-jurisdictional list of activities. This would, for example, allow automated interpretation of local rules to determine where activities like passenger loading could take place.
+* **Cross-jurisdictional allowed use mapping**: A mechanism to establish defaults and translate [Rules](Rule.md) (which are locally defined in their meaning) into a standardized, cross-jurisdictional list of activities. This would, for example, allow automated interpretation of local rules to determine where activities like passenger loading could take place.
