@@ -1,51 +1,67 @@
-# General
-While [Regulations](Regulation.md) define the _when_ of curb use, a Rule defines the _who_, _what_, and _why_. Rules can also specify other conditions (such as required payment or time limits) that impact the use of the curb.
+# About rules
+For a given location, a `rule` defines _what_ is allowed or prohibited at a section of curb, and how the rule should be applied.
 
-If a Rule does not specify a `who` field, it will be assumed to apply to all curb users. A given [Regulation](Regulation.md) can have multiple Rules associated with it, but only one of those Rules can have an empty `who`. When evaluating what Rule applies to a specific [UserClass](UserClass.md), the Rule without a `who` will be considered the default if no other rules apply to the user.
+A rule has several parts:
+* _**what**:_ One [Restriction](Restriction.md) that is applied when the rule is in effect
+* _**[priority](Priority.md)**:_ Defines how this rule should supersede or be superseded by others
+* _**when**:_ Defines one or more [TimeSpans](TimeSpan.md) when this rule is in effect
+* _**who**:_ Defines one or more [user classes](UserClass.md) to whom this rule applies
+* _**how**:_ Provides optional, supplemental information about the rule and how it is applied. This can include a [payment profile](Payment.md), and could be expanded to hold supplemental information about physical assets or other needs.
 
-A rule may be written as a prohibition (e.g. "No Parking") or as an authorization (e.g. "Loading Zone"). CurbSpec can indicate what rule is in effect at a given place and time (or that no rule is in effect), but local regulation will determine what specific activities are allowed under any particular rule. For example, local rules may allow for passenger loading in a "No Parking" zone but not in a "No Stopping" zone.
+Once a full set of prioritized rules is resolved, there should be only a single applicable [Restriction](Restriction.md) at a given location on the curb for any particular combination of _who_ and _when_. In some cases, there will be no applicable [Restriction](Restriction.md).
 
-# Definition
-| field | format  | description | example |
-| :--- | :--- | :--- | :--- |
-| rule | `string` | Indicates _what_ is being allowed or prohibited by the rule. This is the primary use policy and should not include details about time or user-specific restrictions. | `Parking` or `No Stopping` or `Taxi Stand` |
-| reason | `string` | An optional human-readable explanation that adds context to the rule (e.g. the _why_). | `Street Cleaning` or `Construction Zone` |
-| who | `object` | A [UserClass](UserClass.md) object that defines _who_ the rule applies to. If not specified, rule will be assumed to apply to all users. | |
-| time_limit | `integer`  | Defines the length of time (in minutes) the curb may be used under this rule | `120` (2 hours) |
-| payment | `string` (values: `yes` or `no`) | Indicates whether payment is required | `yes` |
+It is also possible to programmatically identify locations with conflicting or ambiguous regulations.
 
 # Examples
+| | |
+| :---- | :---- |
+| [Examples of Simple Regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic rules  |
+| [Examples of Complex Regulations](examples/complex_examples.md) | Complex scenarios that address multiple user classes, complicated expressions of time, and overlapping regulations |
 
-### Simple rule
-Defines a No Stopping rule that applies to all road users.
+
+
+### Simple rule: no parking
+Defines a No Parking rule that applies to all road users. Standing and loading may or may not be permitted.
 ```
 {
-  rule: "No Stopping"
+  "rule": {
+    "what": {
+      "zone": "no parking"
+    }
+  }  
 }
 ```
 
 ### Resident parking
-Defines a rule to allow people with a Zone 4 Resident Parking Permit to park.
+Defines a rule to allow people with a Zone 4 Resident Parking Permit to park. Implies no parking for any other users. Standing and loading may or may not be permitted.
 ```
 {
-  rule: "Parking",
-  reason: "Resident Only Parking"
-  who: {
-    class: "Resident Permit",
-    subclass: "Zone 4"
-  }
+  "rule": {
+    "what": {
+      "zone": "parking",
+      "reason": "resident parking"
+    }
+    "who": {
+      "class": "resident permit",
+      "subclass": "zone 4"
+    }
+  }  
 }
 ```
 
 ### Time-limited handicap space
-Allows parking for handicap users with a 3 hour time limit.
+Allows parking for handicap users with a three-hour time limit.
 ```
 {
-  rule: "Parking",
-  who: {
-    class: "Handicap"
-  },
-  time_limit: 180
+  "rule": {
+    "what": {
+      "zone": "parking",
+
+    }
+    "who": {
+      "class": "handicap"
+    }
+  }  
 }
 ```
 
@@ -53,8 +69,12 @@ Allows parking for handicap users with a 3 hour time limit.
 Anyone may park for up to two hours with payment
 ```
 {
-  rule: "Parking",
-  time_limit: 120,
-  payment: "yes"
+  "rule": {
+    "what": {
+      "zone": "Parking",
+      "time_limit": 120,
+      "payment": "yes"
+    }
+  }
 }
 ```

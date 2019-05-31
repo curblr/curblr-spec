@@ -1,20 +1,22 @@
 <img src="images/cover_image.png">
 
 # Origins
-This is a fork of the [original CurbSpec](https://github.com/jfh01/CurbSpec). At SharedStreets, we spoke with a handful of cities across the US, reviewed their parking regulation datasets, conducted field mapping in a local area to experience data collection, and converted an initial dataset of ~35,000 LA parking zones into the CurbSpec format. To our knowledge, this was the first attempt to convert a curb regulation dataset into CurbSpec. When trying to convert GIS data into the spec, we realized that several modifications were needed. This fork contains those modifications, including: 
-- adding location information for the regulation (both geographic and with the [SharedStreets linear referencing system](https://github.com/sharedstreets/sharedstreets-ref-system).
-- structuring the JSON in a flatter manner (one regulation type per object)
-- using a well-known values approach to avoid free-form text where possible
-- adding a structured, but optional, place for non-essential data such as payment information and asset information
+This is a fork of the [original CurbSpec](https://github.com/jfh01/CurbSpec). At SharedStreets, we spoke with a handful of cities across the US, reviewed their parking regulation datasets, conducted field mapping in a local area to experience data collection, and converted an initial dataset of ~35,000 Los Angeles parking zones into the CurbSpec format. To our knowledge, this was the first attempt to convert a curb regulation dataset into CurbSpec. When trying to convert GIS data into the spec, we realized that several modifications were needed. This fork contains those modifications, including:
+- Adding location information for the regulation (both geographic and with the [SharedStreets linear referencing system](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/).
+- Structuring the JSON in a flatter manner (one curb zone per object)
+- Using a well-known values approach to avoid free-form text where possible
+- Adding a structured, but optional, place for non-essential data such as payment information and asset information
 
 # What is CurbSpec?
-CurbSpec is a data standard for describing urban curb regulations. It exists to help government effectively manage and regulate the curb and to support public and private users of city streets. 
+CurbSpec is a data standard for describing urban curb regulations. It exists to help government effectively manage and regulate the curb and to support public and private users of city streets.
 
-CurbSpec provides a structured, standardized format that can be used by government agencies, citizens, and companies who want to store and share information about curb regulations, regardless of whether the data are gathered through mapping, crowdsourcing, or machine learning techniques. 
+CurbSpec provides a structured, standardized format that can be used by government agencies, citizens, and companies who want to store and share information about curb regulations, regardless of whether the data are gathered through mapping, crowdsourcing, or machine learning techniques.
 
 CurbSpec is a common language on which many things can be built, including rules engines, query APIs, consumer notification services, mapping tools, and analytic models.
 
-# Design Principles
+CurbSpec is stored in JSON format.
+
+# Design principles
 1. ***Machine-readable:*** From navigation apps to connected cars, urban mobility is increasingly digital. CurbSpec helps computers understand the curb, whether that's answering real-time questions like "where's the nearest place to drop off a passenger?" or modeling parking allocation scenarios for an entire neighborhood.
 
 1. ***Human-oriented:*** Curbs are managed and used by people, so CurbSpec must be useful to humans and not just machines. CurbSpec is designed to be directly readable and writable by people with technical training, and to support tools that make it accessible to the non-technical.
@@ -22,6 +24,8 @@ CurbSpec is a common language on which many things can be built, including rules
 1. ***Reversible:*** Most curb management is not digitized today and this won't change overnight. To ease this transition, it must be possible to take existing signs and translate them into CurbSpec, and to use CurbSpec to generate a hypothetical physical signage plan.
 
 1. ***Adaptable:*** No two cities manage their curb in exactly the same way. CurbSpec is built to support many types of regulations and management practices. A city should not have to change its curb regulations to use CurbSpec.
+
+1. ***Essential but not exhaustive:*** CurbSpec is not the appropriate place to store exhaustive information that would not be consumed by others outside the city (for example, the date when a parking sign was last replaced). This information can be maintained separately and linked to the curb regulation data - in the same way that GTFS contains essential information about a transit system, but doesn't capture every bit of the transit agency's data.
 
 1. ***Future-friendly:*** How we use the curb is changing. Cities are adjusting parking prices based on demand, new transportation services are arriving on our streets, and vehicles without humans behind the wheel will one day deliver people and goods to the curb. CurbSpec exists to help make these futures a reality and will grow and adapt as urban mobility evolves.
 
@@ -33,27 +37,28 @@ The pages below show real world curb regulations translated into CurbSpec.
 | [Examples of Simple Regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic rules  |
 | [Examples of Complex Regulations](examples/complex_examples.md) | Complex scenarios that address multiple user classes, complicated expressions of time, and overlapping regulations |
 
-# Data Model
-| Object | Description |
+# Data model
+
+CurbSpec groups data into several categories, focusing on **where** the restriction occurs, **what** it restricts, **when**, **to whom**, and **how**, it applies, and how it relates to overlapping restrictions. Each object in the JSON may contain the following properties, organized in order of importance:
+
+| Category | Importance | Description |
 | :--- | :--- |
-***[Location]*** | Describes the location where the regulation applies. Curb regulations are often mapped based on the location of physical assets, such as signs or curb paint. These markers are point-based data that applies to a segment of the street's edge. CurbSpec enables the location of a regulation to be stored as a point or as a street segment. |
-| ***[Regulation](Regulation.md)*** | A given location or segment of curb may have one or more regulations that determine what is allowed or forbidden during a particular period of time |
-| ***[Rule](Rule.md)*** | A [Regulation](Regulation.md) may have one or more rules that define what particular curb users can and cannot do when the [Regulation](Regulaton.md) is in effect |
-| ***[Timespan](TimeSpan.md)*** | Defines the time period when a [Regulation](Regulation.md) is in effect. |
-| ***[UserClass](UserClass.md)*** | Defines a category of curb user. Can be used to denote permit holders, vehicle types, or vehicle function. |
+| ***[Location](Location.md)*** | Required | Describes the location (zone) **where** the restriction applies, using geographic information and linear referencing |
+| ***[Restriction](Restriction.md)*** | Required | Determines **what** is allowed or forbidden in the zone during a particular period of time |
+| ***[Priority](Priority.md)*** | Recommended | Defines how overlapping zone restrictions relate to one another (i.e. which one takes **priority**) |
+| ***[TimeSpan](TimeSpan.md)*** | If applicable | Defines the time period **when** a zone regulation is in effect |
+| ***[UserClass](UserClass.md)*** | If applicable | Defines **who** the restriction applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
+| Additional categories: (***[Payment](Payment.md)***) | Optional | Provides a structure to store additional information about **how** the rules are applied, such as payment profiles. Additional categories, such as asset information, could be added if needed |
 
-# About Location
-CurbSpec provides a mechanism to describe curb regulation, but it does not specify how to talk about location (e.g. how to identify a specific stretch of curb). Location is highly context dependent and CurbSpec is designed to work with various approaches and use cases, rather than to prescribe a one-size-fits-all solution.
+The [location](Location.md) fields are object-level properties of the JSON. The remaining fields form part of the (rule)[Rule.md] that applies to the object. The example below shows the structure of the JSON, using an example from the Los Angeles data:
 
-For example, a company might develop an API that takes a point location (lat/lon) and returns the applicable CurbSpec that applies to the stretch of curb on which the point falls. In this case, no external location referencing system is needed.
+<img src="images/data_model.png" width=500>
 
-Alternatively, a City might apply CurbSpec on top of its proprietary linear referencing system to keep an internal database of signage and regulations.
 
-However, it will be hard to unlock the full potential of digitizing urban curb regulation without a standard referencing system that works across jurisdictions. The [SharedStreets Reference System](https://github.com/sharedstreets/sharedstreets-ref-system) provides an open, non-proprietary method for identifying street segments and integrating multiple underlying basemaps into a single shared referencing system. CurbSpec can be used in conjunction with Shared Streets References to provide a truly common way to talk about both a place on the curb and the rules that apply in that place.
-
-# Future Enhancements
+# Future enhancements
 * **External referencing for designated periods**: Extend [TimeSpan](TimeSpan.md) to allow arbitrarily designated periods (e.g. "Snow Emergency" or "School Days") to be specifically defined via a static or dynamic (API) referencing system.
 
 * **Enhanced payment definition**: A schema to define payment requirements for a given use. Could support the publishing of dynamic parking pricing or complex fee structures such as peak period ride share pickup / drop-off fees.
 
+## not sure about this; please review: (defaults?)
 * **Cross-jurisdictional allowed use mapping**: A mechanism to translate [Rules](Rule.md) (which are locally defined in their meaning) into a standardized, cross-jurisdictional list of activities. This would, for example, allow automated interpretation of local rules to determine where activities like passenger loading could take place.

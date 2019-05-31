@@ -1,6 +1,6 @@
 # No stopping
 
-No Stopping is allowed by anyone at any time.
+No Stopping is allowed by anyone at any time. Example location information is included.
 
 ### **Sign**
 
@@ -9,15 +9,25 @@ No Stopping is allowed by anyone at any time.
 ### **CurbSpec**
 ```
 {
-  rules: {
-    rule: "No Stopping"
-  },
-  priority: 4
+  "x": -118.376341,
+  "y": 34.086525,
+  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
+  "shst_location": 51.61148912,
+  "pt_relation": 2,
+  "direction": "forward",
+  "side_of_street": "left",
+  "rule": {
+    "what": {
+      "zone": "no stopping",
+      "reason": "tow-away zone"
+    },
+    "priority": 4
+  }
 }
 ```
 
 # Snow emergency
-No one may park during snow emergencies.
+No one may park during snow emergencies. Example location information is included.
 
 ### **Sign**
 
@@ -27,21 +37,31 @@ No one may park during snow emergencies.
 
 ```
 {
-  rules: {
-    rule: "No Parking",
-    reason: "Snow Emergency Route"
-  },
-  priority: 2,
-  when: {
-    designated_period: {
-      name: "Snow Emergency",
-      apply: "only_during"
+  "x": -118.376341,
+  "y": 34.086525,
+  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
+  "shst_location": 51.61148912,
+  "pt_relation": 0,
+  "direction": "forward",
+  "side_of_street": "right",
+  "rule": {
+    "what": {
+      "zone": "no parking",
+      "reason": "snow emergency zone"
+    },
+    "priority": 2,
+    "when": {
+      "designated_period": {
+        "name": "snow emergency",
+        "apply": "only_during"
+      }
     }
   }
 }
 ```
+
 # Car share vehicles
-Only Enterprise CarShare vehicles may park. All others are prohibited at all times.
+Only Enterprise CarShare vehicles may park. All others are prohibited at all times (this is implied and does not need to be specified).
 
 ### **Sign**
 
@@ -51,20 +71,20 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
 
 ```
 {
-  rules: [
-    { // applies Enterprise car share vehicles
-      rule: "Parking",
-      who: {
-        class: "Car Share",
-        subclass: "Enterprise"
-      }
+  "x": -118.376341,
+  "y": 34.086525,
+  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
+  "shst_location": 51.61148912,
+  "pt_relation": 1,
+  "direction": "forward",
+  "side_of_street": "right",
+  "rule": {
+    "what": {
+      "zone": "parking",
+      "reason": "car share only"
     },
-    { // applies to everyone else
-      rule: "No Parking",
-      reason: "Car Share Vehicles Only"
-    }
-  ],
-  priority: 4
+    "priority": 4,
+  }
 }
 ```
 
@@ -77,30 +97,69 @@ All vehicles except permitted construction vehicles are prohibited from standing
 
 ### **CurbSpec**
 
+
 ```
-{
-  rules: [
-    { // applies to construction vehicles
-      rule: "Parking",
-      who: {
-        class: "Construction Vehicles"
+{ // defines a parking zone for construction vehicles
+  "x": -118.376341,
+  "y": 34.086525,
+  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
+  "shst_location": 51.61148912,
+  "pt_relation": 2,
+  "direction": "forward",
+  "side_of_street": "right",
+  "rule": {
+    "what": {
+      "zone": "parking",
+      "reason": "construction vehicles only"
+    },
+    "priority": 2,
+    "when": {
+      "effective_dates": {
+        "from": "20180409",
+        "to": "20180409"
+      },
+      "time_of_day": {
+        "from": "0700",
+        "until": "1600"
       }
     },
-    { // applies to everyone else
-      rule: "No Standing",
-      reason: "Construction Vehicles Only"
+    "who" : {
+      "class": "construction"
     }
-  ],
-  priority: 2,
-  when: {
-    effective_dates: {
-      from: "20180409",
-      until: "20180409"
+  }
+},
+
+{ // defines a no standing zone for all other vehicles
+  "x": -118.376341,
+  "y": 34.086525,
+  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
+  "shst_location": 51.61148912,
+  "pt_relation": 2,
+  "direction": "forward",
+  "side_of_street": "right",
+  "rule": {
+    "what": {
+      "zone": "standing",
+      "reason": "construction vehicles only"
     },
-    time_of_day: {from: "0700", until: "1600"}
+    "priority": 2,
+    "when": {
+      "effective_dates": {
+        "from": "20180409",
+        "to": "20180409"
+      },
+      "time_of_day": {
+        "from": "0700",
+        "until": "1600"
+      }
+    },
+    "who" : {
+      "class": "construction"
+    }
   }
 }
 ```
+
 
 # Resident parking
 Parking allowed only for resident permit holders Monday through Saturday, except holidays.
@@ -113,138 +172,32 @@ Parking allowed only for resident permit holders Monday through Saturday, except
 
 ```
 {
-  when: {
-    days_of_week: {
-      days: ["Mo", "Tu", "We", "Th", "Fr", "Sa"]
+  "x": -118.376341,
+  "y": 34.086525,
+  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
+  "shst_location": 51.61148912,
+  "pt_relation": 2,
+  "direction": "forward",
+  "side_of_street": "right",
+  "rule": {
+    "what": {
+      "zone": "parking"
     },
-    designated_period: {
-      name: "Holidays",
-      apply: "except_during"
-    }
-  },
-  rules: [
-    { // this rule applies to people with permits
-      rule: "Parking",
-      who: {
-        class: "Resident Permit"
-      }
+    "priority": 4,
+    "when": {
+      "days_of_week": {
+        "days": [
+          "Mo", "Tu", "We", "Th", "Fr", "Sa"
+        ]
+      },
+      "designated_period": {
+        "name": "holidays",
+        "apply": "except_during"
+      },
     },
-    { // this rule applies to everyone else
-      rule: "No Parking"
-    }
-  ],
-  priority: 4
-}
-```
-
-# Time limited meter parking
-Parking is limited to two hours between 8am and 8pm Monday through Saturday. Payment is required.
-
-### **Sign**
-
-<img src="images/meter_parking_time_limit.jpg" width="350">
-
-### **CurbSpec**
-
-```
-{  
-  rules: {
-    rule: "Parking",
-    time_limit: 120,
-    payment: "yes"
-  },
-  priority: 4,
-  when: {
-    days_of_week: {
-      days: ["Mo", "Tu", "We", "Th", "Fr", "Sa"]
-    },
-    time_of_day: {from: "0800", until: "2000"}
-  }
-}
-```
-
-# Street cleaning
-No parking allowed between 6am and 8am on the 2nd and 4th Wednesday of each month between April 1st and November 30th of every year.
-
-### **Sign**
-
-<img src="images/street_cleaning.jpg" width="350">
-
-### **CurbSpec**
-
-```
-{
-  rules: {
-    rule: "No Parking",
-    reason: "Street Cleaning"
-  }
-  priority: 3,
-  when: {
-    time_of_day: {from: "0600", until: "0800"},
-    days_of_week: {
-      days: ["We"],
-      occurrence_in_month: ["2nd", "4th"]
-    },
-    effective_dates: {
-      from: "0401",
-      until: "1130
+    "who" : {
+      "class": "permit"
     }
   }
-}
-```
-
-# Odd/even parking restrictions
-No parking between 2am and 6am on the odd side of the street on odd days and the even side of the street on even days.
-
-### **Sign**
-
-<img src="images/odd_even.jpg" width="300">
-
-### **CurbSpec**
-
-```
-// this regulation applied to odd side locations
-{
-  rules: {
-    rule: "No Parking",
-  },
-  priority: 3,
-  when: {
-    time_of_day: {from: "0200", until: "0600"},
-    days_of_month: "odd"
-  }
-}
-
-// this regulation applied to even side locations
-{
-  rules: {
-    rule: "No Parking",
-  },
-  priority: 3,
-  when: {
-    time_of_day: {from: "0200", until: "0600"},
-    days_of_month: "even"
-  }
-}
-```
-
-# Prohibit specific users
-No parking by Kardashians at any time.
-
-### **Sign**
-
-<img src="images/no_kardashians.jpg" width="300">
-
-### **CurbSpec**
-
-```
-{
-  rules: {
-    rule: "No Parking",
-    who: {
-      class: "Kardashian"
-    }
-  },
-  priority: 2
 }
 ```
