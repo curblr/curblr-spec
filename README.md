@@ -1,5 +1,5 @@
 # Origins
-This is a fork of the [original CurbSpec](https://github.com/jfh01/CurbSpec). At SharedStreets, we spoke with a handful of cities across the US, reviewed their parking regulation datasets, conducted field mapping in a local area to experience data collection, and converted an initial dataset of ~35,000 Los Angeles parking zones into the CurbSpec format. To our knowledge, this was the first attempt to convert a curb regulation dataset into CurbSpec. When trying to convert GIS data into the spec, we realized that several modifications were needed. This fork contains those modifications, including:
+This is a fork of the [original CurbSpec](https://github.com/jfh01/CurbSpec). At SharedStreets, we spoke with a handful of cities across the US, reviewed their parking regulation datasets, conducted field mapping in a local area to experience data collection, and converted an [initial dataset of ~35,000 Los Angeles parking zones](/conversions) into the CurbSpec format. To our knowledge, this was the first attempt to convert a curb regulation dataset into CurbSpec. When trying to convert GIS data into the spec, we realized that several modifications were needed. This fork contains those modifications, including:
 - Adding location information for the regulation (both geographic and with the [SharedStreets linear referencing system](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/).
 - Structuring the JSON in a flatter manner (one curb zone per object)
 - Using a well-known values approach to avoid free-form text where possible
@@ -28,11 +28,12 @@ CurbSpec is stored in JSON format.
 1. ***Future-friendly:*** How we use the curb is changing. Cities are adjusting parking prices based on demand, new transportation services are arriving on our streets, and vehicles without humans behind the wheel will one day deliver people and goods to the curb. CurbSpec exists to help make these futures a reality and will grow and adapt as urban mobility evolves.
 
 # Examples
-The pages below show real world curb regulations translated into CurbSpec.
+The links below show real world curb regulations translated into CurbSpec.
 
 | | |
 | :---- | :---- |
-| [Examples of Simple Regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic rules  |
+| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic rules  |
+| Large dataset of [Los Angeles' parking regulations, translated into CurbSpec](/conversions/LA_CurbSpec.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbSpec-ready CSV](/conversions/prepped_data.csv), and converted into JSON format using [Jupyter](/conversions/CSV to JSON parking rules.ipynb).
 
 # Data model
 
