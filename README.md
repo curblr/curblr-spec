@@ -46,7 +46,7 @@ CurbSpec groups data into several categories, focusing on **where** the restrict
 | [Priority](Priority.md) | Recommended | Defines how overlapping zone restrictions relate to one another (i.e. which one takes **priority**) |
 | [TimeSpan](TimeSpan.md) | If applicable | Defines the time period **when** a zone regulation is in effect |
 | [UserClass](UserClass.md) | If applicable | Defines **who** the restriction applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
-| Additional categories: (**[Payment](Payment.md)**) | Optional | Provides a structure to store additional information about **how** the rules are applied, such as payment profiles. Additional categories, such as asset information, could be added if needed |
+| Additional categories: (**[Payment](Payment.md)**) | Optional | Provides a structure to store additional information about **how** the rules are applied, such as payment profiles. Additional categories, such as asset information, could be added if needed
 
 The [location](Location.md) fields are object-level properties of the JSON. The remaining fields form part of the [rule](Rule.md) that applies to the object. The example below shows the structure of the JSON, using an example from the Los Angeles data:
 
