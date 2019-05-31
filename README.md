@@ -33,7 +33,6 @@ The pages below show real world curb regulations translated into CurbSpec.
 | | |
 | :---- | :---- |
 | [Examples of Simple Regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic rules  |
-| [Examples of Complex Regulations](examples/complex_examples.md) | Complex scenarios that address multiple user classes, complicated expressions of time, and overlapping regulations |
 
 # Data model
 
