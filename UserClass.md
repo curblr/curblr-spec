@@ -10,7 +10,7 @@ Each object in the JSON may have the following properties:
 
 
 | Field name | Importance  | Type | Description | Example
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | class | If applicable | `string` Suggested values; see below | The identifier of a user class, which may define a type of vehicle, permit, purpose, or service | `food truck` |
 | subclass | If applicable | `string` | An optional secondary identifier for a class of user. Useful for subdividing permit holders by zone or other designation | `Zone 4` |
 

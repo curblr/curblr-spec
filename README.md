@@ -40,7 +40,7 @@ The links below show real world curb regulations translated into CurbSpec.
 CurbSpec groups data into several categories, focusing on **where** the restriction occurs, **what** it restricts, **when**, **to whom**, and **how**, it applies, and how it relates to overlapping restrictions. Each object in the JSON may contain the following properties, organized in order of importance:
 
 | Category | Importance | Description |
-| :---- | :---- |
+| :---- | :---- | :---- |
 | [Location](Location.md) | Required | Describes the location (zone) **where** the restriction applies, using geographic information and linear referencing |
 | [Restriction](Restriction.md) | Required | Determines **what** is allowed or forbidden in the zone during a particular period of time |
 | [Priority](Priority.md) | Recommended | Defines how overlapping zone restrictions relate to one another (i.e. which one takes **priority**) |

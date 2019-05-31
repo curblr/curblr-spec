@@ -5,7 +5,7 @@ A restriction defines _what_ is allowed or prohibited at a section of curb, _why
 Each object in the JSON may have the following properties:
 
 | Field name | Importance  | Type | Description | Example
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- |
 | zone | Required | `enum` (`string`) Values: `parking`, `no parking`, `standing`, `no standing`, `loading`, `no loading` | Describes what activity is restricted or permitted | `parking`
 | reason | Optional | `string` Suggested values; see below | Describes why the restriction is in place. This is especially helpful for denoting restrictions with [Priority](Priority.md) levels <`4`, such as snow emergency zones, which may be in effect for irregular or unpredictable time periods; these may require human interpretation or an API to determine whether they are in effect | `snow emergency zone`
 | time_limit | If applicable | `int` | The length of time (in minutes) for which the curb may be used under this rule. This provides a time restriction, in addition to any [TimeSpan](TimeSpan.md) restrictions | `30`

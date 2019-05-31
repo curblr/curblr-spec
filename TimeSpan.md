@@ -22,7 +22,7 @@ Some of the concepts supported by TimeSpan:
 A JSON object may include `when` fields made up of the following:
 
 | Field name | Type | Description | Example
-| :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | effective_dates | `object` or `array` | Specific date range (or multiple date ranges) that define a fixed span of time or an annual period | |
 | effective_dates.from | `string` (`MMDD` or `YYYYMMDD`) | The beginning date of a time period. This is either a full date or a month and day that will define the timespan on an annual basis | `20180802` or `0401` |
 | effective_dates.to | `string` (`MMDD` or `YYYYMMDD`) | The ending date of a time period. This is either a full date or a month and day that will define the timespan on an annual basis | `20180805` or `1130` |
