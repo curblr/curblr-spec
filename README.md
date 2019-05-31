@@ -1,5 +1,3 @@
-<img src="images/cover_image.png">
-
 # Origins
 This is a fork of the [original CurbSpec](https://github.com/jfh01/CurbSpec). At SharedStreets, we spoke with a handful of cities across the US, reviewed their parking regulation datasets, conducted field mapping in a local area to experience data collection, and converted an initial dataset of ~35,000 Los Angeles parking zones into the CurbSpec format. To our knowledge, this was the first attempt to convert a curb regulation dataset into CurbSpec. When trying to convert GIS data into the spec, we realized that several modifications were needed. This fork contains those modifications, including:
 - Adding location information for the regulation (both geographic and with the [SharedStreets linear referencing system](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/).
