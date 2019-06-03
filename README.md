@@ -49,10 +49,7 @@ Here's a visual overview:
 
 SharedStreets references can be regenerated at any time, and individual assets can be edited without impacting the rest of the data. This provides a stable, interoperable way to convert the location of a parking sign into the regulatory geometry that it represents.
 
-With location taken care of, the rest of a curb regulation is relatively straightforward to describe, using categories to capture what, where, to whom, and how the rule applies, as shown in the example below:
-
-<img src="images/motorcycle_parking.png" width="800">
-
+With location taken care of, the rest of a curb regulation is relatively straightforward to describe, using categories to capture what, where, to whom, and how the rule applies.
 
 
 # Examples
@@ -78,7 +75,7 @@ CurbLR groups data into several categories, focusing on **where** the restrictio
 
 The [location](Location.md) fields are object-level properties of the JSON. The remaining fields form part of the [rule](Rule.md) that applies to the object. The example below shows the structure of the JSON, using an example from the Los Angeles data:
 
-<img src="images/data_model.png" width=500>
+<img src="images/motorcycle_parking.png" width="800">
 
 
 # Future enhancements
