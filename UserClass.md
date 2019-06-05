@@ -1,12 +1,12 @@
-# About rules
+# About user classifications
 A curb [Rule](Rule.md) is often applied differently to different road users. For example, street parking may be allowed but only for vehicles displaying a resident parking permit with a specific zone number. Or, a section of curb may be reserved for pick-up and drop-off by vehicles providing rideshare services ("TNCs").
 
-A UserClass can define a type of vehicle, permit, or service for which a [Restriction](Restriction.md) may be applied. CurbSpec provides a list of well-known values for user classes. However, each jurisdiction will determine how they want to differentiate between types of road users (i.e. what constitutes a rideshare vehicle or what type of handicap permit is required (this varies by country)).
+A UserClass can define a type of vehicle, permit, or service for which a [Restriction](Restriction.md) may be applied. CurbLR provides a list of well-known values for user classes. However, each jurisdiction will determine how they want to differentiate between types of road users (i.e. what constitutes a rideshare vehicle or what type of handicap permit is required (this varies by country)).
 
 A given vehicle may fall into multiple user classes depending on activity and circumstance (for example, a car may be operated as a rideshare vehicle and display a resident parking permit).
 
 # Definition
-Each object in the JSON may have the following properties:
+Each feature in the GeoJSON may have the following properties:
 
 
 | Field name | Importance  | Type | Description | Example
@@ -54,7 +54,7 @@ Defines a parking zone for vehicles operating as food trucks
 {
   "rule": {
     "what": {
-      "zone": "parking"
+      "activity": "parking"
     }
     "who": {
       "class": "food truck"
@@ -69,7 +69,7 @@ Defines a parking zone for vehicles displaying a Zone 4 or Zone 5 Resident Permi
 {
   "rule": {
     "what": {
-      "zone": "parking"
+      "activity": "parking"
     }
     "who": {
       "class": "resident permit",
@@ -88,7 +88,7 @@ Defines a parking restriction for large trucks that does not apply to smaller tr
 {
   "rule": {
     "what": {
-      "zone": "no parking"
+      "activity": "no parking"
     }
     "who": {
       "class": "truck",

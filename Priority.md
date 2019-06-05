@@ -6,12 +6,12 @@ It is sometimes necessary to have multiple regulations at a given location. For 
 
 Priorities allow for different regulations to coexist without ambiguity. When multiple regulations apply at a specific location and time, the priority determines which one is in force.
 
-In the real world, priorities are often implied rather than explicit. Road users assume that a "No Parking - Street Cleaning" sign overrules a "2H Meter Parking" sign. As computers are not adept at making these kinds of value judgements, CurbSpec requires that priorities be specified explicitly.
+In the real world, priorities are often implied rather than explicit. Road users assume that a "No Parking - Street Cleaning" sign overrules a "2H Meter Parking" sign. As computers are not adept at making these kinds of value judgements, CurbLR requires that priorities be specified explicitly.
 
 Priorities also avoid the need to define the regulations for each span of curb individually. An entire street or set of streets might be regulated as resident parking, but with small spans near fire hydrants defined with higher priority "no parking" rules applied.
 
 # Definition
-CurbSpec defines four priority levels for regulations. When multiple regulations apply at a location, lower numbered regulations supersede higher numbers. The `priority` is a property of each object in the JSON, expressed as an `enum`. Possible values are `int` from `1` - `4`.
+CurbLR defines four priority levels for regulations. When multiple regulations apply at a location, lower numbered regulations supersede higher numbers. The `priority` is a property of each object in the JSON, expressed as an `enum`. Possible values are `int` from `1` - `4`.
 
 | Level | Name | Description |
 | :--- | :--- | :--- |

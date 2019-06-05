@@ -26,7 +26,7 @@ Defines a No Parking rule that applies to all road users. Standing and loading m
 {
   "rule": {
     "what": {
-      "zone": "no parking"
+      "activity": "no parking"
     }
   }  
 }
@@ -38,7 +38,7 @@ Defines a rule to allow people with a Zone 4 Resident Parking Permit to park. Im
 {
   "rule": {
     "what": {
-      "zone": "parking",
+      "activity": "parking",
       "reason": "resident parking"
     }
     "who": {
@@ -55,7 +55,7 @@ Allows parking for handicap users with a three-hour time limit.
 {
   "rule": {
     "what": {
-      "zone": "parking",
+      "activity": "parking",
 
     }
     "who": {
@@ -66,13 +66,14 @@ Allows parking for handicap users with a three-hour time limit.
 ```
 
 ### Meter parking with time limit
-Anyone may park for up to two hours with payment
+Anyone may park for up to two hours with payment, and must leave for four hours before returning
 ```
 {
   "rule": {
     "what": {
-      "zone": "Parking",
-      "time_limit": 120,
+      "activity": "parking",
+      "timeLimit": 120,
+      "timeAway": 240,
       "payment": "yes"
     }
   }

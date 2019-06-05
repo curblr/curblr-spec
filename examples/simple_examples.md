@@ -6,24 +6,36 @@ No Stopping is allowed by anyone at any time. Example location information is in
 
 <img src="images/no_stopping.jpg" width="300">
 
-### **CurbSpec**
+### **CurbLR**
 ```
 {
-  "x": -118.376341,
-  "y": 34.086525,
-  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
-  "shst_location": 51.61148912,
-  "pt_relation": 2,
-  "direction": "forward",
-  "side_of_street": "left",
-  "rule": {
-    "what": {
-      "zone": "no stopping",
-      "reason": "tow-away zone"
-    },
-    "priority": 4
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -118.2816343,
+      34.0227093
+    ]
+  },
+  "properties": {
+    "location": {
+        "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
+        "shstLocation": 51.61148912,
+        "ptRelation": 2,
+        "direction": "forward",
+        "sideOfStreet": "left",
+        "marker": sign"
+      },
+      "rule": {
+          "what": {
+            "activity": "no stopping",
+            "reason": "tow-away zone"
+          },
+          "priority": 4
+        }
+      }
+    }
   }
-}
 ```
 
 # Snow emergency
@@ -33,27 +45,38 @@ No one may park during snow emergencies. Example location information is include
 
 <img src="images/snow_emergency.jpg" width="300">
 
-### **CurbSpec**
+### **CurbLR**
 
 ```
 {
-  "x": -118.376341,
-  "y": 34.086525,
-  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
-  "shst_location": 51.61148912,
-  "pt_relation": 0,
-  "direction": "forward",
-  "side_of_street": "right",
-  "rule": {
-    "what": {
-      "zone": "no parking",
-      "reason": "snow emergency zone"
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -118.2816343,
+      34.0227093
+    ]
+  },
+  "properties": {
+    "location": {
+      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
+      "shstLocation": 51.61148912,
+      "ptRelation": 1,
+      "direction": "forward",
+      "sideOfStreet": "right",
+      "marker": sign"
     },
-    "priority": 2,
-    "when": {
-      "designated_period": {
-        "name": "snow emergency",
-        "apply": "only_during"
+    "rule": {
+      "what": {
+        "activity": "no parking",
+        "reason": "snow emergency zone"
+      },
+      "priority": 2,
+      "when": {
+        "designatedPeriod": {
+          "name": "snow emergency",
+          "apply": "only_during"
+        }
       }
     }
   }
@@ -67,23 +90,34 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
 
 <img src="images/car_share.jpg" width="300">
 
-### **CurbSpec**
+### **CurbLR**
 
 ```
 {
-  "x": -118.376341,
-  "y": 34.086525,
-  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
-  "shst_location": 51.61148912,
-  "pt_relation": 1,
-  "direction": "forward",
-  "side_of_street": "right",
-  "rule": {
-    "what": {
-      "zone": "parking",
-      "reason": "car share only"
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -118.2816343,
+      34.0227093
+    ]
+  },
+  "properties": {
+    "location": {
+      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
+      "shstLocation": 51.61148912,
+      "ptRelation": 2,
+      "direction": "forward",
+      "sideOfStreet": "left",
+      "marker": sign"
     },
-    "priority": 4,
+    "rule": {
+      "what": {
+        "activity": "parking",
+        "reason": "car share only"
+      },
+      "priority": 4
+    }  
   }
 }
 ```
@@ -95,67 +129,88 @@ All vehicles except permitted construction vehicles are prohibited from standing
 
 <img src="images/temporary_construction_zone.jpg" width="300">
 
-### **CurbSpec**
-
-
+### **CurbLR**
 ```
-{ // defines a parking zone for construction vehicles
-  "x": -118.376341,
-  "y": 34.086525,
-  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
-  "shst_location": 51.61148912,
-  "pt_relation": 2,
-  "direction": "forward",
-  "side_of_street": "right",
-  "rule": {
-    "what": {
-      "zone": "parking",
-      "reason": "construction vehicles only"
+{  // defines a parking zone for construction vehicles
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -118.2816343,
+      34.0227093
+    ]
+  },
+  "properties": {
+    "location": {
+      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
+      "shstLocation": 51.61148912,
+      "ptRelation": 2,
+      "direction": "forward",
+      "sideOfStreet": "left",
+      "marker": sign"
     },
-    "priority": 2,
-    "when": {
-      "effective_dates": {
-        "from": "20180409",
-        "to": "20180409"
+    "rule": {
+      "what": {
+        "activity": "parking",
+        "reason": "construction vehicles only"
       },
-      "time_of_day": {
-        "from": "0700",
-        "until": "1600"
+      "priority": 4,
+      "when": {
+        "effectiveDates": {
+          "from": "20180409",
+          "until": "20180409"
+        },
+        "timeOfDay": {
+          "from": "0700",
+          "until": "1600"
+        }
+      },
+      "who" : {
+        "class": "construction"
       }
-    },
-    "who" : {
-      "class": "construction"
-    }
+    }  
   }
-},
+}
+
 
 { // defines a no standing zone for all other vehicles
-  "x": -118.376341,
-  "y": 34.086525,
-  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
-  "shst_location": 51.61148912,
-  "pt_relation": 2,
-  "direction": "forward",
-  "side_of_street": "right",
-  "rule": {
-    "what": {
-      "zone": "standing",
-      "reason": "construction vehicles only"
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -118.2816343,
+      34.0227093
+    ]
+  },
+  "properties": {
+    "location": {
+      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
+      "shstLocation": 51.61148912,
+      "ptRelation": 2,
+      "direction": "forward",
+      "sideOfStreet": "left",
+      "marker": sign"
     },
-    "priority": 2,
-    "when": {
-      "effective_dates": {
-        "from": "20180409",
-        "to": "20180409"
+    "rule": {
+      "what": {
+        "activity": "standing",
+        "reason": "construction vehicles only"
       },
-      "time_of_day": {
-        "from": "0700",
-        "until": "1600"
+      "priority": 4,
+      "when": {
+        "effectiveDates": {
+          "from": "20180409",
+          "until": "20180409"
+        },
+        "timeOfDay": {
+          "from": "0700",
+          "until": "1600"
+        }
+      },
+      "who" : {
+        "class": "construction"
       }
-    },
-    "who" : {
-      "class": "construction"
-    }
+    }  
   }
 }
 ```
@@ -168,36 +223,47 @@ Parking allowed only for resident permit holders Monday through Saturday, except
 
 <img src="images/resident_parking.jpg" width="300">
 
-### **CurbSpec**
+### **CurbLR**
 
 ```
 {
-  "x": -118.376341,
-  "y": 34.086525,
-  "shst_ref_id": "324af8ba918d9a2921b1fe6f9723d729",
-  "shst_location": 51.61148912,
-  "pt_relation": 2,
-  "direction": "forward",
-  "side_of_street": "right",
-  "rule": {
-    "what": {
-      "zone": "parking"
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -118.2816343,
+      34.0227093
+    ]
+  },
+  "properties": {
+    "location": {
+      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
+      "shstLocation": 51.61148912,
+      "ptRelation": 2,
+      "direction": "forward",
+      "sideOfStreet": "right",
+      "marker": sign"
     },
-    "priority": 4,
-    "when": {
-      "days_of_week": {
-        "days": [
-          "Mo", "Tu", "We", "Th", "Fr", "Sa"
-        ]
+    "rule": {
+      "what": {
+        "activity": "parking",
       },
-      "designated_period": {
-        "name": "holidays",
-        "apply": "except_during"
+      "priority": 4,
+      "when": {
+        "daysOfWeek": {
+          "days": [
+            "Mo", "Tu", "We", "Th", "Fr", "Sa"
+          ]
+        },
+        "designatedPeriod": {
+          "name": "holidays",
+          "apply": "exceptDuring"
+        },
       },
-    },
-    "who" : {
-      "class": "permit"
-    }
+      "who" : {
+        "class": "permit"
+      }
+    }  
   }
 }
 ```
