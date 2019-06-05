@@ -257,7 +257,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
         },
         "designatedPeriod": {
           "name": "holidays",
-          "apply": "exceptDuring"
+          "apply": "except_during"
         },
       },
       "who" : {
