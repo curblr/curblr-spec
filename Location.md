@@ -14,7 +14,7 @@ The [SharedStreets command line interface](https://github.com/sharedstreets/shar
 
 # GeoJSON feature geometries
 
-Each regulation must be associated with a geographic feature. That feature can be either a `Point` or a line segment (`LineString`). Either way, the coordinates for the point(s) that make up this feature are contained within the `Feature` of a `Feature Class`. The coordinates should be based on the matched SharedStreets output, not the input data. This ensures that the resulting feature geometries have been snapped to the street and can be displayed on a map consistently.
+Each regulation must be associated with a geographic feature. That feature can be either a `Point` or a line segment (`LineString`). Either way, the geographic coordinates for the point(s) that make up this feature are contained within the `Feature` of a `Feature Class`. The coordinates should be based on the matched SharedStreets output, not the input data. This ensures that the resulting feature geometries have been snapped to the street and can be displayed on a map consistently.
 
 (For a primer on GeoJSON terminology and structure, see [this post](https://macwright.org/2015/03/23/geojson-second-bite.html))
 
@@ -31,7 +31,7 @@ Here's an example of the geometry of a GeoJSON feature. Note that the coordinate
 
 # Location properties using street segments
 
-Each feature in the GeoJSON should contain the following properties:
+Each feature in the GeoJSON should contain the following `location` properties:
 
 | Field name | Importance  | Type | Description | Example |
 | :---: | :--- | :--- | :--- | :--- |
@@ -44,7 +44,7 @@ Each feature in the GeoJSON should contain the following properties:
 
 # Location properties using point data
 
-Each geature in the GeoJSON should contain the following properties:
+Each feature in the GeoJSON should contain the following `location` properties:
 
 | Field name | Importance  | Type | Description | Example
 | :---: | :--- | :--- | :--- | :--- |
