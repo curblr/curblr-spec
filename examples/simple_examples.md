@@ -24,7 +24,9 @@ No Stopping is allowed by anyone at any time. Example location information is in
         "ptRelation": 2,
         "direction": "forward",
         "sideOfStreet": "left",
-        "marker": sign"
+        "marker": "sign",
+        "objectID": 59463,
+        "derivedFrom": "b2045"
       },
       "rule": {
           "what": {
@@ -64,7 +66,9 @@ No one may park during snow emergencies. Example location information is include
       "ptRelation": 1,
       "direction": "forward",
       "sideOfStreet": "right",
-      "marker": sign"
+      "marker": "sign",
+      "objectID": 59463,
+      "derivedFrom": "b2045"
     },
     "rule": {
       "what": {
@@ -109,7 +113,9 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
       "ptRelation": 2,
       "direction": "forward",
       "sideOfStreet": "left",
-      "marker": sign"
+      "marker": "sign",
+      "objectID": 59463,
+      "derivedFrom": "b2045"
     },
     "rule": {
       "what": {
@@ -147,7 +153,9 @@ All vehicles except permitted construction vehicles are prohibited from standing
       "ptRelation": 2,
       "direction": "forward",
       "sideOfStreet": "left",
-      "marker": sign"
+      "marker": "sign",
+      "objectID": 59463,
+      "derivedFrom": "b2045"
     },
     "rule": {
       "what": {
@@ -157,12 +165,12 @@ All vehicles except permitted construction vehicles are prohibited from standing
       "priority": 4,
       "when": {
         "effectiveDates": {
-          "from": "20180409",
-          "until": "20180409"
+          "from": "2018-04-09",
+          "until": "2018-04-09"
         },
         "timeOfDay": {
-          "from": "0700",
-          "until": "1600"
+          "from": "07:00",
+          "until": "16:00"
         }
       },
       "who" : {
@@ -189,7 +197,9 @@ All vehicles except permitted construction vehicles are prohibited from standing
       "ptRelation": 2,
       "direction": "forward",
       "sideOfStreet": "left",
-      "marker": sign"
+      "marker": "sign",
+      "objectID": 59463,
+      "derivedFrom": "b2045"
     },
     "rule": {
       "what": {
@@ -199,12 +209,12 @@ All vehicles except permitted construction vehicles are prohibited from standing
       "priority": 4,
       "when": {
         "effectiveDates": {
-          "from": "20180409",
-          "until": "20180409"
+          "from": "2018-04-09",
+          "until": "2018-04-09"
         },
         "timeOfDay": {
-          "from": "0700",
-          "until": "1600"
+          "from": "07:00",
+          "until": "16:00"
         }
       },
       "who" : {
@@ -242,7 +252,9 @@ Parking allowed only for resident permit holders Monday through Saturday, except
       "ptRelation": 2,
       "direction": "forward",
       "sideOfStreet": "right",
-      "marker": sign"
+      "marker": "sign",
+      "objectID": 59463,
+      "derivedFrom": "b2045"
     },
     "rule": {
       "what": {

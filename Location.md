@@ -40,7 +40,9 @@ Each feature in the GeoJSON should contain the following `location` properties:
 | shstLocationEnd | Required | `float` | Where the restriction zone ends. Given as the distance (in meters) along the street, in the direction of digitization | `95.295` |
 | direction | Required | `enum` (`string`) Values: `forward`, `back` | Where the restriction zone ends. Given as the distance (in meters) along the street, in the direction of digitization | `forward` |
 | sideOfStreet | Required | `enum` (`string`) Values: `left`, `right` | Side of street that the curb regulation applies to, relative to the direction of digitization | `left` |
-| marker | Recommended | `string` Suggested values: `curb cut`, `hydrant`, `meter`, `paint`, `pay station`, `sign` | Describes the feature that marks the regulation on the street, likely the asset that was mapped to generate the input data for CurbLR. This can be used to indicate what a curb user should look for in order to verify parking directions from an app or other product | `sign`
+| objectId | Recommended | `string` |  Identifier for the regulation geometry. Enables CurbLR data to be linked back to input asset data, can be used by applications looking to model changes or future scenarios | `440235`
+| derivedFrom | Recommended | `string` | An array that holds object IDs that correspond to the physical assets used to derive the feature geometry (e.g. object ID for signposts, meters). Enables CurbLR data to be linked back to input asset data in GIS. Also useful when converting GIS data into CurbLR, for pre-processing and linear referencing steps. | `[3455, 1359]`
+| marker | Recommended | `string` Suggested values: `curb cut`, `hydrant`, `meter`, `paint`, `pay station`, `sign` | Describes the feature that marks the regulation on the street, likely the asset that was mapped to generate the input data for CurbLR. This can be used to indicate what a human curb user should look for in order to verify parking directions from an app or other product | `sign`
 
 # Location properties using point data
 
@@ -54,7 +56,9 @@ Each feature in the GeoJSON should contain the following `location` properties:
 | ptRelation | Recommended | `enum` (`int`) Values: `0`-`3` | Defines the relationship between signs of the same type in order to enable the extrapolation of zone information. For example, can be used to denote the beginning and end of a "No parking" zone. `0` = Point-based data, relationship to other signs is not known. `1` = Beginning of a zone. `2` = Continuation of a zone. `3` = End of a zone. While this is technically redundant, and should be used to generate the curb segment's geometry, we have chosen to surface this to help define a template for city data collection | `1` |
 | direction | Required | `enum` (`string`) Values: `forward`, `back` | Where the restriction zone ends. Given as the distance (in meters) along the street, in the direction of digitization | `95.295` |
 | sideOfStreet | Required | `enum` (`string`) Values: `left`, `right` | Side of street that the curb regulation applies to, relative to the direction of digitization | `left` |
-| marker | Recommended | `string` Suggested values: `curb cut`, `hydrant`, `meter`, `paint`, `pay station`, `sign` | Describes the feature that marks the regulation on the street, likely the asset that was mapped to generate the input data for CurbLR. This can be used to indicate what a curb user should look for in order to verify parking directions from an app or other product | `sign`
+| objectId | Recommended | `string` |  Identifier for the regulation geometry. Enables CurbLR data to be linked back to input asset data, can be used by applications looking to model changes or future scenarios | `440235`
+| derivedFrom | Recommended | `string` | An array that holds object IDs that correspond to the physical assets used to derive the feature geometry (e.g. object ID for signposts, meters). Enables CurbLR data to be linked back to input asset data in GIS. Also useful when converting GIS data into CurbLR, for pre-processing and linear referencing steps. | `[3455, 1359]`
+| marker | Recommended | `string` Suggested values: `curb cut`, `hydrant`, `meter`, `paint`, `pay station`, `sign` | Describes the feature that marks the regulation on the street, likely the asset that was mapped to generate the input data for CurbLR. This can be used to indicate what a human curb user should look for in order to verify parking directions from an app or other product | `sign`
 
 ## Using point-based data
 
@@ -67,6 +71,13 @@ The [SharedStreets map conflation tools](https://github.com/sharedstreets/shared
 ## Additional possibilities, seeking feedback
 
 Additional fields to consider are:
-- `reg_id`: a unique id for the feature
-- `derivedFrom`: array of asset ids for the signs/paint/meter used to derive the feature geometry
 - `relates_to`: array of `reg_id`s for overlapping regulations
+
+# Examples
+
+The links below show real world curb regulations translated into CurbLR.
+
+| Link | Description |
+| :---- | :---- |
+| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
+| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [Jupyter](https://github.com/sharedstreets/CurbLR/blob/master/conversions/CSV%20to%20JSON%20parking%20rules.ipynb).

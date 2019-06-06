@@ -2,7 +2,7 @@
 
 ### Note: feedback wanted - should this use OSM `opening_hours` format instead?
 
-A TimeSpan defines a contiguous or non-contiguous period of time. It is used to specify when a [Restriction](Restriction.md) applies. It supports variety of different concepts for expressing time which may be combined together.
+A TimeSpan defines a contiguous or non-contiguous period of time. It is used to specify when a [rule](Rule.md) applies, in order to form a complete [restriction](Restriction.md). It supports variety of different concepts for expressing time which may be combined together.
 
 Multiple TimeSpans may be combined into the same `when` "clause". Whether these are subject to a logical **AND** operation or a logical **OR** operation depends on their position within an array. The examples below provide additional context.
 
@@ -24,22 +24,22 @@ A GeoJSON feature may include `when` fields made up of the following:
 | Field name | Type | Description | Example
 | :--- | :--- | :--- | :--- |
 | effectiveDates | `object` or `array` | Specific date range (or multiple date ranges) that define a fixed span of time or an annual period | |
-| effectiveDates.from | `string` (`MMDD` or `YYYYMMDD`) | The beginning date of a time period. This is either a full date or a month and day that will define the timespan on an annual basis | `20180802` or `0401` |
-| effectiveDates.to | `string` (`MMDD` or `YYYYMMDD`) | The ending date of a time period. This is either a full date or a month and day that will define the timespan on an annual basis | `20180805` or `1130` |
+| effectiveDates.from | `string` (`MM-DD` or `YYYY-MM-DD`) | The beginning date of a time period. This is either a full date or a month and day that will define the timespan on an annual basis | `2018-08-02` or `04-01` |
+| effectiveDates.to | `string` (`MMDD` or `YYYY-MM-DD`) | The ending date of a time period. This is either a full date or a month and day that will define the timespan on an annual basis | `2018-08-05` or `11-30` |
 | daysOfWeek | `object` | Determines which days of the week will be included in a timespan.
 | daysOfWeek.days | `enum` (`string`) Values: `Mo Tu We Th Fr Sa Su` | List of days to include in the timespan | To specify weekdays: `["Mo", "Tu", "We", "Th", "Fr"]` |
 | daysOfWeek.occurrence_in_month | `enum` Values: `1st 2nd 3rd 4th 5th last` | Modifier to indicate which occurrences of the specified days within the month to include in the timespan | `["1st", "3rd"]` |
 | daysOfMonth | `enum` (`string`) Values: `1-31`, `last`, `odd`, `even` | Specify specific days during the month to include in the timespan | To specify the 14th and last day of the month `["14", "last"]` |
 | timeOfDay | `object` or `array` | Specific time range during the day (or multiple time ranges) | |
-| timeOfDay.from | `string` (`HHMM`) | The beginning time (24H) of the time range | `0700` |
-| timeOfDay.until | `string` (`HHMM`) | The ending time (24H) of the time range | `0930` |
+| timeOfDay.from | `string` (`HH:MM`) | The beginning time (24H) of the time range | `07:00` |
+| timeOfDay.until | `string` (`HH:MM`) | The ending time (24H) of the time range | `09:30` |
 | designatedPeriod | `object` | An arbitrary, externally-defined named period of time. Timespan can be defined to only apply during a designated period or at all times except during a designated period. | |
 | designatedPeriod.name | `string` | The name of designated period. | `snow emergency` or `holidays` |
 | designatedPeriod.apply | `enum` (`string`) Values: `only_during` or `except_during` | Will the designated period be excluded from the timespan or will the timespan only apply during the period. | Except Holidays: `except_during` or  During Snow Emergency: `only_during` |
 
 When multiple "clauses" are combined in a single TimeSpan, a logical **AND** operation is applied. For example, a TimeSpan that includes Wednesdays and the period of February 1st through April 30th specifies all Wednesdays between February 1st and April 30th. It does not specify all Wednesdays during the year AND all days between February 1st and April 30th (the equivalent of a logical **OR** operation).
 
-When multiple "clauses" are part of a single `when` field but defined in separate TimeSpans, a logical **OR** operation is applied. For example, a rule may contain a TimeSpan that specifies weekdays from 9am-5pm, and another TimeSpan that specifies weekends from 11-2. See examples below for further clarification.
+When multiple "clauses" are part of a single `when` field but defined in separate TimeSpans, a logical **OR** operation is applied. For example, a restriction may contain a TimeSpan that specifies weekdays from 9am-5pm, and another TimeSpan that specifies weekends from 11-2. See examples below for further clarification.
 
 # Examples
 
@@ -56,8 +56,8 @@ TimeSpan applies overnight (midnight until 6am)
 {
   "when":
     "timeOfDay": {
-      "from": "0000",
-      "until": "0600"
+      "from": "00:00",
+      "until": "0:600"
   }
 }
 ```
@@ -68,10 +68,10 @@ TimeSpan applies during the morning **and** evening rush hours. Providing the tw
 {
   "when":
     "timeOfDay": [
-      {"from": "0730",
-       "until": "0930"},
-      {"from": "1600",
-       "until": "1800"}
+      {"from": "07:30",
+       "until": "09:30"},
+      {"from": "16:00",
+       "until": "18:00"}
     ]
 }
 ```
@@ -88,8 +88,8 @@ TimeSpan applies on weekdays from 8am to 8pm, **and** on Sundays from 11am to 8p
         ]
       },
       "timeOfDay": {
-        "from": "0800",
-        "until": "2000"
+        "from": "08:00",
+        "until": "20:00"
       }
     },
     {
@@ -97,8 +97,8 @@ TimeSpan applies on weekdays from 8am to 8pm, **and** on Sundays from 11am to 8p
         "Su"
       ],
       "timeOfDay": {
-        "from": "1100",
-        "until": "2000"
+        "from": "11:00",
+        "until": "20:00"
       }
     }
   ]
@@ -128,8 +128,8 @@ TimeSpan applies Monday through Saturday between 8am and 8pm, except holidays
       ]
     },
     "timeOfDay": {
-      "from": "0800",
-      "until": "2000"
+      "from": "08:00",
+      "until": "20:00"
     },
     "designatedPeriod" {
       "name": "holidays"
@@ -145,12 +145,12 @@ TimeSpan applies during designated construction hours (7am until 7pm) for the da
 {
   "when": {
     "timeOfDay": {
-      "from": "0700",
-      "until": "1900"
+      "from": "07:00",
+      "until": "19:00"
     },
     "effectiveDates": {
-      "from": "20180802",
-      "until": "20180805"
+      "from": "2018-08-02",
+      "until": "2018-08-05"
     }
   }
 }
@@ -165,12 +165,12 @@ TimeSpan applies on odd number days between December 1st and March 31st from 1am
       "odd"
     ],
     "timeOfDay": {
-      "from": "0100",
-      "until": "0600"
+      "from": "01:00",
+      "until": "06:00"
     },
     "effectiveDates": {
-      "from": "1201",
-      "until": "0331"
+      "from": "12-01",
+      "until": "03-31"
     }
   }
 }
@@ -188,12 +188,12 @@ TimeSpan applies between 11am and 1pm on the 2nd and 4th Tuesday of every month 
       "occurrence_in_month": ["2nd", "4th"]
     },
     "timeOfDay": {
-      "from": "1100",
-      "until": "1300"
+      "from": "11:00",
+      "until": "13:00"
     },
     "effectiveDates": {
-      "from": "0401",
-      "until": "1130"
+      "from": "04-01",
+      "until": "11-30"
     }
   }
 }
