@@ -28,7 +28,7 @@ No Stopping is allowed by anyone at any time. Example location information is in
         "objectID": 59463,
         "derivedFrom": "b2045"
       },
-      "rule": {
+      "restriction": {
           "what": {
             "activity": "no stopping",
             "reason": "tow-away zone"
@@ -70,7 +70,7 @@ No one may park during snow emergencies. Example location information is include
       "objectID": 59463,
       "derivedFrom": "b2045"
     },
-    "rule": {
+    "restriction": {
       "what": {
         "activity": "no parking",
         "reason": "snow emergency zone"
@@ -117,7 +117,7 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
       "objectID": 59463,
       "derivedFrom": "b2045"
     },
-    "rule": {
+    "restriction": {
       "what": {
         "activity": "parking",
         "reason": "car share only"
@@ -161,7 +161,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
       "objectID": 59463,
       "derivedFrom": "b2045"
     },
-    "rule": {
+    "restriction": {
       "what": {
         "activity": "parking",
         "reason": "construction vehicles only"
@@ -205,7 +205,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
       "objectID": 59463,
       "derivedFrom": "b2045"
     },
-    "rule": {
+    "restriction": {
       "what": {
         "activity": "standing",
         "reason": "construction vehicles only"
@@ -260,7 +260,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
       "objectID": 59463,
       "derivedFrom": "b2045"
     },
-    "rule": {
+    "restriction": {
       "what": {
         "activity": "parking",
       },
