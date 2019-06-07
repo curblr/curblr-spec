@@ -122,7 +122,11 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
         "activity": "parking",
         "reason": "car share only"
       },
-      "priority": 4
+      "priority": 4,
+      "who" : {
+        "class": "car share",
+        "subclass": "Enterprise"
+      }
     }  
   }
 }
