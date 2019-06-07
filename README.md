@@ -74,7 +74,7 @@ These categories are described below:
 | Category | Importance | Description |
 | :---- | :---- | :---- |
 | [Location](Location.md) | Required | Describes the location (street-linked point or street segment) **where** the restriction applies, using geographic information and linear referencing. |
-| [Restriction](Restriction.md) | Required | Determines **what** is allowed or forbidden in the zone during a particular period of time |
+| [Rule](Rule.md) | Required | Determines **what** is allowed or forbidden in the zone during a particular period of time |
 | [Priority](Priority.md) | Recommended | Defines how overlapping zone restrictions relate to one another (i.e. which one takes **priority**) |
 | [TimeSpan](TimeSpan.md) | If applicable | Defines the time period **when** a zone regulation is in effect |
 | [UserClass](UserClass.md) | If applicable | Defines **who** the restriction applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
