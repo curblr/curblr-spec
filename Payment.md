@@ -4,7 +4,7 @@ Parking payment may be priced according to varying schedules and even dynamic pr
 We are very interested in feedback from cities or companies that would like to weigh in on this aspect of CurbLR.
 
 # Definition
-Each feature in the GeoJSON objet may have the following properties:
+Each feature in the GeoJSON object may have the following properties:
 
 
 | Field name | Type | Description | Example
