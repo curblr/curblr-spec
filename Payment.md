@@ -8,7 +8,7 @@ Each feature in the GeoJSON objet may have the following properties:
 
 
 | Field name | Type | Description | Example
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | minRate | array | Groups properties corresponding to the minimum cost per interval of time (e.g. refers to the concept of "$1/hr") | |
 | minRate.minAmount | `float` | The minimum cost of parking, in local currency units (e.g. USD, GBP, EUR) for a specified time interval | `2.0` |
 | minRate.minInterval | `int` | The time interval, in minutes, that is purchased by the minimum parking fee amount | `2.0` |
