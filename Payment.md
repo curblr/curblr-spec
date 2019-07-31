@@ -5,9 +5,9 @@ The `payment` field indicates whether payment is required and stores information
 Fees for parking or other street usage can be sorted into three categories, borrowed from the [Alliance for Parking Data Standards'](https://www.allianceforparkingdatastandards.org/resources) Release 2.0:
 | Rate type | Description | Example |
 | :--- | :--- | :--- |
-| Flat-rate | A fixed amount is charged for a period of time, irrespective of the day, time, or actual length of stay. | The fee is $1 per hour, for any part of that hour
+| Flat-rate | A fixed amount is charged for a period of time, irrespective of the day, time, or actual length of stay. | The fee is $1 per hour, for any part of that hour |
 | Flat-rate tier | A fixed amount is charged for an initial period of time. The amount changes for successive periods. The fee schedule may vary based on duration of stay, time of day, or both | In the first hour of a parking session, the fee is $1 for any part of that hour; in the second hour of a parking session, the fee is $2 for any part of that hour. |
-| Incrementing | Same as flat-rate tier, but intended to be used for smaller amounts of time, such as 5-minute periods | The fee is 5 cents for the first 5 mins, 10 cents for the next 5 mins, 25 cents for the next 10 mins, 50 cents for the next 15 mins
+| Incrementing | Same as flat-rate tier, but intended to be used for smaller amounts of time, such as 5-minute periods | The fee is 5 cents for the first 5 mins, 10 cents for the next 5 mins, 25 cents for the next 10 mins, 50 cents for the next 15 mins |
 
 These fields are stored as key:value pairs in a pricing object in the spec.
 
@@ -16,7 +16,7 @@ Fees may also vary based on time of day. To address this, users can include a [t
 # Definition
 Each feature in the GeoJSON object may have the following `payment` properties:
 
-| Field name | Type | Description | Example
+| Field name | Type | Description | Example |
 | :--- | :--- | :--- | :--- |
 | fee | `float` (may be an array) | The amount charged for the duration of stay, expressed as whole units of currency. Currency units can be specified in the `manifest` for the CurbLR feed. | `1`, `0.25`
 | durationSt | `int` (may be an array) | Duration of stay, in mins, at which this fee begins to apply. Do not use for flat-fee rates. | `0`, `60` |
