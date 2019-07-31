@@ -13,6 +13,7 @@ Each feature in the GeoJSON may have the following properties:
 | :--- | :--- | :--- | :--- | :--- |
 | class | If applicable | `string` Suggested values; see below | The identifier of a user class, which may define a type of vehicle, permit, purpose, or service | `food truck` |
 | subclass | If applicable | `string` | An optional secondary identifier for a class of user. Useful for subdividing permit holders by zone or other designation | `Zone 4` |
+| numeric restriction | If applicable | `float` |If the `class` or `subclass` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Metadata.md).) | `maxHeight`:`6`, `minLength`:`25`, `maxWeight`:`1000` |
 
 
 If a `restriction` does not specify `who` properties, it will be assumed to apply to all curb users.
@@ -45,6 +46,16 @@ The following is a suggested but not exhaustive list of values for `class`. It i
 - `truck`
 - `visitor`
 
+## Numeric restrictions (height, length, width)
+
+Numeric restrictions, if applicable, are entered as key:value pairs in the local measurement unit (e.g. feet and pounds in USA, metres and kilograms in UK). Measurement units may be specified in the [manifest](Metadata.md). Available keys include:
+
+- `maxHeight`
+- `maxLength`
+- `maxWeight`
+- `minHeight`
+- `minLength`
+- `minWeight`
 
 # Examples
 
@@ -73,16 +84,13 @@ Defines a parking zone for vehicles displaying a Zone 4 or Zone 5 Resident Permi
     }
     "who": {
       "class": "resident permit",
-      "subclass": [
-        "zone 4",
-        "zone 5"
-      ]
+      "subclass": ["zone 4", "zone 5"]
     }
   }  
 }
 ```
 
-### Truck classification
+### Truck length limit
 Defines a parking restriction for large trucks that does not apply to smaller trucks (or any other `class`).
 ```
 {
@@ -92,11 +100,27 @@ Defines a parking restriction for large trucks that does not apply to smaller tr
     }
     "who": {
       "class": "truck",
-      "subclass": "over 25 ft"
+      "maxLength": 25
     }
   }  
 },
 ```
+
+### Vehicle height limit
+Defines a parking space for vehicles no more than 6 feet tall.
+```
+{
+  "restriction": {
+    "what": {
+      "activity": "parking"
+    }
+    "who": {
+      "maxHeight": 6
+    }
+  }  
+},
+```
+
 
 ### Car share
 Defines car share spaces with subclasses for specific operations. This would allow for certain spaces to be reserved for specific operators while also allowing the creation of floating car share spaces to be used by any operator.
