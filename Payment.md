@@ -17,7 +17,7 @@ Fees may also vary based on time of day. To address this, users can include a [T
 # Definition
 Each feature in the GeoJSON object may have the following Payment properties:
 
-| Field name | Type | Description | Example
+| Field name | Type | Description | Example |
 | :--- | :--- | :--- | :--- |
 | rates | `array` | The fee amounts and durations. If the fee amount varies depending on time of day, then optional TimeSpan object(s) can be included here. Each rates field can include a single or multiple values, so for consistency, rates fields are always arrays.
 | rate.fees | array of `float` | The amounts charged for the duration of stay, expressed as whole units of currency. Currency units can be specified in the `manifest` for the CurbLR feed. | [`1`]; [`0.25`, `0.5`]
