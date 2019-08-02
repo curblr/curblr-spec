@@ -11,17 +11,17 @@ Each feature in the GeoJSON may have the following properties:
 
 | Field name | Importance  | Type | Description | Example
 | :--- | :--- | :--- | :--- | :--- |
-| class | If applicable | `string` Suggested values; see below | The identifier of a user class, which may define a type of vehicle, permit, purpose, or service | `food truck` |
-| subclass | If applicable | `string` | An optional secondary identifier for a class of user. Useful for subdividing permit holders by zone or other designation | `Zone 4` |
-| numeric restriction | If applicable | `float` |If the `class` or `subclass` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Metadata.md).) | `maxHeight`:`6`, `minLength`:`25`, `maxWeight`:`1000` |
+| classes | If applicable | array of `string` Suggested values; see below | The identifier of a user class, which may define a type of vehicle, permit, purpose, or service. This field is an array in order to accommodate single or multiple values in a consistent way. | [`food truck`] |
+| subclasses | If applicable | array of `string` | Optional secondary identifiers for a class of user. Useful for subdividing permit holders by zone or other designation | [`zone 4`, `zone 5`] |
+| numeric restriction | If applicable | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `maxHeight`:`6`; `minLength`:`25`; `maxWeight`:`1000` |
 
 
-If a `restriction` does not specify `who` properties, it will be assumed to apply to all curb users.
+If a [restriction](Restriction.md) does not specify `userClass` properties, it will be assumed to apply to all curb users.
 
-It is possible for a given curb segment to have multiple restrictions that apply, during the same time period, to different user classes. However, only one of those restrictions may have an empty `who` field; otherwise they will conflict with one another. When evaluating what `restriction` applies to a specific user class, the `restriction` without a `who` will be considered the default if no other restrictions apply to the user.
+It is possible for a given curb segment to have multiple restrictions that apply, during the same time period, to different user classes. However, only one of those restrictions may have an empty `userClass` field; otherwise they will conflict with one another. When evaluating what [restriction](Restriction.md) applies to a specific user class, the restriction without a `userClass` will be considered the default if no other restrictions apply to the user.
 
 ## Class: well-known values
-The following is a suggested but not exhaustive list of values for `class`. It is up to a particular jurisdiction to define exactly which vehicles, user, purposes, or permits are required for each value. Multiple values may be specified in an array. If multiple well-known values apply, the most descriptive should be used (e.g. for resident-only parking, `resident permit` should be used rather than `permit`)
+The following is a suggested but not exhaustive list of values for `classes`. It is up to a particular jurisdiction to define exactly which vehicles, user, purposes, or permits are required for each value. Multiple values may be specified in an array. If multiple well-known values apply, the most descriptive should be used (e.g. for resident-only parking, `resident permit` should be used rather than `permit`)
 
 - `bike`
 - `car share`
@@ -48,7 +48,7 @@ The following is a suggested but not exhaustive list of values for `class`. It i
 
 ## Numeric restrictions (height, length, width)
 
-Numeric restrictions, if applicable, are entered as key:value pairs in the local measurement unit (e.g. feet and pounds in USA, metres and kilograms in UK). Measurement units may be specified in the [manifest](Metadata.md). Available keys include:
+Numeric restrictions, if applicable, are entered as key:value pairs in the local measurement unit (e.g. feet and pounds in USA, metres and kilograms in UK). Measurement units may be specified in the [manifest](Manifest.md). Available keys include:
 
 - `maxHeight`
 - `maxLength`
@@ -61,14 +61,14 @@ Numeric restrictions, if applicable, are entered as key:value pairs in the local
 
 ### Food truck
 Defines a parking zone for vehicles operating as food trucks
-```
+```JSON
 {
   "restriction": {
-    "what": {
+    "rule": {
       "activity": "parking"
-    }
-    "who": {
-      "class": "food truck"
+    },
+    "userClass": {
+      "classes": ["food truck"]
     }
   }  
 }
@@ -76,15 +76,15 @@ Defines a parking zone for vehicles operating as food trucks
 
 ### Zoned resident-only parking
 Defines a parking zone for vehicles displaying a Zone 4 or Zone 5 Resident Permit.
-```
+```JSON
 {
   "restriction": {
-    "what": {
+    "rule": {
       "activity": "parking"
-    }
-    "who": {
-      "class": "resident permit",
-      "subclass": ["zone 4", "zone 5"]
+    },
+    "userClass": {
+      "classes": ["resident permit"],
+      "subclasses": ["zone 4", "zone 5"]
     }
   }  
 }
@@ -92,29 +92,29 @@ Defines a parking zone for vehicles displaying a Zone 4 or Zone 5 Resident Permi
 
 ### Truck length limit
 Defines a parking restriction for large trucks that does not apply to smaller trucks (or any other `class`).
-```
+```JSON
 {
   "restriction": {
-    "what": {
+    "rule": {
       "activity": "no parking"
-    }
-    "who": {
-      "class": "truck",
+    },
+    "userClass": {
+      "classes": ["truck"],
       "maxLength": 25
     }
   }  
-},
+},M
 ```
 
 ### Vehicle height limit
 Defines a parking space for vehicles no more than 6 feet tall.
-```
+```JSON
 {
   "restriction": {
-    "what": {
+    "rule": {
       "activity": "parking"
-    }
-    "who": {
+    },
+    "userClass": {
       "maxHeight": 6
     }
   }  
@@ -125,21 +125,23 @@ Defines a parking space for vehicles no more than 6 feet tall.
 ### Car share
 Defines car share spaces with subclasses for specific operations. This would allow for certain spaces to be reserved for specific operators while also allowing the creation of floating car share spaces to be used by any operator.
 
-Denotes `who` for Zipcar spaces:
-```
+Denotes the `userClass` for Zipcar spaces:
+```json
 {
-  "class": "car share",
-  "subclass": "Zipcar"
+  "classes": ["car share"],
+  "subclasses": ["Zipcar"]
 }
 ```
-Denotes `who` for Car2Go spaces:
-```
+Denotes the `userClass` for Car2Go spaces:
+```json
 {
-  "class": "car share",
-  "subclass": "Car2Go"
+  "classes": ["car share"],
+  "subclasses": ["Car2Go"]
 }
 ```
-Denotes `who` for floating spaces:
-```
-{ "class": "car share"}
+Denotes the `userClass` for floating spaces:
+```json
+{
+  "classes": ["car share"]
+}
 ```

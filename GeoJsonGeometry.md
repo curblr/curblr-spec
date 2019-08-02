@@ -6,11 +6,15 @@ Each regulation must be associated with a geographic feature, which must be a li
 
 Here's an example of the geometry of a GeoJSON feature. Note that the coordinates are for the signpost's location _after it was snapped to the street and extrapolated into a street segment_:
 
-```
+```json
 {
   "type": "Feature",
   "geometry": {
     "type": "LineString",
-    "coordinates": [-112.12588548660278,33.45134313598914],[-112.12530076503754,33.45132075686167]
+    "coordinates": [
+      [-112.12588548660278,33.45134313598914],
+      [-112.12530076503754,33.45132075686167]
+    ]
   }
-  ```
+}
+```
