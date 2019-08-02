@@ -7,29 +7,29 @@ No Stopping is allowed by anyone at any time. Example location information is in
 <img src="images/no_stopping.jpg" width="300">
 
 ### **CurbLR**
-```
+```json
 {
   "type": "Feature",
   "geometry": {
-    "type": "Point",
+    "type": "LineString",
     "coordinates": [
-      -118.2816343,
-      34.0227093
+      [-112.12588548660278,33.45134313598914],
+      [-112.12530076503754,33.45132075686167]
     ]
   },
   "properties": {
     "location": {
         "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-        "shstLocation": 51.61148912,
-        "ptRelation": 2,
-        "direction": "forward",
-        "sideOfStreet": "left",
-        "marker": "sign",
+        "shstLocationSt": 51.61148912,
+        "shstLocationEnd": 55.61148912,
+        "sideOfStreet": "right",
         "objectID": 59463,
-        "derivedFrom": "b2045"
+        "derivedFrom": ["b2045"],
+        "marker": "sign",
+        "streetName": "Madison Ave"
       },
       "restriction": {
-          "what": {
+          "rule": {
             "activity": "no stopping",
             "reason": "tow-away zone"
           },
@@ -49,39 +49,41 @@ No one may park during snow emergencies. Example location information is include
 
 ### **CurbLR**
 
-```
+```json
 {
   "type": "Feature",
   "geometry": {
-    "type": "Point",
+    "type": "LineString",
     "coordinates": [
-      -118.2816343,
-      34.0227093
+      [-115.12588548660278,32.45134313598914],
+      [-115.12530076503754,32.45132075686167]
     ]
   },
   "properties": {
     "location": {
-      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-      "shstLocation": 51.61148912,
-      "ptRelation": 1,
-      "direction": "forward",
-      "sideOfStreet": "right",
-      "marker": "sign",
-      "objectID": 59463,
-      "derivedFrom": "b2045"
-    },
+        "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
+        "shstLocationSt": 29.61148912,
+        "shstLocationEnd": 34.61148912,
+        "sideOfStreet": "left",
+        "objectID": 49202,
+        "derivedFrom": ["ks045"],
+        "marker": "sign",
+        "streetName": "Parkdale St"
+      },
     "restriction": {
-      "what": {
+      "rule": {
         "activity": "no parking",
         "reason": "snow emergency zone"
       },
       "priority": 2,
-      "when": {
-        "designatedPeriod": {
-          "name": "snow emergency",
-          "apply": "only_during"
+      "timeSpans": [
+        {
+          "designatedPeriod": {
+            "name": "snow emergency",
+            "apply": "only_during"
+          }
         }
-      }
+      ]
     }
   }
 }
@@ -96,36 +98,36 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
 
 ### **CurbLR**
 
-```
+```json
 {
   "type": "Feature",
   "geometry": {
-    "type": "Point",
+    "type": "LineString",
     "coordinates": [
-      -118.2816343,
-      34.0227093
+      [-112.12588548660278,33.45134313598914],
+      [-112.12530076503754,33.45132075686167]
     ]
   },
   "properties": {
     "location": {
-      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-      "shstLocation": 51.61148912,
-      "ptRelation": 2,
-      "direction": "forward",
-      "sideOfStreet": "left",
-      "marker": "sign",
-      "objectID": 59463,
-      "derivedFrom": "b2045"
-    },
+        "shstRefId": "908af8ba918d9a2921b1fe6f9723d729",
+        "shstLocationSt": 14.71148912,
+        "shstLocationEnd": 19.61148912,
+        "sideOfStreet": "right",
+        "objectID": 40163,
+        "derivedFrom": ["wo3045"],
+        "marker": "sign",
+        "streetName": "Reed Ave"
+      },
     "restriction": {
-      "what": {
+      "rule": {
         "activity": "parking",
         "reason": "car share only"
       },
       "priority": 4,
-      "who" : {
-        "class": "car share",
-        "subclass": "Enterprise"
+      "userClass" : {
+        "classes": ["car share"],
+        "subclasses": ["Enterprise"]
       }
     }  
   }
@@ -140,89 +142,101 @@ All vehicles except permitted construction vehicles are prohibited from standing
 <img src="images/temporary_construction_zone.jpg" width="300">
 
 ### **CurbLR**
-```
-{  // defines a parking zone for construction vehicles
+
+```json
+// defines a parking zone for construction vehicles
+{  
   "type": "Feature",
   "geometry": {
-    "type": "Point",
+    "type": "LineString",
     "coordinates": [
-      -118.2816343,
-      34.0227093
+      [-129.12588548660278,33.45134313598914],
+      [-129.12530076503754,33.45132075686167]
     ]
   },
   "properties": {
     "location": {
-      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-      "shstLocation": 51.61148912,
-      "ptRelation": 2,
-      "direction": "forward",
-      "sideOfStreet": "left",
-      "marker": "sign",
-      "objectID": 59463,
-      "derivedFrom": "b2045"
-    },
+        "shstRefId": "224af8ba918d9a2921b1fe6f9723d729",
+        "shstLocationSt": 20.61148912,
+        "shstLocationEnd": 25.61148912,
+        "sideOfStreet": "right",
+        "objectID": 59463,
+        "derivedFrom": ["b2045"],
+        "marker": "sign",
+        "streetName": "Madison Ave"
+      },
     "restriction": {
-      "what": {
+      "rule": {
         "activity": "parking",
         "reason": "construction vehicles only"
       },
       "priority": 4,
-      "when": {
-        "effectiveDates": {
-          "from": "2018-04-09",
-          "until": "2018-04-09"
+      "timeSpans": [
+        {
+          "effectiveDates": [
+            {
+              "from": "2018-04-09",
+              "until": "2018-04-09"
+            }
+          ],
+          "timesOfDay": [
+            {
+              "from": "07:00",
+              "until": "16:00"
+            }
+          ]
         },
-        "timeOfDay": {
-          "from": "07:00",
-          "until": "16:00"
-        }
-      },
-      "who" : {
+      ],
+      "userClass" : {
         "class": "construction"
       }
     }  
   }
 }
 
-
-{ // defines a no standing zone for all other vehicles
+// defines a no standing zone for all other vehicles
+{
   "type": "Feature",
   "geometry": {
-    "type": "Point",
+    "type": "LineString",
     "coordinates": [
-      -118.2816343,
-      34.0227093
+      [-129.12588548660278,33.45134313598914],
+      [-129.12530076503754,33.45132075686167]
     ]
   },
   "properties": {
     "location": {
-      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-      "shstLocation": 51.61148912,
-      "ptRelation": 2,
-      "direction": "forward",
-      "sideOfStreet": "left",
-      "marker": "sign",
-      "objectID": 59463,
-      "derivedFrom": "b2045"
-    },
+        "shstRefId": "224af8ba918d9a2921b1fe6f9723d729",
+        "shstLocationSt": 20.61148912,
+        "shstLocationEnd": 25.61148912,
+        "sideOfStreet": "right",
+        "objectID": 59463,
+        "derivedFrom": ["b2045"],
+        "marker": "sign",
+        "streetName": "Madison Ave"
+      },
     "restriction": {
-      "what": {
+      "rule": {
         "activity": "standing",
         "reason": "construction vehicles only"
       },
       "priority": 4,
-      "when": {
-        "effectiveDates": {
-          "from": "2018-04-09",
-          "until": "2018-04-09"
-        },
-        "timeOfDay": {
-          "from": "07:00",
-          "until": "16:00"
+      "timeSpans": [
+        {
+          "effectiveDates": {
+            "from": "2018-04-09",
+            "until": "2018-04-09"
+          },
+          "timesOfDay": [
+            {
+              "from": "07:00",
+              "until": "16:00"
+            }
+          ]
         }
-      },
-      "who" : {
-        "class": "construction"
+      ],
+      "userClass" : {
+        "classes": ["construction"]
       }
     }  
   }
@@ -239,45 +253,49 @@ Parking allowed only for resident permit holders Monday through Saturday, except
 
 ### **CurbLR**
 
-```
+```json
 {
   "type": "Feature",
   "geometry": {
-    "type": "Point",
+    "type": "LineString",
     "coordinates": [
-      -118.2816343,
-      34.0227093
+      [-113.12588548660278,32.45134313598914],
+      [-113.12530076503754,32.45132075686167]
     ]
   },
   "properties": {
     "location": {
-      "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-      "shstLocation": 51.61148912,
-      "ptRelation": 2,
-      "direction": "forward",
-      "sideOfStreet": "right",
-      "marker": "sign",
-      "objectID": 59463,
-      "derivedFrom": "b2045"
-    },
+        "shstRefId": "993dj8ba408d9a2921b1fe6f9723d729",
+        "shstLocationSt": 5,
+        "shstLocationEnd": 100,
+        "sideOfStreet": "right",
+        "objectID": 39204,
+        "derivedFrom": ["w0434"],
+        "marker": "sign",
+        "streetName": "Bond St"
+      },
     "restriction": {
-      "what": {
+      "rule": {
         "activity": "parking",
       },
       "priority": 4,
-      "when": {
-        "daysOfWeek": {
-          "days": [
-            "Mo", "Tu", "We", "Th", "Fr", "Sa"
+      "timeSpans": [
+        {
+          "daysOfWeek": {
+            "days": [
+              "Mo", "Tu", "We", "Th", "Fr", "Sa"
+            ]
+          },
+          "designatedPeriods": [
+            {
+              "name": "holidays",
+              "apply": "except_during"
+            }
           ]
-        },
-        "designatedPeriod": {
-          "name": "holidays",
-          "apply": "except_during"
-        },
-      },
-      "who" : {
-        "class": "permit"
+        }
+      ],
+      "userClass" : {
+        "classes": ["permit"]
       }
     }  
   }
