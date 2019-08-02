@@ -23,7 +23,7 @@ No Stopping is allowed by anyone at any time. Example location information is in
         "shstLocationSt": 51.61148912,
         "shstLocationEnd": 55.61148912,
         "sideOfStreet": "right",
-        "objectID": 59463,
+        "objectID": "59463",
         "derivedFrom": ["b2045"],
         "marker": "sign",
         "streetName": "Madison Ave"
@@ -65,7 +65,7 @@ No one may park during snow emergencies. Example location information is include
         "shstLocationSt": 29.61148912,
         "shstLocationEnd": 34.61148912,
         "sideOfStreet": "left",
-        "objectID": 49202,
+        "objectID": "49202",
         "derivedFrom": ["ks045"],
         "marker": "sign",
         "streetName": "Parkdale St"
@@ -114,7 +114,7 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
         "shstLocationSt": 14.71148912,
         "shstLocationEnd": 19.61148912,
         "sideOfStreet": "right",
-        "objectID": 40163,
+        "objectID": "40163s",
         "derivedFrom": ["wo3045"],
         "marker": "sign",
         "streetName": "Reed Ave"
@@ -160,7 +160,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
         "shstLocationSt": 20.61148912,
         "shstLocationEnd": 25.61148912,
         "sideOfStreet": "right",
-        "objectID": 59463,
+        "objectID": "d59463",
         "derivedFrom": ["b2045"],
         "marker": "sign",
         "streetName": "Madison Ave"
@@ -210,7 +210,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
         "shstLocationSt": 20.61148912,
         "shstLocationEnd": 25.61148912,
         "sideOfStreet": "right",
-        "objectID": 59463,
+        "objectID": "sg463",
         "derivedFrom": ["b2045"],
         "marker": "sign",
         "streetName": "Madison Ave"
@@ -269,7 +269,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
         "shstLocationSt": 5,
         "shstLocationEnd": 100,
         "sideOfStreet": "right",
-        "objectID": 39204,
+        "objectID": "190-349s",
         "derivedFrom": ["w0434"],
         "marker": "sign",
         "streetName": "Bond St"
