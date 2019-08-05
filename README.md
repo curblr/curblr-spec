@@ -36,15 +36,15 @@ CurbLR is a common language on which many things can be built, including rules e
 
 # Approach
 
-CurbLR structures every curb regulation as having up to four components: the GeoJSON feature (point or line), the location properties, and the restriction that applies. While the restriction is relatively straightforward to describe, location is more difficult.
+CurbLR structures every curb regulation as having three components: the [GeoJSON feature](GeoJsonGeometry.md) (point or line), the [location properties](Location.md), and the [regulation](Regulations.md) that applies. While the regulation is relatively straightforward to describe, location is more difficult.
 
-Curb regulations are usually represented by physical assets like parking signs and curb markings that describe where the restriction applies. These signs can be mapped using their geographic coordinates.
+Curb regulations are usually represented by physical assets like parking signs and curb markings that describe where the regulation applies. These signs can be mapped using their geographic coordinates.
 
 The assets themselves are easy to map, but the concepts they represent are not. Curb regulations don’t have a perfect, 1:1 relationship with physical space. They represent **regulatory geometries**, not physical geometries.
 
 CurbLR uses asset data as the building blocks for a spec, but supplements it with additional location information and structure.
 
-CurbLR requires users to reference asset data to their location along a street, using the SharedStreets Referencing System. Individual asset locations are given the SharedStreets Reference ID for the street on which they are located, along with their location along it. Points can be extrapolated into line segments by setting a particular width for each type of restriction, by including information about sign relationships along a street, or by estimating based on similar metadata. This enables asset-based point or line data to be converted into street-linked data.
+CurbLR requires users to reference asset data to their location along a street, using the SharedStreets Referencing System. Individual asset locations are given the SharedStreets Reference ID for the street on which they are located, along with their location along it. Points can be extrapolated into line segments by setting a particular width for each type of regulation, by including information about sign relationships along a street, or by estimating based on similar metadata. This enables asset-based point or line data to be converted into street-linked data.
 
 Here's a visual overview:
 
@@ -53,7 +53,7 @@ Here's a visual overview:
 
 SharedStreets references can be regenerated at any time, and individual assets can be edited without impacting the rest of the data. This provides a stable, interoperable way to convert the location of a parking sign into the regulatory geometry that it represents.
 
-With location taken care of, the rest of a curb regulation is relatively straightforward to describe, using categories to capture what, where, to whom, and how the restriction should be applied.
+With location taken care of, the rest of a curb regulation is relatively straightforward to describe, using categories to capture what, where, to whom, and how the regulation should be applied.
 
 
 # Examples
@@ -61,25 +61,29 @@ The links below show real world curb regulations translated into CurbLR.
 
 | Link | Description |
 | :---- | :---- |
-| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
+| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic regulations  |
 | Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a CurbLR-ready CSV, and converted into JSON format using Jupyter.
 
 # Data model
 
-CurbLR groups regulation properties into several categories, focusing on **where** the restriction occurs, **what** it restricts, **when**, **to whom**, and **how**, it applies, and how it relates to overlapping restrictions.
+CurbLR groups regulations into several categories, focusing on **where** the regulation occurs, **what** it restricts or permits, **when**, **to whom**, and **how**, it applies, and how it relates to overlapping regulation.
 
 These categories are described below:
 
 | Category | Importance | Description |
 | :---- | :---- | :---- |
-| [Location](Location.md) | Required | Describes the location (street-linked point or street segment) **where** the restriction applies, using geographic information and linear referencing. |
-| [Rule](Rule.md) | Required | Determines **what** is allowed or forbidden in the zone during a particular period of time |
-| [Priority](Priority.md) | Recommended | Defines how overlapping zone restrictions relate to one another (i.e. which one takes **priority**) |
-| [TimeSpan](TimeSpans.md) | If applicable | Defines the time period **when** a zone regulation is in effect |
-| [UserClass](UserClass.md) | If applicable | Defines **who** the restriction applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
-| [Payment](Payment.md) | Optional | Provides a structure to store additional information about fees that may be required in order to use a given curbspace
+| [GeoJSON feature](GeoJsonGeometry.md) | Required | Describes the street segment as it will appear on a map. All GeoJson features are LineStrings containing coordinates and the fields listed below in this table. |
+| GeoJsonProperties.[Location](Location.md) | Required | Describes the location (street-linked point or street segment) **where** the regulation applies, using geographic information and linear referencing. |
+| GeoJsonProperties.[Regulations](Regulations.md) | Required | Describes the curb usage regulation(s) that are in place for the location |
+| GeoJsonProperties.Regulations.[Rule](Rule.md) | Required | Determines **what** is allowed or forbidden in the zone during a particular period of time |
+| GeoJsonProperties.Regulations.[UserClass](UserClass.md) | If applicable | Defines **who** the regulations applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
+| GeoJsonProperties.Regulations.[TimeSpans](TimeSpans.md) | If applicable | Defines the time period **when** a zone regulation is in effect |
 
-Feature properties that correspond to *where* a restriction applies are grouped in CurbLR as [`location`](Location.md). The remaining fields form part of the [restriction](Restriction.md) that applies to the object. All of this is stored as individual features that form one GeoJSON object. Above this in the file, the CurbLR feed will contain metadata properties that apply to all regulations, such as the date when the feed was created. These are stored as a [manifest](Manifest.md), which is a JSON object.
+| GeoJsonProperties.Regulations.[Payment](Payment.md) | Optional | Provides a structure to store additional information about fees that may be required in order to use a given curbspace |
+| GeoJsonProperties.Regulations.[Priority](Priority.md) | Required | Defines how overlapping regulations relate to one another (i.e. which one takes **priority**)
+
+
+All of this is stored as individual features that form one GeoJSON object. Above this in the file, the CurbLR feed will contain metadata properties that apply to all regulations, such as the date when the feed was created. These are stored as a [manifest](Manifest.md), which is a JSON object.
 
 The example below shows the structure of one feature in the feed:
 
@@ -89,4 +93,4 @@ The example below shows the structure of one feature in the feed:
 # Potential future enhancements
 * **External referencing for designated periods**: Extend [TimeSpan](TimeSpans.md) to allow arbitrarily designated periods (e.g. "Snow Emergency" or "School Days") to be specifically defined via a static or dynamic (API) referencing system.
 
-* **Cross-jurisdictional allowed use mapping**: A mechanism to establish defaults and translate [restrictions](Restriction.md) (which are locally defined in their meaning) into a standardized, cross-jurisdictional list of activities. This would, for example, allow automated interpretation of local restrictions to determine where activities like passenger loading could take place.
+* **Cross-jurisdictional allowed use mapping**: A mechanism to establish defaults and translate [Regulations](Regulations.md) (which are locally defined in their meaning) into a standardized, cross-jurisdictional list of activities. This would, for example, allow automated interpretation of local regulations to determine where activities like passenger loading could take place.

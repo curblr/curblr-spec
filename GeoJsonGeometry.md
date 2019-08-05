@@ -4,6 +4,8 @@ Each regulation must be associated with a geographic feature, which must be a li
 
 (For a primer on GeoJSON terminology and structure, see [this post](https://macwright.org/2015/03/23/geojson-second-bite.html))
 
+Each geographic coordinate should have no more than 7 decimal places of precision. This is sufficient to describe a location with ~1.1 cm accuracy. Further precision is unnecessary; less is sufficient.
+
 Here's an example of the geometry of a GeoJSON feature. Note that the coordinates are for the signpost's location _after it was snapped to the street and extrapolated into a street segment_:
 
 ```json

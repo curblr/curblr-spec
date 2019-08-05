@@ -1,6 +1,6 @@
 # About time spans
 
-A TimeSpan defines a contiguous or non-contiguous period of time. It is used to specify when a [Rule](Rule.md) applies, in order to form a complete [restriction](Restriction.md). It supports variety of different concepts for expressing time which may be combined together.
+A TimeSpan defines a contiguous or non-contiguous period of time. It is used to specify when a [Rule](Rule.md) applies, in order to form a complete [regulation](Regulations.md). It supports variety of different concepts for expressing time which may be combined together.
 
 Multiple TimeSpans may be combined into the same "clause". Whether these are subject to a logical **AND** operation or a logical **OR** operation depends on their position within an array. The examples below provide additional context.
 
@@ -17,7 +17,7 @@ Some of the concepts supported by TimeSpan:
 | *designated periods* | Externally-defined named designations for time periods | `Holidays` or `Game Days` or `Snow Emergencies` |
 
 # Definition
-A GeoJSON feature may include TimeSpans made up of the following fields. The TimeSpan(s) are always expressed as an array in order to provide a consistent format regardless of whether a given restriction has a single or multiple TimeSpans. Several fields within the TimeSpan are always expressed as arrays for the same reason.
+A GeoJSON feature may include TimeSpans made up of the following fields. The TimeSpan(s) are always expressed as an array in order to provide a consistent format regardless of whether a given regulation has a single or multiple TimeSpans. Several fields within the TimeSpan are always expressed as arrays for the same reason.
 
 | Field name | Type | Description | Example
 | :--- | :--- | :--- | :--- |
@@ -37,7 +37,7 @@ A GeoJSON feature may include TimeSpans made up of the following fields. The Tim
 
 When multiple "clauses" are combined in a single TimeSpan, a logical **AND** operation is applied. For example, a TimeSpan that includes Wednesdays and the period of February 1st through April 30th specifies all Wednesdays between February 1st and April 30th. It does not specify all Wednesdays during the year AND all days between February 1st and April 30th (the equivalent of a logical **OR** operation).
 
-When multiple "clauses" are part of a single TimeSpan field but defined in separate TimeSpans, a logical **OR** operation is applied. For example, a restriction may contain a TimeSpan that specifies weekdays from 9am-5pm, and another TimeSpan that specifies weekends from 11-2. See examples below for further clarification.
+When multiple "clauses" are part of a single TimeSpan field but defined in separate TimeSpans, a logical **OR** operation is applied. For example, a regulation may contain a TimeSpan that specifies weekdays from 9am-5pm, and another TimeSpan that specifies weekends from 11-2. See examples below for further clarification.
 
 # Examples
 
@@ -55,27 +55,22 @@ TimeSpan applies overnight (midnight until 6am).
   "timeSpans": [
     {
       "timesOfDay": [
-        {
-          "from": "00:00",
-          "until": "06:00"
-        }
+        {"from": "00:00", "until": "06:00"}
       ]
     }
   ]
 }
 ```
 
-### Rush hour (AM and PM) parking restriction
+### Rush hour (AM and PM) parking regulation
 TimeSpan applies during the morning **and** evening rush hours. Providing the two times of day as separate "clauses" in an array means that a logical **OR** expression is applied.
 ```JSON
 {
   "timeSpans": [
     {
       "timesOfDay": [
-        {"from": "07:30",
-         "until": "09:30"},
-        {"from": "16:00",
-         "until": "18:00"}
+        {"from": "07:30", "until": "09:30"},
+        {"from": "16:00", "until": "18:00"}
       ]
     }
   ]
@@ -89,15 +84,10 @@ TimeSpan applies on weekdays from 8am to 8pm, **and** on Sundays from 11am to 8p
   "timeSpans": [
     {
       "daysOfWeek": {
-        "days": [
-          "Mo", "Tu", "We", "Th", "Fr"
-        ]
+        "days": ["Mo", "Tu", "We", "Th", "Fr"]
       },
       "timesOfDay": [
-        {
-          "from": "08:00",
-          "until": "20:00"
-        }
+        {"from": "08:00", "until": "20:00"}
       ]
     },
     {
@@ -105,10 +95,7 @@ TimeSpan applies on weekdays from 8am to 8pm, **and** on Sundays from 11am to 8p
         "days": ["Su"]
       },
       "timesOfDay": [
-        {
-          "from": "11:00",
-          "until": "20:00"
-        }
+        {"from": "11:00", "until": "20:00"}
       ]
     }
   ]
@@ -122,10 +109,7 @@ TimeSpan in effect only during a snow emergency.
   "timeSpans": [
     {
       "designatedPeriods": [
-        {
-          "name": "snow emergency",
-          "apply": "only_during"
-        }
+        {"name": "snow emergency", "apply": "only_during"}
       ]
     }
   ]
@@ -139,21 +123,13 @@ TimeSpan applies Monday through Saturday between 8am and 8pm, except holidays.
   "timeSpans": [
     {
       "daysOfWeek": {
-        "days": [
-          "Mo", "Tu", "We", "Th", "Fr", "Sa"
-        ]
+        "days": ["Mo", "Tu", "We", "Th", "Fr", "Sa"]
       },
       "timesOfDay": [
-        {
-          "from": "08:00",
-          "until": "20:00"
-        }
+        {"from": "08:00", "until": "20:00"}
       ],
       "designatedPeriods": [
-        {
-          "name": "holidays",
-          "apply": "except_during"
-        }
+        {"name": "holidays", "apply": "except_during"}
       ]
     }
   ]
@@ -167,16 +143,10 @@ TimeSpan applies during designated construction hours (7am until 7pm) for the da
   "timeSpans": [
     {
       "timesOfDay": [
-        {
-          "from": "07:00",
-          "until": "19:00"
-        },
+        {"from": "07:00", "until": "19:00"},
       ],
       "effectiveDates": [
-        {
-          "from": "2018-08-02",
-          "until": "2018-08-05"
-        }
+        {"from": "2018-08-02", "until": "2018-08-05"}
       ]
     }
   ]
@@ -191,16 +161,10 @@ TimeSpan applies on odd number days between December 1st and March 31st from 1am
     {
       "daysOfMonth": ["odd"],
       "timesOfDay": [
-        {
-          "from": "01:00",
-          "until": "06:00"
-        }
+        {"from": "01:00", "until": "06:00"}
       ],
       "effectiveDates": [
-        {
-          "from": "12-01",
-          "until": "03-31"
-        }
+        {"from": "12-01", "until": "03-31"}
       ]
     }
   ]
@@ -218,16 +182,10 @@ TimeSpan applies between 11am and 1pm on the 2nd and 4th Tuesday of every month 
         "occurrences_in_month": ["2nd", "4th"]
       },
       "timesOfDay": [
-        {
-          "from": "11:00",
-          "until": "13:00"
-        }
+        {"from": "11:00", "until": "13:00"}
       ],
       "effectiveDates": [
-        {
-          "from": "04-01",
-          "until": "11-30"
-        }
+        {"from": "04-01", "until": "11-30"}
       ]
     }
   ]

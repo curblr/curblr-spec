@@ -1,5 +1,5 @@
 # About rules
-A rule is a subsection of the [restriction](Restriction.md). It groups properties that define _what_ activity is allowed or prohibited at a section of curb, _why_, and pertinent information about _how_ the restriction applies (whether there is a time limit or maximum time before returning). Additional object properties grouped elsewhere in the spec further define [_when_](TimeSpan.md) and [_to whom_](UserClass.md) the restriction applies, whether and how much [payment](Payment.md) is required, as well as the [_priority_](Priority.md) level of the restriction.
+A rule is a subsection of the [regulations](Regulations.md). It groups properties that define _what_ activity is allowed or prohibited at a section of curb, _why_, and pertinent information about _how_ the regulation applies (whether there is a time limit or maximum time before returning). Additional object properties grouped elsewhere in the spec further define [_when_](TimeSpan.md) and [_to whom_](UserClass.md) the regulation applies, whether and how much [payment](Payment.md) is required, as well as the [_priority_](Priority.md) level of the regulation.
 
 # Definition
 Each object in the GeoJSON may have the following properties:
@@ -7,9 +7,10 @@ Each object in the GeoJSON may have the following properties:
 | Field name | Importance  | Type | Description | Example
 | :--- | :--- | :--- | :--- | :--- |
 | activity | Required | `enum` (`string`) Values: `parking`, `no parking`, `standing`, `no standing`, `loading`, `no loading` | Describes what activity is forbidden or permitted | `parking`
-| reason | Optional | `string` Suggested values; see below | Describes why the activity rule is in place. This is especially helpful for denoting restrictions with [Priority](Priority.md) levels <`4`, such as snow emergency zones, which may be in effect for irregular or unpredictable time periods; these may require human interpretation or an API to determine whether they are in effect | `snow emergency zone`
-| maxStay | If applicable | `int` | The length of time (in minutes) for which the curb may be used under this restriction. This provides a time restriction, in addition to any [TimeSpan](TimeSpans.md) restrictions | `30`
-| noReturn | If applicable | `int` | The length of time (in minutes) that a user must vacate the curbspace before allowed to return for another stay. Generally applies only to restrictions with a `maxStay` | `60`
+| reason | Optional | `string` Suggested values; see below | Describes why the activity rule is in place. This is especially helpful for denoting regulations with [Priority](Priority.md) levels <`4`, such as snow emergency zones, which may be in effect for irregular or unpredictable time periods; these may require human interpretation or an API to determine whether they are in effect | `snow emergency zone`
+| maxStay | If applicable | `int` | The length of time (in minutes) for which the curb may be used under this regulation. This provides a time restriction, in addition to any [TimeSpan](TimeSpans.md) restrictions | `30`
+| noReturn | If applicable | `int` | The length of time (in minutes) that a user must vacate the curbspace before allowed to return for another stay. Generally applies only to regulations with a `maxStay` | `60`|
+| payment | If applicable | `boolean` Default value: `false` | `true` indicates that payment is required. This field is not necessary if no payment is required. Additional payment information is stored in [Payment](Payment.md)| `true`|
 | authority | Optional | An agency producing CurbLR data can indicate, in the [metadata](Manifest.md), which authority has jurisdiction over the curbspace in the data (i.e. who created and manages the regulation). Often, this will be consistent across all data in a CurbLR feed. However, this property can also be set for each individual feature geometry, and is intended to store exceptions that override the authority set in the metadata.
 
 ## Activity: possible values
@@ -19,9 +20,9 @@ CurbLR assumes that all activities along the curb fit into three categories:
 * **Standing:** Stopping a vehicle but leaving it attended
 * **Loading:** Stopping a vehicle (attended or unattended) to perform a loading activity. The vehicle may remain in the curb section _only_ while the loading activity occurs.
 
-Each of these activities can be described in the affirmative (e.g. `parking`) to denote what is permitted, or in the negative (e.g. `no parking`) to denote what is prohibited. It is not necessary to duplicate an object to define its inverse. A restriction for a certain type of user implies that no other users can perform that activity in the given curbspace (unless otherwise specified). For example, `parking` for residential permit holders implies that the curb segment is a `no parking` zone for any other users.
+Each of these activities can be described in the affirmative (e.g. `parking`) to denote what is permitted, or in the negative (e.g. `no parking`) to denote what is prohibited. It is not necessary to duplicate an object to define its inverse. A regulation for a certain type of user implies that no other users can perform that activity in the given curbspace (unless otherwise specified). For example, `parking` for residential permit holders implies that the curb segment is a `no parking` zone for any other users.
 
-CurbLR can indicate what restriction is in effect at a given place and time (or that no restriction is in effect). CurbLR can also indicate a relationship between certain activities, but not others; if a section of curb is described as a standing or loading zone, this implies that parking is not permitted during that period. Beyond this, local regulation must determine what specific activities are allowed in a particular section of the curb. For example, local rules may allow for passenger loading in a "No Parking" zone but not in a "No Stopping" zone.
+CurbLR can indicate what regulation is in effect at a given place and time (or that no regulation is in effect). CurbLR can also indicate a relationship between certain activities, but not others; if a section of curb is described as a standing or loading zone, this implies that parking is not permitted during that period. Beyond this, local regulation must determine what specific activities are allowed in a particular section of the curb. For example, local rules may allow for passenger loading in a "No Parking" zone but not in a "No Stopping" zone.
 
 ### Activity classification examples
 
@@ -50,8 +51,8 @@ The activity classifications may be modified to describe myriad activities along
 Please use the Github issue tracker to suggest additional values.
 
 # Examples
-### Simple restriction: no parking
-Defines a No Parking restriction that applies to all road users. Standing and loading may or may not be permitted.
+### Simple regulation: no parking
+Defines a No Parking regulation that applies to all road users. Standing and loading may or may not be permitted.
 ```json
 {
   "rule": {
@@ -61,7 +62,7 @@ Defines a No Parking restriction that applies to all road users. Standing and lo
 ```
 
 ### Resident parking
-Defines a `restriction` to allow people with a Zone 4 Resident Parking Permit to park. Implies no parking for any other users. Standing and loading may or may not be permitted.
+Defines a `regulation` to allow people with a Zone 4 Resident Parking Permit to park. Implies no parking for any other users. Standing and loading may or may not be permitted.
 ```json
 {
   "rule": {
@@ -76,7 +77,7 @@ Defines a `restriction` to allow people with a Zone 4 Resident Parking Permit to
 ```
 
 ### Time-limited handicap space
-Defines a `restriction` that allows parking for handicap users with a 3 hour time limit.
+Defines a `regulation` that allows parking for handicap users with a 3 hour time limit.
 ```json
 {
   "rule": {
@@ -102,7 +103,7 @@ Defines a `restriction` that allows anyone to park for up to two hours with paym
 ```
 
 ### Taxi stand
-Defines a `restriction` that allows taxis to stand and pick up passengers. Implies that no other users may park or stand here.
+Defines a `regulation` that allows taxis to stand and pick up passengers. Implies that no other users may park or stand here.
 ```json
 {
   "rule": {
@@ -116,7 +117,7 @@ Defines a `restriction` that allows taxis to stand and pick up passengers. Impli
 ```
 
 ### Rideshare (TNC) pick-up and drop-off zone
-Defines a `restriction` that allows rideshare companies to drop off and pick up passengers. Individual jurisdictions must determine what constitutes a rideshare.
+Defines a `regulation` that allows rideshare companies to drop off and pick up passengers. Individual jurisdictions must determine what constitutes a rideshare.
 ```JSON
 {
   "rule": {

@@ -1,6 +1,6 @@
 # About payment
 
-The Payment field indicates whether payment is required and stores information that can be used to calculate the fee required for a given time and stay, and how the payment may be made. CurbLR does not, at this time, store information sufficient to facilitate dynamic pricing.
+The payment object indicates whether payment is required and stores information that can be used to calculate the fee required for a given time and stay, and how the payment may be made. CurbLR does not, at this time, store information sufficient to facilitate dynamic pricing.
 
 Fees for parking or other street usage can be sorted into three categories, borrowed from the [Alliance for Parking Data Standards'](https://www.allianceforparkingdatastandards.org/resources) Release 2.0:
 
@@ -22,7 +22,7 @@ Each feature in the GeoJSON object may have the following Payment properties:
 | rates | `array` | The fee amounts and durations. If the fee amount varies depending on time of day, then optional TimeSpan object(s) can be included here. Each rates field can include a single or multiple values, so for consistency, rates fields are always arrays.
 | rate.fees | array of `float` | The amounts charged for the duration of stay, expressed as whole units of currency. Currency units can be specified in the `manifest` for the CurbLR feed. | [`1`]; [`0.25`, `0.5`]
 | rate.durations | array of `int` | Duration of stay, in mins, for which this fee applies. Consecutive periods (for incrementing or other tiered parking rates) can be stored in an array. The final fee and duration in the arrays are assumed to repeat until the `maxStay`, defined in the [rule](Rule.md). | [`60`]; [`30`, `15`, `15`] |
-| rate.ßtimeSpans | `array`, see [TimeSpans](TimeSpans.md) and examples | If the pricing schedule varies according to the time of day, a timespan object can be embedded within the rate object | see [TimeSpans](TimeSpans.md) and examples below |
+| rate.timeSpans | `array`, see [TimeSpans](TimeSpans.md) and examples | If the pricing schedule varies according to the time of day, a timespan object can be embedded within the rate object | see [TimeSpans](TimeSpans.md) and examples below |
 | method | `string` Well-known values: `meter`, `pay station`, `digital` | How the fee is collected at the street-level (or exclusively digitally). |
 | forms | array of `string` Well-known values: `coins`, `bills`, `Visa`, `ApplePay` | What type of payment is accepted. Expressed as an array. | [`coins`,`SFMARTA card`, `ParkingApp`]
 | operator | `string` | The ID or name of the company that operates the payment method. If the payment operator is the same for most/all of the area, then this could be set as a property of the GeoJSON `Feature Collection` and used here only as an override  | `Acme Paystation` |
@@ -33,7 +33,7 @@ Each feature in the GeoJSON object may have the following Payment properties:
 
 | | |
 | :---- | :---- |
-| [Examples of Simple Regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
+| [Examples of Simple Regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic regulations  |
 
 ## Flat-rate
 Describes a parking meter. The fee is $1 for any part of an hour.
