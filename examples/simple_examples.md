@@ -9,7 +9,7 @@ No Stopping is allowed by anyone at any time. Example location information is in
 <img src="images/no_stopping.jpg" width="300">
 
 ### **CurbLR**
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
@@ -53,7 +53,7 @@ No one may park during snow emergencies. Example location information is include
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
@@ -104,7 +104,7 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
@@ -151,7 +151,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
 
 ### **CurbLR**
 
-```json
+```javascript
 {  
   "type": "Feature",
   "geometry": {
@@ -232,7 +232,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {

@@ -10,7 +10,7 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
@@ -85,7 +85,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
@@ -193,7 +193,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
@@ -266,7 +266,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
@@ -366,7 +366,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
@@ -470,7 +470,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
@@ -595,7 +595,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
 
 ### **CurbLR**
 
-```json
+```javascript
 {
   "type": "Feature",
   "geometry": {
