@@ -57,6 +57,11 @@ Numeric restrictions, if applicable, are entered as key:value pairs in the local
 - `minWeight`
 
 # Examples
+| | |
+| :---- | :---- |
+| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic regulations  |
+| [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
+
 
 ### Food truck
 Defines a parking zone for vehicles operating as food trucks

@@ -21,3 +21,9 @@ CurbLR defines four priority levels for regulations. When multiple regulations a
 | `4` | Normal | Everything else |
 
 It is our view that a more exhaustive list of hierarchies (e.g. 1-100) is not necessary. It is unlikely that a city will have multiple _conflicting_ regulations at the same priority level (e.g. No parking 12-3pm & Parking 12-3pm). If that were the case, the signs themselves would be impossible for a human to interpret, and the problem would lie with the regulations themselves rather than the data format.
+
+# Examples
+| | |
+| :---- | :---- |
+| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic regulations  |
+| [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
