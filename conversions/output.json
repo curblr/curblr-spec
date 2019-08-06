@@ -1,0 +1,98 @@
+[
+  {
+    "location": {
+      "coordinates": [
+        [
+          2.3,
+          23.4
+        ],
+        [
+          2.5,
+          2.5
+        ]
+      ],
+      "shstRefId": "b1746280afb88b5af9ef4526ee11dd5b",
+      "shstLocationSt": 89.9,
+      "shstLocationEnd": 96.9,
+      "sideOfStreet": "left",
+      "objectId": "BF665",
+      "derivedFrom": [
+        "BF665"
+      ],
+      "marker": "sign",
+      "streetName": "8200 MELROSE AV"
+    },
+    "regulations": [
+      {
+        "timeSpans": []
+      },
+      {
+        "rule": {
+          "activity": "loading",
+          "reason": "passenger loading only",
+          "payment": "no"
+        },
+        "timeSpans": [
+          {
+            "timesOfDay": [
+              {
+                "from": "10:00",
+                "until": "15:00"
+              },
+              {
+                "from": "18:00",
+                "until": "23:59"
+              }
+            ]
+          }
+        ],
+        "priority": 4
+      },
+      {
+        "rule": {
+          "activity": "parking",
+          "payment": "yes"
+        },
+        "timeSpans": [
+          {
+            "daysOfWeek": {
+              "days": [
+                "Mo",
+                "Tu",
+                "We",
+                "Th",
+                "Fr",
+                "Sa"
+              ]
+            },
+            "timesOfDay": [
+              {
+                "from": "8:00",
+                "until": "11:00"
+              }
+            ]
+          },
+          {
+            "timesOfDay": [
+              {
+                "from": "15:00",
+                "until": "18:00"
+              }
+            ]
+          }
+        ],
+        "payment": {
+          "rates": [
+            {
+              "fees": [
+                1.0
+              ]
+            }
+          ],
+          "method": "meter"
+        },
+        "priority": 4
+      }
+    ]
+  }
+]
