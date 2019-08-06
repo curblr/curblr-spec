@@ -309,7 +309,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
             ]
           }
         ],
-        "priority": 4
+        "priority": 3
       },
 
       // defines a no standing zone for all other vehicles:
@@ -331,7 +331,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
             ]
           }
         ],
-        "priority": 4
+        "priority": 3
       }
     ]
   }
