@@ -11,6 +11,7 @@ Each object in the GeoJSON may have the following properties:
 | maxStay | If applicable | `int` | The length of time (in minutes) for which the curb may be used under this regulation. This provides a time restriction, in addition to any [TimeSpan](TimeSpans.md) restrictions | `30`
 | noReturn | If applicable | `int` | The length of time (in minutes) that a user must vacate the curbspace before allowed to return for another stay. Generally applies only to regulations with a `maxStay` | `60`|
 | payment | If applicable | `boolean` Default value: `false` | `true` indicates that payment is required. This field is not necessary if no payment is required. Additional payment information is stored in [Payment](Payment.md)| `true`|
+| marker | Recommended | `string` Suggested values: `curb cut`, `crosswalk`, `fire hydrant`, `meter`, `paint`, `pay station`, `sign` | Describes the feature that marks the regulation on the street, likely the asset that was mapped to generate the input data for CurbLR. This can be used to indicate what a human curb user should look for in order to verify parking directions from an app or other product | `sign` |
 | authority | Optional | An agency producing CurbLR data can indicate, in the [metadata](Manifest.md), which authority has jurisdiction over the curbspace in the data (i.e. who created and manages the regulation). Often, this will be consistent across all data in a CurbLR feed. However, this property can also be set for each individual feature geometry, and is intended to store exceptions that override the authority set in the metadata.
 
 ## Activity: possible values
@@ -65,7 +66,8 @@ Defines a No Parking regulation that applies to all road users. Standing and loa
 ```json
 {
   "rule": {
-    "activity": "no parking"
+    "activity": "no parking",
+    "marker": "sign"
   }
 }
 ```
@@ -76,7 +78,8 @@ Defines a `regulation` to allow people with a Zone 4 Resident Parking Permit to 
 {
   "rule": {
     "activity": "parking",
-    "reason": "resident parking"
+    "reason": "resident parking",
+    "marker": "sign"
   },
   "userClass": {
     "classes": ["resident permit"],
@@ -91,7 +94,8 @@ Defines a `regulation` that allows parking for handicap users with a 3 hour time
 {
   "rule": {
     "activity": "parking",
-    "maxStay": 180
+    "maxStay": 180,
+    "marker": "sign"
   },
   "userClass": {
     "classes": ["handicap"]
@@ -106,7 +110,8 @@ Defines a `restriction` that allows anyone to park for up to two hours with paym
   "rule": {
     "activity": "parking",
     "maxStay": 120,
-    "noReturn": 30
+    "noReturn": 30,
+    "marker": "sign"
   }
 }
 ```
@@ -117,7 +122,8 @@ Defines a `regulation` that allows taxis to stand and pick up passengers. Implie
 {
   "rule": {
     "activity": "standing",
-    "reason": "taxi stand"
+    "reason": "taxi stand",
+    "marker": "sign"
   },
   "userClass": {
     "classes": ["taxi"],
@@ -131,7 +137,8 @@ Defines a `regulation` that allows rideshare companies to drop off and pick up p
 {
   "rule": {
     "activity": "loading",
-    "reason": "rideshare pick-up drop-off"
+    "reason": "rideshare pick-up drop-off",
+    "marker": "sign"
   },
   "userClass": {
     "classes": ["rideshare"],

@@ -23,7 +23,7 @@ It is possible for a given curb segment to have multiple regulations that apply,
 ## Class: well-known values
 The following is a suggested but not exhaustive list of values for `classes`. It is up to a particular jurisdiction to define exactly which vehicles, user, purposes, or permits are required for each value. Multiple values may be specified in an array. If multiple well-known values apply, the most descriptive should be used (e.g. for resident-only parking, `resident permit` should be used rather than `permit`)
 
-- `bike`
+- `bicycle`
 - `car share`
 - `carpool`
 - `commercial`
@@ -35,6 +35,7 @@ The following is a suggested but not exhaustive list of values for `classes`. It
 - `handicap`
 - `micromobility`
 - `motorcycle`
+- `official`
 - `passenger`
 - `permit`
 - `police`

@@ -27,14 +27,14 @@ No stopping is allowed by anyone at any time. Example location information is in
         "sideOfStreet": "right",
         "objectID": "59463",
         "derivedFrom": ["b2045", "d0294"],
-        "marker": "sign",
         "streetName": "Madison Ave"
       },
       "regulations": [
         {
             "rule": {
               "activity": "no stopping",
-              "reason": "tow-away zone"
+              "reason": "tow-away zone",
+              "marker": "sign"
             },
             "priority": 4
           }
@@ -71,14 +71,14 @@ No one may park during snow emergencies. Example location information is include
         "sideOfStreet": "left",
         "objectID": "49202",
         "derivedFrom": ["ks045", "q9372"],
-        "marker": "sign",
         "streetName": "Parkdale St"
       },
     "regulations": [
       {
         "rule": {
           "activity": "no parking",
-          "reason": "snow emergency zone"
+          "reason": "snow emergency zone",
+          "marker": "sign"
         },
         "timeSpans": [
           {
@@ -122,14 +122,14 @@ Parking is limited to two hours between 8am and 8pm Monday through Saturday. Pay
         "sideOfStreet": "right",
         "objectID": "2945",
         "derivedFrom": ["kj045", "o9372"],
-        "marker": "sign",
         "streetName": "Mission St"
       },
     "regulations": [
       {
         "rule": {
           "activity": "parking",
-          "payment": true
+          "payment": true,
+          "marker": "sign"
         },
         "timeSpans": [
           {
@@ -181,14 +181,14 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
         "sideOfStreet": "right",
         "objectID": "40163s",
         "derivedFrom": ["wo3045", "ty7649"],
-        "marker": "sign",
         "streetName": "Reed Ave"
       },
     "regulations": [
       {
         "rule": {
           "activity": "parking",
-          "reason": "car share only"
+          "reason": "car share only",
+          "marker": "sign"
         },
         "userClass" : {
           "classes": ["car share"],
@@ -228,14 +228,14 @@ No parking allowed between 6am and 8am on the 2nd and 4th Wednesday of each mont
         "sideOfStreet": "right",
         "objectID": "d59463",
         "derivedFrom": ["sign-7369", "sign-1045"],
-        "marker": "sign",
         "streetName": "Brookline St"
       },
     "regulations": [
       {
         "rule": {
           "activity": "no parking",
-          "reason": "street cleaning"
+          "reason": "street cleaning",
+          "marker": "sign"
         },
         "timeSpans": [
           {
@@ -285,7 +285,6 @@ All vehicles except permitted construction vehicles are prohibited from standing
         "sideOfStreet": "right",
         "objectID": "d59463",
         "derivedFrom": ["sign-9769", "sign-2045"],
-        "marker": "sign",
         "streetName": "Madison Ave"
       },
     "regulations": [
@@ -294,7 +293,8 @@ All vehicles except permitted construction vehicles are prohibited from standing
       {
         "rule": {
           "activity": "parking",
-          "reason": "construction vehicles only"
+          "reason": "construction vehicles only",
+          "marker": "sign"
         },
         "userClass" : {
           "classes": ["construction"]
@@ -316,7 +316,8 @@ All vehicles except permitted construction vehicles are prohibited from standing
       {
         "rule": {
           "activity": "standing",
-          "reason": "construction vehicles only"
+          "reason": "construction vehicles only",
+          "marker": "sign"
         },
         "userClass" : {
           "classes": ["construction"]
@@ -366,13 +367,13 @@ Parking allowed only for resident permit holders Monday through Saturday, except
         "sideOfStreet": "right",
         "objectID": "190-349s",
         "derivedFrom": ["w0434", "q9404"],
-        "marker": "sign",
         "streetName": "Bond St"
       },
     "regulations": [
       {
         "rule": {
           "activity": "parking",
+          "marker": "sign"
         },
         "userClass" : {
           "classes": ["permit"],
@@ -421,13 +422,13 @@ No parking for Kardashians at any time
         "sideOfStreet": "right",
         "objectID": "190-349s",
         "derivedFrom": ["w0434", "q9404"],
-        "marker": "sign",
         "streetName": "Celebrity St"
       },
     "regulations": [
       {
         "rule": {
           "activity": "no parking",
+          "marker": "sign"
         },
         "userClass" : {
           "classes": ["Kardashians"],
