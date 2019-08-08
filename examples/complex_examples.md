@@ -103,6 +103,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       "sideOfStreet": "right",
       "objectID": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
+      "marker": "sign",
       "streetName": "43rd St"
     },
     "regulations": [
@@ -111,8 +112,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       {
         "rule": {
           "activity": "no parking",
-          "reason": "no overnight parking",
-          "marker": "sign"
+          "reason": "no overnight parking"
         },
         "timeSpans": [
           {
@@ -129,8 +129,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       {
         "rule": {
           "activity": "no parking",
-          "reason": "street cleaning",
-          "marker": "sign"
+          "reason": "street cleaning"
         },
         "timeSpans": [
           {
@@ -148,8 +147,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       // Zone 5 permit holders may park anytime between 8am and 6pm, every day:
       {
         "rule": {
-          "activity": "parking",
-          "marker": "sign"
+          "activity": "parking"
         },
         "userClass": {
           "classes": ["permit"],
@@ -169,8 +167,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       {
         "rule": {
           "activity": "parking",
-          "maxStay": 120,
-          "marker": "sign"
+          "maxStay": 120
         },
         "timeSpans": [
           {
@@ -214,6 +211,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
       "sideOfStreet": "right",
       "objectID": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
+      "marker": "sign",
       "streetName": "61st St"
     },
     "regulations": [
@@ -222,8 +220,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
       {
         "rule": {
           "activity": "no parking",
-          "reason": "snow emergency zone",
-          "marker": "sign"
+          "reason": "snow emergency zone"
         },
         "timeSpans": [
           {
@@ -240,8 +237,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
       {
         "rule": {
           "activity": "no parking",
-          "reason": "snow emergency zone",
-          "marker": "sign"
+          "reason": "snow emergency zone"
         },
         "timeSpans": [
           {
@@ -288,6 +284,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
       "sideOfStreet": "right",
       "objectID": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
+      "marker": "sign",
       "streetName": "43rd St"
     },
     "regulations": [
@@ -296,8 +293,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
       {
         "rule": {
           "activity": "no standing",
-          "reason": "rush hour",
-          "marker": "sign"
+          "reason": "rush hour"
         },
         "timeSpans": [
           {
@@ -317,8 +313,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
       {
         "rule": {
           "activity": "parking",
-          "maxStay": 120,
-          "marker": "sign"
+          "maxStay": 120
         },
         "userClass": {
           "classes": ["handicap"]
@@ -342,8 +337,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
         "rule": {
           "activity": "loading",
           "reason": "loading zone",
-          "maxStay": 15,
-          "marker": "sign"
+          "maxStay": 15
         },
         "timeSpans": [
           {
@@ -390,6 +384,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
       "sideOfStreet": "right",
       "objectID": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
+      "marker": "sign",
       "streetName": "43rd St"
     },
     "regulations": [
@@ -398,7 +393,6 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
       {
         "rule": {
           "activity": "no standing",
-          "marker": "sign"
         },
         "timeSpans": [
           {
@@ -416,8 +410,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
       {
         "rule": {
           "activity": "loading",
-          "maxStay": 60,
-          "marker": "sign"
+          "maxStay": 60
         },
         "userClass": {
           "classes": ["truck"]
@@ -438,8 +431,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
       {
         "rule": {
           "activity": "parking",
-          "maxStay": 120,
-          "marker": "sign"
+          "maxStay": 120
         },
 
         // (weekday allowed parking):
@@ -496,6 +488,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
       "sideOfStreet": "right",
       "objectID": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
+      "marker": "sign",
       "streetName": "43rd St"
     },
     "regulations": [
@@ -504,7 +497,6 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
       {
         "rule": {
           "activity": "parking",
-          "marker": "sign"
         },
         "userClass": {
           "classes": ["permit"],
@@ -534,8 +526,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
       {
         "rule": {
           "activity": "parking",
-          "payment": false,  // this is the default, but specified here for clarity
-          "marker": "sign"
+          "payment": false  // this is the default, but specified here for clarity
         },
         "userClass": {
           "classes": ["permit"],
@@ -566,8 +557,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
       {
         "rule": {
           "activity": "parking",
-          "payment": true,
-          "marker": "sign"
+          "payment": true
         },
         "timeSpans": [
           {
@@ -623,6 +613,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       "sideOfStreet": "right",
       "objectID": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
+      "marker": "sign",
       "streetName": "43rd St"
     },
     "regulations": [
@@ -632,8 +623,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
         "rule": {
           "activity": "loading",
           "reason": "school pick-up and drop-off only",
-          "maxStay": 5,
-          "marker": "sign"
+          "maxStay": 5
         },
         "userClass": {
           "classes": ["passenger"]
@@ -676,8 +666,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       {
         "rule": {
           "activity": "no parking",
-          "reason": "street cleaning",
-          "marker": "sign"
+          "reason": "street cleaning"
         },
         "timeSpans": [
           {
@@ -697,7 +686,6 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       {
         "rule": {
           "activity": "parking",
-          "marker": "sign"
         },
         "userClass": {
           "classes": ["permit"],
@@ -717,8 +705,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       {
         "rule": {
           "activity": "parking",
-          "maxStay": 120,
-          "marker": "sign"
+          "maxStay": 120
         },
         "timeSpans": [
           {
