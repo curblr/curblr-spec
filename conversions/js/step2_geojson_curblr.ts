@@ -2,16 +2,17 @@ import * as fs from "fs";
 
 import * as curblr from './curblr'
 import { CurbFeature, Location, Regulation, Rule, UserClass, TimeSpan, TimesOfDay, DaysOfWeek, Payment, Rates } from "./curblr";
+import { FeatureCollection, featureCollection } from "@turf/helpers";
 
 
-var geoJsonData = fs.readFileSync("test.out.buffered.merged.geojson", "utf8");
+var geoJsonData = fs.readFileSync("filtered_meters.buffered.merged.geojson", "utf8");
 
-var featureCollection = JSON.parse(geoJsonData);
+var fc = JSON.parse(geoJsonData);
 
 // map refId:start:end:side:priority
 var curbFeatures:Map<string,curblr.CurbFeature> = new Map();
 
-for(var feature of featureCollection.features) {
+for(var feature of fc.features) {
     var featureKey = feature.properties['referenceId'] + ':' + feature.properties['section'][0] + ':' + feature.properties['section'][1] + '' + feature.properties['sideOfStreet'] + feature.properties['pp_priority']
 
     var curbFeature:CurbFeature;
@@ -21,6 +22,7 @@ for(var feature of featureCollection.features) {
         curbFeature = new CurbFeature();
 
         // build location
+        curbFeature.geometry = feature.geometry;
         curbFeature.properties.location.shstRefId = feature.properties['referenceId'];
         curbFeature.properties.location.shstLocationStart = feature.properties['section'][0];
         curbFeature.properties.location.shstLocationEnd = feature.properties['section'][1];
@@ -44,7 +46,7 @@ for(var feature of featureCollection.features) {
         rule.reason = feature.properties['pp_reason'];
     
     if(feature.properties['pp_time_limit'])
-        rule.maxStay = parseInt(feature.properties['pp_timelimit']);
+        rule.maxStay = parseInt(feature.properties['pp_time_limit']);
     
     if(feature.properties['pp_payment'])
         rule.payment = (feature.properties['pp_payment'] == 'true');
@@ -63,24 +65,29 @@ for(var feature of featureCollection.features) {
     for(var timeSuffix of ['_a', '_b', '_c', '_d']) {
 
         var timeSpan = new TimeSpan();
-        if(feature.properties['pp_days_of_week.days'] + timeSuffix) {
+        var includeTimespan = false;
+        if(feature.properties['pp_days_of_week.days' + timeSuffix] ) {
 
             var daysOfWeek = new DaysOfWeek();
-            var days:any[] = (feature.properties['pp_days_of_week.days'] + timeSuffix).split(','); // TODO check valid days names?
-            daysOfWeek.days = days.filter((day) => {day.toLocaleLowerCase()});
+            var days:any[] = (feature.properties['pp_days_of_week.days' + timeSuffix]).split(','); // TODO check valid days names?
+            daysOfWeek.days = days.map((d) => {return d.toLocaleLowerCase()});
             
             timeSpan.daysOfWeek = [daysOfWeek];
+            includeTimespan =true;
         }
 
-        if(feature.properties['pp_time_of_day.from'] + timeSuffix) {
+        if(feature.properties['pp_time_of_day.from' + timeSuffix]) {
             timeSpan.timesOfDay = [];
             var  timesOfDay = new TimesOfDay();
-            timesOfDay.from = feature.properties['pp_time_of_day.from'] + timeSuffix;
-            timesOfDay.until = feature.properties['pp_time_of_day.to'] + timeSuffix; // csv is to -- spec is until?
+            timesOfDay.from = feature.properties['pp_time_of_day.from'+ timeSuffix];
+            timesOfDay.until = feature.properties['pp_time_of_day.to' + timeSuffix]; // csv is to -- spec is until?
 
             timeSpan.timesOfDay = [timesOfDay];
+            includeTimespan = true;
         }
 
+        if(includeTimespan)
+            regulation.timeSpans.push(timeSpan)
     }
 
     // build payment 
@@ -110,12 +117,18 @@ for(var feature of featureCollection.features) {
         regulation.payment = payment;
     }
 
-
     curbFeature.properties.regulations.push(regulation);
-    
+
 }   
 
-console.log(curbFeatures.keys.length)
+var collection:FeatureCollection = featureCollection([]);
+
+for(var f of curbFeatures.values()) {
+    collection.features.push(f);
+}
+
+
+console.log(JSON.stringify(collection));
 
 /*{
     "type": "Feature",
