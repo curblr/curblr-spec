@@ -26,7 +26,7 @@ A GeoJSON feature may include TimeSpans made up of the following fields. The Tim
 | effectiveDates.to | `string` (`MMDD` or `YYYY-MM-DD`) | The ending date of a time period. This is either a full date or a month and day that will define the timespan on an annual basis | `2018-08-05` or `11-30` |
 | daysOfWeek | `object` | Determines which days of the week will be included in a timespan.
 | daysOfWeek.days | array of `enum` (`string`) Values: `Mo Tu We Th Fr Sa Su` | List of days to include in the timespan | To specify weekdays: `["Mo", "Tu", "We", "Th", "Fr"]` |
-| daysOfWeek.occurrences_in_month | array of `enum`. Values: `1st 2nd 3rd 4th 5th last` | Modifier to indicate which occurrences of the specified days within the month to include in the timespan | `["1st", "3rd"]` |
+| daysOfWeek.occurrencesInMonth | array of `enum`. Values: `1st 2nd 3rd 4th 5th last` | Modifier to indicate which occurrences of the specified days within the month to include in the timespan | `["1st", "3rd"]` |
 | daysOfMonth | array of `enum` (`string`) Values: `1-31`, `last`, `odd`, `even` | Specify specific days during the month to include in the timespan | To specify the 14th and last day of the month `["14", "last"]` |
 | timesOfDay | `array` | Specific time range during the day (or multiple time ranges) | |
 | timesOfDay.from | `string` (`HH:MM`) | The beginning time (24H) of the time range | `07:00` |
@@ -187,7 +187,7 @@ TimeSpan applies between 11am and 1pm on the 2nd and 4th Tuesday of every month 
     {
       "daysOfWeek": {
         "days": ["Tu"],
-        "occurrences_in_month": ["2nd", "4th"]
+        "occurrencesInMonth": ["2nd", "4th"]
       },
       "timesOfDay": [
         {"from": "11:00", "until": "13:00"}
