@@ -21,16 +21,16 @@ export class Authority {
     phone:string;
 }
 
-export class Metadata {
-    createdDate:string; // should this be a full timestamp?
-    lastUpdatedDate:string; // should this be a full timestamp?
+export class Manifest {
+    createdDate:string; // should this be a full timestamp? ISO format
+    lastUpdatedDate:string; // should this be a full timestamp? ISO format
     timeZone:string;
     currency:string;
     authority:Authority;
 }
 
 export class Rule  {
-    activity:"parking" | "no parking" | "standing" | "no standing" | "loading" | "no loading"; // camel case? underscore?
+    activity:"parking" | "no parking" | "standing" | "no standing" | "loading" | "no loading"; 
     reason:string;
     maxStay:number
     noReturn:number
@@ -39,13 +39,13 @@ export class Rule  {
 } 
 
 export class DaysOfWeek {
-    days:Array<"mo"|"tu"|"we"|"th"|"fr"|"sa"|"su">;     // TODO update case in spec
+    days:Array<"mo"|"tu"|"we"|"th"|"fr"|"sa"|"su">;  
     occurrencesInMonth:Array<"1st"|"2nd"|"3rd"|"4th"|"5th"|"last">
 }
 
 export class TimesOfDay {
     from:string;
-    until:string;
+    to:string;
 }
 
 export class DesignatedPeriods {
@@ -57,12 +57,12 @@ export class TimeSpan {
     effectiveDates:[{to:string, from:string}];
     daysOfWeek:Array<DaysOfWeek>;
     daysOfMonth:Array<string|"even"|"odd"|"last">;
-    timesOfDay:Array<TimesOfDay>; // should this be from/to?
-    designatedPeriods:Array<DesignatedPeriods> // TODO update case in spec
+    timesOfDay:Array<TimesOfDay>; 
+    designatedPeriods:Array<DesignatedPeriods> 
 } 
 
 export class UserClass {
-    classes:string[];
+    classes:string;
     subclasses:string[];
     // TODO numeric restriction
 } 
@@ -86,7 +86,7 @@ export class Regulation {
     priority:number;
     rule:Rule;
     timeSpans:TimeSpan[] = [];
-    userClass:UserClass;
+    userClass:UserClass[] = [];
     payment:Payment;
 } 
 
