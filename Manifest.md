@@ -14,9 +14,10 @@ The manifest JSON object may contain the following properties:
 | currency | Required | `string` Possible values are listed in [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) | Local currency, for interpreting payment information | `USD`
 | unitHeightLength | Required | `string` (for most countries, this will be `feet` or `metres`) | Defines the unit of measure used to describe maximum and minimum vehicle height and length restrictions in the [UserClass](UserClass.md) | `feet`, `metres` |
 | unitWeight | Required | `string` (well-known values: `tons`, `tonnes`, `pounds`, `kilograms`) | Defines the unit of measure used to describe maximum and minimum vehicle weight restrictions in the [UserClass](UserClass.md) | `tons` |
-| authority | Required | `string` | Defines which government authority regulates the curbspace described by the individual CurbLR feed. Many cities conducting data collection will only survey the areas that they regulate, so storing this as a universal property helps to reduce the size of the GeoJSON. If an override or exception is needed, this can be stored in the [rule](Rule.md) as a property that describes the activity being permitted or forbidden | `City of London`|
-| authorityUrl | Required | `string` (web link) | Link to the regulatory agency's domain | `https://vancouver.ca`
-| authorityPhone | Optional | `string` (`E.164 format`: `+` + `country code` + `local area code` + `phone number`) | The phone number, including country and area code, for the regulatory agency that could be contacted about parking regulations | `+15551231234`
+| authority | Required | object | Defines which government authority regulates the curbspace described by the individual CurbLR feed. Many cities conducting data collection will only survey the areas that they regulate, so storing this as a universal property helps to reduce the size of the GeoJSON. If an override or exception is needed, this can be stored in the [rule](Rule.md) as a property that describes the activity being permitted or forbidden | |
+| authority.name | Required | `string` (web link) | Name of agency | `City of London`
+| authority.url | Required | `string` (web link) | Link to the regulatory agency's domain | `https://vancouver.ca`
+| authority.phone | Optional | `string` (`E.164 format`: `+` + `country code` + `local area code` + `phone number`) | The phone number,  including country and area code, for the regulatory agency that could be contacted about parking regulations | `+15551231234`
 
 # Examples
 
