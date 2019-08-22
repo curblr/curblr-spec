@@ -62,9 +62,14 @@ export class TimeSpan {
 } 
 
 export class UserClass {
-    classes:string;
+    class:string;
     subclasses:string[];
-    // TODO numeric restriction
+    maxHeight:number;
+    maxLength:number;
+    maxWeight:number;
+    minHeight:number;
+    minLength:number;
+    minWeight:number;
 } 
 
 export class Rates {
@@ -75,7 +80,7 @@ export class Rates {
 
 export class Payment {
     rates:Rates;
-    method:string; // TODO should this be an array?
+    methods:string[] = []; 
     forms:string[] = [];
     operator:string;
     phone:string;
@@ -86,17 +91,17 @@ export class Regulation {
     priority:number;
     rule:Rule;
     timeSpans:TimeSpan[] = [];
-    userClass:UserClass[] = [];
+    userClasses:UserClass[] = [];
     payment:Payment;
 } 
 
 export class CurbProperties {
-    location:Location = new Location();
+    location:Location;
     regulations:Regulation[] = [];
 }
 
 export class CurbFeature implements Feature<LineString|Point> {
     type:"Feature";
     geometry:LineString|Point;
-    properties:CurbProperties = new CurbProperties();
+    properties:CurbProperties;
 } 
