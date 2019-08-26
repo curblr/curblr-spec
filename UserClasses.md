@@ -27,7 +27,7 @@ If a [regulation](Regulations.md) does not specify `userClasses` properties, it 
 
 It is possible for a given curb segment to have multiple regulations that apply, during the same time period, to different user classes. However, only one of those regulations may have an empty `userClasses` field; otherwise they will conflict with one another. When evaluating which [regulation](Regulations.md) applies to a specific user class, the regulation without `userClasses` will be considered the default if no other regulations apply to the user.
 
-## Class: well-known values
+## Classes: well-known values
 The following is a suggested but not exhaustive list of values for `classes`. It is up to a particular jurisdiction to define exactly which vehicles, user, purposes, or permits are required for each value. Multiple values may be specified in an array. If multiple well-known values apply, the most descriptive should be used (e.g. for food truck parking, `food truck` should be used rather than `truck`)
 
 - `bicycle`
@@ -71,7 +71,7 @@ Numeric restrictions, if applicable, are entered as key:value pairs in the local
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [scripts](/js).
+| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
 
 
 ### Food truck

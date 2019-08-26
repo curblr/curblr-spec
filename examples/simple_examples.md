@@ -25,7 +25,7 @@ No stopping is allowed by anyone at any time. Example location information is in
         "shstLocationStart": 51.6,
         "shstLocationEnd": 55.6,
         "sideOfStreet": "right",
-        "objectID": "59463",
+        "objectId": "59463",
         "derivedFrom": ["b2045", "d0294"],
         "marker": "sign",
         "streetName": "Madison Ave"
@@ -69,7 +69,7 @@ No one may park during snow emergencies. Example location information is include
         "shstLocationStart": 29.9,
         "shstLocationEnd": 34.1,
         "sideOfStreet": "left",
-        "objectID": "49202",
+        "objectId": "49202",
         "derivedFrom": ["ks045", "q9372"],
         "marker": "sign",
         "streetName": "Parkdale St"
@@ -120,7 +120,7 @@ Parking is limited to two hours between 8am and 8pm Monday through Saturday. Pay
         "shstLocationStart": 40,
         "shstLocationEnd": 60,
         "sideOfStreet": "right",
-        "objectID": "2945",
+        "objectId": "2945",
         "derivedFrom": ["kj045", "o9372"],
         "marker": "sign",
         "streetName": "Mission St"
@@ -179,7 +179,7 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
         "shstLocationStart": 14.7,
         "shstLocationEnd": 19.0,
         "sideOfStreet": "right",
-        "objectID": "40163s",
+        "objectId": "40163s",
         "derivedFrom": ["wo3045", "ty7649"],
         "marker": "sign",
         "streetName": "Reed Ave"
@@ -228,7 +228,7 @@ No parking allowed between 6am and 8am on the 2nd and 4th Wednesday of each mont
         "shstLocationStart": 5,
         "shstLocationEnd": 90,
         "sideOfStreet": "right",
-        "objectID": "d59463",
+        "objectId": "d59463",
         "derivedFrom": ["sign-7369", "sign-1045"],
         "marker": "sign",
         "streetName": "Brookline St"
@@ -285,7 +285,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
         "shstLocationStart": 20.3,
         "shstLocationEnd": 25.8,
         "sideOfStreet": "right",
-        "objectID": "d59463",
+        "objectId": "d59463",
         "derivedFrom": ["sign-9769", "sign-2045"],
         "marker": "sign",
         "streetName": "Madison Ave"
@@ -370,7 +370,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
         "shstLocationStart": 5,
         "shstLocationEnd": 100,
         "sideOfStreet": "right",
-        "objectID": "190-349s",
+        "objectId": "190-349s",
         "derivedFrom": ["w0434", "q9404"],
         "marker": "sign",
         "streetName": "Bond St"
@@ -427,7 +427,7 @@ No parking for Kardashians at any time
         "shstLocationStart": 5,
         "shstLocationEnd": 100,
         "sideOfStreet": "right",
-        "objectID": "190-349s",
+        "objectId": "190-349s",
         "derivedFrom": ["w0434", "q9404"],
         "marker": "sign",
         "streetName": "Celebrity St"

@@ -26,7 +26,7 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
       "shstLocationStart": 51,
       "shstLocationEnd": 55,
       "sideOfStreet": "right",
-      "objectID": "87580",
+      "objectId": "87580",
       "derivedFrom": ["sign_452", "sign_204"],
       "marker": "sign",
       "streetName": "92nd St"
@@ -103,7 +103,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
-      "objectID": "94022",
+      "objectId": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
       "marker": "sign",
       "streetName": "43rd St"
@@ -213,7 +213,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
       "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
-      "objectID": "94022",
+      "objectId": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
       "marker": "sign",
       "streetName": "61st St"
@@ -286,7 +286,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
       "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
-      "objectID": "94022",
+      "objectId": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
       "marker": "sign",
       "streetName": "43rd St"
@@ -388,7 +388,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
       "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
-      "objectID": "94022",
+      "objectId": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
       "marker": "sign",
       "streetName": "43rd St"
@@ -497,7 +497,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
       "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
-      "objectID": "94022",
+      "objectId": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
       "marker": "sign",
       "streetName": "43rd St"
@@ -629,7 +629,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
-      "objectID": "94022",
+      "objectId": "94022",
       "derivedFrom": ["sign_820", "sign_028", "sign-940"],
       "marker": "sign",
       "streetName": "43rd St"

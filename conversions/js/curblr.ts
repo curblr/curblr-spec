@@ -30,16 +30,16 @@ export class Manifest {
 }
 
 export class Rule  {
-    activity:"parking" | "no parking" | "standing" | "no standing" | "loading" | "no loading"; 
+    activity:"parking" | "no parking" | "standing" | "no standing" | "loading" | "no loading";
     reason:string;
     maxStay:number
     noReturn:number
-    payment:boolean;	
-    authority:Authority; // changed v1 draft spec to object to simplify inclusion in rule	
-} 
+    payment:boolean;
+    authority:Authority; // changed v1 draft spec to object to simplify inclusion in rule
+}
 
 export class DaysOfWeek {
-    days:Array<"mo"|"tu"|"we"|"th"|"fr"|"sa"|"su">;  
+    days:Array<"mo"|"tu"|"we"|"th"|"fr"|"sa"|"su">;
     occurrencesInMonth:Array<"1st"|"2nd"|"3rd"|"4th"|"5th"|"last">
 }
 
@@ -57,9 +57,9 @@ export class TimeSpan {
     effectiveDates:[{to:string, from:string}];
     daysOfWeek:Array<DaysOfWeek>;
     daysOfMonth:Array<string|"even"|"odd"|"last">;
-    timesOfDay:Array<TimesOfDay>; 
-    designatedPeriods:Array<DesignatedPeriods> 
-} 
+    timesOfDay:Array<TimesOfDay>;
+    designatedPeriods:Array<DesignatedPeriods>
+}
 
 export class UserClass {
     class:string;
@@ -70,21 +70,21 @@ export class UserClass {
     minHeight:number;
     minLength:number;
     minWeight:number;
-} 
+}
 
 export class Rates {
     fees:number[] = [];
     durations:number[] = [];
-    timeSpans:TimeSpan[] = []; 
+    timeSpans:TimeSpan[] = [];
 }
 
 export class Payment {
     rates:Rates;
-    methods:string[] = []; 
+    methods:string[] = [];
     forms:string[] = [];
     operator:string;
     phone:string;
-    deviceID:string;
+    deviceIds:string[] = [];
 }
 
 export class Regulation {
@@ -93,15 +93,15 @@ export class Regulation {
     timeSpans:TimeSpan[] = [];
     userClasses:UserClass[] = [];
     payment:Payment;
-} 
+}
 
 export class CurbProperties {
     location:Location;
     regulations:Regulation[] = [];
 }
 
-export class CurbFeature implements Feature<LineString|Point> {
+export class CurbFeature implements Feature<LineString> {
     type:"Feature";
-    geometry:LineString|Point;
+    geometry:LineString;
     properties:CurbProperties;
-} 
+}

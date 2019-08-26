@@ -26,7 +26,7 @@ CurbLR is a common language on which many things can be built, including rules e
 
 # Approach
 
-CurbLR structures every curb regulation as having three components: the [GeoJSON feature](GeoJsonGeometry.md) (point or line), the [location properties](Location.md), and the [regulation](Regulations.md) that applies. While the regulation is relatively straightforward to describe, location is more difficult.
+CurbLR structures every curb regulation as having three components: the [GeoJSON feature](GeoJsonGeometry.md), the [location properties](Location.md), and the [regulation](Regulations.md) that applies. While the regulation is relatively straightforward to describe, location is more difficult.
 
 Curb regulations are usually represented by physical assets like parking signs and curb markings that describe where the regulation applies. These signs can be mapped using their geographic coordinates.
 
@@ -53,7 +53,7 @@ The links below show real world curb regulations translated into CurbLR.
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [scripts](/js).
+| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
 
 # Data model
 
@@ -63,6 +63,7 @@ These categories are described below:
 
 | Category | Importance | Description |
 | :---- | :---- | :---- |
+| [Manifest](Manifest.md) | Required | Contains metadata properties that apply to all regulations, such as the date when the feed was created |
 | [GeoJSON feature](GeoJsonGeometry.md) | Required | Describes the street segment as it will appear on a map. All GeoJson features are LineStrings containing coordinates and the fields listed below in this table. |
 | GeoJsonProperties.[Location](Location.md) | Required | Describes the location (street-linked point or street segment) **where** the regulation applies, using geographic information and linear referencing. |
 | GeoJsonProperties.[Regulations](Regulations.md) | Required | Describes the curb usage regulation(s) that are in place for the location |
@@ -73,7 +74,7 @@ These categories are described below:
 | GeoJsonProperties.Regulations.[Priority](Priority.md) | Required | Defines how overlapping regulations relate to one another (i.e. which one takes **priority**)
 
 
-All of this is stored as individual features that form one GeoJSON object. Above this in the file, the CurbLR feed will contain metadata properties that apply to all regulations, such as the date when the feed was created. These are stored as a [manifest](Manifest.md), which is a JSON object.
+The feed as a whole is a JSON file. The curb geometries and properties are stored as GeoJSON features that form one GeoJSON object. Above this in the file, the CurbLR feed will contain metadata properties, stored as a [manifest](Manifest.md), which is a JSON object.
 
 The example below shows the structure of one feature in the feed:
 
@@ -82,7 +83,7 @@ The example below shows the structure of one feature in the feed:
 # Origins
 CurbLR is based on the design and thinking laid out in [CurbSpec](https://github.com/jfh01/CurbSpec). At SharedStreets, we spoke with a handful of cities across the US, reviewed their parking regulation datasets, conducted field mapping in a local area to experience data collection, and converted an [initial dataset of ~35,000 Los Angeles parking zones](/conversions) into the CurbSpec format. To our knowledge, this was the first attempt to convert a curb regulation dataset into CurbSpec. When trying to convert GIS data into the spec, we realized that several significant modifications were needed, including:
 - Adding location information for the regulation (both geographic and with the [SharedStreets linear referencing system](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/).
-- Structuring regulations as a GeoJSON, and in a flatter manner (one curb activity per feature)
+- Structuring regulations as a GeoJSON object, and in a flatter manner (one curb activity per feature)
 - Using a well-known values approach to avoid free-form text where possible
 - Adding metadata to describe the agency that created the data, and other relevant aspects that apply across a CurbLR feed
 - Adding a structured, but optional, place for data such as payment information and asset information, which is required for some consumption efforts
