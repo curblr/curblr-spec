@@ -20,14 +20,17 @@ Each feature in the GeoJSON object may have the following Payment properties:
 | Field name | Type | Description | Example |
 | :--- | :--- | :--- | :--- |
 | rates | `array` | The fee amounts and durations. If the fee amount varies depending on time of day, then optional TimeSpan object(s) can be included here. Each rates field can include a single or multiple values, so for consistency, rates fields are always arrays.
-| rate.fees | array of `float` | The amounts charged for the duration of stay, expressed as whole units of currency. Currency units can be specified in the `manifest` for the CurbLR feed. | [`1`]; [`0.25`, `0.5`]
-| rate.durations | array of `int` | Duration of stay, in mins, for which this fee applies. Consecutive periods (for incrementing or other tiered parking rates) can be stored in an array. The final fee and duration in the arrays are assumed to repeat until the `maxStay`, defined in the [rule](Rule.md). | [`60`]; [`30`, `15`, `15`] |
+| rate.fees | array of `float` | The amounts charged for the duration of stay, expressed as whole units of currency. Currency units can be specified in the `manifest` for the CurbLR feed. | [`1`]; [`0.25, 0.5`]
+| rate.durations | array of `int` | Duration of stay, in mins, for which this fee applies. Consecutive periods (for incrementing or other tiered parking rates) can be stored in an array. The final fee and duration in the arrays are assumed to repeat until the `maxStay`, defined in the [rule](Rule.md). | `[60]`; `[30, 15, 15]` |
 | rate.timeSpans | `array`, see [TimeSpans](TimeSpans.md) and examples | If the pricing schedule varies according to the time of day, a timespan object can be embedded within the rate object | see [TimeSpans](TimeSpans.md) and examples below |
-| method | `string` Well-known values: `meter`, `pay station`, `digital` | How the fee is collected at the street-level (or exclusively digitally). | `pay station` |
-| forms | array of `string` Well-known values: `coins`, `bills`, `Visa`, `ApplePay` | What type of payment is accepted. Expressed as an array. | [`coins`,`SFMARTA card`, `ParkingApp`]
+| methods | array of `string` Well-known values: `meter`, `pay station`, `digital` | How the fee is collected at the street-level, including through digital payment. | `["pay station", "digital"]` |
+| forms | array of `string` Well-known values: `coins`, `bills`, `Visa`, `ApplePay` | What type of payment is accepted. Expressed as an array. | `["coins", "SFMARTA card", "ParkingApp"]` |
 | operator | `string` | The ID or name of the company that operates the payment method. If the payment operator is the same for most/all of the area, then this could be set as a property of the GeoJSON `Feature Collection` and used here only as an override  | `Acme Paystation` |
 | phone | `string` (`E.164 format`: `+` + `country code` + `local area code` + `phone number`) | The phone number, including country and area code, for the company or service that operates and may be contacted about the payment. If the payment operator is the same for most/all of the area, then this could be set as a property of the GeoJSON `Feature Collection` and used here only as an override | `+15551231234` |
-| deviceID | `string` | A unique device ID that corresponds to the parking payment device (e.g. meter) for this regulation. For feature geometries that encompass multiple payment devices, list these as an array | `1234nmfl`|
+| deviceIDs | array of `string` | A unique device ID that corresponds to the parking payment device (e.g. meter) for this regulation. Feature geometries can encompass multiple payment devices, so these are listed as an array | `["1234nmfl", "0249sndn"]`|
+
+Data fields should generally be considered case insensitive since they are used programmatically; we use lower-case in our examples, except for fields that would be used for display purposes (such as a street name or agency name).
+
 
 # Examples
 
@@ -36,9 +39,9 @@ The links below show real world curb regulations translated into CurbLR.
 
 | Link | Description |
 | :---- | :---- |
-| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic regulations  |
+| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [Jupyter](https://github.com/sharedstreets/CurbLR/blob/master/conversions/CSV%20to%20JSON%20parking%20rules.ipynb).
+| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [scripts](/js).
 
 ## Flat-rate
 Describes a parking meter. The fee is $1 for any part of an hour.
@@ -52,11 +55,11 @@ Describes a parking meter. The fee is $1 for any part of an hour.
         "durations": [60]
       }
     ],
-    "method": "meter",
+    "methods": ["meter"],
     "forms": ["coins"],
     "operator": "LADOT",
     "phone": "+15552225039",
-    "deviceID": "MB-2038"
+    "deviceIDs": ["MB-2038"]
   }
 }
 ```
@@ -73,11 +76,11 @@ Describes a parking meter. In the first hour of a parking session, the fee is $1
         "durations": [60, 60]
       }
     ],
-    "method": "meter",
+    "methods": ["meter", "digital"],
     "forms": ["coins", "MasterCard", "Visa", "American Express", "Discover", "ApplePay", "AndroidPay"],
     "operator": "LADOT",
     "phone": "+15552225039",
-    "deviceID": "MB-2494"
+    "deviceIDs": ["MB-2494"]
   }
 }
 ```
@@ -96,7 +99,7 @@ Describes a parking meter. From 9am to 5pm, the fee is $1 for the first 30 mins 
           {
             "timeOfDay": {
               "from": "09:00",
-              "until": "17:00"
+              "to": "17:00"
             }
           }
         ]
@@ -109,18 +112,18 @@ Describes a parking meter. From 9am to 5pm, the fee is $1 for the first 30 mins 
             "timesOfDay": [
               {
                 "from": "17:00",
-                "until": "22:00"
+                "to": "22:00"
               }
             ]
           }
         ]
       }
     ],
-    "method": "meter",
+    "methods": ["meter", "digital"],
     "forms": ["coins", "MasterCard", "Visa", "American Express", "Discover", "ApplePay", "AndroidPay"],
     "operator": "LADOT",
     "phone": "+15552225039",
-    "deviceID": "MB-0028"
+    "deviceIDs": ["MB-0028"]
   }
 }
 ```
@@ -136,11 +139,11 @@ Describes a parking meter. The fee is 5 cents for the first 5 mins, 10 cents for
       "fees": [0.05, 0.1, 0.25, 0.5],
       "durations": [5, 5, 10, 15]
     },
-    "method": "meter",
+    "methods": ["meter"],
     "forms": ["coins", "MasterCard", "Visa", "American Express", "Discover", "ApplePay", "AndroidPay"],
     "operator": "LADOT",
     "phone": "+15552225039",
-    "deviceID": "MB-2494"
+    "deviceIDs": ["MB-2494"]
   }
 }
 ```

@@ -25,19 +25,22 @@ A GeoJSON feature may include TimeSpans made up of the following fields. The Tim
 | effectiveDates.from | `string` (`MM-DD` or `YYYY-MM-DD`) | The beginning date of a time period. This is either a full date or a month and day that will define the timespan on an annual basis | `2018-08-02` or `04-01` |
 | effectiveDates.to | `string` (`MMDD` or `YYYY-MM-DD`) | The ending date of a time period. This is either a full date or a month and day that will define the timespan on an annual basis | `2018-08-05` or `11-30` |
 | daysOfWeek | `object` | Determines which days of the week will be included in a timespan.
-| daysOfWeek.days | array of `enum` (`string`) Values: `Mo Tu We Th Fr Sa Su` | List of days to include in the timespan | To specify weekdays: `["Mo", "Tu", "We", "Th", "Fr"]` |
+| daysOfWeek.days | array of `enum` (`string`) Values: `mo tu we th fr sa` | List of days to include in the timespan | To specify weekdays: `["mo", "tu", "we", "th", "fr"]`|
 | daysOfWeek.occurrencesInMonth | array of `enum`. Values: `1st 2nd 3rd 4th 5th last` | Modifier to indicate which occurrences of the specified days within the month to include in the timespan | `["1st", "3rd"]` |
 | daysOfMonth | array of `enum` (`string`) Values: `1-31`, `last`, `odd`, `even` | Specify specific days during the month to include in the timespan | To specify the 14th and last day of the month `["14", "last"]` |
 | timesOfDay | `array` | Specific time range during the day (or multiple time ranges) | |
 | timesOfDay.from | `string` (`HH:MM`) | The beginning time (24H) of the time range | `07:00` |
-| timesOfDay.until | `string` (`HH:MM`) | The ending time (24H) of the time range | `09:30` |
+| timesOfDay.to | `string` (`HH:MM`) | The ending time (24H) of the time range | `09:30` |
 | designatedPeriods | `array` | An arbitrary, externally-defined named period of time. TimeSpan can be defined to only apply during a designated period or at all times except during a designated period. | |
 | designatedPeriods.name | `string` | The name of designated period. | `snow emergency` or `holidays` |
-| designatedPeriods.apply | `enum` (`string`) Values: `only_during` or `except_during` | Will the designated period be excluded from the timespan or will the timespan only apply during the period. | Except Holidays: `except_during` or  During Snow Emergency: `only_during` |
+| designatedPeriods.apply | `enum` (`string`) Values: `only during` or `except during` | Will the designated period be excluded from the timespan or will the timespan only apply during the period. | Except Holidays: `except during` or  During Snow Emergency: `only during` |
 
 When multiple "clauses" are combined in a single TimeSpan, a logical **AND** operation is applied. For example, a TimeSpan that includes Wednesdays and the period of February 1st through April 30th specifies all Wednesdays between February 1st and April 30th. It does not specify all Wednesdays during the year AND all days between February 1st and April 30th (the equivalent of a logical **OR** operation).
 
 When multiple "clauses" are part of a single TimeSpan field but defined in separate TimeSpans, a logical **OR** operation is applied. For example, a regulation may contain a TimeSpan that specifies weekdays from 9am-5pm, and another TimeSpan that specifies weekends from 11-2. See examples below for further clarification.
+
+Data fields should generally be considered case insensitive since they are used programmatically; we use lower-case in our examples, except for fields that would be used for display purposes (such as a street name or agency name).
+
 
 # Examples
 
@@ -45,9 +48,9 @@ The links below show real world curb regulations translated into CurbLR.
 
 | Link | Description |
 | :---- | :---- |
-| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic regulations  |
+| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [Jupyter](https://github.com/sharedstreets/CurbLR/blob/master/conversions/CSV%20to%20JSON%20parking%20rules.ipynb).
+| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [scripts](/js).
 
 ### No standing at fire hydrant
 TimeSpan applies at all times.
@@ -63,7 +66,7 @@ TimeSpan applies overnight (midnight until 6am).
   "timeSpans": [
     {
       "timesOfDay": [
-        {"from": "00:00", "until": "06:00"}
+        {"from": "00:00", "to": "06:00"}
       ]
     }
   ]
@@ -77,8 +80,8 @@ TimeSpan applies during the morning **and** evening rush hours. Providing the tw
   "timeSpans": [
     {
       "timesOfDay": [
-        {"from": "07:30", "until": "09:30"},
-        {"from": "16:00", "until": "18:00"}
+        {"from": "07:30", "to": "09:30"},
+        {"from": "16:00", "to": "18:00"}
       ]
     }
   ]
@@ -92,18 +95,18 @@ TimeSpan applies on weekdays from 8am to 8pm, **and** on Sundays from 11am to 8p
   "timeSpans": [
     {
       "daysOfWeek": {
-        "days": ["Mo", "Tu", "We", "Th", "Fr"]
+        "days": ["mo", "tu", "we", "th", "fr"]
       },
       "timesOfDay": [
-        {"from": "08:00", "until": "20:00"}
+        {"from": "08:00", "to": "20:00"}
       ]
     },
     {
       "daysOfWeek": {
-        "days": ["Su"]
+        "days": ["su"]
       },
       "timesOfDay": [
-        {"from": "11:00", "until": "20:00"}
+        {"from": "11:00", "to": "20:00"}
       ]
     }
   ]
@@ -117,7 +120,7 @@ TimeSpan in effect only during a snow emergency.
   "timeSpans": [
     {
       "designatedPeriods": [
-        {"name": "snow emergency", "apply": "only_during"}
+        {"name": "snow emergency", "apply": "only during"}
       ]
     }
   ]
@@ -131,13 +134,13 @@ TimeSpan applies Monday through Saturday between 8am and 8pm, except holidays.
   "timeSpans": [
     {
       "daysOfWeek": {
-        "days": ["Mo", "Tu", "We", "Th", "Fr", "Sa"]
+        "days": ["mo", "tu", "we", "th", "fr", "sa"]
       },
       "timesOfDay": [
         {"from": "08:00", "until": "20:00"}
       ],
       "designatedPeriods": [
-        {"name": "holidays", "apply": "except_during"}
+        {"name": "holidays", "apply": "except during"}
       ]
     }
   ]
@@ -151,10 +154,10 @@ TimeSpan applies during designated construction hours (7am until 7pm) for the da
   "timeSpans": [
     {
       "timesOfDay": [
-        {"from": "07:00", "until": "19:00"},
+        {"from": "07:00", "to": "19:00"},
       ],
       "effectiveDates": [
-        {"from": "2018-08-02", "until": "2018-08-05"}
+        {"from": "2018-08-02", "to": "2018-08-05"}
       ]
     }
   ]
@@ -169,10 +172,10 @@ TimeSpan applies on odd number days between December 1st and March 31st from 1am
     {
       "daysOfMonth": ["odd"],
       "timesOfDay": [
-        {"from": "01:00", "until": "06:00"}
+        {"from": "01:00", "to": "06:00"}
       ],
       "effectiveDates": [
-        {"from": "12-01", "until": "03-31"}
+        {"from": "12-01", "to": "03-31"}
       ]
     }
   ]
@@ -186,14 +189,14 @@ TimeSpan applies between 11am and 1pm on the 2nd and 4th Tuesday of every month 
   "timeSpans": [
     {
       "daysOfWeek": {
-        "days": ["Tu"],
+        "days": ["tu"],
         "occurrencesInMonth": ["2nd", "4th"]
       },
       "timesOfDay": [
-        {"from": "11:00", "until": "13:00"}
+        {"from": "11:00", "to": "13:00"}
       ],
       "effectiveDates": [
-        {"from": "04-01", "until": "11-30"}
+        {"from": "04-01", "to": "11-30"}
       ]
     }
   ]

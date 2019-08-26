@@ -23,7 +23,7 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
   "properties": {
     "location": {
       "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-      "shstLocationSt": 51,
+      "shstLocationStart": 51,
       "shstLocationEnd": 55,
       "sideOfStreet": "right",
       "objectID": "87580",
@@ -38,17 +38,19 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
         "rule": {
           "activity": "parking"
         },
-        "userClass": {
-          "classes": ["resident permit"],
-          "subclasses": ["F", "N"]
-        },
+        "userClasses": [
+          {
+            "classes": ["resident permit"],
+            "subclasses": ["F", "N"]
+          }
+        ],
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "09:00", "until": "18:00"}
+              {"from": "09:00", "to": "18:00"}
             ]
           }
         ],
@@ -62,10 +64,10 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "09:00","until": "18:00"}
+              {"from": "09:00","to": "18:00"}
             ]
           }
         ],
@@ -98,7 +100,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
   "properties": {
     "location": {
       "shstRefId": "920af8ba918d9a2921b1fe6f9723d042",
-      "shstLocationSt": 12,
+      "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
       "objectID": "94022",
@@ -117,8 +119,8 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
         "timeSpans": [
           {
             "timesOfDay": [
-              {"from": "18:00", "until": "23:59"},
-              {"from": "00:00", "until": "08:00"}
+              {"from": "18:00", "to": "23:59"},
+              {"from": "00:00", "to": "08:00"}
             ]
           }
         ],
@@ -134,10 +136,10 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["We"]
+              "days": ["we"]
             },
             "timesOfDay": [
-              {"from": "13:00", "until": "15:00"}
+              {"from": "13:00", "to": "15:00"}
             ]
           }
         ],
@@ -149,14 +151,16 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
         "rule": {
           "activity": "parking"
         },
-        "userClass": {
-          "classes": ["permit"],
-          "subclasses": ["zone 5"]
-        },
+        "userClasses": [
+          {
+            "classes": ["permit"],
+            "subclasses": ["zone 5"]
+          }
+        ],
         "timeSpans": [
           {
             "timesOfDay": [
-              {"from": "08:00", "until": "18:00"}
+              {"from": "08:00", "to": "18:00"}
             ]
           }
         ],
@@ -172,7 +176,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
         "timeSpans": [
           {
             "timesOfDay": [
-              {"from": "08:00", "until": "18:00"}
+              {"from": "08:00", "to": "18:00"}
             ]
           }
         ],
@@ -206,7 +210,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
   "properties": {
     "location": {
       "shstRefId": "920af8ba918d9a2921b1fe6f9723d042",
-      "shstLocationSt": 12,
+      "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
       "objectID": "94022",
@@ -226,7 +230,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
           {
             "designated_period": {
               "name": "Snow over 2 inches",
-              "apply": "only_during"
+              "apply": "only during"
             }
           }
         ],
@@ -242,11 +246,11 @@ Between December 1st and April 1st of each year, no one may park between 3am and
         "timeSpans": [
           {
             "effectiveDates": [
-              {"from": "12-01", "until": "12-31"},
-              {"from": "01-01", "until": "03-31"}
+              {"from": "12-01", "to": "12-31"},
+              {"from": "01-01", "to": "03-31"}
             ],
             "timesOfDay": [
-              {"from": "03:00", "until": "07:00"}
+              {"from": "03:00", "to": "07:00"}
             ]
           }
         ],
@@ -279,7 +283,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
   "properties": {
     "location": {
       "shstRefId": "920af8ba918d9a2921b1fe6f9723d042",
-      "shstLocationSt": 12,
+      "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
       "objectID": "94022",
@@ -298,11 +302,11 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "07:00", "until": "09:30"},
-              {"from": "16:00", "until": "18:30"}
+              {"from": "07:00", "to": "09:30"},
+              {"from": "16:00", "to": "18:30"}
             ]
           }
         ],
@@ -315,17 +319,19 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
           "activity": "parking",
           "maxStay": 120
         },
-        "userClass": {
-          "classes": ["handicap"]
-        },
+        "userClasses": [
+          {
+            "classes": ["handicap"]
+          }
+        ],
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "09:30", "until": "16:00"},
-              {"from": "18:30", "until": "19:30"}
+              {"from": "09:30", "to": "16:00"},
+              {"from": "18:30", "to": "19:30"}
             ]
           }
         ],
@@ -342,11 +348,11 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "09:30", "until": "16:00"},
-              {"from": "18:30", "until": "19:30"}
+              {"from": "09:30", "to": "16:00"},
+              {"from": "18:30", "to": "19:30"}
             ]
           }
         ],
@@ -379,7 +385,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
   "properties": {
     "location": {
       "shstRefId": "920af8ba918d9a2921b1fe6f9723d042",
-      "shstLocationSt": 12,
+      "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
       "objectID": "94022",
@@ -397,10 +403,11 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "15:30", "until": "18:30"}            ]
+              {"from": "15:30", "to": "18:30"}            
+            ]
           }
         ],
         "priority": 3
@@ -412,16 +419,19 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
           "activity": "loading",
           "maxStay": 60
         },
-        "userClass": {
-          "classes": ["truck"]
-        },
+        "userClasses": [
+          {
+            "classes": ["truck"]
+          }
+        ],
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "06:00", "until": "10:00"}            ]
+              {"from": "06:00", "to": "10:00"}            
+            ]
           }
         ],
         "priority": 4
@@ -438,20 +448,21 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "10:00", "until": "10:30"},
-              {"from": "18:30", "until": "22:00"}
+              {"from": "10:00", "to": "10:30"},
+              {"from": "18:30", "to": "22:00"}
             ]
           },
           // (weekend allowed parking):
           {
             "daysOfWeek": {
-              "days": ["Sa", "Su"]
+              "days": ["sa", "su"]
             },
             "timesOfDay": [
-              {"from": "08:00", "until": "22:00"}            ]
+              {"from": "08:00", "to": "22:00"}            
+            ]
           }
         ],
         "priority": 4
@@ -483,7 +494,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
   "properties": {
     "location": {
       "shstRefId": "920af8ba918d9a2921b1fe6f9723d042",
-      "shstLocationSt": 12,
+      "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
       "objectID": "94022",
@@ -498,25 +509,28 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
         "rule": {
           "activity": "parking",
         },
-        "userClass": {
-          "classes": ["permit"],
-          "subclasses": ["zone F"]
-        }
-
+        "userClasses": [
+          {
+            "classes": ["permit"],
+            "subclasses": ["zone F"]
+          }
+        ],
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr", "Sa"]
+              "days": ["mo", "tu", "we", "th", "fr", "sa"]
             },
             "timesOfDay": [
-              {"from": "18:30", "until": "20:00"}            ]
+              {"from": "18:30", "to": "20:00"}            
+            ]
           },
           {
             "daysOfWeek": {
-              "days": ["Sa"]
+              "days": ["sa"]
             },
             "timesOfDay": [
-              {"from": "14:00", "until": "16:00"}            ]
+              {"from": "14:00", "to": "16:00"}
+            ]
           }
         ],
         "priority": 4
@@ -528,25 +542,28 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
           "activity": "parking",
           "payment": false  // this is the default, but specified here for clarity
         },
-        "userClass": {
-          "classes": ["permit"],
-          "subclasses": ["zone F"]
-        },
+        "userClasses": [
+          {
+            "classes": ["permit"],
+            "subclasses": ["zone F"]
+          }
+        ],
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "09:00", "until": "18:30"}            ]
+              {"from": "09:00", "to": "18:30"}            
+            ]
           },
           {
             "daysOfWeek": {
-              "days": ["Sa", "Su"]
+              "days": ["sa", "su"]
             },
             "timesOfDay": [
-              {"from": "09:00", "until": "14:00"},
-              {"from": "16:00", "until": "18:30"}
+              {"from": "09:00", "to": "14:00"},
+              {"from": "16:00", "to": "18:30"}
             ]
           }
         ],
@@ -562,18 +579,19 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]
+              "days": ["mo", "tu", "we", "th", "fr"]
             },
             "timesOfDay": [
-              {"from": "09:00", "until": "18:30"}            ]
+              {"from": "09:00", "to": "18:30"}            
+            ]
           },
           {
             "daysOfWeek": {
-              "days": ["Sa", "Su"]
+              "days": ["sa", "su"]
             },
             "timesOfDay": [
-              {"from": "09:00", "until": "14:00"},
-              {"from": "16:00", "until": "18:30"}
+              {"from": "09:00", "to": "14:00"},
+              {"from": "16:00", "to": "18:30"}
             ]
           }
         ],
@@ -608,7 +626,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
   "properties": {
     "location": {
       "shstRefId": "920af8ba918d9a2921b1fe6f9723d042",
-      "shstLocationSt": 12,
+      "shstLocationStart": 12,
       "shstLocationEnd": 105,
       "sideOfStreet": "right",
       "objectID": "94022",
@@ -625,21 +643,23 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
           "reason": "school pick-up and drop-off only",
           "maxStay": 5
         },
-        "userClass": {
-          "classes": ["passenger"]
-        },
+        "userClasses": [
+          {
+            "classes": ["passenger"]
+          }
+        ],
         "timeSpans": [
           {
             "designatedPeriod": {
               "name": "school days",
-              "apply": "only_during"
+              "apply": "only during"
             },
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr"]   //This is implied in the "designated period", but included for clarity
+              "days": ["mo", "tu", "we", "th", "fr"]   //This is implied in the "designated period", but included for clarity
             },
             "timesOfDay": [
-              {"from": "06:30", "until": "09:00"},
-              {"from": "13:30", "until": "16:00"}
+              {"from": "06:30", "to": "09:00"},
+              {"from": "13:30", "to": "16:00"}
             ]
           }
         ],
@@ -654,8 +674,8 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
         "timeSpans": [
           {
             "timesOfDay": [
-              {"from": "18:00", "until": "23:59"},
-              {"from": "00:00", "until": "08:00"}
+              {"from": "18:00", "to": "23:59"},
+              {"from": "00:00", "to": "08:00"}
             ]
           }
         ],
@@ -671,10 +691,10 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo"]
+              "days": ["mo"]
             },
             "timesOfDay": [
-              {"from": "10:00", "until": "13:00"}
+              {"from": "10:00", "to": "13:00"}
             ]
           }
         ],
@@ -687,14 +707,16 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
         "rule": {
           "activity": "parking",
         },
-        "userClass": {
-          "classes": ["permit"],
-          "subclasses": ["zone 64"]
-        },
+        "userClasses": [
+          {
+            "classes": ["permit"],
+            "subclasses": ["zone 64"]
+          }
+        ],
         "timeSpans": [
           {
             "timesOfDay": [
-              {"from": "08:00", "until": "18:00"},
+              {"from": "08:00", "to": "18:00"},
             ]
           }
         ],
@@ -710,7 +732,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
         "timeSpans": [
           {
             "timesOfDay": [
-              {"from": "08:00", "until": "18:00"}
+              {"from": "08:00", "to": "18:00"}
             ]
           }
         ],

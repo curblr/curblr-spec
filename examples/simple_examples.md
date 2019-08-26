@@ -22,7 +22,7 @@ No stopping is allowed by anyone at any time. Example location information is in
   "properties": {
     "location": {
         "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-        "shstLocationSt": 51.6,
+        "shstLocationStart": 51.6,
         "shstLocationEnd": 55.6,
         "sideOfStreet": "right",
         "objectID": "59463",
@@ -66,7 +66,7 @@ No one may park during snow emergencies. Example location information is include
   "properties": {
     "location": {
         "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-        "shstLocationSt": 29.9,
+        "shstLocationStart": 29.9,
         "shstLocationEnd": 34.1,
         "sideOfStreet": "left",
         "objectID": "49202",
@@ -84,7 +84,7 @@ No one may park during snow emergencies. Example location information is include
           {
             "designatedPeriod": {
               "name": "snow emergency",
-              "apply": "only_during"
+              "apply": "only during"
             }
           }
         ],
@@ -117,7 +117,7 @@ Parking is limited to two hours between 8am and 8pm Monday through Saturday. Pay
   "properties": {
     "location": {
         "shstRefId": "324af8ba918d9a2921b1fe6f9723d729",
-        "shstLocationSt": 40,
+        "shstLocationStart": 40,
         "shstLocationEnd": 60,
         "sideOfStreet": "right",
         "objectID": "2945",
@@ -134,16 +134,16 @@ Parking is limited to two hours between 8am and 8pm Monday through Saturday. Pay
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr", "Sa"]
+              "days": ["mo", "tu", "we", "th", "fr", "sa"]
             },
             "timesOfDay": [
-              {"from": "08:00", "until": "20:00"}
+              {"from": "08:00", "to": "20:00"}
             ]
           }
         ],
         {
           "payment":{
-            "device": "meter"
+            "devices": ["meter"]
           }
         }
         "priority": 4
@@ -176,7 +176,7 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
   "properties": {
     "location": {
         "shstRefId": "908af8ba918d9a2921b1fe6f9723d729",
-        "shstLocationSt": 14.7,
+        "shstLocationStart": 14.7,
         "shstLocationEnd": 19.0,
         "sideOfStreet": "right",
         "objectID": "40163s",
@@ -190,10 +190,12 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
           "activity": "parking",
           "reason": "car share only"
         },
-        "userClass" : {
-          "classes": ["car share"],
-          "subclasses": ["Enterprise"]
-        },
+        "userClasses" : [
+          {
+            "classes": ["car share"],
+            "subclasses": ["Enterprise"]
+          }
+        ],
         "priority": 4
       }
     ]
@@ -223,7 +225,7 @@ No parking allowed between 6am and 8am on the 2nd and 4th Wednesday of each mont
   "properties": {
     "location": {
         "shstRefId": "923af8ba918d9a2921b1fe6f9723d729",
-        "shstLocationSt": 5,
+        "shstLocationStart": 5,
         "shstLocationEnd": 90,
         "sideOfStreet": "right",
         "objectID": "d59463",
@@ -240,14 +242,14 @@ No parking allowed between 6am and 8am on the 2nd and 4th Wednesday of each mont
         "timeSpans": [
           {
             "effectiveDates": [
-              {"from": "04-01", "until": "11-30"}
+              {"from": "04-01", "to": "11-30"}
             ],
             "daysOfWeek": {
               "days": ["We"],
-              "occurrences_in_month": ["2nd", "4th"]
+              "occurrencesInMonth": ["2nd", "4th"]
             },
             "timesOfDay": [
-              {"from": "06:00", "until": "08:00"}
+              {"from": "06:00", "to": "08:00"}
             ]
           }
         ],
@@ -280,7 +282,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
   "properties": {
     "location": {
         "shstRefId": "224af8ba918d9a2921b1fe6f9723d729",
-        "shstLocationSt": 20.3,
+        "shstLocationStart": 20.3,
         "shstLocationEnd": 25.8,
         "sideOfStreet": "right",
         "objectID": "d59463",
@@ -296,16 +298,18 @@ All vehicles except permitted construction vehicles are prohibited from standing
           "activity": "parking",
           "reason": "construction vehicles only"
         },
-        "userClass" : {
-          "classes": ["construction"]
-        },
+        "userClasses" : [
+          {
+            "classes": ["construction"]
+          }
+        ],
         "timeSpans": [
           {
             "effectiveDates": [
-              {"from": "2018-04-09", "until": "2018-04-09"}
+              {"from": "2018-04-09", "to": "2018-04-09"}
             ],
             "timesOfDay": [
-              {"from": "07:00", "until": "16:00"}
+              {"from": "07:00", "to": "16:00"}
             ]
           }
         ],
@@ -318,16 +322,18 @@ All vehicles except permitted construction vehicles are prohibited from standing
           "activity": "standing",
           "reason": "construction vehicles only"
         },
-        "userClass" : {
-          "classes": ["construction"]
-        },
+        "userClasses" : [
+          {
+            "classes": ["construction"]
+          }
+        ],
         "timeSpans": [
           {
             "effectiveDates": {
-              "from": "2018-04-09","until": "2018-04-09"
+              "from": "2018-04-09","to": "2018-04-09"
             },
             "timesOfDay": [
-              {"from": "07:00", "until": "16:00"}
+              {"from": "07:00", "to": "16:00"}
             ]
           }
         ],
@@ -361,7 +367,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
   "properties": {
     "location": {
         "shstRefId": "993dj8ba408d9a2921b1fe6f9723d729",
-        "shstLocationSt": 5,
+        "shstLocationStart": 5,
         "shstLocationEnd": 100,
         "sideOfStreet": "right",
         "objectID": "190-349s",
@@ -374,16 +380,18 @@ Parking allowed only for resident permit holders Monday through Saturday, except
         "rule": {
           "activity": "parking",
         },
-        "userClass" : {
-          "classes": ["permit"],
-        },
+        "userClasses" : [
+          {
+            "classes": ["permit"],
+          }
+        ],
         "timeSpans": [
           {
             "daysOfWeek": {
-              "days": ["Mo", "Tu", "We", "Th", "Fr", "Sa"]
+              "days": ["mo", "tu", "we", "th", "fr", "sa"]
             },
             "designatedPeriods": [
-              {"name": "holidays", "apply": "except_during"}
+              {"name": "holidays", "apply": "except during"}
             ]
           }
         ],
@@ -416,7 +424,7 @@ No parking for Kardashians at any time
   "properties": {
     "location": {
         "shstRefId": "993dj8ba408d9a2921b1fe6f9723d729",
-        "shstLocationSt": 5,
+        "shstLocationStart": 5,
         "shstLocationEnd": 100,
         "sideOfStreet": "right",
         "objectID": "190-349s",
@@ -429,9 +437,11 @@ No parking for Kardashians at any time
         "rule": {
           "activity": "no parking",
         },
-        "userClass" : {
-          "classes": ["Kardashians"],
-        },
+        "userClasses" : [
+          {
+            "classes": ["Kardashians"],
+          }
+        ],
         "priority": 4
       }  
     ]

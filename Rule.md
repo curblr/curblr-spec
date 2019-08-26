@@ -1,5 +1,5 @@
 # About rules
-A rule is a subsection of the [regulations](Regulations.md). It groups properties that define _what_ activity is allowed or prohibited at a section of curb, _why_, and pertinent information about _how_ the regulation applies (whether there is a time limit or maximum time before returning). Additional object properties grouped elsewhere in the spec further define [_when_](TimeSpan.md) and [_to whom_](UserClass.md) the regulation applies, whether and how much [payment](Payment.md) is required, as well as the [_priority_](Priority.md) level of the regulation.
+A rule is a subsection of the [regulations](Regulations.md). It groups properties that define _what_ activity is allowed or prohibited at a section of curb, _why_, and pertinent information about _how_ the regulation applies (whether there is a time limit or maximum time before returning). Additional object properties grouped elsewhere in the spec further define [_when_](TimeSpan.md) and [_to whom_](UserClasses.md) the regulation applies, whether and how much [payment](Payment.md) is required, as well as the [_priority_](Priority.md) level of the regulation.
 
 # Definition
 Each object in the GeoJSON may have the following properties:
@@ -11,7 +11,13 @@ Each object in the GeoJSON may have the following properties:
 | maxStay | If applicable | `int` | The length of time (in minutes) for which the curb may be used under this regulation. This provides a time restriction, in addition to any [TimeSpan](TimeSpans.md) restrictions | `30`
 | noReturn | If applicable | `int` | The length of time (in minutes) that a user must vacate the curbspace before allowed to return for another stay. Generally applies only to regulations with a `maxStay` | `60`|
 | payment | If applicable | `boolean` Default value: `false` | `true` indicates that payment is required. This field is not necessary if no payment is required. Additional payment information is stored in [Payment](Payment.md)| `true`|
-| authority | Optional | An agency producing CurbLR data can indicate, in the [metadata](Manifest.md), which authority has jurisdiction over the curbspace in the data (i.e. who created and manages the regulation). Often, this will be consistent across all data in a CurbLR feed. However, this property can also be set for each individual feature geometry, and is intended to store exceptions that override the authority set in the metadata.
+| authority | Optional object used as override for exceptions | An agency producing CurbLR data can indicate, in the [metadata](Manifest.md), which authority has jurisdiction over the curbspace in the data (i.e. who created and manages the regulation). Often, this will be consistent across all data in a CurbLR feed. However, this property can also be set for each individual feature geometry, and is intended to store exceptions that override the authority set in the metadata.
+| authority.name | Optional override | `string` (web link) | Name of agency | `City of London`
+| authority.url | Optional override | `string` (web link) | Link to the regulatory agency's domain | `https://vancouver.ca`
+| authority.phone | Optional override | `string` (`E.164 format`: + `country code` + `local area code` + `phone number`) | The phone number,  including country and area code, for the regulatory agency that could be contacted about parking regulations | `+15551231234`
+
+Data fields should generally be considered case insensitive since they are used programmatically; we use lower-case in our examples, except for fields that would be used for display purposes (such as a street name or agency name).
+
 
 ## Activity: possible values
 
@@ -56,9 +62,9 @@ The links below show real world curb regulations translated into CurbLR.
 
 | Link | Description |
 | :---- | :---- |
-| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic regulations  |
+| [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [Jupyter](https://github.com/sharedstreets/CurbLR/blob/master/conversions/CSV%20to%20JSON%20parking%20rules.ipynb).
+| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [scripts](/js).
 
 ### Simple regulation: no parking
 Defines a No Parking regulation that applies to all road users. Standing and loading may or may not be permitted.
@@ -78,10 +84,12 @@ Defines a `regulation` to allow people with a Zone 4 Resident Parking Permit to 
     "activity": "parking",
     "reason": "resident parking"
   },
-  "userClass": {
-    "classes": ["resident permit"],
-    "subclasses": ["zone 4"]
-  }
+  "userClasses": [
+    {
+      "classes": ["resident permit"],
+      "subclasses": ["zone 4"]
+    }
+  ]
 }
 ```
 
@@ -93,9 +101,11 @@ Defines a `regulation` that allows parking for handicap users with a 3 hour time
     "activity": "parking",
     "maxStay": 180
   },
-  "userClass": {
-    "classes": ["handicap"]
-  }
+  "userClasses": [
+    {
+      "classes": ["handicap"]
+    }
+  ]
 }
 ```
 
@@ -119,9 +129,11 @@ Defines a `regulation` that allows taxis to stand and pick up passengers. Implie
     "activity": "standing",
     "reason": "taxi stand"
   },
-  "userClass": {
-    "classes": ["taxi"],
-  }
+  "userClasses": [
+    {
+      "classes": ["taxi"],
+    }
+  ]
 }
 ```
 
@@ -133,8 +145,10 @@ Defines a `regulation` that allows rideshare companies to drop off and pick up p
     "activity": "loading",
     "reason": "rideshare pick-up drop-off"
   },
-  "userClass": {
-    "classes": ["rideshare"],
-  }
+  "userClasses": [
+    {
+      "classes": ["rideshare"],
+    }
+  ]
 }
 ```
