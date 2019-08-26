@@ -1,76 +1,51 @@
 # About location
 
-Curb regulations always apply to a linear segment of the curb, but in the physical world they are often marked as points, such as parking signs or meters. For this reason, agencies often collect and store point-based data about the curb. Sometimes an agency's dataset contains sufficient information to determine the beginning and end of the zone. Sometimes it does not.
+For each curb regulation, CurbLR contains a [GeoJSON feature geometry](GeoJsonGeometry.md) as well as JSON fields that describe the location with respect to the street. This page focuses on the latter.
 
-CurbSpec allows location information to be stored either as street segments or as street-linked points, in order to enable all cities to store and share their data in a standardized format.
+Curb regulations always apply to a linear segment of the street edge. Therefore, CurbLR requires location information to be stored as street segments: features that refer to a particular street and direction of travel, and which have a start and an end point. This enables producers and consumers to communicate clearly about where a [Regulation](Regulations.md) applies.
 
-# Using linear referencing
+## Using linear referencing
 
 Since curb regulations apply to a segment of the street, sign posts and zones most reference a particular street and their location along it.
 
-Doing this requires a standard referencing system that works across jurisdictions. The [SharedStreets Referencing System](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/) provides an open, non-proprietary method for identifying street segments and integrating multiple underlying basemaps into a single shared referencing system. CurbSpec includes SharedStreets References to provide a truly common way to talk about both a place on the curb and the rules that apply in that place.
+Doing this requires a standard referencing system that works across jurisdictions. The [SharedStreets Referencing System](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/) provides an open, non-proprietary method for identifying street segments and integrating multiple underlying basemaps into a single shared referencing system. CurbLR includes SharedStreets References to provide a truly common way to talk about both a place on the curb and the rules that apply in that place.
 
-The [SharedStreets command line interface](https://github.com/sharedstreets/sharedstreets-js) enables users to generate linear references for input data before converting it into the CurbSpec GeoJSON format.
+The [SharedStreets command line interface](https://github.com/sharedstreets/sharedstreets-js) enables users to generate linear references for input data before converting it into the CurbLR format.
 
-# GeoJSON feature geometries
+## Converting point-based data into street segments
 
-Each regulation must be associated with a geographic feature. That feature can be either a `Point` or a line segment (`LineString`). Either way, the geographic coordinates for the point(s) that make up this feature are contained within the `Feature` of a `Feature Class`. The coordinates should be based on the matched SharedStreets output, not the input data. This ensures that the resulting feature geometries have been snapped to the street and can be displayed on a map consistently.
+In addition to referencing a particular street and side of the street, curb regulations must also have a start and end location. In the physical world, curb regulations are often marked as points, such as parking signs or meters. For this reason, agencies often collect and store point-based data about the curb and the assets used to communicate regulations to the public. SharedStreets has created data processing tools that can be used to convert point-based asset data into segments with a certain length.
 
-(For a primer on GeoJSON terminology and structure, see [this post](https://macwright.org/2015/03/23/geojson-second-bite.html))
+The point-to-street-segment tools are part of the [SharedStreets command line interface](https://www.github.com/sharedstreets/sharedstreets-js). They enable users to snap points to the street and convert them into street segments in multiple ways:
 
-Here's an example of the geometry of a GeoJSON feature. Note that the coordinates are for the signpost's location _after it was snapped to the street_:
+1. _By determining relationships between signs_. Regulations are often indicated by multiple signs along the same street. With this method, each input data point is assigned a value to indicate whether it is the beginning (`1`), middle (`2`), or end (`3`) of a regulation. The processing tools examine each individual street to identify points that describe the same regulation, then use the point relationships to turn these points into a street segment. This method is the preferred, most precise method and it is recommended for any new data collection. Here's an overview of the process:
+<img src="images/sign_process.png" width="800">
 
-```
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [ -118.2816343, 34.0227093]
-  }
-  ```
 
-# Location properties using street segments
+2. _Using a fixed-width or variable-width buffer_. If a city only has point-based data, then the length of the regulation must be extrapolated/estimated. Certain assets, like parking meters, often have a typical length. The approximate length of each feature can be set in the input data and used to generate a street segment. Or, a fixed-width buffer can be used, where all points are assigned the same length (though this is the least common scenario and should only be used if appropriate). Overlapping street segments with the same regulation information will be combined into one street segment. Here's an overview of the buffer process:
+<img src="images/buffer_process.png" width="800">
 
-Each feature in the GeoJSON should contain the following `location` properties:
+The tools can also use a combination of methods, determined by how much data is available for each point. Sign relationships would be given priority, followed by fixed-buffer width, followed by a fallback buffer size.
+
+
+# Definition
+
+Each feature in the GeoJSON should contain the following Location properties:
 
 | Field name | Importance  | Type | Description | Example |
 | :---: | :--- | :--- | :--- | :--- |
 | shstRefId | Required | `string` | An alphanumeric hash generated by the [SharedStreets Referencing System](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/), which refers to the street segment and its direction. This provides a common, non-proprietary way to identify a street and can be used to link city and private datasets | `592c2106e6553d3c930a372763f10254` |
-| shstLocationSt | Required | `float` | Where the restriction zone starts. Given as the distance (in meters) along the street, in the direction of digitization | `80.362` |
-| shstLocationEnd | Required | `float` | Where the restriction zone ends. Given as the distance (in meters) along the street, in the direction of digitization | `95.295` |
 | sideOfStreet | Required | `enum` (`string`) Values: `left`, `right` | Side of street that the curb regulation applies to, relative to the direction of digitization. Note that each direction of travel has a left and a right side. Thus, a one-way street will have one reference ID with a left and a right side. A two-way street will have two reference IDs, each with a left and a right side. | `left` |
-| objectId | Recommended | `string` |  Identifier for the regulation geometry. Enables CurbLR data to be linked back to input asset data, can be used by applications looking to model changes or future scenarios | `440235`
-| derivedFrom | Recommended | `string` | An array that holds object IDs that correspond to the physical assets used to derive the feature geometry (e.g. object ID for signposts, meters). Enables CurbLR data to be linked back to input asset data in GIS. Also useful when converting GIS data into CurbLR, for pre-processing and linear referencing steps. | `[3455, 1359]`
-| marker | Recommended | `string` Suggested values: `curb cut`, `hydrant`, `meter`, `paint`, `pay station`, `sign` | Describes the feature that marks the regulation on the street, likely the asset that was mapped to generate the input data for CurbLR. This can be used to indicate what a human curb user should look for in order to verify parking directions from an app or other product | `sign`
+| shstLocationStart | Required | `float` | Where the regulation starts. Given as the distance (in meters) along the street, in the direction of digitization | `80.2` |
+| shstLocationEnd | Required | `float` | Where the regulation ends. Given as the distance (in meters) along the street, in the direction of digitization | `95.3` |
+| objectId | Recommended | `string` |  Optional identifier for the regulation geometry. Enables CurbLR data to be linked back to input asset data, can be used by applications looking to model changes or future scenarios. These may have logic to them, or may be arbitrary feature ID's generated by the creator of the feed. | `440235`
+| derivedFrom | Recommended | array of `string` | An optional array that holds object IDs that correspond to the physical assets used to derive the feature geometry (e.g. object ID for signposts, meters). Enables CurbLR data to be linked back to input asset data in GIS. Also useful when converting GIS data into CurbLR, for pre-processing and linear referencing steps. | `[3455, 1359]`|
+| marker | Recommended | `string` Suggested values: `curb cut`, `hydrant`, `meter`, `paint`, `pay station`, `sign` | Describes the feature that marks the regulation on the street, likely the asset that was mapped to generate the input data for CurbLR. This can be used to indicate what a human curb user should look for in order to verify parking directions from an app or other product | `sign` |
+| baysAngle | Recommended if applicable | `enum` (`string`) Values: `parallel`, `perpendicular`, `diagonal` | Describes the angle of parking/loading/standing spaces. Could be used to approximate the number of parking spaces (and estimate availability) in a street section | `parallel` |
+| baysCount | Optional | `int` | The number of parking/loading/standing bays demarcated in a street section. Could be used to estimate parking availability | `5` |
+| streetName | Optional | `string` | Optional field to store the name of the street, with the intent of surfacing this information to end users or facilitations QA/QC of the data | `Main St`|
 
-# Location properties using point data
-
-Each feature in the GeoJSON should contain the following `location` properties:
-
-| Field name | Importance  | Type | Description | Example
-| :---: | :--- | :--- | :--- | :--- |
-| z | If applicable | `int` | For multi-level roads, this indicates the vertical level, where `0` is ground level, `-1` is 1 level below ground, `1` is one level above ground, and so on | `1` |
-| shstRefId | Required | `string` | An alphanumeric hash generated by the [SharedStreets Referencing System](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/), which refers to the street segment and its direction. This provides a common, non-proprietary way to identify a street and can be used to link city and private datasets | `592c2106e6553d3c930a372763f10254` |
-| shstLocation | Required | `float` | Location of a point-based regulation. Given as the distance (in meters) along the street, in the direction of digitization | `86.925` |
-| ptRelation | Recommended | `enum` (`int`) Values: `0`-`3` | Defines the relationship between signs of the same type in order to enable the extrapolation of zone information. For example, can be used to denote the beginning and end of a "No parking" zone. `0` = Point-based data, relationship to other signs is not known. `1` = Beginning of a zone. `2` = Continuation of a zone. `3` = End of a zone. While this is technically redundant, and should be used to generate the curb segment's geometry, we have chosen to surface this to help define a template for city data collection | `1` |
-| direction | Required | `enum` (`string`) Values: `forward`, `back` | Where the restriction zone ends. Given as the distance (in meters) along the street, in the direction of digitization | `95.295` |
-| sideOfStreet | Required | `enum` (`string`) Values: `left`, `right` | Side of street that the curb regulation applies to, relative to the direction of digitization | `left` |
-| objectId | Recommended | `string` |  Identifier for the regulation geometry. Enables CurbLR data to be linked back to input asset data, can be used by applications looking to model changes or future scenarios | `440235`
-| derivedFrom | Recommended | `string` | An array that holds object IDs that correspond to the physical assets used to derive the feature geometry (e.g. object ID for signposts, meters). Enables CurbLR data to be linked back to input asset data in GIS. Also useful when converting GIS data into CurbLR, for pre-processing and linear referencing steps. | `[3455, 1359]`
-| marker | Recommended | `string` Suggested values: `curb cut`, `hydrant`, `meter`, `paint`, `pay station`, `sign` | Describes the feature that marks the regulation on the street, likely the asset that was mapped to generate the input data for CurbLR. This can be used to indicate what a human curb user should look for in order to verify parking directions from an app or other product | `sign`
-
-## Using point-based data
-
-Location information is most precise when expressed as street segments, or as point-based data with information about sign relations.
-
-If a city only has point-based data, then the zone must be extrapolated/estimated. It is preferable if a city performs this internally before publishing their data in CurbLR format. For example, if the city knows the approximate width of a metered parking space, then it can estimate the length and location of the curb segment.
-
-The [SharedStreets map conflation tools](https://github.com/sharedstreets/sharedstreets-js) can convert point-based data into linear-referenced street segments. When processing input data, users have the option to buffer points by a certain specified distance and to convert them into street segments of the specified length. The desired length can be specific to each point, specified by a column in the input data.
-
-## Additional possibilities, seeking feedback
-
-Additional fields to consider are:
-- `relates_to`: array of `reg_id`s for overlapping regulations
+Data fields should generally be considered case insensitive since they are used programmatically; we use lower-case in our examples, except for fields that would be used for display purposes (such as a street name or agency name).
 
 # Examples
 
@@ -79,4 +54,5 @@ The links below show real world curb regulations translated into CurbLR.
 | Link | Description |
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [Jupyter](https://github.com/sharedstreets/CurbLR/blob/master/conversions/CSV%20to%20JSON%20parking%20rules.ipynb).
+| [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
+| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and converted into GeoJSON format using [scripts](/js).
