@@ -1,13 +1,3 @@
-# Origins
-CurbLR is based on the design and thinking laid out in [CurbSpec](https://github.com/jfh01/CurbSpec). At SharedStreets, we spoke with a handful of cities across the US, reviewed their parking regulation datasets, conducted field mapping in a local area to experience data collection, and converted an [initial dataset of ~35,000 Los Angeles parking zones](/conversions) into the CurbSpec format. To our knowledge, this was the first attempt to convert a curb regulation dataset into CurbSpec. When trying to convert GIS data into the spec, we realized that several significant modifications were needed, including:
-- Adding location information for the regulation (both geographic and with the [SharedStreets linear referencing system](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/).
-- Structuring regulations as a GeoJSON, and in a flatter manner (one curb activity per feature)
-- Using a well-known values approach to avoid free-form text where possible
-- Adding metadata to describe the agency that created the data, and other relevant aspects that apply across a CurbLR feed
-- Adding a structured, but optional, place for payment rates
-
-The addition of linear-referenced location information was a significant change that is critical to how the spec functions. Because of this change, we chose to rename this spec as CurbLR.
-
 # What is CurbLR?
 CurbLR is a data standard for describing urban curb regulations. It exists to help government effectively manage and regulate the curb and to support public and private users of city streets.
 
@@ -89,6 +79,17 @@ All of this is stored as individual features that form one GeoJSON object. Above
 The example below shows the structure of one feature in the feed:
 
 <img src="images/motorcycle_parking.png" width="800">
+
+# Origins
+CurbLR is based on the design and thinking laid out in [CurbSpec](https://github.com/jfh01/CurbSpec). At SharedStreets, we spoke with a handful of cities across the US, reviewed their parking regulation datasets, conducted field mapping in a local area to experience data collection, and converted an [initial dataset of ~35,000 Los Angeles parking zones](/conversions) into the CurbSpec format. To our knowledge, this was the first attempt to convert a curb regulation dataset into CurbSpec. When trying to convert GIS data into the spec, we realized that several significant modifications were needed, including:
+- Adding location information for the regulation (both geographic and with the [SharedStreets linear referencing system](https://sharedstreets.io/how-the-sharedstreets-referencing-system-works/).
+- Structuring regulations as a GeoJSON, and in a flatter manner (one curb activity per feature)
+- Using a well-known values approach to avoid free-form text where possible
+- Adding metadata to describe the agency that created the data, and other relevant aspects that apply across a CurbLR feed
+- Adding a structured, but optional, place for data such as payment information and asset information, which is required for some consumption efforts
+
+The addition of linear-referenced location information was a significant change that is critical to how the spec functions. Because of this change, we chose to rename this spec as CurbLR.
+
 
 
 # Potential future enhancements
