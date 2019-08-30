@@ -4,6 +4,8 @@ import * as curblr from './curblr'
 import { CurbFeature, Location, Regulation, Rule, UserClass, TimeSpan, TimesOfDay, DaysOfWeek, Payment, Rates, CurbProperties } from "./curblr";
 import { FeatureCollection, featureCollection } from "@turf/helpers";
 
+/// shst match filtered_meters.geojson --buffer-points --buffer-merge --buffer-merge-match-fields=priority,zone,reason,classes,days_of_week.days_a,time_of_day.from_a,time_of_day.to_a,days_of_week.days_b,time_of_day.from_b,time_of_day.to_b,days_of_week.days_c,time_of_day.from_c,time_of_day.to_c,days_of_week.days_d,time_of_day.from_d,time_of_day.to_d,payment_min,payment_min_interval,payment_max,payment_max_interval,time_limit,method,payment_form --buffer-merge-group-fields=space_id --offset-line=5 --search-radius=20 --buffer-points-length=6
+
 
 var geoJsonData = fs.readFileSync("filtered_meters.buffered.merged.geojson", "utf8");
 
@@ -76,7 +78,7 @@ for(var feature of fc.features) {
             var days:any[] = (feature.properties['pp_days_of_week.days' + timeSuffix]).split(','); // TODO check valid days names?
             daysOfWeek.days = days.map((d) => {return d.toLocaleLowerCase()});
             
-            timeSpan.daysOfWeek = [daysOfWeek];
+            timeSpan.daysOfWeek = daysOfWeek;
             includeTimespan =true;
         }
 
@@ -129,4 +131,5 @@ for(var f of curbFeatures.values()) {
     collection.features.push(f);
 }
 
-console.log(JSON.stringify(collection));
+
+fs.writeFileSync("la_curblr.geojson", JSON.stringify(collection), "utf8");
