@@ -37,6 +37,7 @@ The following is a suggested but not exhaustive list of values for `classes`. It
 - `commercial`
 - `compact`
 - `construction`
+- `diplomat`
 - `electric`
 - `emergency`
 - `food truck`
