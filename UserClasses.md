@@ -31,6 +31,7 @@ It is possible for a given curb segment to have multiple regulations that apply,
 The following is a suggested but not exhaustive list of values for `classes`. It is up to a particular jurisdiction to define exactly which vehicles, user, purposes, or permits are required for each value. Multiple values may be specified in an array. If multiple well-known values apply, the most descriptive should be used (e.g. for food truck parking, `food truck` should be used rather than `truck`)
 
 - `bicycle`
+- `bikeshare`
 - `bus`
 - `car share`
 - `carpool`
