@@ -68,8 +68,8 @@ These categories are described below:
 | GeoJsonProperties.[Location](Location.md) | Required | Describes the location (street-linked point or street segment) **where** the regulation applies, using geographic information and linear referencing. |
 | GeoJsonProperties.[Regulations](Regulations.md) | Required | Describes the curb usage regulation(s) that are in place for the location |
 | GeoJsonProperties.Regulations.[Rule](Rule.md) | Required | Determines **what** is allowed or forbidden in the zone during a particular period of time |
-| GeoJsonProperties.Regulations.[UserClasses](UserClasses.md) | If applicable | Defines **who** the regulations applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
-| GeoJsonProperties.Regulations.[TimeSpans](TimeSpans.md) | If applicable | Defines the time period **when** a zone regulation is in effect |
+| GeoJsonProperties.Regulations.[UserClasses](UserClasses.md) | Optional | Defines **who** the regulations applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
+| GeoJsonProperties.Regulations.[TimeSpans](TimeSpans.md) | Optional | Defines the time period **when** a zone regulation is in effect |
 | GeoJsonProperties.Regulations.[Payment](Payment.md) | Optional | Provides a structure to store additional information about fees that may be required in order to use a given curbspace |
 | GeoJsonProperties.Regulations.[Priority](Priority.md) | Required | Defines how overlapping regulations relate to one another (i.e. which one takes **priority**)
 
