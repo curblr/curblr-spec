@@ -9,11 +9,11 @@ The manifest JSON object may contain the following properties:
 | Field name | Importance  | Type | Description | Example |
 | :---: | :--- | :--- | :--- | :--- |
 | createdDate | Required | `string` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) | Timestamp when this CurbLR feed was created from asset data | `2019-08-15T21:17:41-05:00` |
-| lastUpdatedDate | If applicable | `string` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) | Date when this CurbLR feed was updated from asset data. Does not apply if this is the initial CurbLR feed for an area | `2019-08-20T15:33:02-05:00` |
+| lastUpdatedDate | Optional | `string` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) | Date when this CurbLR feed was updated from asset data. Does not apply if this is the initial CurbLR feed for an area | `2019-08-20T15:33:02-05:00` |
 | timeZone | Required | `enum` (`string`) Possible values are listed in [tz database](https://www.iana.org/time-zones) | Defines the timezone for the local area covered by the CurbLR feed | `Europe/London`
 | currency | Required | `string` Possible values are listed in [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) | Local currency, for interpreting payment information | `USD`
-| unitHeightLength | Required | `string` (for most countries, this will be `feet` or `metres`) | Defines the unit of measure used to describe maximum and minimum vehicle height and length restrictions in the [UserClasses](UserClasses.md) | `feet`, `metres` |
-| unitWeight | Required | `string` (well-known values: `tons`, `tonnes`, `pounds`, `kilograms`) | Defines the unit of measure used to describe maximum and minimum vehicle weight restrictions in the [UserClasses](UserClasses.md) | `tons` |
+| unitHeightLength | Optional | `string` (for most countries, this will be `feet` or `metres`) | Defines the unit of measure used to describe maximum and minimum vehicle height and length restrictions in the [UserClasses](UserClasses.md) | `feet`, `metres` |
+| unitWeight | Optional | `string` (well-known values: `tons`, `tonnes`, `pounds`, `kilograms`) | Defines the unit of measure used to describe maximum and minimum vehicle weight restrictions in the [UserClasses](UserClasses.md) | `tons` |
 | authority | Required | object | Defines which government authority regulates the curbspace described by the individual CurbLR feed. Many cities conducting data collection will only survey the areas that they regulate, so storing this as a universal property helps to reduce the size of the GeoJSON. If an override or exception is needed, this can be stored in the [rule](Rule.md) as a property that describes the activity being permitted or forbidden | |
 | authority.name | Required | `string` | Name of agency | `City of London`
 | authority.url | Required | `string` (web link) | Link to the regulatory agency's domain | `https://vancouver.ca`
