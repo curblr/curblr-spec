@@ -22,7 +22,7 @@ export class Location {
     shstRefId:string;
     shstLocationStart:number;
     shstLocationEnd:number;
-    sideOfStreet:"left"|"right";
+    sideOfStreet:"left"|"right"|"unknown";
     objectId?:string;
     derivedFrom?:string;
     marker?:string;
