@@ -1,9 +1,9 @@
 # About images
 
-The images array gives links to pictures of the given resource. 
+The images array is an optional field that provides links to photo(s) of the given resource. For example, this could link to photo(s) of a sign, parking meter, fire hydrant, curb paint, or other physical street asset that conveys the regulation to curbspace users.
 
 
-# Examples
+# Example
 
 ```json
 {
