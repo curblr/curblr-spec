@@ -71,7 +71,8 @@ These categories are described below:
 | GeoJsonProperties.Regulations.[UserClasses](UserClasses.md) | Optional | Defines **who** the regulations applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
 | GeoJsonProperties.Regulations.[TimeSpans](TimeSpans.md) | Optional | Defines the time period **when** a zone regulation is in effect |
 | GeoJsonProperties.Regulations.[Payment](Payment.md) | Optional | Provides a structure to store additional information about fees that may be required in order to use a given curbspace |
-| GeoJsonProperties.Regulations.[Priority](Priority.md) | Required | Defines how overlapping regulations relate to one another (i.e. which one takes **priority**)
+| GeoJsonProperties.Regulations.[Priority](Priority.md) | Required | Defines how overlapping regulations relate to one another (i.e. which one takes **priority**)|
+| GeoJsonProperties.[Images](Images.md) | Optional | Provides link(s) to image(s) of street assets that communicate the regulations to curbspace users, such as a street sign, parking meter, or fire hydrant |
 
 
 The feed as a whole is a JSON file. The curb geometries and properties are stored as GeoJSON features that form one GeoJSON object. Above this in the file, the CurbLR feed will contain metadata properties, stored as a [manifest](Manifest.md), which is a JSON object.
