@@ -73,6 +73,9 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
         ],
         "priority": 4
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/time_limit_with_permit_exemption.jpg"
     ]
   }
 }
@@ -182,6 +185,9 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
         ],
         "priority": 4
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/time_limit_with_permit_exemption_multiple.jpg"
     ]
   }
 }
@@ -256,6 +262,9 @@ Between December 1st and April 1st of each year, no one may park between 3am and
         ],
         "priority": 2
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/snow_removal.jpg"
     ]
   }
 }
@@ -358,6 +367,9 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
         ],
         "priority": 4
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/dual_use_rush_hour.jpg"
     ]
   }
 }
@@ -467,6 +479,9 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
         ],
         "priority": 4
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/complex_time_use.jpg"
     ]
   }
 }
@@ -597,6 +612,9 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
         ],
         "priority": 4
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/permit_meter_complex_payment.jpg"
     ]
   }
 }
@@ -605,7 +623,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
 # School loading zone, time limited parking with permit exemption, and multiple no parking periods
 On school days only 5 minute passenger loading is permitted from 6:30am to 9am and from 1:30pm to 4pm. No vehicles may park between 6pm and 8am daily due to overnight parking restrictions, or between 10am and 1pm on Monday for street cleaning. Between 8am and 6pm, vehicles without a Zone 64 permit are limited to 2 hours.
 
-_[Editor's Note: The school day regulation overlaps with both the overnight no parking and the 2 hour allowed parking regulations. To avoid ambiguity about which rule is in effect, the school day regulation is given a higher priority than the other regulations.]_
+_[Editor's Note: The school day regulation overlaps with both the overnight no parking and the 2-hour allowed parking regulations. To avoid ambiguity about which rule is in effect, the school day regulation is given a higher priority than the other regulations.]_
 
 ### **Sign**
 
@@ -738,6 +756,9 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
         ],
         "priority": 4
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/tower_of_signs.jpg"
     ]
   }
 }
