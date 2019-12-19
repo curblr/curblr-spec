@@ -69,6 +69,8 @@ for (var feature of input.features) {
       //replace only tackles the first character to be replaced. if there are mutliple underscores (chars to be replaced) in a field, use a regex:
       activity = activity.replace(/_/g,' ')
 
+      reason = reason.replace(/_/g,' ')
+
       // don't show the properties that are null
       if (payment === "true") {
         payment = true;
@@ -340,7 +342,7 @@ for (var feature of input.features) {
           ]
         });
 
-      } else if (opening_hours === "20:00-23:59; 00:00-10:00") {
+      } else if (opening_hours === "20:00-23:59, 00:00-10:00") {
         timesOfDayFrom = "20:00";
         timesOfDayTo = "23:59";
         secondTimesFrom = "00:00";
@@ -470,7 +472,7 @@ for (var feature of input.features) {
           ]
         });
 
-      } else if (opening_hours === "20:00-23:59; 00:00-10:00") {
+      } else if (opening_hours === "20:00-23:59, 00:00-10:00") {
         timesOfDayFrom = "20:00";
         timesOfDayTo = "23:59";
         secondTimesFrom = "00:00";

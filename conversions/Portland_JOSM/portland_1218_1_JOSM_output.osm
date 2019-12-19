@@ -7,7 +7,7 @@
   <bounds minlat='45.52035' minlon='-122.679' maxlat='45.52175' maxlon='-122.676' origin='CGImap 0.7.5 (21408 thorn-01.openstreetmap.org)' />
   <bounds minlat='45.5203' minlon='-122.676' maxlat='45.52175' maxlon='-122.674' origin='CGImap 0.7.5 (3494 thorn-03.openstreetmap.org)' />
   <node id='-103024' action='modify' lat='45.52105044756' lon='-122.68045976892'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='barrier' />
     <tag k='point_relation' v='1' />
@@ -15,7 +15,7 @@
     <tag k='reason' v='construction' />
   </node>
   <node id='-103026' action='modify' lat='45.52130696899' lon='-122.68128790096'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='barrier' />
     <tag k='point_relation' v='3' />
@@ -23,7 +23,7 @@
     <tag k='reason' v='construction' />
   </node>
   <node id='-103028' action='modify' lat='45.52047820418' lon='-122.68077157706'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='barrier' />
     <tag k='point_relation' v='3' />
@@ -39,7 +39,7 @@
     <tag k='reason' v='fire_hydrant' />
   </node>
   <node id='-103032' action='modify' lat='45.52065767716' lon='-122.68161177904'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='barrier' />
     <tag k='point_relation' v='1' />
@@ -47,7 +47,7 @@
     <tag k='reason' v='construction' />
   </node>
   <node id='-103034' action='modify' lat='45.52108051607' lon='-122.68047720328'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='barrier' />
     <tag k='point_relation' v='1' />
@@ -55,7 +55,7 @@
     <tag k='reason' v='construction' />
   </node>
   <node id='-103036' action='modify' lat='45.52045847151' lon='-122.68081784517'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='barrier' />
     <tag k='point_relation' v='3' />
@@ -236,7 +236,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-103339' action='modify' lat='45.52109085164' lon='-122.6803645505'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -245,7 +245,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-103372' action='modify' lat='45.52097762486' lon='-122.67993539706'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -319,7 +319,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-103417' action='modify' lat='45.52106830027' lon='-122.679857613'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -422,7 +422,7 @@
     <tag k='reason' v='curb_cut' />
   </node>
   <node id='-103469' action='modify' lat='45.52102319749' lon='-122.67982676759'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -581,7 +581,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-103528' action='modify' lat='45.52088553984' lon='-122.67976574733'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -652,7 +652,7 @@
     <tag k='reason' v='fire_hydrant' />
   </node>
   <node id='-103619' action='modify' lat='45.52041712544' lon='-122.68068239227'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -821,14 +821,14 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-103708' action='modify' lat='45.52072908893' lon='-122.67998501793'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103711' action='modify' lat='45.52078922627' lon='-122.67995283142'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -851,31 +851,31 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-103719' action='modify' lat='45.52038094884' lon='-122.68021971121'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103722' action='modify' lat='45.52036967302' lon='-122.68017344311'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103724' action='modify' lat='45.52089070788' lon='-122.67995417252'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103729' action='modify' lat='45.52087990198' lon='-122.67991058662'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103733' action='modify' lat='45.52104105068' lon='-122.68041283026'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='barrier' />
     <tag k='point_relation' v='1' />
@@ -883,7 +883,7 @@
     <tag k='reason' v='construction' />
   </node>
   <node id='-103735' action='modify' lat='45.52045283219' lon='-122.68074944749'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='barrier' />
     <tag k='point_relation' v='3' />
@@ -939,7 +939,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-103748' action='modify' lat='45.52115944535' lon='-122.68054694071'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -948,7 +948,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-103750' action='modify' lat='45.52122475024' lon='-122.6808040975'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -1118,13 +1118,13 @@
     <tag k='priority' v='3' />
   </node>
   <node id='-103783' action='modify' lat='45.52061116317' lon='-122.68162049487'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103785' action='modify' lat='45.52041947457' lon='-122.68087819352'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -1146,32 +1146,32 @@
     <tag k='reason' v='curb_cut' />
   </node>
   <node id='-103803' action='modify' lat='45.52031094471' lon='-122.6803055419'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103805' action='modify' lat='45.52027993613' lon='-122.68034041062'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103807' action='modify' lat='45.52036732388' lon='-122.68070921436'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103809' action='modify' lat='45.52056465056' lon='-122.67899796501'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-103811' action='modify' lat='45.52012489301' lon='-122.67925411597'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -1252,7 +1252,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-106421' action='modify' lat='45.52036121614' lon='-122.68086344138'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -1351,7 +1351,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-106461' action='modify' lat='45.51996750127' lon='-122.68196851283'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -1359,7 +1359,7 @@
     <tag k='reason' v='transit_lane' />
   </node>
   <node id='-106475' action='modify' lat='45.51975325857' lon='-122.68117055565'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -1369,7 +1369,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106477' action='modify' lat='45.51995810468' lon='-122.68197119504'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -1379,7 +1379,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106502' action='modify' lat='45.51974010329' lon='-122.68111691147'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -1389,7 +1389,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106504' action='modify' lat='45.51961700731' lon='-122.68063679606'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -1399,7 +1399,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106509' action='modify' lat='45.51959633468' lon='-122.680559012'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -1409,7 +1409,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106512' action='modify' lat='45.51936799553' lon='-122.67971411616'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -1419,7 +1419,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106518' action='modify' lat='45.51908562423' lon='-122.67872974545'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -1429,7 +1429,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106521' action='modify' lat='45.51930926618' lon='-122.67952636153'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -1439,7 +1439,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106530' action='modify' lat='45.51907622749' lon='-122.68146023423'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -1449,7 +1449,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106537' action='modify' lat='45.51895218944' lon='-122.6809881641'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -1459,7 +1459,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106548' action='modify' lat='45.51909877873' lon='-122.68154069915'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -1469,7 +1469,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106552' action='modify' lat='45.51930738684' lon='-122.68231317669'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -1515,7 +1515,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-106599' action='modify' lat='45.51893151751' lon='-122.68089562923'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -1525,7 +1525,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-106604' action='modify' lat='45.51872196832' lon='-122.68002726272'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -1595,7 +1595,7 @@
     <tag k='user_classes' v='hotel_guest' />
   </node>
   <node id='-106641' action='modify' lat='45.52009811374' lon='-122.67968327075'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -1605,7 +1605,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-106643' action='modify' lat='45.52012818275' lon='-122.67980799347'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -1647,7 +1647,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-106687' action='modify' lat='45.5202602034' lon='-122.68010370567'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -1655,14 +1655,14 @@
     <tag k='user_classes' v='taxi' />
   </node>
   <node id='-106689' action='modify' lat='45.52022167755' lon='-122.67995350197'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
     <tag k='user_classes' v='taxi' />
   </node>
-  <node id='-106699' action='modify' lat='45.52008166974' lon='-122.67943516642'>
+  <node id='-106699' action='modify' lat='45.52008307923' lon='-122.67943281949'>
     <tag k='activity' v='parking' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
@@ -1793,14 +1793,14 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-106720' action='modify' lat='45.52003421609' lon='-122.67939962581'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-106722' action='modify' lat='45.51996045289' lon='-122.67915085092'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -1825,7 +1825,7 @@
     <tag k='priority' v='3' />
   </node>
   <node id='-106730' action='modify' lat='45.51986272824' lon='-122.67938956753'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -1833,7 +1833,7 @@
     <tag k='user_classes' v='taxi' />
   </node>
   <node id='-106732' action='modify' lat='45.51992709497' lon='-122.67935872212'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -1974,28 +1974,28 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-106850' action='modify' lat='45.51950048779' lon='-122.6795823513'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='bulb_out' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-106852' action='modify' lat='45.51949719895' lon='-122.67950020865'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-106854' action='modify' lat='45.51992850446' lon='-122.67936274543'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-106856' action='modify' lat='45.51993508208' lon='-122.67927490309'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -2024,7 +2024,7 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='max_stay' v='30' />
-    <tag k='opening_hours' v='20:00-23:59; 00:00-10:00' />
+    <tag k='opening_hours' v='20:00-23:59, 00:00-10:00' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='3' />
   </node>
@@ -2033,56 +2033,17 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='max_stay' v='30' />
-    <tag k='opening_hours' v='20:00-23:59; 00:00-10:00' />
+    <tag k='opening_hours' v='20:00-23:59, 00:00-10:00' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='3' />
   </node>
-  <node id='-106946' action='modify' lat='45.52008354811' lon='-122.67943248286'>
+  <node id='-106949' action='modify' lat='45.51995669425' lon='-122.67915219203'>
     <tag k='activity' v='parking' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='max_stay' v='120' />
-    <tag k='opening_hours' v='Mo-Sa 08:00-19:00; Su 13:00-19:00' />
-    <tag k='payment' v='true' />
-    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
-    <tag k='payment_method' v='pay_station, digital' />
-    <tag k='payment_phone' v='+15032785410' />
-    <tag k='payment_rate:durations' v='15' />
-    <tag k='payment_rate:fees' v='0.50' />
-    <tag k='payment_zone' v='1002' />
-    <tag k='point_relation' v='3' />
-    <tag k='priority' v='4' />
-  </node>
-  <node id='-106949' action='modify' lat='45.51995575459' lon='-122.67915219203'>
-    <tag k='activity' v='parking' />
-    <tag k='bays_angle' v='parallel' />
-    <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
-    <tag k='opening_hours' v='Mo-Sa 00:00-07:00; 18:00-23:59' />
-    <tag k='payment' v='true' />
-    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
-    <tag k='payment_method' v='pay_station, digital' />
-    <tag k='payment_phone' v='+15032785410' />
-    <tag k='payment_rate:durations' v='15' />
-    <tag k='payment_rate:fees' v='0.50' />
-    <tag k='payment_zone' v='1002' />
+    <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
-    <tag k='priority' v='4' />
-  </node>
-  <node id='-106953' action='modify' lat='45.51975184814' lon='-122.67842397228'>
-    <tag k='activity' v='parking' />
-    <tag k='bays_angle' v='parallel' />
-    <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
-    <tag k='opening_hours' v='Mo-Sa 00:00-07:00; 18:00-23:59' />
-    <tag k='payment' v='true' />
-    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
-    <tag k='payment_method' v='pay_station, digital' />
-    <tag k='payment_phone' v='+15032785410' />
-    <tag k='payment_rate:durations' v='15' />
-    <tag k='payment_rate:fees' v='0.50' />
-    <tag k='payment_zone' v='1002' />
-    <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-106956' action='modify' lat='45.51967291641' lon='-122.68054023519'>
@@ -2419,28 +2380,28 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-107030' action='modify' lat='45.51903863958' lon='-122.68091306224'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107032' action='modify' lat='45.51952444929' lon='-122.6806636168'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107034' action='modify' lat='45.51954324261' lon='-122.68061265483'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107036' action='modify' lat='45.5190414586' lon='-122.680871488'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -2600,49 +2561,49 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-107089' action='modify' lat='45.51915797908' lon='-122.68143072993'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107091' action='modify' lat='45.5196663397' lon='-122.68117860228'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107093' action='modify' lat='45.52019113971' lon='-122.68026463956'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107095' action='modify' lat='45.51967338718' lon='-122.68054560095'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107097' action='modify' lat='45.51967996342' lon='-122.68059186704'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107099' action='modify' lat='45.52018878916' lon='-122.68031962283'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107102' action='modify' lat='45.51917536184' lon='-122.67977211792'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -2667,7 +2628,7 @@
     <tag k='user_classes' v='passenger' />
   </node>
   <node id='-107109' action='modify' lat='45.5188854724' lon='-122.67989918724'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -2822,14 +2783,14 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-107156' action='modify' lat='45.52006663429' lon='-122.6792044951'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-107158' action='modify' lat='45.52033631534' lon='-122.6790569736'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -2850,7 +2811,7 @@
     <tag k='priority' v='2' />
   </node>
   <node id='-110974' action='modify' lat='45.51881076801' lon='-122.68100828066'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='bulb_out' />
     <tag k='point_relation' v='1' />
@@ -3038,28 +2999,28 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-111048' action='modify' lat='45.51803247393' lon='-122.68050871924'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-111050' action='modify' lat='45.51821078011' lon='-122.68117189542'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-111052' action='modify' lat='45.518083922' lon='-122.68047183886'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-111054' action='modify' lat='45.51817883068' lon='-122.68086210028'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -3133,7 +3094,7 @@
     <tag k='priority' v='3' />
   </node>
   <node id='-111072' action='modify' lat='45.51853215265' lon='-122.6800963296'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='max_stay' v='5' />
@@ -3141,7 +3102,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-111077' action='modify' lat='45.51840717466' lon='-122.68015667931'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='max_stay' v='5' />
@@ -3149,7 +3110,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-111079' action='modify' lat='45.5185293336' lon='-122.68008560077'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='bulb_out' />
     <tag k='point_relation' v='3' />
@@ -3196,7 +3157,7 @@
     <tag k='reason' v='fire_hydrant' />
   </node>
   <node id='-111088' action='modify' lat='45.51851711772' lon='-122.68002525107'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='bulb_out' />
     <tag k='point_relation' v='3' />
@@ -3336,28 +3297,28 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-111159' action='modify' lat='45.51786873339' lon='-122.67989248306'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-111161' action='modify' lat='45.51790679099' lon='-122.680039334'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-111170' action='modify' lat='45.51798454917' lon='-122.68010269918'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-111172' action='modify' lat='45.51792440883' lon='-122.67989415743'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='1' />
@@ -3445,14 +3406,14 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-111199' action='modify' lat='45.51780671354' lon='-122.67945662409'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='paint' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-111207' action='modify' lat='45.51775408917' lon='-122.67949014969'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='paint' />
     <tag k='point_relation' v='3' />
@@ -3507,33 +3468,33 @@
     <tag k='priority' v='3' />
   </node>
   <node id='-111223' action='modify' lat='45.51792464375' lon='-122.68011443384'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-111226' action='modify' lat='45.51801250501' lon='-122.68020764061'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-111228' action='modify' lat='45.517833025' lon='-122.67936408788'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-111239' action='modify' lat='45.51838556283' lon='-122.67905563384'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-111242' action='modify' lat='45.51836864849' lon='-122.67897919089'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -3541,7 +3502,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-111244' action='modify' lat='45.51781611049' lon='-122.67928764492'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -3584,7 +3545,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-111288' action='modify' lat='45.51849221611' lon='-122.67938889698'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -3593,7 +3554,7 @@
     <tag k='user_subclasses' v='TriMet' />
   </node>
   <node id='-111290' action='modify' lat='45.51842925725' lon='-122.67916090921'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3602,21 +3563,21 @@
     <tag k='user_subclasses' v='TriMet' />
   </node>
   <node id='-114863' action='modify' lat='45.5190358215' lon='-122.67869219452'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-114865' action='modify' lat='45.51847765194' lon='-122.6789845553'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-114867' action='modify' lat='45.51902266605' lon='-122.67864927918'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -3624,7 +3585,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-114869' action='modify' lat='45.5184682551' lon='-122.67894968659'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -3646,7 +3607,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-114876' action='modify' lat='45.51840494384' lon='-122.67888229608'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -3656,7 +3617,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-114878' action='modify' lat='45.5181885809' lon='-122.67807428062'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -3666,7 +3627,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-114896' action='modify' lat='45.51809296747' lon='-122.67796632171'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -3675,7 +3636,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-114898' action='modify' lat='45.51753173454' lon='-122.6782754463'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3684,7 +3645,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-114902' action='modify' lat='45.51819515872' lon='-122.67790932477'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3693,7 +3654,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-114904' action='modify' lat='45.5187394708' lon='-122.67761361122'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -3702,7 +3663,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-114906' action='modify' lat='45.51872819464' lon='-122.67756667257'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -3710,7 +3671,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-114908' action='modify' lat='45.5181801237' lon='-122.67785299838'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3718,7 +3679,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-114919' action='modify' lat='45.51807699273' lon='-122.67789926648'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -3726,7 +3687,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-114921' action='modify' lat='45.51751575964' lon='-122.67818961561'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3734,7 +3695,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-114924' action='modify' lat='45.51811681211' lon='-122.67784059316'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -3742,7 +3703,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-114926' action='modify' lat='45.51790068298' lon='-122.67702251941'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3770,28 +3731,28 @@
     <tag k='user_subclasses' v='commercial' />
   </node>
   <node id='-114954' action='modify' lat='45.51818118085' lon='-122.678210738'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-114959' action='modify' lat='45.51784712042' lon='-122.67682001263'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-114961' action='modify' lat='45.51763850783' lon='-122.67603948981'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-114966' action='modify' lat='45.51759058321' lon='-122.67607435852'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3799,7 +3760,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-114968' action='modify' lat='45.51780107537' lon='-122.67684683472'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -3823,14 +3784,14 @@
     <tag k='priority' v='3' />
   </node>
   <node id='-114976' action='modify' lat='45.51840905497' lon='-122.67667785555'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-114978' action='modify' lat='45.5180143858' lon='-122.67689779669'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3935,7 +3896,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-115005' action='modify' lat='45.51786062853' lon='-122.67703492462'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3943,7 +3904,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-115007' action='modify' lat='45.51808451025' lon='-122.67785903335'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -3951,14 +3912,14 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-115036' action='modify' lat='45.51839402' lon='-122.67657861382'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-115038' action='modify' lat='45.51802190333' lon='-122.67679184944'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -3983,7 +3944,7 @@
     <tag k='user_classes' v='tour_bus' />
   </node>
   <node id='-115047' action='modify' lat='45.51860732819' lon='-122.67678916723'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='bulb_out' />
     <tag k='point_relation' v='3' />
@@ -4003,7 +3964,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-115058' action='modify' lat='45.51854401709' lon='-122.67670568347'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -4013,7 +3974,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-115060' action='modify' lat='45.51875708979' lon='-122.67750833452'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -4053,7 +4014,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-115079' action='modify' lat='45.51880148962' lon='-122.67771553516'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='1' />
@@ -4063,7 +4024,7 @@
     <tag k='user_subclasses' v='streetcar' />
   </node>
   <node id='-115081' action='modify' lat='45.51901456135' lon='-122.67851818621'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -4089,14 +4050,14 @@
     <tag k='priority' v='3' />
   </node>
   <node id='-115105' action='modify' lat='45.5191673758' lon='-122.67629396439'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-115107' action='modify' lat='45.5186524329' lon='-122.67655045062'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -4152,28 +4113,28 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-117848' action='modify' lat='45.51939383549' lon='-122.67706006899'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-117850' action='modify' lat='45.51921247913' lon='-122.6764069511'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-117853' action='modify' lat='45.51944645691' lon='-122.67702251807'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-117857' action='modify' lat='45.51926416105' lon='-122.67638012901'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -4381,21 +4342,21 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-117913' action='modify' lat='45.5197198996' lon='-122.67803639308'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-117915' action='modify' lat='45.51953854429' lon='-122.67739534512'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-117917' action='modify' lat='45.51967479574' lon='-122.67791032925'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='1' />
@@ -4403,7 +4364,7 @@
     <tag k='reason' v='curb_cut' />
   </node>
   <node id='-117919' action='modify' lat='45.51965788178' lon='-122.67784461513'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='3' />
@@ -4411,7 +4372,7 @@
     <tag k='reason' v='curb_cut' />
   </node>
   <node id='-117929' action='modify' lat='45.51962781252' lon='-122.67772324517'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='1' />
@@ -4419,7 +4380,7 @@
     <tag k='reason' v='curb_cut' />
   </node>
   <node id='-117931' action='modify' lat='45.51960901922' lon='-122.67765082553'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='3' />
@@ -4436,14 +4397,14 @@
     <tag k='priority' v='3' />
   </node>
   <node id='-117935' action='modify' lat='45.51966633876' lon='-122.67807930842'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-117938' action='modify' lat='45.51950189729' lon='-122.67744228378'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -4470,7 +4431,7 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='max_stay' v='30' />
-    <tag k='opening_hours' v='20:00-23:59; 00:00-10:00' />
+    <tag k='opening_hours' v='20:00-23:59, 00:00-10:00' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='3' />
   </node>
@@ -4479,7 +4440,7 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='max_stay' v='30' />
-    <tag k='opening_hours' v='20:00-23:59; 00:00-10:00' />
+    <tag k='opening_hours' v='20:00-23:59, 00:00-10:00' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='3' />
   </node>
@@ -4525,91 +4486,27 @@
     <tag k='priority' v='1' />
     <tag k='reason' v='fire_hydrant' />
   </node>
-  <node id='-117959' action='modify' lat='45.519890919' lon='-122.67866872519'>
+  <node id='-117959' action='modify' lat='45.51988481121' lon='-122.67867207795'>
     <tag k='activity' v='no_parking' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
-  <node id='-117961' action='modify' lat='45.5198740051' lon='-122.67860301107'>
+  <node id='-117961' action='modify' lat='45.5198709512' lon='-122.67860468745'>
     <tag k='activity' v='no_parking' />
     <tag k='bays_angle' v='parallel' />
-    <tag k='point_relation' v='3' />
-    <tag k='priority' v='4' />
-  </node>
-  <node id='-117972' action='modify' lat='45.52000226771' lon='-122.67913274601'>
-    <tag k='activity' v='parking' />
-    <tag k='bays_angle' v='parallel' />
-    <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
-    <tag k='opening_hours' v='Mo-Sa 00:00-07:00; 18:00-23:59' />
-    <tag k='payment' v='true' />
-    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
-    <tag k='payment_method' v='pay_station, digital' />
-    <tag k='payment_phone' v='+15032785410' />
-    <tag k='payment_rate:durations' v='15' />
-    <tag k='payment_rate:fees' v='0.50' />
-    <tag k='payment_zone' v='1002' />
-    <tag k='point_relation' v='1' />
-    <tag k='priority' v='4' />
-  </node>
-  <node id='-117974' action='modify' lat='45.51988668958' lon='-122.67867140606'>
-    <tag k='activity' v='parking' />
-    <tag k='bays_angle' v='parallel' />
-    <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
-    <tag k='opening_hours' v='Mo-Sa 00:00-07:00; 18:00-23:59' />
-    <tag k='payment' v='true' />
-    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
-    <tag k='payment_method' v='pay_station, digital' />
-    <tag k='payment_phone' v='+15032785410' />
-    <tag k='payment_rate:durations' v='15' />
-    <tag k='payment_rate:fees' v='0.50' />
-    <tag k='payment_zone' v='1002' />
-    <tag k='point_relation' v='3' />
-    <tag k='priority' v='4' />
-  </node>
-  <node id='-117976' action='modify' lat='45.51986413773' lon='-122.67860569194'>
-    <tag k='activity' v='parking' />
-    <tag k='bays_angle' v='parallel' />
-    <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
-    <tag k='opening_hours' v='Mo-Sa 00:00-07:00; 18:00-23:59' />
-    <tag k='payment' v='true' />
-    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
-    <tag k='payment_method' v='pay_station, digital' />
-    <tag k='payment_phone' v='+15032785410' />
-    <tag k='payment_rate:durations' v='15' />
-    <tag k='payment_rate:fees' v='0.50' />
-    <tag k='payment_zone' v='1002' />
-    <tag k='point_relation' v='1' />
-    <tag k='priority' v='4' />
-  </node>
-  <node id='-117978' action='modify' lat='45.51982373229' lon='-122.67846085265'>
-    <tag k='activity' v='parking' />
-    <tag k='bays_angle' v='parallel' />
-    <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
-    <tag k='opening_hours' v='Mo-Sa 00:00-07:00; 18:00-23:59' />
-    <tag k='payment' v='true' />
-    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
-    <tag k='payment_method' v='pay_station, digital' />
-    <tag k='payment_phone' v='+15032785410' />
-    <tag k='payment_rate:durations' v='15' />
-    <tag k='payment_rate:fees' v='0.50' />
-    <tag k='payment_zone' v='1002' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-117982' action='modify' lat='45.51983078069' lon='-122.67845481902'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
-  <node id='-117984' action='modify' lat='45.51999710053' lon='-122.67913475901'>
-    <tag k='activity' v='no_stopping' />
+  <node id='-117984' action='modify' lat='45.51999768782' lon='-122.67913484283'>
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -4629,22 +4526,6 @@
     <tag k='payment_rate:fees' v='0.50' />
     <tag k='payment_zone' v='1002' />
     <tag k='point_relation' v='3' />
-    <tag k='priority' v='4' />
-  </node>
-  <node id='-117989' action='modify' lat='45.52021650945' lon='-122.6770486696'>
-    <tag k='activity' v='parking' />
-    <tag k='bays_angle' v='parallel' />
-    <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
-    <tag k='opening_hours' v='Mo-Sa 08:00-19:00; Su 13:00-19:00' />
-    <tag k='payment' v='true' />
-    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
-    <tag k='payment_method' v='pay_station, digital' />
-    <tag k='payment_phone' v='+15032785410' />
-    <tag k='payment_rate:durations' v='15' />
-    <tag k='payment_rate:fees' v='0.50' />
-    <tag k='payment_zone' v='1002' />
-    <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-117991' action='modify' lat='45.52027288873' lon='-122.67724983528'>
@@ -4681,14 +4562,14 @@
     <tag k='user_classes' v='police' />
   </node>
   <node id='-118009' action='modify' lat='45.52021134135' lon='-122.67705202236'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-118011' action='modify' lat='45.52037578075' lon='-122.67769172921'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -4711,7 +4592,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-118019' action='modify' lat='45.52016271419' lon='-122.67705235764'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -4752,7 +4633,7 @@
     <tag k='user_classes' v='hotel_guest' />
   </node>
   <node id='-118030' action='modify' lat='45.52022731549' lon='-122.67731152609'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='1' />
@@ -4760,7 +4641,7 @@
     <tag k='reason' v='curb_cut' />
   </node>
   <node id='-118032' action='modify' lat='45.5202446991' lon='-122.67737656966'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='3' />
@@ -4786,14 +4667,14 @@
     <tag k='priority' v='3' />
   </node>
   <node id='-118038' action='modify' lat='45.52031752228' lon='-122.67767027154'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-118049' action='modify' lat='45.52005535934' lon='-122.67668254942'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -4801,7 +4682,7 @@
     <tag k='user_classes' v='taxi' />
   </node>
   <node id='-118051' action='modify' lat='45.52002341096' lon='-122.67656855553'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -4875,35 +4756,35 @@
     <tag k='user_classes' v='motorcycle' />
   </node>
   <node id='-118074' action='modify' lat='45.52004596276' lon='-122.67668590218'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-118076' action='modify' lat='45.51988058273' lon='-122.67605021864'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-118086' action='modify' lat='45.52009670425' lon='-122.67665908009'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-118088' action='modify' lat='45.51994072098' lon='-122.67598852783'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
   <node id='-118090' action='modify' lat='45.51993132438' lon='-122.67599657446'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -4912,7 +4793,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118092' action='modify' lat='45.52010422151' lon='-122.67664835125'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -4920,7 +4801,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118110' action='modify' lat='45.51968701231' lon='-122.67828181654'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -4928,7 +4809,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118112' action='modify' lat='45.51916455679' lon='-122.6785661307'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -4936,7 +4817,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118114' action='modify' lat='45.52032973871' lon='-122.67794519931'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -4944,7 +4825,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118116' action='modify' lat='45.51980540983' lon='-122.67821878463'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -4952,14 +4833,14 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118120' action='modify' lat='45.5191607981' lon='-122.67863050371'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-118122' action='modify' lat='45.51969828828' lon='-122.67835691839'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -5006,7 +4887,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-118269' action='modify' lat='45.52003468686' lon='-122.67817922205'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='1' />
@@ -5014,7 +4895,7 @@
     <tag k='reason' v='curb_cut' />
   </node>
   <node id='-118271' action='modify' lat='45.5201606009' lon='-122.67811082572'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='curb_cut' />
     <tag k='point_relation' v='3' />
@@ -5034,7 +4915,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-118277' action='modify' lat='45.52005535933' lon='-122.67691254884'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -5043,7 +4924,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118279' action='modify' lat='45.51953290723' lon='-122.67720222741'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5052,7 +4933,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118281' action='modify' lat='45.52003186788' lon='-122.67682671815'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -5060,7 +4941,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-118283' action='modify' lat='45.51950753623' lon='-122.67711907893'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5068,7 +4949,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-118285' action='modify' lat='45.5188535243' lon='-122.67754286796'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5077,7 +4958,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118287' action='modify' lat='45.51941732814' lon='-122.67727464706'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -5086,7 +4967,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-118289' action='modify' lat='45.51883942914' lon='-122.67748520047'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5094,7 +4975,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-118291' action='modify' lat='45.51939383643' lon='-122.67717138201'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -5102,7 +4983,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-121187' action='modify' lat='45.52100252632' lon='-122.67757237226'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -5110,7 +4991,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-121189' action='modify' lat='45.52047820371' lon='-122.67784595758'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -5118,7 +4999,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-121194' action='modify' lat='45.52115286882' lon='-122.67747849494'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -5126,7 +5007,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-121196' action='modify' lat='45.52167718514' lon='-122.67720490962'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -5134,28 +5015,28 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-121198' action='modify' lat='45.52101756058' lon='-122.67765417963'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-121200' action='modify' lat='45.52049887602' lon='-122.677941176'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-121207' action='modify' lat='45.5216912796' lon='-122.67727330595'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-121209' action='modify' lat='45.52117260124' lon='-122.67756030232'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -5178,7 +5059,7 @@
     <tag k='reason' v='fire_hydrant' />
   </node>
   <node id='-121217' action='modify' lat='45.52087755381' lon='-122.6788118881'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -5194,19 +5075,19 @@
     <tag k='user_classes' v='hotel_guest' />
   </node>
   <node id='-121221' action='modify' lat='45.52077795146' lon='-122.67888900161'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-121235' action='modify' lat='45.52075539902' lon='-122.67881959811'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-121241' action='modify' lat='45.52077607123' lon='-122.67887860671'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5383,7 +5264,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-121307' action='modify' lat='45.5214732854' lon='-122.67842682414'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -5391,7 +5272,7 @@
     <tag k='user_classes' v='taxi' />
   </node>
   <node id='-121309' action='modify' lat='45.52140751004' lon='-122.67846672066'>
-    <tag k='activity' v='loading' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5761,7 +5642,7 @@
     <tag k='reason' v='fire_hydrant' />
   </node>
   <node id='-121424' action='modify' lat='45.52017657504' lon='-122.67685622245'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5770,7 +5651,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-121426' action='modify' lat='45.52071781411' lon='-122.67654776841'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -5779,7 +5660,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-121428' action='modify' lat='45.52015496296' lon='-122.67677441508'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5787,7 +5668,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-121430' action='modify' lat='45.5207055987' lon='-122.67649010092'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -5795,7 +5676,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-122856' action='modify' lat='45.52143194102' lon='-122.676157507'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -5804,7 +5685,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-122858' action='modify' lat='45.52090198455' lon='-122.67646596104'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5813,7 +5694,7 @@
     <tag k='user_subclasses' v='bus' />
   </node>
   <node id='-122860' action='modify' lat='45.52088413132' lon='-122.6763948825'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='3' />
@@ -5821,7 +5702,7 @@
     <tag k='reason' v='travel_lane' />
   </node>
   <node id='-122862' action='modify' lat='45.52142160503' lon='-122.67610788614'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='sign' />
     <tag k='point_relation' v='1' />
@@ -6806,7 +6687,7 @@
     <tag k='priority' v='4' />
   </node>
   <node id='-128397' action='modify' lat='45.5197913149' lon='-122.68121749431'>
-    <tag k='activity' v='stopping' />
+    <tag k='activity' v='standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='marker' v='track' />
     <tag k='point_relation' v='3' />
@@ -6862,7 +6743,7 @@
     <tag k='user_classes' v='handicap' />
   </node>
   <node id='-128442' action='modify' lat='45.52049041822' lon='-122.6782818152'>
-    <tag k='activity' v='no_stopping' />
+    <tag k='activity' v='no_standing' />
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -6966,7 +6847,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -6976,7 +6856,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -6986,7 +6865,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -6997,7 +6875,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7007,7 +6884,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7017,7 +6893,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7027,7 +6902,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7037,7 +6911,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7047,7 +6920,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7057,7 +6929,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7067,7 +6938,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7077,7 +6947,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7087,7 +6956,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7097,7 +6965,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7107,7 +6974,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7117,7 +6983,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7127,7 +6992,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7137,7 +7001,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7147,7 +7010,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7157,7 +7019,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7167,7 +7028,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7177,7 +7037,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7187,7 +7046,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7197,7 +7055,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7207,7 +7064,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7217,7 +7073,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7227,7 +7082,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7237,7 +7091,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7247,7 +7100,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7257,7 +7109,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7267,7 +7118,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7277,7 +7127,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7287,7 +7136,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7297,7 +7145,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7307,7 +7154,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7318,7 +7164,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7329,7 +7174,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7339,7 +7183,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7349,7 +7192,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7359,7 +7201,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7369,7 +7210,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7379,7 +7219,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7389,7 +7228,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7399,7 +7237,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7409,7 +7246,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7419,7 +7255,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7430,7 +7265,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7440,7 +7274,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7450,7 +7283,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7460,7 +7292,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7470,7 +7301,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7480,7 +7310,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7490,7 +7319,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7501,7 +7329,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7511,7 +7338,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7521,7 +7347,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7531,7 +7356,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='30' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7541,7 +7365,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7551,7 +7374,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='30' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7561,7 +7383,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7571,7 +7392,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7581,7 +7401,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7591,7 +7410,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7601,7 +7419,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7611,7 +7428,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7621,7 +7437,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7631,7 +7446,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7641,7 +7455,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7651,7 +7464,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7661,7 +7473,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7671,7 +7482,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7681,7 +7491,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7691,7 +7500,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7701,7 +7509,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7711,7 +7518,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7721,7 +7527,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7731,7 +7536,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7741,7 +7545,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7751,7 +7554,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7761,7 +7563,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7771,7 +7572,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7781,7 +7581,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7791,7 +7590,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7801,7 +7599,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7811,7 +7608,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7821,7 +7617,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7831,7 +7626,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7841,7 +7635,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7851,7 +7644,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7861,7 +7653,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7871,7 +7662,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7881,7 +7671,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7891,7 +7680,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7901,7 +7689,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7911,7 +7698,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7921,7 +7707,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7931,7 +7716,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7941,7 +7725,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7951,7 +7734,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7961,7 +7743,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -7971,7 +7752,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7981,7 +7761,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -7991,7 +7770,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8001,7 +7779,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8011,7 +7788,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8021,7 +7797,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8031,7 +7806,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8041,7 +7815,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8051,7 +7824,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8061,7 +7833,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8071,7 +7842,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8081,7 +7851,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8091,7 +7860,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8101,7 +7869,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8111,7 +7878,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='2' />
     <tag k='priority' v='4' />
@@ -8121,7 +7887,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8131,7 +7896,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8141,7 +7905,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8151,7 +7914,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8161,7 +7923,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8171,7 +7932,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8181,7 +7941,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8191,7 +7950,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8201,7 +7959,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8211,7 +7968,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8221,7 +7977,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8231,7 +7986,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8241,7 +7995,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8251,7 +8004,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8261,7 +8013,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8271,7 +8022,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8281,7 +8031,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8291,7 +8040,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='30' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8301,7 +8049,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8311,17 +8058,15 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
   </node>
-  <node id='-140915' action='modify' lat='45.52033960483' lon='-122.67754320256'>
+  <node id='-140915' action='modify' lat='45.52034054448' lon='-122.67754320256'>
     <tag k='activity' v='parking' />
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8331,19 +8076,8 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
-    <tag k='priority' v='4' />
-  </node>
-  <node id='-140919' action='modify' lat='45.52021651015' lon='-122.67704833499'>
-    <tag k='activity' v='parking' />
-    <tag k='bays_angle' v='parallel' />
-    <tag k='duplicate' v='yes' />
-    <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
-    <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
-    <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
   </node>
   <node id='-140921' action='modify' lat='45.52125529011' lon='-122.67505076117'>
@@ -8351,7 +8085,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8361,7 +8094,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8371,7 +8103,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8381,7 +8112,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8391,7 +8121,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8401,7 +8130,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8411,7 +8139,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8421,7 +8148,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8431,7 +8157,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8441,7 +8166,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8451,7 +8175,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8461,7 +8184,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8471,7 +8193,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8481,7 +8202,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8491,7 +8211,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8501,7 +8220,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8511,7 +8229,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
@@ -8521,7 +8238,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='3' />
     <tag k='priority' v='4' />
@@ -8531,11 +8247,176 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='duplicate' v='yes' />
     <tag k='marker' v='sign' />
-    <tag k='max_stay' v='120' />
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority' v='4' />
     <tag k='user_classes' v='motorcycle' />
+  </node>
+  <node id='-157487' action='modify' lat='45.52021603963' lon='-122.67704799905'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='marker' v='sign' />
+    <tag k='max_stay' v='120' />
+    <tag k='opening_hours' v='Mo-Sa 08:00-19:00; Su 13:00-19:00' />
+    <tag k='payment' v='true' />
+    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
+    <tag k='payment_method' v='pay_station, digital' />
+    <tag k='payment_phone' v='+15032785410' />
+    <tag k='payment_rate:durations' v='15' />
+    <tag k='payment_rate:fees' v='0.50' />
+    <tag k='payment_zone' v='1002' />
+    <tag k='point_relation' v='1' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157498' action='modify' lat='45.52021416032' lon='-122.67704934016'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='duplicate' v='yes' />
+    <tag k='marker' v='sign' />
+    <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
+    <tag k='point_relation' v='1' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157504' action='modify' lat='45.51995575459' lon='-122.67915353313'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='marker' v='sign' />
+    <tag k='max_stay' v='120' />
+    <tag k='opening_hours' v='Mo-Sa 08:00-19:00; Su 13:00-19:00' />
+    <tag k='payment' v='true' />
+    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
+    <tag k='payment_method' v='pay_station, digital' />
+    <tag k='payment_phone' v='+15032785410' />
+    <tag k='payment_rate:durations' v='15' />
+    <tag k='payment_rate:fees' v='0.50' />
+    <tag k='payment_zone' v='1002' />
+    <tag k='point_relation' v='1' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157509' action='modify' lat='45.51976312409' lon='-122.67843201891'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='marker' v='sign' />
+    <tag k='max_stay' v='120' />
+    <tag k='opening_hours' v='Mo-Sa 08:00-19:00; Su 13:00-19:00' />
+    <tag k='payment' v='true' />
+    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
+    <tag k='payment_method' v='pay_station, digital' />
+    <tag k='payment_phone' v='+15032785410' />
+    <tag k='payment_rate:durations' v='15' />
+    <tag k='payment_rate:fees' v='0.50' />
+    <tag k='payment_zone' v='1002' />
+    <tag k='point_relation' v='3' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157512' action='modify' lat='45.51976218443' lon='-122.6784306778'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='marker' v='sign' />
+    <tag k='max_stay' v='120' />
+    <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
+    <tag k='point_relation' v='3' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157517' action='modify' lat='45.52000085822' lon='-122.67913341656'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='marker' v='sign' />
+    <tag k='max_stay' v='120' />
+    <tag k='opening_hours' v='Mo-Sa 08:00-19:00; Su 13:00-19:00' />
+    <tag k='payment' v='true' />
+    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
+    <tag k='payment_method' v='pay_station, digital' />
+    <tag k='payment_phone' v='+15032785410' />
+    <tag k='payment_rate:durations' v='15' />
+    <tag k='payment_rate:fees' v='0.50' />
+    <tag k='payment_zone' v='1002' />
+    <tag k='point_relation' v='1' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157535' action='modify' lat='45.51988410552' lon='-122.67867174134'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='marker' v='sign' />
+    <tag k='max_stay' v='120' />
+    <tag k='opening_hours' v='Mo-Sa 08:00-19:00; Su 13:00-19:00' />
+    <tag k='payment' v='true' />
+    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
+    <tag k='payment_method' v='pay_station, digital' />
+    <tag k='payment_phone' v='+15032785410' />
+    <tag k='payment_rate:durations' v='15' />
+    <tag k='payment_rate:fees' v='0.50' />
+    <tag k='payment_zone' v='1002' />
+    <tag k='point_relation' v='3' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157542' action='modify' lat='45.51999803924' lon='-122.67913475767'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='duplicate' v='yes' />
+    <tag k='marker' v='sign' />
+    <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
+    <tag k='point_relation' v='1' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157544' action='modify' lat='45.51988598484' lon='-122.67867107078'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='duplicate' v='yes' />
+    <tag k='marker' v='sign' />
+    <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
+    <tag k='point_relation' v='3' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157560' action='modify' lat='45.51982702064' lon='-122.67845816977'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='marker' v='sign' />
+    <tag k='max_stay' v='120' />
+    <tag k='opening_hours' v='Mo-Sa 08:00-19:00; Su 13:00-19:00' />
+    <tag k='payment' v='true' />
+    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
+    <tag k='payment_method' v='pay_station, digital' />
+    <tag k='payment_phone' v='+15032785410' />
+    <tag k='payment_rate:durations' v='15' />
+    <tag k='payment_rate:fees' v='0.50' />
+    <tag k='payment_zone' v='1002' />
+    <tag k='point_relation' v='3' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157562' action='modify' lat='45.51986742607' lon='-122.67860636182'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='marker' v='sign' />
+    <tag k='max_stay' v='120' />
+    <tag k='opening_hours' v='Mo-Sa 08:00-19:00; Su 13:00-19:00' />
+    <tag k='payment' v='true' />
+    <tag k='payment_form' v='Visa, Mastercard, American Express, Smart Card, coins, Parking Kitty' />
+    <tag k='payment_method' v='pay_station, digital' />
+    <tag k='payment_phone' v='+15032785410' />
+    <tag k='payment_rate:durations' v='15' />
+    <tag k='payment_rate:fees' v='0.50' />
+    <tag k='payment_zone' v='1002' />
+    <tag k='point_relation' v='1' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157566' action='modify' lat='45.51982796077' lon='-122.67845615879'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='duplicate' v='yes' />
+    <tag k='marker' v='sign' />
+    <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
+    <tag k='point_relation' v='3' />
+    <tag k='priority' v='4' />
+  </node>
+  <node id='-157568' action='modify' lat='45.51986554722' lon='-122.6786077036'>
+    <tag k='activity' v='parking' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='duplicate' v='yes' />
+    <tag k='marker' v='sign' />
+    <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
+    <tag k='point_relation' v='1' />
+    <tag k='priority' v='4' />
   </node>
   <node id='32201127' action='delete' timestamp='2011-08-03T23:15:55Z' uid='372357' user='PJ Houser' version='4' changeset='8915445' lat='45.5175729' lon='-122.6818085' />
   <node id='40378999' action='delete' timestamp='2019-09-03T06:14:37Z' uid='9465017' user='tguen' version='10' changeset='74021686' lat='45.5208491' lon='-122.6853109'>
