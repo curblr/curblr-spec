@@ -34,7 +34,7 @@ The assets themselves are easy to map, but the concepts they represent are not. 
 
 CurbLR uses asset data as the building blocks for a spec, but supplements it with additional location information and structure.
 
-CurbLR requires users to reference asset data to their location along a street, using the SharedStreets Referencing System. Individual asset locations are given the SharedStreets Reference ID for the street on which they are located, along with their location along it. Points can be extrapolated into line segments by setting a particular width for each type of regulation, by including information about sign relationships along a street, or by estimating based on similar metadata. This enables asset-based point or line data to be converted into street-linked data.
+CurbLR requires users to reference asset data to their location along a street, using the [SharedStreets Referencing System](https://github.com/sharedstreets/sharedstreets-ref-system). Individual asset locations are given the SharedStreets Reference ID for the street on which they are located, along with their location along it. Points can be extrapolated into line segments by setting a particular width for each type of regulation, by including information about sign relationships along a street, or by estimating based on similar metadata. This enables asset-based point or line data to be converted into street-linked data.
 
 Here's a visual overview:
 
