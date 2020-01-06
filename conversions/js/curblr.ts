@@ -3,7 +3,7 @@ import {Feature, LineString, Point, FeatureCollection} from '@turf/helpers'
 
 function convertTimeSrtToMinOfDay(timeStr:string):number {
     var timeParts = timeStr.split(":");
-    return (parseInt(timeParts[0]) * 60) + parseInt(timeParts[1]); 
+    return (parseInt(timeParts[0]) * 60) + parseInt(timeParts[1]);
 }
 
 export function filterTimeAndDay(feature:CurbFeature, dayOfWeek:string, timeStr:string):boolean {
@@ -46,16 +46,16 @@ export class Manifest {
 }
 
 export class Rule  {
-    activity:"parking" | "no parking" | "standing" | "no standing" | "loading" | "no loading"; 
+    activity:"parking" | "no parking" | "standing" | "no standing" | "loading" | "no loading";
     reason?:string;
     maxStay?:number
     noReturn?:number
-    payment?:boolean;	
-    authority?:Authority; // changed v1 draft spec to object to simplify inclusion in rule	
-} 
+    payment?:boolean;
+    authority?:Authority; // changed v1 draft spec to object to simplify inclusion in rule
+}
 
 export class DaysOfWeek {
-    days:Array<"mo"|"tu"|"we"|"th"|"fr"|"sa"|"su">;  
+    days:Array<"mo"|"tu"|"we"|"th"|"fr"|"sa"|"su">;
     occurrencesInMonth?:Array<"1st"|"2nd"|"3rd"|"4th"|"5th"|"last">
 }
 
@@ -73,9 +73,9 @@ export class TimeSpan {
     effectiveDates?:[{to:string, from:string}];
     daysOfWeek:DaysOfWeek;
     daysOfMonth?:Array<string|"even"|"odd"|"last">;
-    timesOfDay?:Array<TimesOfDay>; 
-    designatedPeriods?:Array<DesignatedPeriods> 
-} 
+    timesOfDay?:Array<TimesOfDay>;
+    designatedPeriods?:Array<DesignatedPeriods>
+}
 
 export class UserClass {
     class:string;
@@ -86,17 +86,17 @@ export class UserClass {
     minHeight?:number;
     minLength?:number;
     minWeight?:number;
-} 
+}
 
 export class Rates {
     fees?:number[] = [];
     durations?:number[] = [];
-    timeSpans?:TimeSpan[] = []; 
+    timeSpans?:TimeSpan[] = [];
 }
 
 export class Payment {
     rates?:Rates;
-    methods?:string[] = []; 
+    methods?:string[] = [];
     forms?:string[] = [];
     operator?:string;
     phone?:string;
@@ -109,7 +109,7 @@ export class Regulation {
     timeSpans?:TimeSpan[] = [];
     userClasses?:UserClass[] = [];
     payment?:Payment;
-} 
+}
 
 export class CurbProperties {
     location:Location;
@@ -124,10 +124,10 @@ export class CurbFeature implements Feature<LineString, CurbProperties> {
     constructor() {
         this.properties = new CurbProperties();
     }
-} 
+}
 
 export class CurbFeatureCollection implements FeatureCollection<LineString, CurbProperties> {
     type:"FeatureCollection";
     manifest?:Manifest;
     features:CurbFeature[] = [];
-} 
+}
