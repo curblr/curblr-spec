@@ -363,8 +363,8 @@ for (var feature of input.features) {
         days = ["mo","tu","we","th","fr","sa"];
         timesOfDayFrom = "00:00";
         timesOfDayTo = "08:00";
-        secondTimesTo = "19:00";
-        secondTimesFrom = "23:59";
+        secondTimesFrom = "19:00";
+        secondTimesTo = "23:59";
         secondDays = ["su"];
         thirdTimesFrom = "00:00";
         thirdTimesTo = "13:00";
