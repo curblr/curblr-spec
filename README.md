@@ -1,5 +1,5 @@
 # What is CurbLR?
-CurbLR is a data standard for describing urban curb regulations. It exists to help government effectively manage and regulate the curb and to support public and private users of city streets.
+CurbLR is a data standard for describing curb regulations. It exists to help government effectively manage and regulate the curb and to support public and private users of city streets.
 
 CurbLR provides a structured, standardized format that can be used by government agencies, citizens, and companies who want to store and share information about curb regulations, regardless of whether the data are gathered through mapping, crowdsourcing, or machine learning techniques. It uses linear referencing to link regulation information back to the street.
 
@@ -34,7 +34,7 @@ The assets themselves are easy to map, but the concepts they represent are not. 
 
 CurbLR uses asset data as the building blocks for a spec, but supplements it with additional location information and structure.
 
-CurbLR requires users to reference asset data to their location along a street, using the SharedStreets Referencing System. Individual asset locations are given the SharedStreets Reference ID for the street on which they are located, along with their location along it. Points can be extrapolated into line segments by setting a particular width for each type of regulation, by including information about sign relationships along a street, or by estimating based on similar metadata. This enables asset-based point or line data to be converted into street-linked data.
+CurbLR requires users to reference asset data to their location along a street, using the [SharedStreets Referencing System](https://github.com/sharedstreets/sharedstreets-ref-system). Individual asset locations are given the SharedStreets Reference ID for the street on which they are located, along with their location along it. Points can be extrapolated into line segments by setting a particular width for each type of regulation, by including information about sign relationships along a street, or by estimating based on similar metadata. This enables asset-based point or line data to be converted into street-linked data.
 
 Here's a visual overview:
 
@@ -53,7 +53,7 @@ The links below show real world curb regulations translated into CurbLR.
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
+| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/LA/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
 
 # Data model
 
@@ -68,10 +68,11 @@ These categories are described below:
 | GeoJsonProperties.[Location](Location.md) | Required | Describes the location (street-linked point or street segment) **where** the regulation applies, using geographic information and linear referencing. |
 | GeoJsonProperties.[Regulations](Regulations.md) | Required | Describes the curb usage regulation(s) that are in place for the location |
 | GeoJsonProperties.Regulations.[Rule](Rule.md) | Required | Determines **what** is allowed or forbidden in the zone during a particular period of time |
-| GeoJsonProperties.Regulations.[UserClasses](UserClasses.md) | If applicable | Defines **who** the regulations applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
-| GeoJsonProperties.Regulations.[TimeSpans](TimeSpans.md) | If applicable | Defines the time period **when** a zone regulation is in effect |
+| GeoJsonProperties.Regulations.[UserClasses](UserClasses.md) | Optional | Defines **who** the regulations applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
+| GeoJsonProperties.Regulations.[TimeSpans](TimeSpans.md) | Optional | Defines the time period **when** a zone regulation is in effect |
 | GeoJsonProperties.Regulations.[Payment](Payment.md) | Optional | Provides a structure to store additional information about fees that may be required in order to use a given curbspace |
-| GeoJsonProperties.Regulations.[Priority](Priority.md) | Required | Defines how overlapping regulations relate to one another (i.e. which one takes **priority**)
+| GeoJsonProperties.Regulations.[Priority](Priority.md) | Required | Defines how overlapping regulations relate to one another (i.e. which one takes **priority**)|
+| GeoJsonProperties.[Images](Images.md) | Optional | Provides link(s) to image(s) of street assets that communicate the regulations to curbspace users, such as a street sign, parking meter, or fire hydrant |
 
 
 The feed as a whole is a JSON file. The curb geometries and properties are stored as GeoJSON features that form one GeoJSON object. Above this in the file, the CurbLR feed will contain metadata properties, stored as a [manifest](Manifest.md), which is a JSON object.

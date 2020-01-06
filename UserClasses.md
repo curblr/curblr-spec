@@ -11,14 +11,14 @@ A GeoJSON feature may include UserClasses made up of the following fields. The U
 
 | Field name | Importance  | Type | Description | Example
 | :--- | :--- | :--- | :--- | :--- |
-| classes | If applicable | array of `string` Suggested values; see below | The identifier of a user class, which may define a type of vehicle, permit, purpose, or service. This field is an array in order to accommodate single or multiple values in a consistent way. | [`food truck`] |
-| subclasses | If applicable | array of `string` | Optional secondary identifiers for a class of user. Useful for subdividing permit holders by zone or other designation | [`zone 4`, `zone 5`] |
-| maxHeight | If applicable | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `maxHeight`:`6` |
-| minHeight | If applicable | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `minHeight`:`3` |
-| maxLength | If applicable | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `maxLength`:`20` |
-| minLength | If applicable | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `minLength`:`10` |
-| maxWeight | If applicable | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `maxWeight`:`5` |
-| minWeight | If applicable | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `minWeight`:`2` |
+| classes | Optional | array of `string` Suggested values; see below | The identifier of a user class, which may define a type of vehicle, permit, purpose, or service. This field is an array in order to accommodate single or multiple values in a consistent way. | [`food truck`] |
+| subclasses | Optional | array of `string` | Optional secondary identifiers for a class of user. Useful for subdividing permit holders by zone or other designation | [`zone 4`, `zone 5`] |
+| maxHeight | Optional | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `maxHeight`:`6` |
+| minHeight | Optional | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `minHeight`:`3` |
+| maxLength | Optional | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `maxLength`:`20` |
+| minLength | Optional | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `minLength`:`10` |
+| maxWeight | Optional | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `maxWeight`:`5` |
+| minWeight | Optional | `float` |If the `classes` or `subclasses` indicates that there is a vehicle height, length, or weight restriction, use an additional key:value pair to indicate the number, in local units. (Local units may be specified in the [manifest](Manifest.md).) | `minWeight`:`2` |
 
 Data fields should generally be considered case insensitive since they are used programmatically; we use lower-case in our examples, except for fields that would be used for display purposes (such as a street name or agency name).
 e
@@ -31,12 +31,14 @@ It is possible for a given curb segment to have multiple regulations that apply,
 The following is a suggested but not exhaustive list of values for `classes`. It is up to a particular jurisdiction to define exactly which vehicles, user, purposes, or permits are required for each value. Multiple values may be specified in an array. If multiple well-known values apply, the most descriptive should be used (e.g. for food truck parking, `food truck` should be used rather than `truck`)
 
 - `bicycle`
+- `bikeshare`
 - `bus`
 - `car share`
 - `carpool`
 - `commercial`
 - `compact`
 - `construction`
+- `diplomat`
 - `electric`
 - `emergency`
 - `food truck`
@@ -56,7 +58,7 @@ The following is a suggested but not exhaustive list of values for `classes`. It
 
 ## Numeric restrictions (height, length, width)
 
-Numeric restrictions, if applicable, are entered as key:value pairs in the local measurement unit (e.g. feet and pounds in USA, metres and kilograms in UK). Measurement units may be specified in the [manifest](Manifest.md). Available keys include:
+Numeric restrictions, Optional, are entered as key:value pairs in the local measurement unit (e.g. feet and pounds in USA, metres and kilograms in UK). Measurement units may be specified in the [manifest](Manifest.md). Available keys include:
 
 - `maxHeight`
 - `maxLength`
@@ -71,7 +73,7 @@ Numeric restrictions, if applicable, are entered as key:value pairs in the local
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
+| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/LA/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
 
 
 ### Food truck

@@ -29,19 +29,21 @@ No stopping is allowed by anyone at any time. Example location information is in
         "derivedFrom": ["b2045", "d0294"],
         "marker": "sign",
         "streetName": "Madison Ave"
-      },
-      "regulations": [
-        {
-            "rule": {
-              "activity": "no stopping",
-              "reason": "tow-away zone"
-            },
-            "priority": 4
-          }
-        ]
+    },
+    "regulations": [
+      {
+        "rule": {
+          "activity": "no stopping",
+          "reason": "tow-away zone"
+        },
+        "priority": 4
       }
-    }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/no_stopping.jpg"
+    ]
   }
+}
 ```
 
 # Snow emergency
@@ -90,6 +92,9 @@ No one may park during snow emergencies. Example location information is include
         ],
         "priority": 2
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/snow_emergency.jpg"
     ]
   }
 }
@@ -148,6 +153,9 @@ Parking is limited to two hours between 8am and 8pm Monday through Saturday. Pay
         }
         "priority": 4
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/meter_parking_time_limit.jpg"
     ]
   }
 }
@@ -198,6 +206,9 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
         ],
         "priority": 4
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/car_share.jpg"
     ]
   }
 }
@@ -255,6 +266,9 @@ No parking allowed between 6am and 8am on the 2nd and 4th Wednesday of each mont
         ],
         "priority": 3
       }
+    ]
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/street_cleaning.jpg"
     ]
   }
 }
@@ -339,6 +353,9 @@ All vehicles except permitted construction vehicles are prohibited from standing
         ],
         "priority": 3
       }
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/temporary_construction_zone.jpg"
     ]
   }
 }
@@ -397,6 +414,9 @@ Parking allowed only for resident permit holders Monday through Saturday, except
         ],
         "priority": 4
       }  
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/resident_parking.jpg"
     ]
   }
 }
@@ -444,6 +464,9 @@ No parking for Kardashians at any time
         ],
         "priority": 4
       }  
+    ],
+    "images": [
+      "https://raw.githubusercontent.com/sharedstreets/curblr/master/examples/images/no_kardashians.jpg"
     ]
   }
 }
