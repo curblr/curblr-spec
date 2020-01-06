@@ -10,8 +10,9 @@ export function filterTimeAndDay(feature:CurbFeature, dayOfWeek:string, timeStr:
     for(var regulation of feature.properties.regulations) {
         if(regulation.timeSpans && regulation.timeSpans.length) {
             for(var timeSpan of regulation.timeSpans) {
-                for(var day of timeSpan.daysOfWeek) {
-                    if(day)
+                for(var day of timeSpan.daysOfWeek.days) {
+                    if(day == dayOfWeek)
+                        return true;
                 }
             }
         }
