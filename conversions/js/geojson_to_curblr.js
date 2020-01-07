@@ -259,23 +259,6 @@ for (var feature of input.features) {
           ]
         });
 
-      } else if (opening_hours === "Mo-Sa 07:00-18:00") {
-        days = ["mo", "tu", "we", "th", "fr", "sa"];
-        timesOfDayFrom = "07:00";
-        timesOfDayTo = "18:00";
-
-        timespans.push({
-          daysOfWeek: {
-            days:days
-          },
-          timesOfDay:[
-            {
-            from:timesOfDayFrom,
-            to:timesOfDayTo
-            }
-          ]
-        });
-
       } else if (opening_hours === "Mo-Sa 07:00-11:00") {
         days = ["mo", "tu", "we", "th", "fr", "sa"];
         timesOfDayFrom = "07:00";
@@ -403,9 +386,27 @@ for (var feature of input.features) {
           ]
         });
 
+        } else if (opening_hours === "Mo-Sa 07:00-18:00") {
+          days = ["mo", "tu", "we", "th", "fr", "sa"];
+          timesOfDayFrom = "07:00";
+          timesOfDayTo = "18:00";
+
+          timespans.push({
+            daysOfWeek: {
+              days:days
+            },
+            timesOfDay:[
+              {
+              from:timesOfDayFrom,
+              to:timesOfDayTo
+              }
+            ]
+          });
+
+
       } else if (opening_hours === "Mo-Sa 08:00-19:00; Su 13:00-19:00") {
         days = ["mo","tu","we","th","fr","sa"];
-        timesOfDayFrom = "00:00";
+        timesOfDayFrom = "08:00";
         timesOfDayTo = "19:00";
         secondDays = ["su"];
         thirdTimesFrom = "13:00";
@@ -447,6 +448,7 @@ for (var feature of input.features) {
           ]
         });
       }
+
 
 
       // toFixed function converts to a string, wrapping in Number function changes it back
