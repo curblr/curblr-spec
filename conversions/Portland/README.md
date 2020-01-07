@@ -57,7 +57,7 @@ These steps were followed to create a CurbLR feed for downtown Portland, Oregon.
           "url": "https://www.portlandoregon.gov/transportation/"
       }
   }
-  ```
+
 
 8. Save this file as a new, `*.curblr.json` file.
 
