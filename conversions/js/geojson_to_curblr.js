@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const inputGeojson = fs.readFileSync('portland_1218_5_matched.joined.geojson');
+const inputGeojson = fs.readFileSync(path.join(process.cwd(), process.argv.slice(2)[0]),'utf-8');
 const input = JSON.parse(inputGeojson);
 var k = 0
 //var feature = input.features[k];
