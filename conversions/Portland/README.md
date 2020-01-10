@@ -46,7 +46,7 @@ These steps were followed to create a CurbLR feed for downtown Portland, Oregon.
 
 7. Add manifest in front of Feature Collection. The manifest will take this format:
 
-   ```
+ ```
   "manifest": {
       "createdDate": "2019-12-30T11:40:45Z",
       "lastUpdatedDate": "2019-12-30T17:40:45Z",
@@ -57,7 +57,7 @@ These steps were followed to create a CurbLR feed for downtown Portland, Oregon.
           "url": "https://www.portlandoregon.gov/transportation/"
       }
   }
-
+```
 
 8. Save this file as a new, `*.curblr.json` file.
 
