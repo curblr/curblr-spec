@@ -24,7 +24,7 @@ Each GeoJSON feature may have the following Payment properties:
 | rate.durations | Optional| array of `int` | Duration of stay, in mins, for which this fee applies. Consecutive periods (for incrementing or other tiered parking rates) can be stored in an array. The final fee and duration in the arrays are assumed to repeat until the `maxStay`, defined in the [rule](Rule.md). | `[60]`; `[30, 15, 15]` |
 | rate.timeSpans | Optional| `array`, see [TimeSpans](TimeSpans.md) and examples | If the pricing schedule varies according to the time of day, a timespan object can be embedded within the rate object | see [TimeSpans](TimeSpans.md) and examples below |
 | methods | Optional| array of `string` Well-known values: `meter`, `pay station`, `digital`, `phone` | How the fee is collected at the street-level, including through digital payment. | `["pay station", "digital"]` |
-| forms | Optional| array of `string` Well-known values: `coins`, `bills`, `Visa`, `ApplePay`, `MasterCard`, `Visa`, `American Express`, `Discover`, `AndroidPay`. These are not exhaustive. Additional, locally-specific values exist. | What type of payment is accepted. Expressed as an array. | `["coins", "SFMARTA card", "ParkingApp"]` |
+| forms | Optional| array of `string` Well-known values: `coins`, `bills`, `Visa`, `ApplePay`, `Mastercard`, `American Express`, `Discover`, `AndroidPay`. These are not exhaustive. Additional, locally-specific values exist. | What type of payment is accepted. Expressed as an array. | `["coins", "SFMARTA card", "ParkingApp"]` |
 | operator | Optional| `string` | The ID or name of the company that operates the payment method. If the payment operator is the same for most/all of the area, then this could be set as a property of the GeoJSON `Feature Collection` and used here only as an override  | `Acme Paystation` |
 | phone | Optional| `string` (`E.164 format`: `+` + `country code` + `local area code` + `phone number`) | The phone number, including country and area code, for the company or service that operates and may be contacted about the payment. If the payment operator is the same for most/all of the area, then this could be set as a property of the GeoJSON `Feature Collection` and used here only as an override | `+15551231234` |
 | deviceIds | Optional| array of `string` | A unique device ID that corresponds to the parking payment device (e.g. meter) for this regulation. Feature geometries can encompass multiple payment devices, so these are listed as an array | `["1234nmfl", "0249sndn"]`|
@@ -77,7 +77,7 @@ Describes a parking meter. In the first hour of a parking session, the fee is $1
       }
     ],
     "methods": ["meter", "digital"],
-    "forms": ["coins", "MasterCard", "Visa", "American Express", "Discover", "ApplePay", "AndroidPay"],
+    "forms": ["coins", "Mastercard", "Visa", "American Express", "Discover", "ApplePay", "AndroidPay"],
     "operator": "LADOT",
     "phone": "+15552225039",
     "deviceIds": ["MB-2494"]
@@ -120,7 +120,7 @@ Describes a parking meter. From 9am to 5pm, the fee is $1 for the first 30 mins 
       }
     ],
     "methods": ["meter", "digital"],
-    "forms": ["coins", "MasterCard", "Visa", "American Express", "Discover", "ApplePay", "AndroidPay"],
+    "forms": ["coins", "Mastercard", "Visa", "American Express", "Discover", "ApplePay", "AndroidPay"],
     "operator": "LADOT",
     "phone": "+15552225039",
     "deviceIds": ["MB-0028"]
