@@ -1,0 +1,123 @@
+# MUTCD codes includes (n=103k out of 112k)
+​
+-   R-NS-RPP: Resident Parking Permitted
+-   R-NS-011: TOW AWAY NO STANDING OR PARKING ANYTIME WITH ARROW
+-   R8-3: No Parking
+-   R-NS-022: NO PARKING DAY AND TIME STREET SWEEPING
+-   R-NS-006: NO STANDING OR PARKING W/ TIMES
+-   R-DC-2HROLD:  2 Hour Parking (Old Versions)
+-   R-NS-005: SNOW EMERGENCY ROUTE NO PARKING DURING EMERGENCY
+-   R-NS_ROP: Resident Only Parking w/Zone
+-   R-NS-019: TOW AWAY NO STANDING OR PARKING METRO BUS ZONE WIT
+-   R-DC-PMPBP:  Park Mobile Pay By Phone
+-   R-NS-172: TOW AWAY HANDICAPPED PARKING SUNDAYS ONLY
+-   R-DC-No_Park_Stadium_Event: No Parking Stadium Event
+-   R-DC-Loading_Zone_With_ParkMobile_Zone: Loading Zone with Park Mobile
+-   R-NS-056: PAY TO PARK
+-   R7-1: No Parking Any Time
+-   R7-8: Handicap Reserved Parking
+​
+# Universal fields
+​
+derivedFrom: ["signid"] or ["sign_objec"]
+asset direction: "signarrowd"
+maxStay: "hourlimit" * 60
+daysOfWeek.days = "startday" until "endday", translated from 1-7 format into "mo"-"su" format. (note: 1=monday?)
+timesOfDay.from = "starttime", translated into hh:mm format. see key.
+timesOfDay.to = "endtime", translated into hh:mm format. see key.
+​
+# Specific regs and fields
+​
+## Create this regulation if "mutcd" = R-NS-RPP, R-NS_ROP
+(note: should it default to unspecified parking outside of timeSpans?)
+(note: I don't see the permit zone listed in the data but I just took a quick look - can double-check)
+​
+"activity" = "parking"
+"reason": "resident permit parking"
+"classes": "permit"
+"priority": 4
+​
+## Create this regulation if "mutcd" = R-NS-011, R-NS-006.
+(note: this applies at all times. ensure TimeSpans is empty, in case of digitization errors)
+​
+"activity" = "no parking"
+​
+## Create this regulation if "mutcd" = R-DC-No_Park_Stadium_Event
+​
+"activity" = "no parking"
+"reason" = "stadium event"
+​
+## Create this regulation if "mutcd" = R-NS-011, R-NS-006.
+(note: could create this for R-NS-019 but it's redundant (metrobus standing implies no other standing))
+​
+"activity" = "no standing"
+"reason": "tow-away zone"
+"priority": 4
+​
+## Create this regulation if "mutcd" = R-NS-019 (exception for metrobus standing)
+​
+"activity" = "standing"
+"reason": "Metrobus zone"
+"classes": ["bus"]
+"subclasses": ["metrobus"]
+"priority": 4
+​
+## Create this regulation if "mutcd" = R-NS-172
+​
+"activity" = "parking"
+"classes": ["handicap"]
+"priority": 4
+"days": "su" (this should come from "startday" in the data, but you can specify it here as an override in case of digitization errors)
+​
+## Create this regulation if "mutcd" = R7-8
+​
+"activity" = "parking"
+"classes": ["handicap"]
+"priority": 4
+​
+## Create this regulation if "mutcd" = R8-3
+​
+"activity" = "no parking"
+"priority": 4
+​
+## Create this regulation if "mutcd" = R-NS-022
+​
+"activity" = "no parking"
+"reason": "street cleaning"
+"priority": 3
+​
+## Create this regulation if "mutcd" = R-DC-2HROLD
+​
+"activity" = "parking"
+"payment" = true
+"maxStay" = 120 (this should come from "hourlimit" in the data, but you can specify it here as an override in case of digitization errors)
+"priority": 3
+​
+## Create this regulation if "mutcd" = R-NS-005
+​
+"activity" = "no standing"
+"reason" = "snow emergency zone"
+"designatedPeriods"."name" = "snow emergency"
+"designatedPeriods"."apply" = "only during"
+"priority": 2
+​
+## Create this regulation if "mutcd" = R-DC-Loading_Zone_With_ParkMobile_Zone
+​
+"activity" = "loading"
+"payment" = true
+"payment"."methods" = ["digital"]  (note: there are probably other ways to pay, but they aren't indicated on the sign and thus not captured in the data) "payment"."forms" = ["park mobile"]
+"priority" = 4
+​
+## Create this regulation if "mutcd" = R-DC-PMPBP
+​
+"activity" = "parking"
+"payment"."methods" = ["digital", "phone"]  (note: there are probably other ways to pay, but they aren't indiciated on the sign and thus not captured in the data)
+"payment"."forms" = ["park mobile"]
+"priority" = 4
+​
+## Create this regulation if "mutcd" = R-NS-056
+(note: assume this is unrestricted parking outside of these TimeSpans?)
+​
+"activity" = "parking"
+"payment" = true
+"priority" = 4
