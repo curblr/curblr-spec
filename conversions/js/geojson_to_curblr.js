@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const inputGeojson = fs.readFileSync('portland_1209.joined.geojson');
+const inputGeojson = fs.readFileSync(path.join(process.cwd(), process.argv.slice(2)[0]),'utf-8');
 const input = JSON.parse(inputGeojson);
 var k = 0
 //var feature = input.features[k];
@@ -259,23 +259,6 @@ for (var feature of input.features) {
           ]
         });
 
-      } else if (opening_hours === "Mo-Sa 07:00-18:00") {
-        days = ["mo", "tu", "we", "th", "fr", "sa"];
-        timesOfDayFrom = "07:00";
-        timesOfDayTo = "18:00";
-
-        timespans.push({
-          daysOfWeek: {
-            days:days
-          },
-          timesOfDay:[
-            {
-            from:timesOfDayFrom,
-            to:timesOfDayTo
-            }
-          ]
-        });
-
       } else if (opening_hours === "Mo-Sa 07:00-11:00") {
         days = ["mo", "tu", "we", "th", "fr", "sa"];
         timesOfDayFrom = "07:00";
@@ -340,7 +323,7 @@ for (var feature of input.features) {
           ]
         });
 
-      } else if (opening_hours === "20:00-23:59; 00:00-10:00") {
+      } else if (opening_hours === "20:00-23:59, 00:00-10:00") {
         timesOfDayFrom = "20:00";
         timesOfDayTo = "23:59";
         secondTimesFrom = "00:00";
@@ -363,8 +346,8 @@ for (var feature of input.features) {
         days = ["mo","tu","we","th","fr","sa"];
         timesOfDayFrom = "00:00";
         timesOfDayTo = "08:00";
-        secondTimesTo = "19:00";
-        secondTimesFrom = "23:59";
+        secondTimesFrom = "19:00";
+        secondTimesTo = "23:59";
         secondDays = ["su"];
         thirdTimesFrom = "00:00";
         thirdTimesTo = "13:00";
@@ -403,9 +386,27 @@ for (var feature of input.features) {
           ]
         });
 
+        } else if (opening_hours === "Mo-Sa 07:00-18:00") {
+          days = ["mo", "tu", "we", "th", "fr", "sa"];
+          timesOfDayFrom = "07:00";
+          timesOfDayTo = "18:00";
+
+          timespans.push({
+            daysOfWeek: {
+              days:days
+            },
+            timesOfDay:[
+              {
+              from:timesOfDayFrom,
+              to:timesOfDayTo
+              }
+            ]
+          });
+
+
       } else if (opening_hours === "Mo-Sa 08:00-19:00; Su 13:00-19:00") {
         days = ["mo","tu","we","th","fr","sa"];
-        timesOfDayFrom = "00:00";
+        timesOfDayFrom = "08:00";
         timesOfDayTo = "19:00";
         secondDays = ["su"];
         thirdTimesFrom = "13:00";
@@ -446,49 +447,8 @@ for (var feature of input.features) {
             }
           ]
         });
+      }
 
-      } else if (opening_hours === "Mo-Sa 00:00-07:00; 18:00-23:59") {
-        days = ["mo","tu","we","th","fr","sa"];
-        timesOfDayFrom = "00:00";
-        timesOfDayTo = "07:00";
-        secondTimesFrom = "18:00";
-        secondTimesTo = "23:59";
-
-        timespans.push({
-          daysOfWeek: {
-            days:days
-          },
-          timesOfDay:[
-            {
-            from:timesOfDayFrom,
-            to:timesOfDayTo
-            },
-            {
-            from:secondTimesFrom,
-            to:secondTimesTo
-            },
-          ]
-        });
-
-      } else if (opening_hours === "20:00-23:59; 00:00-10:00") {
-        timesOfDayFrom = "20:00";
-        timesOfDayTo = "23:59";
-        secondTimesFrom = "00:00";
-        secondTimesTo = "10:00";
-
-        timespans.push({
-          timesOfDay:[
-            {
-            from:timesOfDayFrom,
-            to:timesOfDayTo
-            },
-            {
-            from:secondTimesFrom,
-            to:secondTimesTo
-            },
-          ]
-        });
-      };
 
 
       // toFixed function converts to a string, wrapping in Number function changes it back
