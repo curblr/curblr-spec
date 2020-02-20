@@ -1,7 +1,7 @@
 The examples below include the regulation described by the sign, as well as sample GeoJSON coordinates and location properties.
 
 
-# Time limited parking with permit exemption
+# Time limited parking with permit exemption, planned to take effect 2020-02-20
 Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit are limited to 2 hours between 9am and 6pm Monday through Friday. (The sign does not indicate whether parking is permitted outside of the specified time range - the "default" rule must be determined based on local context.)
 
 ### **Sign**
@@ -54,7 +54,7 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       },
       {
         "rule": {
@@ -71,7 +71,7 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       }
     ],
     "images": [
@@ -127,7 +127,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       },
 
       // Street cleaning on Wed from 1-3pm:
@@ -167,7 +167,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       },
 
       // All others may park between 8am and 6pm, with a 2-hour maximum stay:
@@ -183,7 +183,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       }
     ],
     "images": [
@@ -344,7 +344,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       },
 
       // Loading zone for all others:
@@ -365,7 +365,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       }
     ],
     "images": [
@@ -422,7 +422,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
             ]
           }
         ],
-        "priority": 3
+        "priority": 5
       },
 
       // Weekday morning truck loading zone (implies no loading and no parking for all others):
@@ -446,7 +446,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       },
 
       // Two-hour parking at specific days and times:
@@ -477,7 +477,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       }
     ],
     "images": [
@@ -548,7 +548,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       },
 
       // Free daytime parking for permit holders:
@@ -582,7 +582,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       },
 
       // Paid daytime parking for everyone else:
@@ -610,7 +610,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       }
     ],
     "images": [
@@ -673,7 +673,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
               "apply": "only during"
             },
             "daysOfWeek": {
-              "days": ["mo", "tu", "we", "th", "fr"]   //This is implied in the "designated period", but included for clarity
+              "days": ["mo", "tu", "we", "th", "fr"]   // This is implied in the "designated period", but included for clarity
             },
             "timesOfDay": [
               {"from": "06:30", "to": "09:00"},
@@ -681,7 +681,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
             ]
           }
         ],
-        "priority": 3
+        "priority": 4 // This is rule overlaps with regular parking areas, so we use priority level 4 to distinguish it
       },
 
       // Overnight parking regulation:
@@ -697,7 +697,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       },
 
       // Street cleaning regulation:
@@ -738,7 +738,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       },
 
       // Time-limited parking for everyone else
@@ -754,7 +754,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       }
     ],
     "images": [

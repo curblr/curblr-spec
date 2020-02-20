@@ -1,14 +1,4 @@
 {
-  "manifest": {
-    "createdDate": "2019-12-30T11:40:45Z",
-    "lastUpdatedDate": "2019-12-30T17:40:45Z",
-    "timeZone": "America/Los_Angeles",
-    "currency": "USD",
-    "authority": {
-      "name": "Portland Bureau of Transportation",
-      "url": "https://www.portlandoregon.gov/transportation/"
-    }
-  },
   "type": "FeatureCollection",
   "features": [
     {
@@ -162,7 +152,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -204,7 +194,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -437,7 +427,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -548,7 +538,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -659,7 +649,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -757,7 +747,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -872,7 +862,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -913,7 +903,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -954,7 +944,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -996,7 +986,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -1107,7 +1097,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -1153,7 +1143,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -1194,7 +1184,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -1305,7 +1295,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -1420,7 +1410,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -1465,7 +1455,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -1510,7 +1500,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -1621,7 +1611,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -1726,7 +1716,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 15
@@ -1771,7 +1761,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -1811,7 +1801,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -1852,7 +1842,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -1963,7 +1953,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -2078,7 +2068,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -2189,7 +2179,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -2300,7 +2290,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -2365,7 +2355,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -2409,7 +2399,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -2449,7 +2439,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -2489,7 +2479,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -2529,7 +2519,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -2612,7 +2602,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -2727,7 +2717,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -2775,7 +2765,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -2886,7 +2876,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -3038,7 +3028,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -3153,7 +3143,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -3264,7 +3254,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -3328,7 +3318,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -3376,7 +3366,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -3417,7 +3407,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -3458,7 +3448,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -3498,7 +3488,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -3539,7 +3529,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -3584,7 +3574,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -3629,7 +3619,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -3671,7 +3661,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -3732,7 +3722,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -3843,7 +3833,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -3888,7 +3878,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -3929,7 +3919,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -4040,7 +4030,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -4081,7 +4071,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -4126,7 +4116,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -4171,7 +4161,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -4217,7 +4207,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -4286,7 +4276,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -4339,7 +4329,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -4396,7 +4386,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -4453,7 +4443,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -4510,7 +4500,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -4567,7 +4557,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -4624,7 +4614,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -4673,7 +4663,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -4722,7 +4712,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -4779,7 +4769,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -4828,7 +4818,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -4877,7 +4867,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -4918,7 +4908,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -4963,7 +4953,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 15
@@ -5009,7 +4999,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing",
               "reason": "bus_stop"
@@ -5058,7 +5048,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -5100,7 +5090,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "travel_lane"
@@ -5146,7 +5136,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -5191,7 +5181,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -5302,7 +5292,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -5363,7 +5353,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -5474,7 +5464,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -5515,7 +5505,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -5556,7 +5546,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -5601,7 +5591,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -5662,7 +5652,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -5707,7 +5697,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -5752,7 +5742,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -5813,7 +5803,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -5924,7 +5914,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -5985,7 +5975,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -6096,7 +6086,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -6145,7 +6135,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -6190,7 +6180,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -6239,7 +6229,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -6284,7 +6274,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 3
@@ -6330,7 +6320,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -6385,7 +6375,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120
@@ -6467,7 +6457,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -6578,7 +6568,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -6693,7 +6683,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -6804,7 +6794,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 30,
@@ -6915,7 +6905,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -6964,7 +6954,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -7012,7 +7002,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -7061,7 +7051,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -7172,7 +7162,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -7283,7 +7273,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -7394,7 +7384,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -7505,7 +7495,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -7554,7 +7544,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -7603,7 +7593,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -7652,7 +7642,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -7701,7 +7691,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -7805,7 +7795,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -7916,7 +7906,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 30,
@@ -8031,7 +8021,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -8080,7 +8070,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -8129,7 +8119,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -8174,7 +8164,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -8215,7 +8205,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -8260,7 +8250,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -8301,7 +8291,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -8354,7 +8344,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -8403,7 +8393,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 3
@@ -8449,7 +8439,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -8498,7 +8488,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -8547,7 +8537,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -8600,7 +8590,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -8649,7 +8639,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -8764,7 +8754,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 15
@@ -8810,7 +8800,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -8925,7 +8915,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -8974,7 +8964,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -9155,7 +9145,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -9266,7 +9256,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -9377,7 +9367,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -9431,7 +9421,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -9546,7 +9536,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -9591,7 +9581,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -9636,7 +9626,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -9681,7 +9671,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -9792,7 +9782,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -9853,7 +9843,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing",
               "maxStay": 5
@@ -9899,7 +9889,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -9948,7 +9938,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -10059,7 +10049,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -10108,7 +10098,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -10227,7 +10217,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -10338,7 +10328,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading"
             },
@@ -10466,7 +10456,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -10577,7 +10567,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -10688,7 +10678,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -10729,7 +10719,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -10770,7 +10760,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -10881,7 +10871,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -10992,7 +10982,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -11037,7 +11027,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -11082,7 +11072,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -11128,7 +11118,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -11173,7 +11163,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -11217,7 +11207,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -11261,7 +11251,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -11310,7 +11300,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -11366,7 +11356,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -11415,7 +11405,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading"
             },
@@ -11460,7 +11450,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -11511,7 +11501,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -11556,7 +11546,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -11608,7 +11598,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -11649,7 +11639,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -11698,7 +11688,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -11754,7 +11744,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -11802,7 +11792,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -11844,7 +11834,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -11894,7 +11884,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -11940,7 +11930,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -11989,7 +11979,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -12038,7 +12028,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -12083,7 +12073,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -12129,7 +12119,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -12171,7 +12161,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -12220,7 +12210,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -12269,7 +12259,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -12380,7 +12370,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -12491,7 +12481,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -12537,7 +12527,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -12586,7 +12576,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -12635,7 +12625,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 5
@@ -12681,7 +12671,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -12725,7 +12715,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -12770,7 +12760,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -12819,7 +12809,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -12872,7 +12862,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading"
             },
@@ -12917,7 +12907,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -12966,7 +12956,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -13015,7 +13005,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -13064,7 +13054,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -13114,7 +13104,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -13159,7 +13149,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -13200,7 +13190,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -13311,7 +13301,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -13356,7 +13346,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -13401,7 +13391,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -13446,7 +13436,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -13491,7 +13481,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -13538,7 +13528,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -13587,7 +13577,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -13648,7 +13638,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -13759,7 +13749,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -13870,7 +13860,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -13981,7 +13971,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14026,7 +14016,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14071,7 +14061,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "curb_cut"
@@ -14113,7 +14103,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "curb_cut"
@@ -14155,7 +14145,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14200,7 +14190,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14245,7 +14235,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -14299,7 +14289,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -14340,7 +14330,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14385,7 +14375,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14430,7 +14420,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -14541,7 +14531,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -14586,7 +14576,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14631,7 +14621,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14676,7 +14666,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -14787,7 +14777,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14832,7 +14822,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -14877,7 +14867,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 15
@@ -14923,7 +14913,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "curb_cut"
@@ -14965,7 +14955,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -15026,7 +15016,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -15071,7 +15061,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -15182,7 +15172,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -15297,7 +15287,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -15342,7 +15332,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -15387,7 +15377,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -15432,7 +15422,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -15477,7 +15467,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -15528,7 +15518,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -15579,7 +15569,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -15630,7 +15620,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -15677,7 +15667,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -15723,7 +15713,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -15834,7 +15824,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "curb_cut"
@@ -15875,7 +15865,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -15916,7 +15906,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -15968,7 +15958,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -16014,7 +16004,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -16066,7 +16056,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -16111,7 +16101,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -16158,7 +16148,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -16213,7 +16203,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -16254,7 +16244,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -16300,7 +16290,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -16345,7 +16335,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading"
             },
@@ -16397,7 +16387,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -16441,7 +16431,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -16486,7 +16476,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -16535,7 +16525,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -16646,7 +16636,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -16757,7 +16747,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -16868,7 +16858,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -16913,7 +16903,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 15
@@ -16959,7 +16949,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 15
@@ -17005,7 +16995,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 15
@@ -17051,7 +17041,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -17162,7 +17152,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -17204,7 +17194,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -17245,7 +17235,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -17306,7 +17296,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -17351,7 +17341,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -17393,7 +17383,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -17504,7 +17494,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -17615,7 +17605,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -17676,7 +17666,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -17787,7 +17777,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -17829,7 +17819,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "temporary_restriction"
@@ -17871,7 +17861,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -17923,7 +17913,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -17969,7 +17959,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing"
             },
@@ -18021,7 +18011,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing",
               "reason": "travel_lane"
@@ -18067,7 +18057,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -18182,7 +18172,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -18243,7 +18233,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -18288,7 +18278,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -18334,7 +18324,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -18484,7 +18474,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -18526,7 +18516,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -18572,7 +18562,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -18683,7 +18673,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -18794,7 +18784,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -18905,7 +18895,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -19016,7 +19006,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -19058,7 +19048,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -19119,7 +19109,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -19230,7 +19220,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -19341,7 +19331,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -19383,7 +19373,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -19498,7 +19488,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading",
               "maxStay": 30
@@ -19559,7 +19549,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -19725,7 +19715,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking"
             },
@@ -19770,7 +19760,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -19881,7 +19871,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -19926,7 +19916,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no parking",
               "reason": "curb_cut"
@@ -20039,7 +20029,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -20150,7 +20140,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -20265,7 +20255,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "loading",
               "maxStay": 15
@@ -20315,7 +20305,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -20426,7 +20416,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "standing",
               "reason": "transit_lane"
@@ -20468,7 +20458,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -20579,7 +20569,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -20623,7 +20613,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "no standing"
             },
@@ -20718,7 +20708,7 @@
         },
         "regulations": [
           {
-            "priority": 3,
+            "priority": 4,
             "rule": {
               "activity": "loading"
             },
@@ -20759,7 +20749,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -20874,7 +20864,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -20985,7 +20975,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21070,7 +21060,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21151,7 +21141,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21240,7 +21230,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21325,7 +21315,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21406,7 +21396,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21487,7 +21477,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21568,7 +21558,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21649,7 +21639,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21730,7 +21720,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21811,7 +21801,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21892,7 +21882,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -21973,7 +21963,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22054,7 +22044,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22135,7 +22125,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22216,7 +22206,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22297,7 +22287,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22378,7 +22368,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22459,7 +22449,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22540,7 +22530,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22621,7 +22611,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22702,7 +22692,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22787,7 +22777,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22868,7 +22858,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -22949,7 +22939,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23034,7 +23024,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23119,7 +23109,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23200,7 +23190,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23281,7 +23271,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23362,7 +23352,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23455,7 +23445,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23536,7 +23526,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23617,7 +23607,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23698,7 +23688,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23783,7 +23773,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23864,7 +23854,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -23945,7 +23935,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24030,7 +24020,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24111,7 +24101,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24192,7 +24182,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24273,7 +24263,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24354,7 +24344,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24439,7 +24429,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24520,7 +24510,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24601,7 +24591,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24682,7 +24672,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24767,7 +24757,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24848,7 +24838,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -24929,7 +24919,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25010,7 +25000,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25091,7 +25081,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25172,7 +25162,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25253,7 +25243,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25334,7 +25324,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25419,7 +25409,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25500,7 +25490,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25581,7 +25571,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25662,7 +25652,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25743,7 +25733,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25824,7 +25814,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25905,7 +25895,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -25986,7 +25976,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26067,7 +26057,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26152,7 +26142,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26233,7 +26223,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26314,7 +26304,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26395,7 +26385,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26476,7 +26466,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26557,7 +26547,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26638,7 +26628,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26723,7 +26713,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26804,7 +26794,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26885,7 +26875,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -26966,7 +26956,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -27047,7 +27037,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -27132,7 +27122,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -27213,7 +27203,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -27298,7 +27288,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -27379,7 +27369,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -27460,7 +27450,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -27571,7 +27561,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -27682,7 +27672,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking",
               "maxStay": 120,
@@ -27793,7 +27783,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },
@@ -27874,7 +27864,7 @@
         },
         "regulations": [
           {
-            "priority": 4,
+            "priority": 5,
             "rule": {
               "activity": "parking"
             },

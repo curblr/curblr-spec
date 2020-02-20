@@ -10,6 +10,7 @@ The manifest JSON object may contain the following properties:
 | :---: | :--- | :--- | :--- | :--- |
 | createdDate | Required | `string` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) | Timestamp when this CurbLR feed was created from asset data | `2019-08-15T21:17:41-05:00` |
 | lastUpdatedDate | Optional | `string` ([ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) | Date when this CurbLR feed was updated from asset data. Does not apply if this is the initial CurbLR feed for an area; otherwise, this field is required. | `2019-08-20T15:33:02-05:00` |
+| curblrVersion | Optional | `enum` (`string`) | Describes the version of the CurbLR data specification used to create this feed | `1.1.0` |
 | timeZone | Required | `enum` (`string`) Possible values are listed in [tz database](https://www.iana.org/time-zones) | Defines the timezone for the local area covered by the CurbLR feed | `Europe/London`
 | currency | Required | `string` Possible values are listed in [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) | Local currency, for interpreting payment information | `USD`
 | unitHeightLength | Optional | `string` (for most countries, this will be `feet` or `metres`) | Defines the unit of measure used to describe maximum and minimum vehicle height and length restrictions in the [UserClasses](UserClasses.md). If a CurbLR feed includes any height- or length-related rules (e.g.`maxHeight` or `maxLength` is used), then this field is required. | `feet`, `metres` |
@@ -29,4 +30,4 @@ The links below show real world curb regulations translated into CurbLR.
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
+| Sample of [downtown Portland's parking regulations](/conversions/Portland/portland_2020-02-20.curblr.json) | Contains data for about 3 miles of parking regulations, surveyed in November 2019. This can also be viewed at [demo.curblr.org](https://demo.curblr.org)

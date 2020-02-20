@@ -36,7 +36,7 @@ No stopping is allowed by anyone at any time. Example location information is in
           "activity": "no stopping",
           "reason": "tow-away zone"
         },
-        "priority": 4
+        "priority": 5
       }
     ],
     "images": [
@@ -151,7 +151,7 @@ Parking is limited to two hours between 8am and 8pm Monday through Saturday. Pay
             "devices": ["meter"]
           }
         }
-        "priority": 4
+        "priority": 5
       }
     ],
     "images": [
@@ -204,7 +204,7 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
             "subclasses": ["Enterprise"]
           }
         ],
-        "priority": 4
+        "priority": 5
       }
     ],
     "images": [
@@ -412,7 +412,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
             ]
           }
         ],
-        "priority": 4
+        "priority": 5
       }  
     ],
     "images": [
@@ -423,7 +423,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
 ```
 
 # Prohibit specific users
-No parking for Kardashians at any time
+No parking for Kardashians at any time. Let's pretend this sign is not yet in place, but proposed for consideration.
 
 ### **Sign**
 
@@ -450,7 +450,8 @@ No parking for Kardashians at any time
         "objectId": "190-349s",
         "derivedFrom": ["w0434", "q9404"],
         "marker": "sign",
-        "streetName": "Celebrity St"
+        "streetName": "Celebrity St",
+        "status": "proposed"
       },
     "regulations": [
       {
@@ -462,7 +463,7 @@ No parking for Kardashians at any time
             "classes": ["Kardashians"],
           }
         ],
-        "priority": 4
+        "priority": 5
       }  
     ],
     "images": [
