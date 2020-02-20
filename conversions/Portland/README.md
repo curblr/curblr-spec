@@ -50,6 +50,7 @@ These steps were followed to create a CurbLR feed for downtown Portland, Oregon.
   "manifest": {
       "createdDate": "2019-12-30T11:40:45Z",
       "lastUpdatedDate": "2020-02-20T17:40:45Z",
+      "curblrVersion": "1.1.0",
       "timeZone": "America/Los_Angeles",
       "currency": "USD",
       "authority": {
