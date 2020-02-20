@@ -40,7 +40,7 @@ These steps were followed to create a CurbLR feed for downtown Portland, Oregon.
    We use the joined output (`portland_2020-01-06_step4_curbonly.joined.geojson`) in the following step.
 
 
-6. Use `geojson_to_curblr.js` script to convert output into CurbLR feed. This will require customization for `opening_hours` for your local area; a parser is not included at this stage.
+6. Use `geojson_to_curblr.js` [script](https://github.com/sharedstreets/curblr/blob/master/conversions/js/geojson_to_curblr.js) to convert output into CurbLR feed. This will require customization for `opening_hours` for your local area; a parser is not included at this stage.
 
    `node ../js/geojson_to_curblr.js portland_2020-01-06_step4_curbonly.joined.geojson > portland_2020-01-06_step5_curblrization.geojson`
 
