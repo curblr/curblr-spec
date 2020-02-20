@@ -141,7 +141,7 @@
     <tag k='opening_hours' v='Mo-Fr 07:00-18:00' />
     <tag k='payment' v='true' />
     <tag k='point_relation' v='3' />
-    <tag k='priority' v='1' />
+    <tag k='priority' v='2' />
     <tag k='reason' v='construction' />
   </node>
   <node id='-103184' action='modify' lat='45.52164946462' lon='-122.68007688291'>
@@ -152,7 +152,7 @@
     <tag k='opening_hours' v='Mo-Fr 07:00-18:00' />
     <tag k='payment' v='true' />
     <tag k='point_relation' v='1' />
-    <tag k='priority' v='1' />
+    <tag k='priority' v='2' />
     <tag k='reason' v='construction' />
   </node>
   <node id='-103187' action='modify' lat='45.52137932051' lon='-122.68029883638'>

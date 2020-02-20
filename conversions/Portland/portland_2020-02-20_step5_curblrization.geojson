@@ -296,7 +296,7 @@
         },
         "regulations": [
           {
-            "priority": 1,
+            "priority": 2,
             "rule": {
               "activity": "no parking",
               "reason": "construction",
@@ -365,7 +365,7 @@
         },
         "regulations": [
           {
-            "priority": 1,
+            "priority": 2,
             "rule": {
               "activity": "no parking",
               "reason": "construction",
