@@ -3,9 +3,19 @@
 
 These steps were followed to create a CurbLR feed for downtown Portland, Oregon. Commands are given for each step. Input/output files are included, as well as any required scripts or configurations.
 
-1. Collect field data (I used [Field Papers](http://fieldpapers.org/)).
+1. Collect field data (I used [Field Papers](http://fieldpapers.org/)). Here's the overall map of where I went, and a single annotated atlas page with digitized notes and locations:
+
+![IMG_2531](https://user-images.githubusercontent.com/9657971/84815992-b39dba80-afc8-11ea-884f-164f04a3432f.JPG)
+
+As an example, my annotated Field Papers atlas pages and photos taken are [here](https://drive.google.com/file/d/1tcTiNqnNYtyaKNv7KYrdVBeT1X7WxHSP/view?usp=sharing). The GPS data on the photos was affected by urban canyoning and was not accurate enough to use, so I ended up using timestamps and knowledge of my route to determine which photos were taken at which annotation on a Field Paper. This would be difficult for someone to replicate - apologies.
+
 
 2. Digitize curb assets in [JOSM](https://josm.openstreetmap.de/). Follow [tagging schema](https://docs.google.com/spreadsheets/d/17E97gZJ0Tl7KZEejmm47_eKq5ESHVo-zo7xb1Fv_XA8/edit#gid=1371993522) as closely as possible. *Do not upload to OSM - this is not an approved tagging schema*.
+
+Here's a screenshot of what the Portland data looked like (red points), with an OSM basemap in the background:
+
+<img width="1792" alt="Screen Shot 2019-12-06 at 3 51 27 PM" src="https://user-images.githubusercontent.com/9657971/84816531-260e9a80-afc9-11ea-98c0-03c49eca538c.png">
+
 
    When finished, save the layer as `.osm` file.
 
