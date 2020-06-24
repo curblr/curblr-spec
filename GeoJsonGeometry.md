@@ -22,8 +22,8 @@ Here's an example of the geometry of a GeoJSON feature. Note that the coordinate
   "geometry": {
     "type": "LineString",
     "coordinates": [
-      [-112.12588548660278,33.45134313598914],
-      [-112.12530076503754,33.45132075686167]
+      [-112.1258855,33.4513431],
+      [-112.1253007,33.4513208]
     ],
     "properties": {
     }

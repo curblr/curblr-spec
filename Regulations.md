@@ -6,12 +6,14 @@ A regulation has several parts:
 * [UserClasses](UserClasses.md): Defines what types of vehicles, permits, and modes to whom this regulation applies
 * [TimeSpans](TimeSpans.md): Defines one or more date and time periods when this regulation is in effect
 * [Payment](Payment.md): Provides optional, supplemental information about a payment profile and how it is applied
-* [Priority](Priority.md): Defines how this regulation should supersede or be superseded by others
 
-Once a full set of prioritized regulations is resolved, there should be only a single applicable activity [Rule](Rule.md) at a given location on the curb for any particular combination of [UserClasses](UserClasses.md) and [TimeSpan](TimeSpans.md). In some cases, there will be no applicable activity [Rule](Rule.md).
+# Overlapping regulations and hierarchy
 
-It is also possible to programmatically identify locations with conflicting or ambiguous regulations.
+It is possible for more than one regulation to apply to the same section of a street. For example, a section of curb may be a loading zone during the morning, a paid parking zone during the afternoon, and a free parking zone in the evening.
 
+However, there should be only a single applicable activity [Rule](Rule.md) at a given location on the curb for any particular combination of [UserClasses](UserClasses.md) and [TimeSpan](TimeSpans.md). In some cases, there will be no applicable activity [Rule](Rule.md). But it is not possible for a section of curb to have multiple conflicting regulations at the same time; for example, a section of curb cannot simultaneously be a "No stopping" zone for all users, as well as a "Parking" zone for all users.
+
+A CurbLR feed contains the necessary information to resolve potential conflicts when regulations overlap one another. When interpreting a CurbLR feed or displaying the data visually, the data should be prioritized in terms of most restrictive and specifc (highest priority) to least restrictive and specific (lowest priority). This documentation lists a default hierarchy through which CurbLR regulations can be prioritized. The hierarchy is included as part of the manifest, enabling a user to customize it in the case when local regulations differ from the norm.
 
 # Examples
 
