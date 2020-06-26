@@ -53,8 +53,7 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
               {"from": "09:00", "to": "18:00"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
       {
         "rule": {
@@ -70,8 +69,7 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
               {"from": "09:00","to": "18:00"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       }
     ],
     "images": [
@@ -126,8 +124,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
               {"from": "00:00", "to": "08:00"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
 
       // Street cleaning on Wed from 1-3pm:
@@ -145,8 +142,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
               {"from": "13:00", "to": "15:00"}
             ]
           }
-        ],
-        "priority": 3
+        ]
       },
 
       // Zone 5 permit holders may park anytime between 8am and 6pm, every day:
@@ -166,8 +162,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
               {"from": "08:00", "to": "18:00"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
 
       // All others may park between 8am and 6pm, with a 2-hour maximum stay:
@@ -182,8 +177,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
               {"from": "08:00", "to": "18:00"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       }
     ],
     "images": [
@@ -239,8 +233,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
               "apply": "only during"
             }
           }
-        ],
-      "priority": 2
+        ]
       },
 
       // No parking that applies during the winter regardless of snowfall:
@@ -259,8 +252,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
               {"from": "03:00", "to": "07:00"}
             ]
           }
-        ],
-        "priority": 2
+        ]
       }
     ],
     "images": [
@@ -318,8 +310,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
               {"from": "16:00", "to": "18:30"}
             ]
           }
-        ],
-        "priority": 3
+        ]
       },
 
       // Handicap parking regulation:
@@ -343,8 +334,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
               {"from": "18:30", "to": "19:30"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
 
       // Loading zone for all others:
@@ -364,8 +354,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
               {"from": "18:30", "to": "19:30"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       }
     ],
     "images": [
@@ -421,8 +410,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
               {"from": "15:30", "to": "18:30"}            
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
 
       // Weekday morning truck loading zone (implies no loading and no parking for all others):
@@ -445,8 +433,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
               {"from": "06:00", "to": "10:00"}            
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
 
       // Two-hour parking at specific days and times:
@@ -476,8 +463,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
               {"from": "08:00", "to": "22:00"}            
             ]
           }
-        ],
-        "priority": 5
+        ]
       }
     ],
     "images": [
@@ -547,8 +533,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
               {"from": "14:00", "to": "16:00"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
 
       // Free daytime parking for permit holders:
@@ -581,8 +566,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
               {"from": "16:00", "to": "18:30"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
 
       // Paid daytime parking for everyone else:
@@ -609,8 +593,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
               {"from": "16:00", "to": "18:30"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       }
     ],
     "images": [
@@ -680,8 +663,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
               {"from": "13:30", "to": "16:00"}
             ]
           }
-        ],
-        "priority": 4 // This is rule overlaps with regular parking areas, so we use priority level 4 to distinguish it
+        ]
       },
 
       // Overnight parking regulation:
@@ -696,8 +678,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
               {"from": "00:00", "to": "08:00"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
 
       // Street cleaning regulation:
@@ -715,8 +696,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
               {"from": "10:00", "to": "13:00"}
             ]
           }
-        ],
-        "priority": 3
+        ]
       },
 
       // Zone 64 allowed parking
@@ -737,8 +717,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
               {"from": "08:00", "to": "18:00"},
             ]
           }
-        ],
-        "priority": 5
+        ]
       },
 
       // Time-limited parking for everyone else
@@ -753,8 +732,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
               {"from": "08:00", "to": "18:00"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       }
     ],
     "images": [

@@ -35,8 +35,7 @@ No stopping is allowed by anyone at any time. Example location information is in
         "rule": {
           "activity": "no stopping",
           "reason": "tow-away zone"
-        },
-        "priority": 4
+        }
       }
     ],
     "images": [
@@ -89,8 +88,7 @@ No one may park during snow emergencies. Example location information is include
               "apply": "only during"
             }
           }
-        ],
-        "priority": 2
+        ]
       }
     ],
     "images": [
@@ -151,7 +149,6 @@ Parking is limited to two hours between 8am and 8pm Monday through Saturday. Pay
             "devices": ["meter"]
           }
         }
-        "priority": 5
       }
     ],
     "images": [
@@ -203,8 +200,7 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
             "classes": ["car share"],
             "subclasses": ["Enterprise"]
           }
-        ],
-        "priority": 5
+        ]
       }
     ],
     "images": [
@@ -263,8 +259,7 @@ No parking allowed between 6am and 8am on the 2nd and 4th Wednesday of each mont
               {"from": "06:00", "to": "08:00"}
             ]
           }
-        ],
-        "priority": 3
+        ]
       }
     ]
     "images": [
@@ -326,8 +321,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
               {"from": "07:00", "to": "16:00"}
             ]
           }
-        ],
-        "priority": 3
+        ]
       },
 
       // defines a no standing zone for all other vehicles:
@@ -350,8 +344,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
               {"from": "07:00", "to": "16:00"}
             ]
           }
-        ],
-        "priority": 3
+        ]
       }
     ],
     "images": [
@@ -411,8 +404,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
               {"name": "holidays", "apply": "except during"}
             ]
           }
-        ],
-        "priority": 5
+        ]
       }  
     ],
     "images": [
@@ -462,8 +454,7 @@ No parking for Kardashians at any time. Let's pretend this sign is not yet in pl
           {
             "classes": ["Kardashians"],
           }
-        ],
-        "priority": 5
+        ]
       }  
     ],
     "images": [

@@ -6,8 +6,8 @@ Each GeoJSON feature may have the following properties:
 
 | Field name | Importance  | Type | Description | Example
 | :--- | :--- | :--- | :--- | :--- |
-| activity | Required | `enum` (`string`) Values: `parking`, `no parking`, `standing`, `no standing`, `loading`, `no loading` | Describes what activity is forbidden or permitted | `parking`
-| reason | Optional | `string` Suggested values; see below | Describes why the activity rule is in place. This is especially helpful for denoting temporary restrictions or regulations such as snow emergency zones, which may be in effect for irregular or unpredictable time periods; these may require human interpretation or an API to determine whether they are in effect | `snow emergency zone`
+| activity | Required | `enum` (`string`) Values: `parking`, `no parking`, `standing`, `no standing`, `loading`, `no loading` | Describes what activity is forbidden or permitted | `parking` |
+| priorityCategory | Required | `string` Suggested values; see below | Assigns a simple, descriptive label to the regulation, often based on the activity or date properties. This describes why the activity rule is in place. All unique `priorityCategory` values in a CurbLR feed must be listed in a prioritized order in the [metadata](Manifest.md). This list creates a hierarchy that can be used to determine which regulation takes precedence when there are overlapping rules. The [metadata](Manifest.md) includes an example ordered list. | `game day` |
 | maxStay | Optional | `int` | The length of time (in minutes) for which the curb may be used under this regulation. This provides a time restriction, in addition to any [TimeSpan](TimeSpans.md) restrictions | `30`
 | noReturn | Optional | `int` | The length of time (in minutes) that a user must vacate the curbspace before allowed to return for another stay. Generally applies only to regulations with a `maxStay` | `60`|
 | payment | Optional | `boolean` Default value: `false` | `true` indicates that payment is required. This field is not necessary if no payment is required. Additional payment information is stored in [Payment](Payment.md)| `true`|
@@ -17,6 +17,17 @@ Each GeoJSON feature may have the following properties:
 | authority.phone | Optional override | `string` (`E.164 format`: + `country code` + `local area code` + `phone number`) | The phone number,  including country and area code, for the regulatory agency that could be contacted about parking regulations | `+15551231234`
 
 Data fields should generally be considered case insensitive since they are used programmatically; we use lower-case in our examples, except for fields that would be used for display purposes (such as a street name or agency name).
+
+
+It is possible for more than one regulation to apply to the same section of a street. For example, a section of curb may be a loading zone during the morning, a paid parking zone during the afternoon, and a free parking zone in the evening. A stretch of curb may be regulated for two-hour parking normally, but during a snow emergency that regulation is superseded by a no parking regulation. Or a temporary regulation might be put into place to disallow parking in a construction zone.
+
+A priority hierarchy allows different regulations to coexist without ambiguity. When multiple regulations apply at a specific location and time, the priority hierarchy determines which one is in force.
+
+In the real world, priorities are often implied rather than explicit. Road users assume that a "No Parking - Street Cleaning" sign overrules a "2H Meter Parking" sign. As computers are not adept at making these kinds of value judgements, CurbLR requires that priorities be specified explicitly.
+
+Priorities also avoid the need to define the regulations for each span of curb individually. An entire street or set of streets might be regulated as resident parking, but with small spans near fire hydrants defined with higher priority "no parking" regulations applied. To resolve potential conflicts when regulations overlap one another, a descriptive priority category is included as part of each regulation, and the [metadata](Manifest.md) includes an ordered list of these priority categories, establishing a hierarchy on the street.
+
+The priority hierarchy is included in the [metadata](Manifest.md) and should be used to resolve potential conflicts when regulations overlap one another. The default hierarchy is described below. It is based on the premise that more restrictive regulations supercede more permissive regulations, which is how a user would interpret these signs on the street. The default hierarchy will apply to most places, but can be customized if a jurisdiction differs from the norm or needs more flexibility. By defining categories and placing them in a priority order, CurbLR avoids the need to hardcode the priority level of each regulation on a street.
 
 
 ## Activity: possible values
@@ -40,21 +51,28 @@ The activity classifications may be modified to describe myriad activities along
 * TNC pick-up/drop-off zone: Loading zone for TNCs. Implies no loading, standing, or parking for any other users.
 
 
-## Reason: well-known values
+## Priority category: additional info and example
 
-`reason` can be used to convey the purpose of the rule. This information is often described elsewhere in CurbLR and is not required but may be helpful for some users. The following is a suggested but not exhaustive list of values for `reason`:
-- `commercial loading`
-- `construction zone`
-- `no stopping`
-- `passenger loading`
-- `resident parking`
-- `rideshare pick-up drop-off`
+Regulations sometimes overlap in time and space, leading to potential ambiguity about which rule takes precedence. The `priorityCategory` exists to resolve these potential conflicts. It is used to sort regulations into categories that can then be placed into an ordered list describing which regulations take precedence over others. This will typically be a list of the `activity` types, plus some special types of rules that may appear temporarily or periodically and should be handled specially.
+
+When regulations overlap, the more restrictive activity rule typically supercedes the less restrictive activity rule (e.g. a "No stopping" zone typically overrides a free parking area). However, cities often create temporary restrictions or regulations for special events, construction, weather emergencies, etc. These rules are often in effect for irregular or unpredictable time periods and a city may want to customize how these special rules fit into the hierarchy.
+
+The following is a suggested but not exhaustive list of values for `priorityCategory`; this property should be customized as needed to describe a city:
+- `no standing`
 - `snow emergency zone`
+- `construction`
+- `game day`
+- `special event`
 - `street cleaning`
-- `taxi stand`
-- `tow-away zone`
+- `temporary`
+- `standing`
+- `no loading`
+- `loading`
+- `no parking`
+- `paid parking`
+- `parking`
 
-Please use the Github issue tracker to suggest additional values.
+All unique `priorityCategory` values in a CurbLR feed must be listed in the [metadata](Manifest.md), placed in order from highest to lowest priority. For the example above, this list would be written as `priorityHierarchy` = [`no standing`, `snow emergency zone`, `construction`, `game day`, `special event`, `street cleaning`, `temporary`, `standing`, `no loading`, `loading`, `no parking`, `paid parking`, `parking`]
 
 # Examples
 
