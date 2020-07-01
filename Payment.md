@@ -22,7 +22,6 @@ Each GeoJSON feature may have the following Payment properties:
 | rates | Optional | `array` | The fee amounts and durations. If the fee amount varies depending on time of day, then optional TimeSpan object(s) can be included here. Each rates field can include a single or multiple values, so for consistency, rates fields are always arrays.
 | rate.fees | Optional| array of `float` | The amounts charged for the duration of stay, expressed as whole units of currency. Currency units can be specified in the `manifest` for the CurbLR feed. | [`1`]; [`0.25, 0.5`]
 | rate.durations | Optional| array of `int` | Duration of stay, in mins, for which this fee applies. Consecutive periods (for incrementing or other tiered parking rates) can be stored in an array. The final fee and duration in the arrays are assumed to repeat until the `maxStay`, defined in the [rule](Rule.md). | `[60]`; `[30, 15, 15]` |
-| rate.timeSpans | Optional| `array`, see [TimeSpans](TimeSpans.md) and examples | If the pricing schedule varies according to the time of day, a timespan object can be embedded within the rate object | see [TimeSpans](TimeSpans.md) and examples below |
 | methods | Optional| array of `string` Well-known values: `meter`, `pay station`, `digital`, `phone` | How the fee is collected at the street-level, including through digital payment. | `["pay station", "digital"]` |
 | forms | Optional| array of `string` Well-known values: `coins`, `bills`, `Visa`, `ApplePay`, `Mastercard`, `American Express`, `Discover`, `AndroidPay`. These are not exhaustive. Additional, locally-specific values exist. | What type of payment is accepted. Expressed as an array. | `["coins", "SFMARTA card", "ParkingApp"]` |
 | operator | Optional| `string` | The ID or name of the company that operates the payment method. If the payment operator is the same for most/all of the area, then this could be set as a property of the GeoJSON `Feature Collection` and used here only as an override  | `Acme Paystation` |
@@ -81,49 +80,6 @@ Describes a parking meter. In the first hour of a parking session, the fee is $1
     "operator": "LADOT",
     "phone": "+15552225039",
     "deviceIds": ["MB-2494"]
-  }
-}
-```
-
-## Flat-rate tier, varies based on time of day
-Describes a parking meter. From 9am to 5pm, the fee is $1 for the first 30 mins and $2 per 15 mins. From 5pm to 10pm, the fee is $1 per hour.
-
-```json
-{
-  "payment": {
-    "rates": [
-      {
-        "fees": [1, 2],
-        "durations": [60, 60],
-        "timeSpans": [
-          {
-            "timeOfDay": {
-              "from": "09:00",
-              "to": "17:00"
-            }
-          }
-        ]
-      },
-      {
-        "fees": [1],
-        "durations": [60],
-        "timeSpans": [
-          {
-            "timesOfDay": [
-              {
-                "from": "17:00",
-                "to": "22:00"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "methods": ["meter", "digital"],
-    "forms": ["coins", "Mastercard", "Visa", "American Express", "Discover", "ApplePay", "AndroidPay"],
-    "operator": "LADOT",
-    "phone": "+15552225039",
-    "deviceIds": ["MB-0028"]
   }
 }
 ```

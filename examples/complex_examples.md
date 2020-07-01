@@ -1,4 +1,4 @@
-The examples below include the regulation described by the sign, as well as sample GeoJSON coordinates and location properties.
+The examples below include the regulation described by the sign, as well as sample GeoJSON coordinates and location properties. In any of these examples, the `priorityHierarchy` in the [metadata](Manifest.md) should list all of the priority categories included in the CurbLR feed, placed in order from highest priority to lowest.
 
 
 # Time limited parking with permit exemption, planned to take effect 2020-02-20
@@ -36,7 +36,8 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
       // defines a no standing zone for all other vehicles:
       {
         "rule": {
-          "activity": "parking"
+          "activity": "parking",
+          "priorityCategory": "parking"
         },
         "userClasses": [
           {
@@ -58,6 +59,7 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking",
           "MaxStay": 120
         },
         "timeSpans": [
@@ -78,6 +80,8 @@ Any vehicle may park at this location, but vehicles without an 'F' or 'N' permit
   }
 }
 ```
+
+_[In this example, both rules have the same `priorityCategory` but they do not conflict because one of the rules has a userClass. However, a user could create a separate priorityCategory (e.g. "restricted parking", "permit parking", or "resident parking") if desired; the categories used in this documentation are just examples and can be modified as desired.]_
 
 # Time limited parking with permit exemption and multiple no parking periods
 No vehicles may park between 6pm and 8am daily due to overnight parking restrictions, or between 1pm and 3pm on Wednesday for street cleaning. Between 8am and 6pm, vehicles without a Zone 5 permit are limited to two hours.
@@ -115,7 +119,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       {
         "rule": {
           "activity": "no parking",
-          "reason": "no overnight parking"
+          "priorityCategory": "no parking"
         },
         "timeSpans": [
           {
@@ -131,7 +135,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       {
         "rule": {
           "activity": "no parking",
-          "reason": "street cleaning"
+          "priorityCategory": "street cleaning"
         },
         "timeSpans": [
           {
@@ -148,7 +152,8 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       // Zone 5 permit holders may park anytime between 8am and 6pm, every day:
       {
         "rule": {
-          "activity": "parking"
+          "activity": "parking",
+          "priorityCategory": "parking"
         },
         "userClasses": [
           {
@@ -169,6 +174,7 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking",
           "maxStay": 120
         },
         "timeSpans": [
@@ -186,7 +192,6 @@ No vehicles may park between 6pm and 8am daily due to overnight parking restrict
   }
 }
 ```
-
 
 # No parking for snow removal (fixed and variable times)
 Between December 1st and April 1st of each year, no one may park between 3am and 7am to facilitate snow removal. Parking is also prohibited when there is more than 2" of snow regardless of the time or date.
@@ -224,7 +229,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
       {
         "rule": {
           "activity": "no parking",
-          "reason": "snow emergency zone"
+          "priorityCategory": "snow emergency zone"
         },
         "timeSpans": [
           {
@@ -240,7 +245,7 @@ Between December 1st and April 1st of each year, no one may park between 3am and
       {
         "rule": {
           "activity": "no parking",
-          "reason": "snow emergency zone"
+          "priorityCategory": "winter restrictions"
         },
         "timeSpans": [
           {
@@ -298,7 +303,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
       {
         "rule": {
           "activity": "no standing",
-          "reason": "rush hour"
+          "priorityCategory": "rush hour"
         },
         "timeSpans": [
           {
@@ -317,6 +322,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking"
           "maxStay": 120
         },
         "userClasses": [
@@ -341,7 +347,7 @@ No vehicles may stop between 7am and 9:30am or between 4pm and 6:30pm Monday thr
       {
         "rule": {
           "activity": "loading",
-          "reason": "loading zone",
+          "priorityCategory": "loading",
           "maxStay": 15
         },
         "timeSpans": [
@@ -400,6 +406,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
       {
         "rule": {
           "activity": "no standing",
+          "priorityCategory": "no standing"
         },
         "timeSpans": [
           {
@@ -417,6 +424,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
       {
         "rule": {
           "activity": "loading",
+          "priorityCategory": "loading",
           "maxStay": 60
         },
         "userClasses": [
@@ -440,6 +448,7 @@ No vehicles may stop between 3:30pm and 6:30pm Monday through Friday. Truck load
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking"
           "maxStay": 120
         },
 
@@ -509,6 +518,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking"
         },
         "userClasses": [
           {
@@ -540,6 +550,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking",
           "payment": false  // this is the default, but specified here for clarity
         },
         "userClasses": [
@@ -573,6 +584,7 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking",
           "payment": true
         },
         "timeSpans": [
@@ -603,10 +615,12 @@ Only vehicles with a Zone F permit may park from 6:30pm to 8:00pm Monday through
 }
 ```
 
+_[This example does not use the `paid parking` priority category described in other examples because it would supercede the permit parking (implying that users had to pay regardless of permit status). Depending on a city's context and how it plans to map rules, a user could create a hybrid "paid or permit parking" category, two separate categories for permit and paid parking, or could combine all these rules into "parking".]_
+
 # School loading zone, time limited parking with permit exemption, and multiple no parking periods
 On school days only 5 minute passenger loading is permitted from 6:30am to 9am and from 1:30pm to 4pm. No vehicles may park between 6pm and 8am daily due to overnight parking restrictions, or between 10am and 1pm on Monday for street cleaning. Between 8am and 6pm, vehicles without a Zone 64 permit are limited to 2 hours.
 
-_[Editor's Note: The school day regulation overlaps with both the overnight no parking and the 2-hour allowed parking regulations. To avoid ambiguity about which rule is in effect, the school day regulation is given a higher priority than the other regulations.]_
+_[Note: The school day regulation overlaps with both the overnight no parking and the 2-hour allowed parking regulations. To avoid ambiguity about which rule is in effect, the school day regulation is given a higher priority than the other regulations.]_
 
 ### **Sign**
 
@@ -641,7 +655,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       {
         "rule": {
           "activity": "loading",
-          "reason": "school pick-up and drop-off only",
+          "priorityCategory": "loading",
           "maxStay": 5
         },
         "userClasses": [
@@ -670,6 +684,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       {
         "rule": {
           "activity": "no parking",
+          "priorityCategory": "no parking"
         },
         "timeSpans": [
           {
@@ -685,7 +700,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       {
         "rule": {
           "activity": "no parking",
-          "reason": "street cleaning"
+          "priorityCategory": "street cleaning"
         },
         "timeSpans": [
           {
@@ -704,6 +719,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking"
         },
         "userClasses": [
           {
@@ -724,6 +740,7 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking",
           "maxStay": 120
         },
         "timeSpans": [
@@ -741,3 +758,4 @@ _[Editor's Note: The school day regulation overlaps with both the overnight no p
   }
 }
 ```
+_[The priorityHierarchy in the metadata would include "loading", "street cleaning", "no parking", and "parking", in that order.]_

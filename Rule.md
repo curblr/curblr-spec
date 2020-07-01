@@ -69,10 +69,39 @@ The following is a suggested but not exhaustive list of values for `priorityCate
 - `no loading`
 - `loading`
 - `no parking`
-- `paid parking`
+- `paid parking` and/or `permit parking`, to be included depending on how the data is mapped and digitized (see next section)
 - `parking`
 
 All unique `priorityCategory` values in a CurbLR feed must be listed in the [metadata](Manifest.md), placed in order from highest to lowest priority. For the example above, this list would be written as `priorityHierarchy` = [`no standing`, `snow emergency zone`, `construction`, `game day`, `special event`, `street cleaning`, `temporary`, `standing`, `no loading`, `loading`, `no parking`, `paid parking`, `parking`]
+
+### Priority categories: Visual example
+
+Priority categories resolve overlapping, contradicting rules. They also make it easier to digitize a city's data. Here's an example of four regulations that may coexist on a street, layered on top of one another:
+
+<img src="images/priority_example_1.png" width="800">
+
+We assign a descriptive priority category to each, which are then ordered in the priorityHierachy as ["snow emergency zone", "loading", "paid parking", "free parking"].
+
+When the CurbLR feed is being interpreted, it will generally be queried to see which regulation applies at a given time. Here is a view of the street at 2pm on a Tuesday, for example:
+
+<img src="images/priority_example_2.png" width="800">
+
+And here is the street at 9am on a Monday, for example:
+
+<img src="images/priority_example_3.png" width="800">
+
+In each case, the priority categories and hierarchy establish the order in which rules should be "layered" on top of one another, in the event that they overlap.
+
+This approach also makes it easier for someone to digitize the rules on a street. For example, it may be advantageous to be able to create "free parking" zones as a default regulation that applies when no other rules are in force, and then "paid parking" zones on top. Because of the priority categories, we can simply add the full section of street where these rules apply, and add the timeSpan or other relevant details. Without priority categories, we would have to split the paid parking zone into multiple geometries with different time spans, so that there isn't conflict between the paid parking zone and the loading zone:
+
+<img src="images/priority_example_4.png" width="800">
+
+The same is true for the free parking zone underneath. Since the categories are flexible, cities can customize them to match how their local rules should be applied and to make their mapping process straightforward and tailored to their digitization method.
+
+
+
+
+
 
 # Examples
 
@@ -100,7 +129,7 @@ Defines a `regulation` to allow people with a Zone 4 Resident Parking Permit to 
 {
   "rule": {
     "activity": "parking",
-    "reason": "resident parking"
+    "priorityCategory": "paid or user-restricted parking"
   },
   "userClasses": [
     {
@@ -117,6 +146,7 @@ Defines a `regulation` that allows parking for handicap users with a 3 hour time
 {
   "rule": {
     "activity": "parking",
+    "priorityCategory": "paid or user-restricted parking",
     "maxStay": 180
   },
   "userClasses": [
@@ -133,6 +163,7 @@ Defines a `restriction` that allows anyone to park for up to two hours with paym
 {
   "rule": {
     "activity": "parking",
+    "priorityCategory": "parking",
     "maxStay": 120,
     "noReturn": 30
   }
@@ -145,7 +176,7 @@ Defines a `regulation` that allows taxis to stand and pick up passengers. Implie
 {
   "rule": {
     "activity": "standing",
-    "reason": "taxi stand"
+    "priorityCategory": "standing"
   },
   "userClasses": [
     {
@@ -161,7 +192,7 @@ Defines a `regulation` that allows rideshare companies to drop off and pick up p
 {
   "rule": {
     "activity": "loading",
-    "reason": "rideshare pick-up drop-off"
+    "priorityCategory": "loading"
   },
   "userClasses": [
     {

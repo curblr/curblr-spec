@@ -33,7 +33,8 @@ No stopping is allowed by anyone at any time. Example location information is in
     "regulations": [
       {
         "rule": {
-          "activity": "no stopping",
+          "activity": "no standing",
+          "priorityCategory": "no standing",
           "reason": "tow-away zone"
         }
       }
@@ -79,7 +80,7 @@ No one may park during snow emergencies. Example location information is include
       {
         "rule": {
           "activity": "no parking",
-          "reason": "snow emergency zone"
+          "priorityCategory": "snow emergency zone"
         },
         "timeSpans": [
           {
@@ -132,6 +133,7 @@ Parking is limited to two hours between 8am and 8pm Monday through Saturday. Pay
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "paid parking",
           "payment": true
         },
         "timeSpans": [
@@ -193,7 +195,7 @@ Only Enterprise CarShare vehicles may park. All others are prohibited at all tim
       {
         "rule": {
           "activity": "parking",
-          "reason": "car share only"
+          "priorityCategory": "parking"
         },
         "userClasses" : [
           {
@@ -244,7 +246,7 @@ No parking allowed between 6am and 8am on the 2nd and 4th Wednesday of each mont
       {
         "rule": {
           "activity": "no parking",
-          "reason": "street cleaning"
+          "priorityCategory": "street cleaning"
         },
         "timeSpans": [
           {
@@ -305,7 +307,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
       {
         "rule": {
           "activity": "parking",
-          "reason": "construction vehicles only"
+          "priorityCategory": "construction"
         },
         "userClasses" : [
           {
@@ -328,7 +330,7 @@ All vehicles except permitted construction vehicles are prohibited from standing
       {
         "rule": {
           "activity": "standing",
-          "reason": "construction vehicles only"
+          "reason": "construction"
         },
         "userClasses" : [
           {
@@ -389,6 +391,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
       {
         "rule": {
           "activity": "parking",
+          "priorityCategory": "parking"
         },
         "userClasses" : [
           {
@@ -449,6 +452,7 @@ No parking for Kardashians at any time. Let's pretend this sign is not yet in pl
       {
         "rule": {
           "activity": "no parking",
+          "priorityCategory": "no parking",
         },
         "userClasses" : [
           {

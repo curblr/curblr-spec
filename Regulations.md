@@ -37,7 +37,8 @@ Defines a No Parking regulation that applies to all road users. Standing and loa
   "regulations": [
     {
       "rule": {
-        "activity": "no parking"
+        "activity": "no parking",
+        "priorityCategory": "no parking"
       }
     }  
   ]
@@ -52,7 +53,7 @@ Defines a regulation to allow people with a Zone 4 Resident Parking Permit to pa
     {
       "rule": {
         "activity": "parking",
-        "reason": "resident parking"
+        "priorityCategory": "parking"
       },
       "UserClasses": [
         {
@@ -73,6 +74,7 @@ Anyone may park for up to two hours, and must leave for four hours before return
   {
       "rule": {
         "activity": "parking",
+        "priorityCategory": "parking",
         "maxStay": 120,
         "noReturn": 240,
       }
@@ -89,6 +91,7 @@ Allows parking for handicap users with a three-hour time limit.
     {
       "rule": {
         "activity": "parking",
+        "priorityCategory": "parking",
         "maxStay": 180,
       },
       "userClasses": [
