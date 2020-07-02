@@ -82,7 +82,8 @@ Defines a parking zone for vehicles operating as food trucks
 {
   "regulation": {
     "rule": {
-      "activity": "parking"
+      "activity": "parking",
+      "priorityCategory": "parking"
     },
     "userClasses": [
         {
@@ -99,7 +100,8 @@ Defines a parking zone for vehicles displaying a Zone 4 or Zone 5 Resident Permi
 {
   "regulation": {
     "rule": {
-      "activity": "parking"
+      "activity": "parking",
+      "priorityCategory": "parking"
     },
     "userClasses": [
       {
@@ -117,7 +119,8 @@ Defines a parking regulation for large trucks that does not apply to smaller tru
 {
   "regulation": {
     "rule": {
-      "activity": "no parking"
+      "activity": "no parking",
+      "priorityCategoryy": "no parking"
     },
     "userClasses": [
       {
@@ -135,7 +138,8 @@ Defines a parking space for vehicles no more than 6 feet tall.
 {
   "regulation": {
     "rule": {
-      "activity": "parking"
+      "activity": "parking",
+      "priorityCategory": "parking"
     },
     "userClasses": [
       {

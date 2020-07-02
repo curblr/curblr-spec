@@ -19,17 +19,6 @@ Each GeoJSON feature may have the following properties:
 Data fields should generally be considered case insensitive since they are used programmatically; we use lower-case in our examples, except for fields that would be used for display purposes (such as a street name or agency name).
 
 
-It is possible for more than one regulation to apply to the same section of a street. For example, a section of curb may be a loading zone during the morning, a paid parking zone during the afternoon, and a free parking zone in the evening. A stretch of curb may be regulated for two-hour parking normally, but during a snow emergency that regulation is superseded by a no parking regulation. Or a temporary regulation might be put into place to disallow parking in a construction zone.
-
-A priority hierarchy allows different regulations to coexist without ambiguity. When multiple regulations apply at a specific location and time, the priority hierarchy determines which one is in force.
-
-In the real world, priorities are often implied rather than explicit. Road users assume that a "No Parking - Street Cleaning" sign overrules a "2H Meter Parking" sign. As computers are not adept at making these kinds of value judgements, CurbLR requires that priorities be specified explicitly.
-
-Priorities also avoid the need to define the regulations for each span of curb individually. An entire street or set of streets might be regulated as resident parking, but with small spans near fire hydrants defined with higher priority "no parking" regulations applied. To resolve potential conflicts when regulations overlap one another, a descriptive priority category is included as part of each regulation, and the [metadata](Manifest.md) includes an ordered list of these priority categories, establishing a hierarchy on the street.
-
-The priority hierarchy is included in the [metadata](Manifest.md) and should be used to resolve potential conflicts when regulations overlap one another. The default hierarchy is described below. It is based on the premise that more restrictive regulations supercede more permissive regulations, which is how a user would interpret these signs on the street. The default hierarchy will apply to most places, but can be customized if a jurisdiction differs from the norm or needs more flexibility. By defining categories and placing them in a priority order, CurbLR avoids the need to hardcode the priority level of each regulation on a street.
-
-
 ## Activity: possible values
 
 CurbLR assumes that all activities along the curb fit into three categories:
@@ -50,10 +39,19 @@ The activity classifications may be modified to describe myriad activities along
 * Taxi stand: Standing zone for taxis. Implies no loading, standing, or parking for any other users. (Note: This is different from a pick-up/drop-off zone since a vehicle may remain at a taxi stand indefinitely while waiting for a potential passenger.)
 * TNC pick-up/drop-off zone: Loading zone for TNCs. Implies no loading, standing, or parking for any other users.
 
+## Overlapping rules
 
-## Priority category: additional info and example
+It is possible for more than one regulation to apply to the same section of a street. For example, a section of curb may be a loading zone during the morning, a paid parking zone during the afternoon, and a free parking zone in the evening. A stretch of curb may be regulated for two-hour parking normally, but during a snow emergency that regulation is superseded by a no parking regulation. Or a temporary regulation might be put into place to disallow parking in a construction zone.
 
-Regulations sometimes overlap in time and space, leading to potential ambiguity about which rule takes precedence. The `priorityCategory` exists to resolve these potential conflicts. It is used to sort regulations into categories that can then be placed into an ordered list describing which regulations take precedence over others. This will typically be a list of the `activity` types, plus some special types of rules that may appear temporarily or periodically and should be handled specially.
+In the real world, priorities are often implied rather than explicit. Road users assume that a "No Parking - Street Cleaning" sign overrules a "2H Meter Parking" sign. As computers are not adept at making these kinds of value judgements, CurbLR requires that priorities be specified explicitly. This allows different regulations to coexist without ambiguity.
+
+The `priorityCategory` exists to resolve these potential conflicts. It is used to assign each regulation a descriptive category, such as "parking" or "snow emergency zone". The `priorityCategory` will typically be a list of the `activity` types, plus some special types of rules that may appear temporarily or periodically and should be handled specially.
+
+The priority categories in a CurbLR feed are then placed into a list ordered from highest to lowest priority; this is the `priorityHierarchy` array in the [metadata](Manifest.md). For example, the `priorityHierarchy` might be ["street cleaning", "paid parking", "free parking"]. When multiple regulations apply at a specific location and time, the priority hierarchy determines which one is in force. In this example, street cleaning will supercede paid and free parking.
+
+An example hierarchy is described below and can be used as a default, or a starting place for creating a feed. The default hierarchy will apply to most places, but can be customized if a jurisdiction differs from the norm or needs more flexibility.
+
+### Priority category: Example values
 
 When regulations overlap, the more restrictive activity rule typically supercedes the less restrictive activity rule (e.g. a "No stopping" zone typically overrides a free parking area). However, cities often create temporary restrictions or regulations for special events, construction, weather emergencies, etc. These rules are often in effect for irregular or unpredictable time periods and a city may want to customize how these special rules fit into the hierarchy.
 
@@ -76,11 +74,31 @@ All unique `priorityCategory` values in a CurbLR feed must be listed in the [met
 
 ### Priority categories: Visual example
 
-Priority categories resolve overlapping, contradicting rules. They also make it easier to digitize a city's data. Here's an example of four regulations that may coexist on a street, layered on top of one another:
+Priority categories aren't just useful for resolving overlapping, conflicting rules. They can also make it easier to digitize a city's data.
+
+For example, an entire street or set of streets might be regulated as resident parking, but with small spans near fire hydrants defined with higher priority "no standing" regulations applied, like so:
+
+<img src="images/priority_hydrant_example1.png" width="800">
+
+We assign a descriptive priority category to each, which are then ordered in the priorityHierachy as ["no standing", "parking"], or similar ("fire hydrant" and "free parking" could be called out specifically, if desired).
+
+Without a priority approach, we would have to digitize each section of the curb individually:
+
+<img src="images/priority_hydrant_example3.png" width="800">
+
+This would become very cumbersome, very quickly - especially in an urban area with many overlapping regulations.
+
+With priority categories, we can digitize the full street as a free parking area, and place more restrictive zones over top:
+
+<img src="images/priority_hydrant_example2.png" width="800">
+
+This provides more flexibility and efficiency when creating and editing CurbLR feeds.
+
+### Priority categories: Complex example
+
+Here's another example of how we could map a more complicated street with three overlapping regulations:
 
 <img src="images/priority_example_1.png" width="800">
-
-We assign a descriptive priority category to each, which are then ordered in the priorityHierachy as ["snow emergency zone", "loading", "paid parking", "free parking"].
 
 When the CurbLR feed is being interpreted, it will generally be queried to see which regulation applies at a given time. Here is a view of the street at 2pm on a Tuesday, for example:
 
@@ -92,15 +110,11 @@ And here is the street at 9am on a Monday, for example:
 
 In each case, the priority categories and hierarchy establish the order in which rules should be "layered" on top of one another, in the event that they overlap.
 
-This approach also makes it easier for someone to digitize the rules on a street. For example, it may be advantageous to be able to create "free parking" zones as a default regulation that applies when no other rules are in force, and then "paid parking" zones on top. Because of the priority categories, we can simply add the full section of street where these rules apply, and add the timeSpan or other relevant details. Without priority categories, we would have to split the paid parking zone into multiple geometries with different time spans, so that there isn't conflict between the paid parking zone and the loading zone:
+Because of the priority approach, we are able to digitize this street with just four geometries; placing higher priority "paid parking" and "loading" zones on top of "free parking" zones. Without priority categories, we may have to split the paid parking and free parking areas into multiple geometries with different time spans, so that there isn't conflict between the paid/free parking zones and the loading zones:
 
 <img src="images/priority_example_4.png" width="800">
 
-The same is true for the free parking zone underneath. Since the categories are flexible, cities can customize them to match how their local rules should be applied and to make their mapping process straightforward and tailored to their digitization method.
-
-
-
-
+Since the categories are flexible, cities can customize them to match how their local rules should be applied and to make their mapping process straightforward and tailored to their digitization method.
 
 
 # Examples

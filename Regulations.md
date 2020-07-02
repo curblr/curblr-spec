@@ -11,12 +11,6 @@ A regulation has several parts:
 
 It is possible for more than one regulation to apply to the same section of a street. For example, a section of curb may be a loading zone during the morning, a paid parking zone during the afternoon, and a free parking zone in the evening. A stretch of curb may be regulated for two-hour parking normally, but during a snow emergency that regulation is superseded by a no parking regulation. Or a temporary regulation might be put into place to disallow parking in a construction zone.
 
-A priority hierarchy allows different regulations to coexist without ambiguity. When multiple regulations apply at a specific location and time, the priority hierarchy determines which one is in force.
-
-In the real world, priorities are often implied rather than explicit. Road users assume that a "No Parking - Street Cleaning" sign overrules a "2H Meter Parking" sign. As computers are not adept at making these kinds of value judgements, CurbLR requires that priorities be specified explicitly.
-
-Priorities also avoid the need to define the regulations for each span of curb individually. An entire street or set of streets might be regulated as resident parking, but with small spans near fire hydrants defined with higher priority "no standing" regulations applied.
-
 To resolve potential conflicts when regulations overlap one another, a descriptive priority category is included as part of each regulation (in the [Rule](Rule.md)), and the [metadata](Manifest.md) includes an ordered list of these priority categories, establishing a hierarchy. Using this category approach enables data creators to prevent ambiguity or conflicts between overlapping regulations, in a way that allows for flexibility, customization, the ability to adapt to future changes.
 
 # Examples
