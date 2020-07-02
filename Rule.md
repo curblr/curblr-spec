@@ -94,28 +94,6 @@ With priority categories, we can digitize the full street as a free parking area
 
 This provides more flexibility and efficiency when creating and editing CurbLR feeds.
 
-### Priority categories: Complex example
-
-Here's another example of how we could map a more complicated street with three overlapping regulations:
-
-<img src="images/priority_example_1.png" width="800">
-
-When the CurbLR feed is being interpreted, it will generally be queried to see which regulation applies at a given time. Here is a view of the street at 2pm on a Tuesday, for example:
-
-<img src="images/priority_example_2.png" width="800">
-
-And here is the street at 9am on a Monday, for example:
-
-<img src="images/priority_example_3.png" width="800">
-
-In each case, the priority categories and hierarchy establish the order in which rules should be "layered" on top of one another, in the event that they overlap.
-
-Because of the priority approach, we are able to digitize this street with just four geometries; placing higher priority "paid parking" and "loading" zones on top of "free parking" zones. Without priority categories, we may have to split the paid parking and free parking areas into multiple geometries with different time spans, so that there isn't conflict between the paid/free parking zones and the loading zones:
-
-<img src="images/priority_example_4.png" width="800">
-
-Since the categories are flexible, cities can customize them to match how their local rules should be applied and to make their mapping process straightforward and tailored to their digitization method.
-
 
 # Examples
 
