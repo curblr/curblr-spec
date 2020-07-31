@@ -26,7 +26,8 @@ export class Location {
     sideOfStreet:"left"|"right"|"unknown";
     objectId?:string;
     derivedFrom?:string;
-    marker?:string;
+    assetType?:string;
+    assetSubtype?:string;
     baysAngle?: "parallel" | "perpendicular" | "diagonal";
     baysCount?:number;
     streetName?:string;
@@ -48,7 +49,7 @@ export class Manifest {
 
 export class Rule  {
     activity:"parking" | "no parking" | "standing" | "no standing" | "loading" | "no loading";
-    reason?:string;
+    priorityCategory:string;
     maxStay?:number
     noReturn?:number
     payment?:boolean;
@@ -105,7 +106,6 @@ export class Payment {
 }
 
 export class Regulation {
-    priority:number;
     rule:Rule;
     timeSpans?:TimeSpan[] = [];
     userClasses?:UserClass[] = [];
