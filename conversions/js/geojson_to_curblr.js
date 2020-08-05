@@ -67,7 +67,8 @@ for (var feature of input.features) {
       //activity = activity.replace('_',' ')
 
       //replace only tackles the first character to be replaced. if there are mutliple underscores (chars to be replaced) in a field, use a regex:
-      activity = activity.replace(/_/g,' ')
+      activity = activity.replace(/_/g,' ');
+      priorityCategory = priorityCategory.replace(/_/g,' ')
 
       // don't show the properties that are null
       if (payment === "true") {

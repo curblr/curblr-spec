@@ -11,7 +11,6 @@
       "url": "https://www.portlandoregon.gov/transportation/"
     }
   },
-  {
     "type": "FeatureCollection",
     "features": [
       {
@@ -273,7 +272,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -446,7 +445,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -558,7 +557,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -670,7 +669,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -769,7 +768,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -885,7 +884,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -927,7 +926,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -1012,7 +1011,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -1124,7 +1123,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -1170,7 +1169,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -1212,7 +1211,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -1324,7 +1323,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -1440,7 +1439,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "restricted_parking"
+                "priorityCategory": "restricted parking"
               },
               "userClasses": [
                 {
@@ -1486,7 +1485,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "restricted_parking"
+                "priorityCategory": "restricted parking"
               },
               "userClasses": [
                 {
@@ -1532,7 +1531,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -1644,7 +1643,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -1686,7 +1685,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking"
+                "priorityCategory": "paid parking"
               },
               "userClasses": [
                 {
@@ -1751,7 +1750,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 15
               },
               "userClasses": [
@@ -1798,7 +1797,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -1840,7 +1839,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -1882,7 +1881,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -1994,7 +1993,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -2110,7 +2109,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -2222,7 +2221,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -2400,7 +2399,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -2446,7 +2445,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -2488,7 +2487,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -2530,7 +2529,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -2572,7 +2571,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -2656,7 +2655,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -2772,7 +2771,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -2821,7 +2820,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -2933,7 +2932,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -3045,7 +3044,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -3087,7 +3086,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -3203,7 +3202,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -3381,7 +3380,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -3431,7 +3430,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -3473,7 +3472,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -3515,7 +3514,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -3557,7 +3556,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -3599,7 +3598,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -3645,7 +3644,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -3796,7 +3795,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -3908,7 +3907,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -3954,7 +3953,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -3996,7 +3995,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -4108,7 +4107,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -4150,7 +4149,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -4196,7 +4195,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -4242,7 +4241,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {}
@@ -4695,7 +4694,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -4745,7 +4744,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -4852,7 +4851,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -4902,7 +4901,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -4952,7 +4951,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -4994,7 +4993,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -5040,7 +5039,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 15
               },
               "userClasses": [
@@ -5087,7 +5086,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -5136,7 +5135,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -5178,7 +5177,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -5224,7 +5223,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -5266,7 +5265,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -5312,7 +5311,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -5358,7 +5357,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -5532,7 +5531,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -5644,7 +5643,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -5752,7 +5751,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -5798,7 +5797,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "restricted_parking"
+                "priorityCategory": "restricted parking"
               },
               "userClasses": [
                 {
@@ -5906,7 +5905,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -6080,7 +6079,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -6192,7 +6191,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -6242,7 +6241,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -6288,7 +6287,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -6338,7 +6337,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -6384,7 +6383,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 3
               },
               "userClasses": [
@@ -6487,7 +6486,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking",
+                "priorityCategory": "free parking",
                 "maxStay": 120
               },
               "userClasses": [
@@ -6570,7 +6569,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -6682,7 +6681,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -6798,7 +6797,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -6910,7 +6909,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 30,
                 "payment": true
               },
@@ -7022,7 +7021,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 30
               },
               "userClasses": [
@@ -7072,7 +7071,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -7122,7 +7121,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -7172,7 +7171,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -7284,7 +7283,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -7396,7 +7395,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -7508,7 +7507,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -7620,7 +7619,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -7670,7 +7669,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -7720,7 +7719,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -7770,7 +7769,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -7820,7 +7819,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -7925,7 +7924,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -8037,7 +8036,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 30,
                 "payment": true
               },
@@ -8153,7 +8152,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -8203,7 +8202,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -8253,7 +8252,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -8299,7 +8298,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -8341,7 +8340,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -8387,7 +8386,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -8429,7 +8428,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -8483,7 +8482,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -8533,7 +8532,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 3
               },
               "userClasses": [
@@ -8580,7 +8579,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -8630,7 +8629,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -8680,7 +8679,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -8734,7 +8733,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "restricted_parking"
+                "priorityCategory": "restricted parking"
               },
               "userClasses": [
                 {
@@ -8784,7 +8783,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -8900,7 +8899,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 15
               },
               "userClasses": [
@@ -8947,7 +8946,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -9063,7 +9062,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -9113,7 +9112,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -9155,7 +9154,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -9209,7 +9208,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -9255,7 +9254,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -9297,7 +9296,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -9409,7 +9408,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -9521,7 +9520,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "temporary_restriction"
+                "priorityCategory": "temporary restriction"
               },
               "userClasses": [
                 {
@@ -9576,7 +9575,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -9692,7 +9691,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -9738,7 +9737,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -9784,7 +9783,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -9830,7 +9829,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -10051,7 +10050,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -10101,7 +10100,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -10213,7 +10212,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -10263,7 +10262,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -10383,7 +10382,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -10495,7 +10494,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading"
+                "priorityCategory": "restricted loading"
               },
               "userClasses": [
                 {
@@ -10550,7 +10549,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -10662,7 +10661,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -10774,7 +10773,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -10816,7 +10815,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -10858,7 +10857,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -10970,7 +10969,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -11082,7 +11081,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -11128,7 +11127,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -11174,7 +11173,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -11220,7 +11219,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -11360,7 +11359,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -11410,7 +11409,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -11467,7 +11466,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -11563,7 +11562,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -11616,7 +11615,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -11662,7 +11661,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -11715,7 +11714,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -11806,7 +11805,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -11863,7 +11862,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -11912,7 +11911,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -11954,7 +11953,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12004,7 +12003,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12050,7 +12049,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 30
               },
               "userClasses": [
@@ -12100,7 +12099,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12150,7 +12149,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12196,7 +12195,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12285,7 +12284,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12335,7 +12334,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12385,7 +12384,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -12497,7 +12496,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -12609,7 +12608,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12655,7 +12654,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12705,7 +12704,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12755,7 +12754,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 5
               },
               "userClasses": [
@@ -12802,7 +12801,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -12848,7 +12847,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -12894,7 +12893,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -12997,7 +12996,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading"
+                "priorityCategory": "restricted loading"
               },
               "userClasses": [
                 {
@@ -13043,7 +13042,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -13093,7 +13092,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -13243,7 +13242,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -13289,7 +13288,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -13331,7 +13330,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -13443,7 +13442,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -13489,7 +13488,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -13535,7 +13534,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -13581,7 +13580,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -13627,7 +13626,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 30
               },
               "userClasses": [
@@ -13675,7 +13674,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 30
               },
               "userClasses": [
@@ -13787,7 +13786,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -13899,7 +13898,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -14011,7 +14010,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -14123,7 +14122,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14169,7 +14168,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14215,7 +14214,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14257,7 +14256,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14299,7 +14298,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14345,7 +14344,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14447,7 +14446,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -14489,7 +14488,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14535,7 +14534,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14581,7 +14580,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -14693,7 +14692,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "restricted_parking"
+                "priorityCategory": "restricted parking"
               },
               "userClasses": [
                 {
@@ -14739,7 +14738,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14785,7 +14784,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14831,7 +14830,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -14943,7 +14942,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -14989,7 +14988,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -15035,7 +15034,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 15
               },
               "userClasses": [
@@ -15082,7 +15081,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -15186,7 +15185,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -15232,7 +15231,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -15344,7 +15343,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -15460,7 +15459,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -15506,7 +15505,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -15552,7 +15551,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -15598,7 +15597,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -15644,7 +15643,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -15693,7 +15692,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -15746,7 +15745,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -15795,7 +15794,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -15841,7 +15840,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -15953,7 +15952,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -15995,7 +15994,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -16037,7 +16036,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -16090,7 +16089,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -16136,7 +16135,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -16189,7 +16188,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -16235,7 +16234,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -16284,7 +16283,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -16341,7 +16340,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -16383,7 +16382,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -16429,7 +16428,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -16475,7 +16474,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading"
+                "priorityCategory": "restricted loading"
               },
               "userClasses": [
                 {
@@ -16529,7 +16528,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -16575,7 +16574,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -16621,7 +16620,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -16671,7 +16670,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -16783,7 +16782,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -16895,7 +16894,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -17007,7 +17006,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -17053,7 +17052,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 15
               },
               "userClasses": [
@@ -17100,7 +17099,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 15
               },
               "userClasses": [
@@ -17147,7 +17146,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 15
               },
               "userClasses": [
@@ -17194,7 +17193,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -17306,7 +17305,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -17348,7 +17347,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -17452,7 +17451,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "restricted_parking"
+                "priorityCategory": "restricted parking"
               },
               "userClasses": [
                 {
@@ -17498,7 +17497,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -17540,7 +17539,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -17652,7 +17651,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -17826,7 +17825,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -17938,7 +17937,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -17980,7 +17979,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "temporary_restriction"
+                "priorityCategory": "temporary restriction"
               },
               "userClasses": [
                 {}
@@ -18022,7 +18021,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -18075,7 +18074,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -18121,7 +18120,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {
@@ -18174,7 +18173,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -18220,7 +18219,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -18398,7 +18397,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -18444,7 +18443,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -18490,7 +18489,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -18641,7 +18640,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -18683,7 +18682,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -18729,7 +18728,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -18841,7 +18840,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -18953,7 +18952,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -19065,7 +19064,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -19177,7 +19176,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -19281,7 +19280,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -19393,7 +19392,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -19548,7 +19547,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -19726,7 +19725,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -19893,7 +19892,7 @@
             {
               "rule": {
                 "activity": "no parking",
-                "priorityCategory": "no_parking"
+                "priorityCategory": "no parking"
               },
               "userClasses": [
                 {}
@@ -19939,7 +19938,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -20051,7 +20050,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "restricted_parking"
+                "priorityCategory": "restricted parking"
               },
               "userClasses": [
                 {
@@ -20097,7 +20096,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -20139,7 +20138,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "temporary_restriction"
+                "priorityCategory": "temporary restriction"
               },
               "userClasses": [
                 {
@@ -20210,7 +20209,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -20322,7 +20321,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -20438,7 +20437,7 @@
             {
               "rule": {
                 "activity": "loading",
-                "priorityCategory": "restricted_loading",
+                "priorityCategory": "restricted loading",
                 "maxStay": 15
               },
               "userClasses": [
@@ -20489,7 +20488,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -20601,7 +20600,7 @@
             {
               "rule": {
                 "activity": "standing",
-                "priorityCategory": "restricted_standing"
+                "priorityCategory": "restricted standing"
               },
               "userClasses": [
                 {}
@@ -20643,7 +20642,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -20755,7 +20754,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "restricted_parking"
+                "priorityCategory": "restricted parking"
               },
               "userClasses": [
                 {
@@ -20801,7 +20800,7 @@
             {
               "rule": {
                 "activity": "no standing",
-                "priorityCategory": "no_standing"
+                "priorityCategory": "no standing"
               },
               "userClasses": [
                 {}
@@ -20847,7 +20846,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "temporary_restriction"
+                "priorityCategory": "temporary restriction"
               },
               "userClasses": [
                 {}
@@ -20940,7 +20939,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -21056,7 +21055,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -21168,7 +21167,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -21254,7 +21253,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -21336,7 +21335,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {
@@ -21426,7 +21425,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -21512,7 +21511,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -21594,7 +21593,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -21676,7 +21675,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -21758,7 +21757,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -21840,7 +21839,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -21922,7 +21921,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22004,7 +22003,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22086,7 +22085,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22168,7 +22167,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22250,7 +22249,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22332,7 +22331,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22414,7 +22413,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22496,7 +22495,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22578,7 +22577,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22660,7 +22659,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22742,7 +22741,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22824,7 +22823,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -22906,7 +22905,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {
@@ -22992,7 +22991,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23074,7 +23073,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23156,7 +23155,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {
@@ -23242,7 +23241,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23328,7 +23327,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23410,7 +23409,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23492,7 +23491,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23574,7 +23573,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23668,7 +23667,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23750,7 +23749,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23832,7 +23831,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -23914,7 +23913,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24000,7 +23999,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24082,7 +24081,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24164,7 +24163,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24250,7 +24249,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24332,7 +24331,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24414,7 +24413,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24496,7 +24495,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24578,7 +24577,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24664,7 +24663,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24746,7 +24745,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24828,7 +24827,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24910,7 +24909,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -24996,7 +24995,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25078,7 +25077,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25160,7 +25159,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25242,7 +25241,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25324,7 +25323,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25406,7 +25405,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25488,7 +25487,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25570,7 +25569,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25656,7 +25655,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25738,7 +25737,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25820,7 +25819,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25902,7 +25901,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -25984,7 +25983,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26066,7 +26065,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26148,7 +26147,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26230,7 +26229,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26312,7 +26311,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26398,7 +26397,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26480,7 +26479,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26562,7 +26561,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26644,7 +26643,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26726,7 +26725,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26808,7 +26807,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26890,7 +26889,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -26976,7 +26975,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -27058,7 +27057,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -27140,7 +27139,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -27222,7 +27221,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -27304,7 +27303,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -27390,7 +27389,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -27472,7 +27471,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -27558,7 +27557,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -27640,7 +27639,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -27722,7 +27721,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -27834,7 +27833,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -27946,7 +27945,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "paid_parking",
+                "priorityCategory": "paid parking",
                 "maxStay": 120,
                 "payment": true
               },
@@ -28058,7 +28057,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}
@@ -28140,7 +28139,7 @@
             {
               "rule": {
                 "activity": "parking",
-                "priorityCategory": "free_parking"
+                "priorityCategory": "free parking"
               },
               "userClasses": [
                 {}

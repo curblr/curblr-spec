@@ -40,8 +40,9 @@ export class Authority {
 }
 
 export class Manifest {
-    createdDate?:string; // should this be a full timestamp? ISO format
-    lastUpdatedDate?:string; // should this be a full timestamp? ISO format
+    createdDate?:string;
+    lastUpdatedDate?:string;
+    priorityHierarchy:Array<string>;
     timeZone?:string;
     currency?:string;
     authority?:Authority;
@@ -50,10 +51,10 @@ export class Manifest {
 export class Rule  {
     activity:"parking" | "no parking" | "standing" | "no standing" | "loading" | "no loading";
     priorityCategory:string;
-    maxStay?:number
-    noReturn?:number
+    maxStay?:number;
+    noReturn?:number;
     payment?:boolean;
-    authority?:Authority; // changed v1 draft spec to object to simplify inclusion in rule
+    authority?:Authority;
 }
 
 export class DaysOfWeek {
