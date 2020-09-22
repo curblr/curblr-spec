@@ -26,7 +26,8 @@ export class Location {
     sideOfStreet:"left"|"right"|"unknown";
     objectId?:string;
     derivedFrom?:string;
-    marker?:string;
+    assetType?:string;
+    assetSubtype?:string;
     baysAngle?: "parallel" | "perpendicular" | "diagonal";
     baysCount?:number;
     streetName?:string;
@@ -39,8 +40,9 @@ export class Authority {
 }
 
 export class Manifest {
-    createdDate?:string; // should this be a full timestamp? ISO format
-    lastUpdatedDate?:string; // should this be a full timestamp? ISO format
+    createdDate?:string;
+    lastUpdatedDate?:string;
+    priorityHierarchy:Array<string>;
     timeZone?:string;
     currency?:string;
     authority?:Authority;
@@ -48,11 +50,11 @@ export class Manifest {
 
 export class Rule  {
     activity:"parking" | "no parking" | "standing" | "no standing" | "loading" | "no loading";
-    reason?:string;
-    maxStay?:number
-    noReturn?:number
+    priorityCategory:string;
+    maxStay?:number;
+    noReturn?:number;
     payment?:boolean;
-    authority?:Authority; // changed v1 draft spec to object to simplify inclusion in rule
+    authority?:Authority;
 }
 
 export class DaysOfWeek {
@@ -105,7 +107,6 @@ export class Payment {
 }
 
 export class Regulation {
-    priority:number;
     rule:Rule;
     timeSpans?:TimeSpan[] = [];
     userClasses?:UserClass[] = [];

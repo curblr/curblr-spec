@@ -6,8 +6,8 @@ Each GeoJSON feature may have the following properties:
 
 | Field name | Importance  | Type | Description | Example
 | :--- | :--- | :--- | :--- | :--- |
-| activity | Required | `enum` (`string`) Values: `parking`, `no parking`, `standing`, `no standing`, `loading`, `no loading` | Describes what activity is forbidden or permitted | `parking`
-| reason | Optional | `string` Suggested values; see below | Describes why the activity rule is in place. This is especially helpful for denoting regulations with [Priority](Priority.md) levels <`4`, such as snow emergency zones, which may be in effect for irregular or unpredictable time periods; these may require human interpretation or an API to determine whether they are in effect | `snow emergency zone`
+| activity | Required | `enum` (`string`) Values: `parking`, `no parking`, `standing`, `no standing`, `loading`, `no loading` | Describes what activity is forbidden or permitted | `parking` |
+| priorityCategory | Required | `string` Suggested values; see below | Assigns a simple, descriptive label to the regulation, often based on the activity or date properties. This describes why the activity rule is in place. All unique `priorityCategory` values in a CurbLR feed must be listed in a prioritized order in the [metadata](Manifest.md). This list creates a hierarchy that can be used to determine which regulation takes precedence when there are overlapping rules. The [metadata](Manifest.md) includes an example ordered list. | `game day` |
 | maxStay | Optional | `int` | The length of time (in minutes) for which the curb may be used under this regulation. This provides a time restriction, in addition to any [TimeSpan](TimeSpans.md) restrictions | `30`
 | noReturn | Optional | `int` | The length of time (in minutes) that a user must vacate the curbspace before allowed to return for another stay. Generally applies only to regulations with a `maxStay` | `60`|
 | payment | Optional | `boolean` Default value: `false` | `true` indicates that payment is required. This field is not necessary if no payment is required. Additional payment information is stored in [Payment](Payment.md)| `true`|
@@ -39,22 +39,61 @@ The activity classifications may be modified to describe myriad activities along
 * Taxi stand: Standing zone for taxis. Implies no loading, standing, or parking for any other users. (Note: This is different from a pick-up/drop-off zone since a vehicle may remain at a taxi stand indefinitely while waiting for a potential passenger.)
 * TNC pick-up/drop-off zone: Loading zone for TNCs. Implies no loading, standing, or parking for any other users.
 
+## Overlapping rules
 
-## Reason: well-known values
+It is possible for more than one regulation to apply to the same section of a street. For example, a section of curb may be a loading zone during the morning, a paid parking zone during the afternoon, and a free parking zone in the evening. A stretch of curb may be regulated for two-hour parking normally, but during a snow emergency that regulation is superseded by a no parking regulation. Or a temporary regulation might be put into place to disallow parking in a construction zone.
 
-`reason` can be used to convey the purpose of the rule. This information is often described elsewhere in CurbLR and is not required but may be helpful for some users. The following is a suggested but not exhaustive list of values for `reason`:
-- `commercial loading`
-- `construction zone`
-- `no stopping`
-- `passenger loading`
-- `resident parking`
-- `rideshare pick-up drop-off`
+In the real world, priorities are often implied rather than explicit. Road users assume that a "No Parking - Street Cleaning" sign overrules a "2H Meter Parking" sign. As computers are not adept at making these kinds of value judgements, CurbLR requires that priorities be specified explicitly. This allows different regulations to coexist without ambiguity.
+
+The `priorityCategory` exists to resolve these potential conflicts. It is used to assign each regulation a descriptive category, such as "parking" or "snow emergency zone". The `priorityCategory` will typically be a list of the `activity` types, plus some special types of rules that may appear temporarily or periodically and should be handled specially.
+
+The priority categories in a CurbLR feed are then placed into a list ordered from highest to lowest priority; this is the `priorityHierarchy` array in the [metadata](Manifest.md). For example, the `priorityHierarchy` might be ["street cleaning", "paid parking", "free parking"]. When multiple regulations apply at a specific location and time, the priority hierarchy determines which one is in force. In this example, street cleaning will supercede paid and free parking.
+
+An example hierarchy is described below and can be used as a default, or a starting place for creating a feed. The default hierarchy will apply to most places, but can be customized if a jurisdiction differs from the norm or needs more flexibility.
+
+### Priority category: Example values
+
+When regulations overlap, the more restrictive activity rule typically supercedes the less restrictive activity rule (e.g. a "No stopping" zone typically overrides a free parking area). However, cities often create temporary restrictions or regulations for special events, construction, weather emergencies, etc. These rules are often in effect for irregular or unpredictable time periods and a city may want to customize how these special rules fit into the hierarchy.
+
+The following is a suggested but not exhaustive list of values for `priorityCategory`; this property should be customized as needed to describe a city:
+- `no standing`
 - `snow emergency zone`
+- `construction`
+- `game day`
+- `special event`
 - `street cleaning`
-- `taxi stand`
-- `tow-away zone`
+- `temporary`
+- `standing`
+- `no loading`
+- `loading`
+- `no parking`
+- `paid parking` and/or `permit parking`, to be included depending on how the data is mapped and digitized (see next section)
+- `parking`
 
-Please use the Github issue tracker to suggest additional values.
+All unique `priorityCategory` values in a CurbLR feed must be listed in the [metadata](Manifest.md), placed in order from highest to lowest priority. For the example above, this list would be written as `priorityHierarchy` = [`no standing`, `snow emergency zone`, `construction`, `game day`, `special event`, `street cleaning`, `temporary`, `standing`, `no loading`, `loading`, `no parking`, `paid parking`, `parking`]
+
+### Priority categories: Visual example
+
+Priority categories aren't just useful for resolving overlapping, conflicting rules. They can also make it easier to digitize a city's data.
+
+For example, an entire street or set of streets might be regulated as resident parking, but with small spans near fire hydrants defined with higher priority "no standing" regulations applied, like so:
+
+<img src="images/priority_hydrant_example1.png" width="800">
+
+We assign a descriptive priority category to each, which are then ordered in the priorityHierachy as ["no standing", "parking"], or similar ("fire hydrant" and "free parking" could be called out specifically, if desired).
+
+Without a priority approach, we would have to digitize each section of the curb individually:
+
+<img src="images/priority_hydrant_example3.png" width="800">
+
+This would become very cumbersome, very quickly - especially in an urban area with many overlapping regulations.
+
+With priority categories, we can digitize the full street as a free parking area, and place more restrictive zones over top:
+
+<img src="images/priority_hydrant_example2.png" width="800">
+
+This provides more flexibility and efficiency when creating and editing CurbLR feeds.
+
 
 # Examples
 
@@ -64,7 +103,7 @@ The links below show real world curb regulations translated into CurbLR.
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/LA/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
+| Sample of [downtown Portland's parking regulations](/conversions/Portland/portland_2020-02-20.curblr.json) | Contains data for about 3 miles of parking regulations, surveyed in November 2019. This can also be viewed at [demo.curblr.org](https://demo.curblr.org)
 
 ### Simple regulation: no parking
 Defines a No Parking regulation that applies to all road users. Standing and loading may or may not be permitted.
@@ -82,7 +121,7 @@ Defines a `regulation` to allow people with a Zone 4 Resident Parking Permit to 
 {
   "rule": {
     "activity": "parking",
-    "reason": "resident parking"
+    "priorityCategory": "paid or user-restricted parking"
   },
   "userClasses": [
     {
@@ -99,6 +138,7 @@ Defines a `regulation` that allows parking for handicap users with a 3 hour time
 {
   "rule": {
     "activity": "parking",
+    "priorityCategory": "paid or user-restricted parking",
     "maxStay": 180
   },
   "userClasses": [
@@ -115,6 +155,7 @@ Defines a `restriction` that allows anyone to park for up to two hours with paym
 {
   "rule": {
     "activity": "parking",
+    "priorityCategory": "parking",
     "maxStay": 120,
     "noReturn": 30
   }
@@ -127,7 +168,7 @@ Defines a `regulation` that allows taxis to stand and pick up passengers. Implie
 {
   "rule": {
     "activity": "standing",
-    "reason": "taxi stand"
+    "priorityCategory": "standing"
   },
   "userClasses": [
     {
@@ -143,7 +184,7 @@ Defines a `regulation` that allows rideshare companies to drop off and pick up p
 {
   "rule": {
     "activity": "loading",
-    "reason": "rideshare pick-up drop-off"
+    "priorityCategory": "loading"
   },
   "userClasses": [
     {

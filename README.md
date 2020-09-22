@@ -53,7 +53,7 @@ The links below show real world curb regulations translated into CurbLR.
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/LA/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
+| Sample of [downtown Portland's parking regulations](/conversions/Portland/portland_2020-02-18.curblr.json) | Contains data for about 3 miles of parking regulations, surveyed in November 2019. This can also be viewed at [demo.curblr.org](https://demo.curblr.org)
 
 # Data model
 
@@ -71,7 +71,6 @@ These categories are described below:
 | GeoJsonProperties.Regulations.[UserClasses](UserClasses.md) | Optional | Defines **who** the regulations applies to. Can be used to denote categories of users such as permit holders, vehicle types, or vehicle function |
 | GeoJsonProperties.Regulations.[TimeSpans](TimeSpans.md) | Optional | Defines the time period **when** a zone regulation is in effect |
 | GeoJsonProperties.Regulations.[Payment](Payment.md) | Optional | Provides a structure to store additional information about fees that may be required in order to use a given curbspace |
-| GeoJsonProperties.Regulations.[Priority](Priority.md) | Required | Defines how overlapping regulations relate to one another (i.e. which one takes **priority**)|
 | GeoJsonProperties.[Images](Images.md) | Optional | Provides link(s) to image(s) of street assets that communicate the regulations to curbspace users, such as a street sign, parking meter, or fire hydrant |
 
 

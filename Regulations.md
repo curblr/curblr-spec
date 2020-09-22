@@ -6,12 +6,12 @@ A regulation has several parts:
 * [UserClasses](UserClasses.md): Defines what types of vehicles, permits, and modes to whom this regulation applies
 * [TimeSpans](TimeSpans.md): Defines one or more date and time periods when this regulation is in effect
 * [Payment](Payment.md): Provides optional, supplemental information about a payment profile and how it is applied
-* [Priority](Priority.md): Defines how this regulation should supersede or be superseded by others
 
-Once a full set of prioritized regulations is resolved, there should be only a single applicable activity [Rule](Rule.md) at a given location on the curb for any particular combination of [UserClasses](UserClasses.md) and [TimeSpan](TimeSpans.md). In some cases, there will be no applicable activity [Rule](Rule.md).
+# Overlapping regulations and hierarchy
 
-It is also possible to programmatically identify locations with conflicting or ambiguous regulations.
+It is possible for more than one regulation to apply to the same section of a street. For example, a section of curb may be a loading zone during the morning, a paid parking zone during the afternoon, and a free parking zone in the evening. A stretch of curb may be regulated for two-hour parking normally, but during a snow emergency that regulation is superseded by a no parking regulation. Or a temporary regulation might be put into place to disallow parking in a construction zone.
 
+To resolve potential conflicts when regulations overlap one another, a descriptive priority category is included as part of each regulation (in the [Rule](Rule.md)), and the [metadata](Manifest.md) includes an ordered list of these priority categories, establishing a hierarchy. Using this category approach enables data creators to prevent ambiguity or conflicts between overlapping regulations, in a way that allows for flexibility, customization, the ability to adapt to future changes.
 
 # Examples
 
@@ -21,7 +21,7 @@ The links below show real world curb regulations translated into CurbLR.
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/LA/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
+| Sample of [downtown Portland's parking regulations](/conversions/Portland/portland_2020-02-20.curblr.json) | Contains data for about 3 miles of parking regulations, surveyed in November 2019. This can also be viewed at [demo.curblr.org](https://demo.curblr.org)
 
 
 ### Simple regulation: no parking
@@ -31,7 +31,8 @@ Defines a No Parking regulation that applies to all road users. Standing and loa
   "regulations": [
     {
       "rule": {
-        "activity": "no parking"
+        "activity": "no parking",
+        "priorityCategory": "no parking"
       }
     }  
   ]
@@ -46,7 +47,7 @@ Defines a regulation to allow people with a Zone 4 Resident Parking Permit to pa
     {
       "rule": {
         "activity": "parking",
-        "reason": "resident parking"
+        "priorityCategory": "parking"
       },
       "UserClasses": [
         {
@@ -67,6 +68,7 @@ Anyone may park for up to two hours, and must leave for four hours before return
   {
       "rule": {
         "activity": "parking",
+        "priorityCategory": "parking",
         "maxStay": 120,
         "noReturn": 240,
       }
@@ -83,6 +85,7 @@ Allows parking for handicap users with a three-hour time limit.
     {
       "rule": {
         "activity": "parking",
+        "priorityCategory": "parking",
         "maxStay": 180,
       },
       "userClasses": [

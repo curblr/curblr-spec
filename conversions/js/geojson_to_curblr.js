@@ -31,11 +31,11 @@ for (var feature of input.features) {
         pp_activity: activity,
         pp_max_stay: maxStay,
         pp_payment: payment,
-        pp_reason: reason,
-        pp_priority: priority,
+        pp_priority_category: priorityCategory,
         pp_user_classes: classes,
         pp_user_subclasses: subclasses,
-        pp_marker: marker,
+        pp_asset_type: assetType,
+        pp_asset_type: assetSubtype,
         pp_opening_hours: opening_hours,
         pp_payment_zone: deviceIds,
         pp_payment_form: forms,
@@ -67,7 +67,8 @@ for (var feature of input.features) {
       //activity = activity.replace('_',' ')
 
       //replace only tackles the first character to be replaced. if there are mutliple underscores (chars to be replaced) in a field, use a regex:
-      activity = activity.replace(/_/g,' ')
+      activity = activity.replace(/_/g,' ');
+      priorityCategory = priorityCategory.replace(/_/g,' ')
 
       // don't show the properties that are null
       if (payment === "true") {
@@ -77,12 +78,11 @@ for (var feature of input.features) {
       }
 
       maxStay = Number(maxStay) || undefined
-      priority = Number(priority) || 4
       baysAngle = baysAngle || undefined
-      marker = marker || undefined
+      assetType = assetType || undefined
+      assetSubtype = assetSubtype || undefined
       phone = phone || undefined
       maxStay = maxStay || undefined
-      reason = reason || undefined
 
       // if the above didn't work, we'd need an if/else like the one for payment (can also be written with ternary operator ("? and :"))
 
@@ -469,14 +469,14 @@ for (var feature of input.features) {
             sideOfStreet,
             shstLocationStart,
             shstLocationEnd,
-            marker,
+            assetType,
+            assetSubtype,
             baysAngle
           },
           regulations:[{
-            priority,
             rule:{
               activity,
-              reason,
+              priorityCategory,
               maxStay,
               payment
             },

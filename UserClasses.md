@@ -73,7 +73,7 @@ Numeric restrictions, Optional, are entered as key:value pairs in the local meas
 | :---- | :---- |
 | [Examples of simple regulations](examples/simple_examples.md) | Simple regulatory scenarios typically involving one or two basic restrictions  |
 | [Examples of complex regulations](examples/complex_examples.md) | Complex regulatory scenarios typically involving several restrictions  |
-| Large dataset of [Los Angeles' parking regulations, translated into CurbLR](/conversions/LA/LA_CurbLR.json) | Contains data from 35,000 parking signs, many with multiple complex regulations. [Raw data](https://geohub.lacity.org/datasets/71c26db1ad614faab1047cc8c3686ece_28) was accessed through LA's open data portal, matched to the SharedStreets Referencing System, cleaned into a [CurbLR-ready CSV](/conversions/LA/prepped_data.csv), and [converted](/js) into CurbLR's JSON format.
+| Sample of [downtown Portland's parking regulations](/conversions/Portland/portland_2020-02-20.curblr.json) | Contains data for about 3 miles of parking regulations, surveyed in November 2019. This can also be viewed at [demo.curblr.org](https://demo.curblr.org)
 
 
 ### Food truck
@@ -82,7 +82,8 @@ Defines a parking zone for vehicles operating as food trucks
 {
   "regulation": {
     "rule": {
-      "activity": "parking"
+      "activity": "parking",
+      "priorityCategory": "parking"
     },
     "userClasses": [
         {
@@ -99,7 +100,8 @@ Defines a parking zone for vehicles displaying a Zone 4 or Zone 5 Resident Permi
 {
   "regulation": {
     "rule": {
-      "activity": "parking"
+      "activity": "parking",
+      "priorityCategory": "parking"
     },
     "userClasses": [
       {
@@ -117,7 +119,8 @@ Defines a parking regulation for large trucks that does not apply to smaller tru
 {
   "regulation": {
     "rule": {
-      "activity": "no parking"
+      "activity": "no parking",
+      "priorityCategoryy": "no parking"
     },
     "userClasses": [
       {
@@ -135,7 +138,8 @@ Defines a parking space for vehicles no more than 6 feet tall.
 {
   "regulation": {
     "rule": {
-      "activity": "parking"
+      "activity": "parking",
+      "priorityCategory": "parking"
     },
     "userClasses": [
       {
