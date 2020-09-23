@@ -35,7 +35,7 @@ for (var feature of input.features) {
         pp_user_classes: classes,
         pp_user_subclasses: subclasses,
         pp_asset_type: assetType,
-        pp_asset_type: assetSubtype,
+        pp_asset_subtype: assetSubtype,
         pp_opening_hours: opening_hours,
         pp_payment_zone: deviceIds,
         pp_payment_form: forms,
