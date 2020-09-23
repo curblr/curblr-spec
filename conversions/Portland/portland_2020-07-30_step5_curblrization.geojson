@@ -10,7 +10,6 @@
           "shstLocationStart": 4.9,
           "shstLocationEnd": 73,
           "assetType": "fence",
-          "assetSubtype": "fence",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -52,7 +51,6 @@
           "shstLocationStart": 4.3,
           "shstLocationEnd": 72.3,
           "assetType": "fence",
-          "assetSubtype": "fence",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -102,7 +100,6 @@
           "shstLocationStart": 10.6,
           "shstLocationEnd": 76.3,
           "assetType": "fence",
-          "assetSubtype": "fence",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -148,7 +145,6 @@
           "shstLocationStart": 53.3,
           "shstLocationEnd": 68.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -191,7 +187,6 @@
           "shstLocationStart": 11.2,
           "shstLocationEnd": 18.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -253,7 +248,6 @@
           "shstLocationStart": 29.4,
           "shstLocationEnd": 75,
           "assetType": "fence",
-          "assetSubtype": "fence",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -295,7 +289,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 29.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -364,7 +357,6 @@
           "shstLocationStart": 10.9,
           "shstLocationEnd": 75.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -426,7 +418,6 @@
           "shstLocationStart": 11.2,
           "shstLocationEnd": 70.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -538,7 +529,6 @@
           "shstLocationStart": 11.3,
           "shstLocationEnd": 75.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -650,7 +640,6 @@
           "shstLocationStart": 4.5,
           "shstLocationEnd": 40.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -703,7 +692,6 @@
           "shstLocationStart": 4.4,
           "shstLocationEnd": 40.7,
           "assetType": "fence",
-          "assetSubtype": "fence",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -749,7 +737,6 @@
           "shstLocationStart": 13.7,
           "shstLocationEnd": 56.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -865,7 +852,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 13.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -907,7 +893,6 @@
           "shstLocationStart": 56.2,
           "shstLocationEnd": 75.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -949,7 +934,6 @@
           "shstLocationStart": 9.9,
           "shstLocationEnd": 35.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -992,7 +976,6 @@
           "shstLocationStart": 43.7,
           "shstLocationEnd": 62.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1104,7 +1087,6 @@
           "shstLocationStart": 35.5,
           "shstLocationEnd": 43.7,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1150,7 +1132,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 9.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1192,7 +1173,6 @@
           "shstLocationStart": 8.1,
           "shstLocationEnd": 35.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1304,7 +1284,6 @@
           "shstLocationStart": 66.7,
           "shstLocationEnd": 74.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1420,7 +1399,6 @@
           "shstLocationStart": 13.5,
           "shstLocationEnd": 24,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1466,7 +1444,6 @@
           "shstLocationStart": 15.7,
           "shstLocationEnd": 23.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1512,7 +1489,6 @@
           "shstLocationStart": 52.3,
           "shstLocationEnd": 71.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1624,7 +1600,6 @@
           "shstLocationStart": 71.2,
           "shstLocationEnd": 79.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1666,7 +1641,6 @@
           "shstLocationStart": 42.7,
           "shstLocationEnd": 66.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1731,7 +1705,6 @@
           "shstLocationStart": 7.2,
           "shstLocationEnd": 27.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1778,7 +1751,7 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 7.2,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1820,7 +1793,7 @@
           "shstLocationStart": 38.9,
           "shstLocationEnd": 41.5,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1862,7 +1835,6 @@
           "shstLocationStart": 24.2,
           "shstLocationEnd": 66.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -1974,7 +1946,6 @@
           "shstLocationStart": 11.7,
           "shstLocationEnd": 71.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2090,7 +2061,6 @@
           "shstLocationStart": 12,
           "shstLocationEnd": 54.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2202,7 +2172,6 @@
           "shstLocationStart": 61.9,
           "shstLocationEnd": 72,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2314,7 +2283,6 @@
           "shstLocationStart": 42.7,
           "shstLocationEnd": 64.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2380,7 +2348,6 @@
           "shstLocationStart": 54.2,
           "shstLocationEnd": 61.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2426,7 +2393,7 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 11.5,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2468,7 +2435,7 @@
           "shstLocationStart": 71.9,
           "shstLocationEnd": 76.3,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2510,7 +2477,7 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 11.6,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2552,7 +2519,7 @@
           "shstLocationStart": 71.9,
           "shstLocationEnd": 76.3,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2594,7 +2561,6 @@
           "shstLocationStart": 4.6,
           "shstLocationEnd": 75.1,
           "assetType": "fence",
-          "assetSubtype": "fence",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2636,7 +2602,6 @@
           "shstLocationStart": 33.9,
           "shstLocationEnd": 53.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2752,7 +2717,6 @@
           "shstLocationStart": 12.5,
           "shstLocationEnd": 33.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2801,7 +2765,6 @@
           "shstLocationStart": 27.3,
           "shstLocationEnd": 38.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -2913,7 +2876,6 @@
           "shstLocationStart": 7.2,
           "shstLocationEnd": 37.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3025,7 +2987,6 @@
           "shstLocationStart": 7.4,
           "shstLocationEnd": 21.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3067,7 +3028,6 @@
           "shstLocationStart": 11.7,
           "shstLocationEnd": 27.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3183,7 +3143,6 @@
           "shstLocationStart": 53.3,
           "shstLocationEnd": 73.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3295,7 +3254,6 @@
           "shstLocationStart": 11.9,
           "shstLocationEnd": 27.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3361,7 +3319,7 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 11.8,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3411,7 +3369,7 @@
           "shstLocationStart": 73.4,
           "shstLocationEnd": 77.8,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3453,7 +3411,6 @@
           "shstLocationStart": 27.6,
           "shstLocationEnd": 53.3,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3495,7 +3452,7 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 7.2,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3537,7 +3494,7 @@
           "shstLocationStart": 37.5,
           "shstLocationEnd": 41.5,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3579,7 +3536,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 14.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3625,7 +3581,6 @@
           "shstLocationStart": 67.5,
           "shstLocationEnd": 76.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3671,7 +3626,6 @@
           "shstLocationStart": 14.7,
           "shstLocationEnd": 30.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3714,7 +3668,6 @@
           "shstLocationStart": 8.3,
           "shstLocationEnd": 36.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3776,7 +3729,6 @@
           "shstLocationStart": 8.3,
           "shstLocationEnd": 61.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3888,7 +3840,6 @@
           "shstLocationStart": 61.6,
           "shstLocationEnd": 74.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3934,7 +3885,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 8.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -3976,7 +3926,6 @@
           "shstLocationStart": 12.5,
           "shstLocationEnd": 70.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4088,7 +4037,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 12.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4130,7 +4078,6 @@
           "shstLocationStart": 70.8,
           "shstLocationEnd": 74.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4176,7 +4123,6 @@
           "shstLocationStart": 3.3,
           "shstLocationEnd": 68.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4222,7 +4168,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 68.3,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4268,7 +4213,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 79.5,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4337,7 +4281,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 68.1,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4390,7 +4333,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 42.7,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4447,7 +4389,6 @@
           "shstLocationStart": 7.7,
           "shstLocationEnd": 78.2,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4504,7 +4445,6 @@
           "shstLocationStart": 6,
           "shstLocationEnd": 72.9,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4561,7 +4501,6 @@
           "shstLocationStart": 3.2,
           "shstLocationEnd": 42,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4618,7 +4557,6 @@
           "shstLocationStart": 13.1,
           "shstLocationEnd": 77.6,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4675,7 +4613,6 @@
           "shstLocationStart": 3.3,
           "shstLocationEnd": 42,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4725,7 +4662,6 @@
           "shstLocationStart": 3.5,
           "shstLocationEnd": 77.2,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4775,7 +4711,6 @@
           "shstLocationStart": 5.1,
           "shstLocationEnd": 76.7,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4832,7 +4767,6 @@
           "shstLocationStart": 7.6,
           "shstLocationEnd": 78.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4882,7 +4816,6 @@
           "shstLocationStart": 3.2,
           "shstLocationEnd": 42.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4932,7 +4865,6 @@
           "shstLocationStart": 5.7,
           "shstLocationEnd": 42,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -4974,7 +4906,6 @@
           "shstLocationStart": 57.7,
           "shstLocationEnd": 72.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5020,7 +4951,6 @@
           "shstLocationStart": 7.7,
           "shstLocationEnd": 29.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5067,7 +4997,6 @@
           "shstLocationStart": 37.9,
           "shstLocationEnd": 48.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5116,7 +5045,6 @@
           "shstLocationStart": 29.8,
           "shstLocationEnd": 37.9,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5158,7 +5086,6 @@
           "shstLocationStart": 48.2,
           "shstLocationEnd": 79.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5204,7 +5131,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 7.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5246,7 +5172,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 71.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5292,7 +5217,6 @@
           "shstLocationStart": 11.1,
           "shstLocationEnd": 23.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5338,7 +5262,6 @@
           "shstLocationStart": 23.7,
           "shstLocationEnd": 66.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5450,7 +5373,6 @@
           "shstLocationStart": 48.4,
           "shstLocationEnd": 66.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5512,7 +5434,6 @@
           "shstLocationStart": 36.1,
           "shstLocationEnd": 67.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5624,7 +5545,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 10.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5670,7 +5590,6 @@
           "shstLocationStart": 10.2,
           "shstLocationEnd": 28.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5732,7 +5651,6 @@
           "shstLocationStart": 11.1,
           "shstLocationEnd": 18.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5778,7 +5696,6 @@
           "shstLocationStart": 11,
           "shstLocationEnd": 18.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5824,7 +5741,6 @@
           "shstLocationStart": 48.3,
           "shstLocationEnd": 61.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5886,7 +5802,6 @@
           "shstLocationStart": 18.6,
           "shstLocationEnd": 61.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -5998,7 +5913,6 @@
           "shstLocationStart": 47.9,
           "shstLocationEnd": 59.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6060,7 +5974,6 @@
           "shstLocationStart": 8,
           "shstLocationEnd": 59.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6172,7 +6085,6 @@
           "shstLocationStart": 61.6,
           "shstLocationEnd": 74.4,
           "assetType": "curb_extension",
-          "assetSubtype": "curb_extension",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6222,7 +6134,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6268,7 +6179,6 @@
           "shstLocationStart": 59.7,
           "shstLocationEnd": 74.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6318,7 +6228,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 11,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6364,7 +6273,6 @@
           "shstLocationStart": 59.9,
           "shstLocationEnd": 68.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6411,7 +6319,6 @@
           "shstLocationStart": 38.7,
           "shstLocationEnd": 59.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6467,7 +6374,6 @@
           "shstLocationStart": 10.3,
           "shstLocationEnd": 70.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6550,7 +6456,6 @@
           "shstLocationStart": 6.7,
           "shstLocationEnd": 59.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6662,7 +6567,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 14.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6778,7 +6682,6 @@
           "shstLocationStart": 14.4,
           "shstLocationEnd": 66.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -6890,7 +6793,6 @@
           "shstLocationStart": 6,
           "shstLocationEnd": 74.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7002,7 +6904,6 @@
           "shstLocationStart": 52.8,
           "shstLocationEnd": 66.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7052,7 +6953,6 @@
           "shstLocationStart": 33.3,
           "shstLocationEnd": 79.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7102,7 +7002,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 52.7,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7152,7 +7051,6 @@
           "shstLocationStart": 14.4,
           "shstLocationEnd": 33.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7264,7 +7162,6 @@
           "shstLocationStart": 66.2,
           "shstLocationEnd": 73.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7376,7 +7273,6 @@
           "shstLocationStart": 13,
           "shstLocationEnd": 25.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7488,7 +7384,6 @@
           "shstLocationStart": 39.3,
           "shstLocationEnd": 70.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7600,7 +7495,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 12.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7650,7 +7544,6 @@
           "shstLocationStart": 70.3,
           "shstLocationEnd": 79.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7700,7 +7593,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 14.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7750,7 +7642,6 @@
           "shstLocationStart": 73.7,
           "shstLocationEnd": 79.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7800,7 +7691,6 @@
           "shstLocationStart": 25.8,
           "shstLocationEnd": 39.4,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7842,7 +7732,6 @@
           "shstLocationStart": 8.2,
           "shstLocationEnd": 75.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -7905,7 +7794,6 @@
           "shstLocationStart": 11.9,
           "shstLocationEnd": 51.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8017,7 +7905,6 @@
           "shstLocationStart": 51.6,
           "shstLocationEnd": 71.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8133,7 +8020,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 11.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8183,7 +8069,6 @@
           "shstLocationStart": 71.7,
           "shstLocationEnd": 79.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8233,7 +8118,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 6.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8279,7 +8163,6 @@
           "shstLocationStart": 68.1,
           "shstLocationEnd": 74.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8321,7 +8204,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8367,7 +8249,6 @@
           "shstLocationStart": 66.4,
           "shstLocationEnd": 74.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8409,7 +8290,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 23.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8463,7 +8343,6 @@
           "shstLocationStart": 56.9,
           "shstLocationEnd": 78.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8513,7 +8392,6 @@
           "shstLocationStart": 23.3,
           "shstLocationEnd": 31.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8560,7 +8438,6 @@
           "shstLocationStart": 5,
           "shstLocationEnd": 40.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8610,7 +8487,6 @@
           "shstLocationStart": 54.2,
           "shstLocationEnd": 78.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8660,7 +8536,6 @@
           "shstLocationStart": 5.1,
           "shstLocationEnd": 75.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8714,7 +8589,6 @@
           "shstLocationStart": 40.4,
           "shstLocationEnd": 54.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8764,7 +8638,6 @@
           "shstLocationStart": 42,
           "shstLocationEnd": 57.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8880,7 +8753,6 @@
           "shstLocationStart": 40,
           "shstLocationEnd": 61.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -8927,7 +8799,6 @@
           "shstLocationStart": 61.7,
           "shstLocationEnd": 72.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9043,7 +8914,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 40.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9093,7 +8963,6 @@
           "shstLocationStart": 72.2,
           "shstLocationEnd": 76.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9135,7 +9004,6 @@
           "shstLocationStart": 3.1,
           "shstLocationEnd": 74.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9189,7 +9057,6 @@
           "shstLocationStart": 64.6,
           "shstLocationEnd": 75.3,
           "assetType": "curb_extension",
-          "assetSubtype": "curb_extension",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9235,7 +9102,6 @@
           "shstLocationStart": 33.5,
           "shstLocationEnd": 39.3,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9277,7 +9143,6 @@
           "shstLocationStart": 11.3,
           "shstLocationEnd": 33.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9389,7 +9254,6 @@
           "shstLocationStart": 39.3,
           "shstLocationEnd": 64.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9501,7 +9365,6 @@
           "shstLocationStart": 54.4,
           "shstLocationEnd": 64.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9556,7 +9419,6 @@
           "shstLocationStart": 14,
           "shstLocationEnd": 68.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9672,7 +9534,6 @@
           "shstLocationStart": 13.5,
           "shstLocationEnd": 79.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9718,7 +9579,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 12.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9764,7 +9624,6 @@
           "shstLocationStart": 45,
           "shstLocationEnd": 79.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9810,7 +9669,6 @@
           "shstLocationStart": 13.3,
           "shstLocationEnd": 43.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9922,7 +9780,6 @@
           "shstLocationStart": 28.4,
           "shstLocationEnd": 43.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -9984,7 +9841,6 @@
           "shstLocationStart": 17,
           "shstLocationEnd": 31.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10031,7 +9887,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 17.1,
           "assetType": "curb_extension",
-          "assetSubtype": "curb_extension",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10081,7 +9936,6 @@
           "shstLocationStart": 31.9,
           "shstLocationEnd": 61.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10193,7 +10047,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 17.1,
           "assetType": "curb_extension",
-          "assetSubtype": "curb_extension",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10243,7 +10096,6 @@
           "shstLocationStart": 17.1,
           "shstLocationEnd": 25.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10363,7 +10215,6 @@
           "shstLocationStart": 25.5,
           "shstLocationEnd": 67.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10475,7 +10326,6 @@
           "shstLocationStart": 41.8,
           "shstLocationEnd": 67.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10530,7 +10380,6 @@
           "shstLocationStart": 9.3,
           "shstLocationEnd": 42.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10642,7 +10491,6 @@
           "shstLocationStart": 55.2,
           "shstLocationEnd": 61.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10754,7 +10602,6 @@
           "shstLocationStart": 42.9,
           "shstLocationEnd": 55.1,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10796,7 +10643,6 @@
           "shstLocationStart": 45.3,
           "shstLocationEnd": 62.8,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10838,7 +10684,6 @@
           "shstLocationStart": 9.1,
           "shstLocationEnd": 45,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -10950,7 +10795,6 @@
           "shstLocationStart": 63,
           "shstLocationEnd": 71.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11062,7 +10906,7 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 8.8,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11108,7 +10952,7 @@
           "shstLocationStart": 71.6,
           "shstLocationEnd": 78,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11154,7 +10998,7 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 9.1,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11200,7 +11044,7 @@
           "shstLocationStart": 61.3,
           "shstLocationEnd": 78,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11246,7 +11090,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 23.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11293,7 +11136,6 @@
           "shstLocationStart": 42.8,
           "shstLocationEnd": 78,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11340,7 +11182,6 @@
           "shstLocationStart": 8.6,
           "shstLocationEnd": 74.9,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11390,7 +11231,6 @@
           "shstLocationStart": 9.1,
           "shstLocationEnd": 74.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11447,7 +11287,6 @@
           "shstLocationStart": 5.3,
           "shstLocationEnd": 50.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11497,7 +11336,6 @@
           "shstLocationStart": 50.6,
           "shstLocationEnd": 69.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11543,7 +11381,6 @@
           "shstLocationStart": 50.7,
           "shstLocationEnd": 69.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11596,7 +11433,6 @@
           "shstLocationStart": 8.1,
           "shstLocationEnd": 74.1,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11642,7 +11478,6 @@
           "shstLocationStart": 8,
           "shstLocationEnd": 74,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11695,7 +11530,6 @@
           "shstLocationStart": 9.4,
           "shstLocationEnd": 49,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11737,7 +11571,6 @@
           "shstLocationStart": 8.9,
           "shstLocationEnd": 76.3,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11786,7 +11619,6 @@
           "shstLocationStart": 3.4,
           "shstLocationEnd": 70.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11843,7 +11675,6 @@
           "shstLocationStart": 8,
           "shstLocationEnd": 72.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11892,7 +11723,6 @@
           "shstLocationStart": 7.9,
           "shstLocationEnd": 72.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11934,7 +11764,6 @@
           "shstLocationStart": 3.1,
           "shstLocationEnd": 69,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -11984,7 +11813,6 @@
           "shstLocationStart": 5.3,
           "shstLocationEnd": 73.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12030,7 +11858,6 @@
           "shstLocationStart": 49.1,
           "shstLocationEnd": 66.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12080,7 +11907,6 @@
           "shstLocationStart": 66.7,
           "shstLocationEnd": 88.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12130,7 +11956,6 @@
           "shstLocationStart": 8.4,
           "shstLocationEnd": 73.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12176,7 +12001,6 @@
           "shstLocationStart": 8.3,
           "shstLocationEnd": 72.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12222,7 +12046,6 @@
           "shstLocationStart": 18.7,
           "shstLocationEnd": 65.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12265,7 +12088,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 18.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12315,7 +12137,6 @@
           "shstLocationStart": 65.6,
           "shstLocationEnd": 79.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12365,7 +12186,6 @@
           "shstLocationStart": 22.3,
           "shstLocationEnd": 66,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12477,7 +12297,6 @@
           "shstLocationStart": 36,
           "shstLocationEnd": 66.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12589,7 +12408,6 @@
           "shstLocationStart": 5.2,
           "shstLocationEnd": 74.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12635,7 +12453,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 22.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12685,7 +12502,6 @@
           "shstLocationStart": 66.8,
           "shstLocationEnd": 79.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12735,7 +12551,6 @@
           "shstLocationStart": 20.2,
           "shstLocationEnd": 42.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12782,7 +12597,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 19.3,
           "assetType": "curb_extension",
-          "assetSubtype": "curb_extension",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12828,7 +12642,6 @@
           "shstLocationStart": 42.8,
           "shstLocationEnd": 78.9,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12874,7 +12687,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 77.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12924,7 +12736,6 @@
           "shstLocationStart": 10.7,
           "shstLocationEnd": 77.5,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -12977,7 +12788,6 @@
           "shstLocationStart": 26.2,
           "shstLocationEnd": 62.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13023,7 +12833,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 26.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13073,7 +12882,6 @@
           "shstLocationStart": 62.7,
           "shstLocationEnd": 89,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13123,7 +12931,6 @@
           "shstLocationStart": 12.7,
           "shstLocationEnd": 79.6,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13172,7 +12979,6 @@
           "shstLocationStart": 12.1,
           "shstLocationEnd": 72.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13223,7 +13029,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 12.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13269,7 +13074,6 @@
           "shstLocationStart": 72.7,
           "shstLocationEnd": 75.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13311,7 +13115,6 @@
           "shstLocationStart": 12.3,
           "shstLocationEnd": 66.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13423,7 +13226,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 12,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13469,7 +13271,6 @@
           "shstLocationStart": 66.7,
           "shstLocationEnd": 79.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13515,7 +13316,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 12.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13561,7 +13361,6 @@
           "shstLocationStart": 66.6,
           "shstLocationEnd": 79.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13607,7 +13406,6 @@
           "shstLocationStart": 12.8,
           "shstLocationEnd": 36.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13655,7 +13453,6 @@
           "shstLocationStart": 61.4,
           "shstLocationEnd": 73.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13705,7 +13502,6 @@
           "shstLocationStart": 19.2,
           "shstLocationEnd": 71.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13767,7 +13563,6 @@
           "shstLocationStart": 20.3,
           "shstLocationEnd": 31.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13879,7 +13674,6 @@
           "shstLocationStart": 36.8,
           "shstLocationEnd": 46.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -13991,7 +13785,6 @@
           "shstLocationStart": 52.8,
           "shstLocationEnd": 61.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14103,7 +13896,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 20.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14149,7 +13941,6 @@
           "shstLocationStart": 74.1,
           "shstLocationEnd": 89.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14195,7 +13986,6 @@
           "shstLocationStart": 31.2,
           "shstLocationEnd": 36.6,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14237,7 +14027,6 @@
           "shstLocationStart": 46.7,
           "shstLocationEnd": 52.7,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14279,7 +14068,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 19.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14325,7 +14113,6 @@
           "shstLocationStart": 72.1,
           "shstLocationEnd": 89.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14371,7 +14158,6 @@
           "shstLocationStart": 53.6,
           "shstLocationEnd": 65.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14427,7 +14213,6 @@
           "shstLocationStart": 48.1,
           "shstLocationEnd": 53.6,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14469,7 +14254,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 10,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14515,7 +14299,6 @@
           "shstLocationStart": 66.1,
           "shstLocationEnd": 77.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14561,7 +14344,6 @@
           "shstLocationStart": 19.9,
           "shstLocationEnd": 60.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14673,7 +14455,6 @@
           "shstLocationStart": 60.9,
           "shstLocationEnd": 72.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14719,7 +14500,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 20,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14765,7 +14545,6 @@
           "shstLocationStart": 73,
           "shstLocationEnd": 89.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14811,7 +14590,6 @@
           "shstLocationStart": 45,
           "shstLocationEnd": 69,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14923,7 +14701,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 18.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -14969,7 +14746,6 @@
           "shstLocationStart": 69.2,
           "shstLocationEnd": 89.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15015,7 +14791,6 @@
           "shstLocationStart": 18.1,
           "shstLocationEnd": 39.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15062,7 +14837,6 @@
           "shstLocationStart": 39.5,
           "shstLocationEnd": 44.9,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15104,7 +14878,6 @@
           "shstLocationStart": 45,
           "shstLocationEnd": 52.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15166,7 +14939,6 @@
           "shstLocationStart": 58.9,
           "shstLocationEnd": 68.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15212,7 +14984,6 @@
           "shstLocationStart": 15.9,
           "shstLocationEnd": 43.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15324,7 +15095,6 @@
           "shstLocationStart": 43.2,
           "shstLocationEnd": 59,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15440,7 +15210,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 15.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15486,7 +15255,6 @@
           "shstLocationStart": 68.4,
           "shstLocationEnd": 78.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15532,7 +15300,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 13.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15578,7 +15345,6 @@
           "shstLocationStart": 68.4,
           "shstLocationEnd": 78.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15624,7 +15390,6 @@
           "shstLocationStart": 13.7,
           "shstLocationEnd": 67.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15673,7 +15438,6 @@
           "shstLocationStart": 9.1,
           "shstLocationEnd": 71.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15726,7 +15490,6 @@
           "shstLocationStart": 7.8,
           "shstLocationEnd": 69.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15775,7 +15538,6 @@
           "shstLocationStart": 7,
           "shstLocationEnd": 70.5,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15821,7 +15583,6 @@
           "shstLocationStart": 48.5,
           "shstLocationEnd": 58.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15933,7 +15694,6 @@
           "shstLocationStart": 32.7,
           "shstLocationEnd": 47.7,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -15975,7 +15735,6 @@
           "shstLocationStart": 8.7,
           "shstLocationEnd": 32.6,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16017,7 +15776,6 @@
           "shstLocationStart": 9.7,
           "shstLocationEnd": 72,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16070,7 +15828,6 @@
           "shstLocationStart": 9.7,
           "shstLocationEnd": 72.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16116,7 +15873,6 @@
           "shstLocationStart": 6.3,
           "shstLocationEnd": 72.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16169,7 +15925,6 @@
           "shstLocationStart": 6.2,
           "shstLocationEnd": 72.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16215,7 +15970,6 @@
           "shstLocationStart": 8.3,
           "shstLocationEnd": 70.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16264,7 +16018,6 @@
           "shstLocationStart": 9.7,
           "shstLocationEnd": 71.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16321,7 +16074,6 @@
           "shstLocationStart": 7.8,
           "shstLocationEnd": 69.7,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16363,7 +16115,6 @@
           "shstLocationStart": 9.5,
           "shstLocationEnd": 71.3,
           "assetType": "no-parking_curb",
-          "assetSubtype": "no-parking_curb",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16409,7 +16160,6 @@
           "shstLocationStart": 56,
           "shstLocationEnd": 68.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16455,7 +16205,6 @@
           "shstLocationStart": 7.5,
           "shstLocationEnd": 68.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16509,7 +16258,7 @@
           "shstLocationStart": 68.5,
           "shstLocationEnd": 76,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16555,7 +16304,7 @@
           "shstLocationStart": 68.9,
           "shstLocationEnd": 76,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16601,7 +16350,6 @@
           "shstLocationStart": 7.5,
           "shstLocationEnd": 31.3,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16651,7 +16399,6 @@
           "shstLocationStart": 31.4,
           "shstLocationEnd": 55.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16763,7 +16510,6 @@
           "shstLocationStart": 16.1,
           "shstLocationEnd": 70.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16875,7 +16621,6 @@
           "shstLocationStart": 10.4,
           "shstLocationEnd": 72,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -16987,7 +16732,6 @@
           "shstLocationStart": 62.7,
           "shstLocationEnd": 70.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17033,7 +16777,6 @@
           "shstLocationStart": 9.9,
           "shstLocationEnd": 67.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17080,7 +16823,6 @@
           "shstLocationStart": 12.4,
           "shstLocationEnd": 25,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17127,7 +16869,6 @@
           "shstLocationStart": 21.9,
           "shstLocationEnd": 33.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17174,7 +16915,6 @@
           "shstLocationStart": 38.1,
           "shstLocationEnd": 62.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17286,7 +17026,6 @@
           "shstLocationStart": 29.4,
           "shstLocationEnd": 38,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17328,7 +17067,6 @@
           "shstLocationStart": 9.3,
           "shstLocationEnd": 29.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17370,7 +17108,6 @@
           "shstLocationStart": 25.3,
           "shstLocationEnd": 67.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17432,7 +17169,6 @@
           "shstLocationStart": 67,
           "shstLocationEnd": 72.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17478,7 +17214,6 @@
           "shstLocationStart": 33.7,
           "shstLocationEnd": 40.5,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17520,7 +17255,6 @@
           "shstLocationStart": 14.3,
           "shstLocationEnd": 21.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17632,7 +17366,6 @@
           "shstLocationStart": 40.6,
           "shstLocationEnd": 74.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17744,7 +17477,6 @@
           "shstLocationStart": 40.7,
           "shstLocationEnd": 51,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17806,7 +17538,6 @@
           "shstLocationStart": 41,
           "shstLocationEnd": 74.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17918,7 +17649,6 @@
           "shstLocationStart": 27.1,
           "shstLocationEnd": 40.9,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -17960,7 +17690,6 @@
           "shstLocationStart": 14.9,
           "shstLocationEnd": 27.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18002,7 +17731,6 @@
           "shstLocationStart": 9.7,
           "shstLocationEnd": 74.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18055,7 +17783,6 @@
           "shstLocationStart": 9.4,
           "shstLocationEnd": 74.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18101,7 +17828,6 @@
           "shstLocationStart": 4,
           "shstLocationEnd": 67.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18154,7 +17880,6 @@
           "shstLocationStart": 3.6,
           "shstLocationEnd": 67.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18200,7 +17925,6 @@
           "shstLocationStart": 22.5,
           "shstLocationEnd": 71.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18316,7 +18040,6 @@
           "shstLocationStart": 14.7,
           "shstLocationEnd": 36.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18378,7 +18101,6 @@
           "shstLocationStart": 52.7,
           "shstLocationEnd": 78.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18424,7 +18146,6 @@
           "shstLocationStart": 29.4,
           "shstLocationEnd": 45.6,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18470,7 +18191,6 @@
           "shstLocationStart": 6.4,
           "shstLocationEnd": 22.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18512,7 +18232,6 @@
           "shstLocationStart": 10.4,
           "shstLocationEnd": 77,
           "assetType": "fence",
-          "assetSubtype": "fence",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18562,7 +18281,6 @@
           "shstLocationStart": 10.5,
           "shstLocationEnd": 77.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18621,7 +18339,6 @@
           "shstLocationStart": 28.3,
           "shstLocationEnd": 35.7,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18663,7 +18380,6 @@
           "shstLocationStart": 20.3,
           "shstLocationEnd": 28.7,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18709,7 +18425,6 @@
           "shstLocationStart": 8.5,
           "shstLocationEnd": 28.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18821,7 +18536,6 @@
           "shstLocationStart": 35.7,
           "shstLocationEnd": 65,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -18933,7 +18647,6 @@
           "shstLocationStart": 8.4,
           "shstLocationEnd": 43.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19045,7 +18758,6 @@
           "shstLocationStart": 63.2,
           "shstLocationEnd": 69.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19157,7 +18869,6 @@
           "shstLocationStart": 43.9,
           "shstLocationEnd": 63.2,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19199,7 +18910,6 @@
           "shstLocationStart": 34.4,
           "shstLocationEnd": 43.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19261,7 +18971,6 @@
           "shstLocationStart": 12.2,
           "shstLocationEnd": 20.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19373,7 +19082,6 @@
           "shstLocationStart": 28.7,
           "shstLocationEnd": 74,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19485,7 +19193,6 @@
           "shstLocationStart": 50.1,
           "shstLocationEnd": 70.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19528,7 +19235,6 @@
           "shstLocationStart": 13.8,
           "shstLocationEnd": 50,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19644,7 +19350,6 @@
           "shstLocationStart": 44.7,
           "shstLocationEnd": 64.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19706,7 +19411,6 @@
           "shstLocationStart": 9.8,
           "shstLocationEnd": 37.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19822,7 +19526,6 @@
           "shstLocationStart": 37.6,
           "shstLocationEnd": 71.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19873,7 +19576,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 24.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -19919,7 +19621,6 @@
           "shstLocationStart": 26.5,
           "shstLocationEnd": 70.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20031,7 +19732,6 @@
           "shstLocationStart": 64,
           "shstLocationEnd": 69.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20077,7 +19777,6 @@
           "shstLocationStart": 58.6,
           "shstLocationEnd": 64.2,
           "assetType": "curb_cut",
-          "assetSubtype": "curb_cut",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20119,7 +19818,6 @@
           "shstLocationStart": 9.1,
           "shstLocationEnd": 58.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20190,7 +19888,6 @@
           "shstLocationStart": 10.8,
           "shstLocationEnd": 29.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20302,7 +19999,6 @@
           "shstLocationStart": 45.3,
           "shstLocationEnd": 77.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20418,7 +20114,6 @@
           "shstLocationStart": 36.6,
           "shstLocationEnd": 52.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20469,7 +20164,6 @@
           "shstLocationStart": 14.7,
           "shstLocationEnd": 36.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20581,7 +20275,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 6.6,
           "assetType": "track",
-          "assetSubtype": "track",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20623,7 +20316,6 @@
           "shstLocationStart": 19.2,
           "shstLocationEnd": 72,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20735,7 +20427,6 @@
           "shstLocationStart": 64,
           "shstLocationEnd": 69.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20781,7 +20472,7 @@
           "shstLocationStart": 28.2,
           "shstLocationEnd": 77.9,
           "assetType": "paint",
-          "assetSubtype": "paint",
+          "assetSubtype": "yellow",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20827,7 +20518,6 @@
           "shstLocationStart": 14.8,
           "shstLocationEnd": 28,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20878,7 +20568,6 @@
           "shstLocationStart": 14.9,
           "shstLocationEnd": 27.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -20920,7 +20609,6 @@
           "shstLocationStart": 9.1,
           "shstLocationEnd": 58.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21036,7 +20724,6 @@
           "shstLocationStart": 25.4,
           "shstLocationEnd": 67.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21148,7 +20835,6 @@
           "shstLocationStart": 22.5,
           "shstLocationEnd": 71.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21234,7 +20920,6 @@
           "shstLocationStart": 45,
           "shstLocationEnd": 69,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21316,7 +21001,6 @@
           "shstLocationStart": 17.1,
           "shstLocationEnd": 25.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21406,7 +21090,6 @@
           "shstLocationStart": 9.8,
           "shstLocationEnd": 37.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21492,7 +21175,6 @@
           "shstLocationStart": 14.4,
           "shstLocationEnd": 33.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21574,7 +21256,6 @@
           "shstLocationStart": 66.3,
           "shstLocationEnd": 73.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21656,7 +21337,6 @@
           "shstLocationStart": 12,
           "shstLocationEnd": 54.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21738,7 +21418,6 @@
           "shstLocationStart": 61.9,
           "shstLocationEnd": 72,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21820,7 +21499,6 @@
           "shstLocationStart": 25.5,
           "shstLocationEnd": 67.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21902,7 +21580,6 @@
           "shstLocationStart": 13,
           "shstLocationEnd": 25.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -21984,7 +21661,6 @@
           "shstLocationStart": 39.3,
           "shstLocationEnd": 70.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22066,7 +21742,6 @@
           "shstLocationStart": 8,
           "shstLocationEnd": 59.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22148,7 +21823,6 @@
           "shstLocationStart": 43.8,
           "shstLocationEnd": 62.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22230,7 +21904,6 @@
           "shstLocationStart": 26.5,
           "shstLocationEnd": 70.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22312,7 +21985,6 @@
           "shstLocationStart": 14.4,
           "shstLocationEnd": 21.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22394,7 +22066,6 @@
           "shstLocationStart": 40.6,
           "shstLocationEnd": 74.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22476,7 +22147,6 @@
           "shstLocationStart": 15.8,
           "shstLocationEnd": 43.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22558,7 +22228,6 @@
           "shstLocationStart": 9.2,
           "shstLocationEnd": 42.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22640,7 +22309,6 @@
           "shstLocationStart": 55.2,
           "shstLocationEnd": 61.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22722,7 +22390,6 @@
           "shstLocationStart": 41,
           "shstLocationEnd": 74.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22804,7 +22471,6 @@
           "shstLocationStart": 8.1,
           "shstLocationEnd": 35.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22886,7 +22552,6 @@
           "shstLocationStart": 43.2,
           "shstLocationEnd": 59,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -22972,7 +22637,6 @@
           "shstLocationStart": 22.3,
           "shstLocationEnd": 66,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23054,7 +22718,6 @@
           "shstLocationStart": 36.1,
           "shstLocationEnd": 66.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23136,7 +22799,6 @@
           "shstLocationStart": 66.6,
           "shstLocationEnd": 74.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23222,7 +22884,6 @@
           "shstLocationStart": 33.9,
           "shstLocationEnd": 53.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23308,7 +22969,6 @@
           "shstLocationStart": 9,
           "shstLocationEnd": 45,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23390,7 +23050,6 @@
           "shstLocationStart": 63,
           "shstLocationEnd": 71.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23472,7 +23131,6 @@
           "shstLocationStart": 11.9,
           "shstLocationEnd": 51.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23554,7 +23212,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 71.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23648,7 +23305,6 @@
           "shstLocationStart": 27.3,
           "shstLocationEnd": 38.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23730,7 +23386,6 @@
           "shstLocationStart": 7.2,
           "shstLocationEnd": 37.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23812,7 +23467,6 @@
           "shstLocationStart": 12.3,
           "shstLocationEnd": 66.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23894,7 +23548,6 @@
           "shstLocationStart": 11.8,
           "shstLocationEnd": 27.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -23980,7 +23633,6 @@
           "shstLocationStart": 53.3,
           "shstLocationEnd": 73.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24062,7 +23714,6 @@
           "shstLocationStart": 10.8,
           "shstLocationEnd": 29.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24144,7 +23795,6 @@
           "shstLocationStart": 45.4,
           "shstLocationEnd": 77.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24230,7 +23880,6 @@
           "shstLocationStart": 52.3,
           "shstLocationEnd": 71.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24312,7 +23961,6 @@
           "shstLocationStart": 8.5,
           "shstLocationEnd": 28.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24394,7 +24042,6 @@
           "shstLocationStart": 35.7,
           "shstLocationEnd": 65,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24476,7 +24123,6 @@
           "shstLocationStart": 14.7,
           "shstLocationEnd": 36.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24558,7 +24204,6 @@
           "shstLocationStart": 42,
           "shstLocationEnd": 57.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24644,7 +24289,6 @@
           "shstLocationStart": 20.3,
           "shstLocationEnd": 31.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24726,7 +24370,6 @@
           "shstLocationStart": 36.8,
           "shstLocationEnd": 46.5,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24808,7 +24451,6 @@
           "shstLocationStart": 52.9,
           "shstLocationEnd": 61.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24890,7 +24532,6 @@
           "shstLocationStart": 61.7,
           "shstLocationEnd": 72.3,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -24976,7 +24617,6 @@
           "shstLocationStart": 11.3,
           "shstLocationEnd": 33.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25058,7 +24698,6 @@
           "shstLocationStart": 39.3,
           "shstLocationEnd": 64.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25140,7 +24779,6 @@
           "shstLocationStart": 11.2,
           "shstLocationEnd": 70.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25222,7 +24860,6 @@
           "shstLocationStart": 11.3,
           "shstLocationEnd": 75.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25304,7 +24941,6 @@
           "shstLocationStart": 19.3,
           "shstLocationEnd": 72.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25386,7 +25022,6 @@
           "shstLocationStart": 8.3,
           "shstLocationEnd": 61.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25468,7 +25103,6 @@
           "shstLocationStart": 25.4,
           "shstLocationEnd": 67.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25550,7 +25184,6 @@
           "shstLocationStart": 14,
           "shstLocationEnd": 68.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25636,7 +25269,6 @@
           "shstLocationStart": 31.3,
           "shstLocationEnd": 55.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25718,7 +25350,6 @@
           "shstLocationStart": 23.7,
           "shstLocationEnd": 66.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25800,7 +25431,6 @@
           "shstLocationStart": 3,
           "shstLocationEnd": 67,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25882,7 +25512,6 @@
           "shstLocationStart": 16,
           "shstLocationEnd": 70.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -25964,7 +25593,6 @@
           "shstLocationStart": 12.5,
           "shstLocationEnd": 70.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26046,7 +25674,6 @@
           "shstLocationStart": 10.4,
           "shstLocationEnd": 72.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26128,7 +25755,6 @@
           "shstLocationStart": 6.7,
           "shstLocationEnd": 59.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26210,7 +25836,6 @@
           "shstLocationStart": 24.1,
           "shstLocationEnd": 66.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26292,7 +25917,6 @@
           "shstLocationStart": 9.1,
           "shstLocationEnd": 58.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26378,7 +26002,6 @@
           "shstLocationStart": 8.4,
           "shstLocationEnd": 43.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26460,7 +26083,6 @@
           "shstLocationStart": 63.2,
           "shstLocationEnd": 69.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26542,7 +26164,6 @@
           "shstLocationStart": 13.3,
           "shstLocationEnd": 43.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26624,7 +26245,6 @@
           "shstLocationStart": 36,
           "shstLocationEnd": 67.7,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26706,7 +26326,6 @@
           "shstLocationStart": 6,
           "shstLocationEnd": 14.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26788,7 +26407,6 @@
           "shstLocationStart": 14.4,
           "shstLocationEnd": 66.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26870,7 +26488,6 @@
           "shstLocationStart": 11.7,
           "shstLocationEnd": 71.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -26956,7 +26573,6 @@
           "shstLocationStart": 19.9,
           "shstLocationEnd": 60.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27038,7 +26654,6 @@
           "shstLocationStart": 31.9,
           "shstLocationEnd": 61.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27120,7 +26735,6 @@
           "shstLocationStart": 12.2,
           "shstLocationEnd": 20.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27202,7 +26816,6 @@
           "shstLocationStart": 28.6,
           "shstLocationEnd": 74,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27284,7 +26897,6 @@
           "shstLocationStart": 13.7,
           "shstLocationEnd": 56.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27370,7 +26982,6 @@
           "shstLocationStart": 38.1,
           "shstLocationEnd": 62.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27452,7 +27063,6 @@
           "shstLocationStart": 13.8,
           "shstLocationEnd": 49.9,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27538,7 +27148,6 @@
           "shstLocationStart": 48.5,
           "shstLocationEnd": 58.8,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27620,7 +27229,6 @@
           "shstLocationStart": 18.6,
           "shstLocationEnd": 61.6,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27702,7 +27310,6 @@
           "shstLocationStart": 10.2,
           "shstLocationEnd": 70.4,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27814,7 +27421,6 @@
           "shstLocationStart": 9.9,
           "shstLocationEnd": 48.2,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -27926,7 +27532,6 @@
           "shstLocationStart": 53.6,
           "shstLocationEnd": 66,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -28038,7 +27643,6 @@
           "shstLocationStart": 9.9,
           "shstLocationEnd": 48.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
@@ -28120,7 +27724,6 @@
           "shstLocationStart": 53.6,
           "shstLocationEnd": 66.1,
           "assetType": "sign",
-          "assetSubtype": "sign",
           "baysAngle": "parallel"
         },
         "regulations": [
