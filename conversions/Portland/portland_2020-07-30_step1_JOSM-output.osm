@@ -955,7 +955,7 @@
     <tag k='user_classes' v='transit' />
     <tag k='user_subclasses' v='bus' />
   </node>
-  <node id='-103753' action='modify' lat='45.52031282401' lon='-122.6803055419'>
+  <node id='-103753' action='modify' lat='45.52028011564' lon='-122.68017189261'>
     <tag k='activity' v='parking' />
     <tag k='asset_type' v='sign' />
     <tag k='bays_angle' v='parallel' />
@@ -1579,7 +1579,7 @@
     <tag k='priority_category' v='restricted_loading' />
     <tag k='user_classes' v='hotel_guest' />
   </node>
-  <node id='-106639' action='modify' lat='45.52023013539' lon='-122.68016673893'>
+  <node id='-106639' action='modify' lat='45.52023577332' lon='-122.68017478556'>
     <tag k='activity' v='loading' />
     <tag k='asset_type' v='sign' />
     <tag k='bays_angle' v='parallel' />
@@ -1773,13 +1773,6 @@
     <tag k='bays_angle' v='parallel' />
     <tag k='point_relation' v='0' />
     <tag k='priority_category' v='no_standing' />
-  </node>
-  <node id='-106718' action='modify' lat='45.52023812152' lon='-122.68016338482'>
-    <tag k='activity' v='no_parking' />
-    <tag k='asset_type' v='sign' />
-    <tag k='bays_angle' v='parallel' />
-    <tag k='point_relation' v='3' />
-    <tag k='priority_category' v='no_parking' />
   </node>
   <node id='-106720' action='modify' lat='45.52003421609' lon='-122.67939962581'>
     <tag k='activity' v='no_standing' />
@@ -6730,7 +6723,7 @@
     <tag k='priority_category' v='no_standing' />
   </node>
   <node id='-128444' action='modify' lat='45.52048572091' lon='-122.67828181654'>
-    <tag k='activity' v='parking' />
+    <tag k='activity' v='no_parking' />
     <tag k='asset_type' v='sign' />
     <tag k='bays_angle' v='parallel' />
     <tag k='opening_hours' v='Jul 01, 2019 - Jun 30, 2020' />
@@ -6738,7 +6731,7 @@
     <tag k='priority_category' v='temporary_restriction' />
   </node>
   <node id='-128450' action='modify' lat='45.52044625464' lon='-122.67812222376'>
-    <tag k='activity' v='parking' />
+    <tag k='activity' v='no_parking' />
     <tag k='asset_type' v='sign' />
     <tag k='bays_angle' v='parallel' />
     <tag k='opening_hours' v='Jul 01, 2019 - Jun 30, 2020' />
@@ -7305,7 +7298,7 @@
     <tag k='priority_category' v='free_parking' />
     <tag k='user_classes' v='motorcycle' />
   </node>
-  <node id='-140751' action='modify' lat='45.52031282471' lon='-122.68030520729'>
+  <node id='-140751' action='modify' lat='45.52027961824' lon='-122.68017250587'>
     <tag k='activity' v='parking' />
     <tag k='asset_type' v='sign' />
     <tag k='bays_angle' v='parallel' />
@@ -8398,6 +8391,13 @@
     <tag k='opening_hours' v='Mo-Sa 00:00-08:00, 19:00-23:59; Su 00:00-13:00, 19:00-23:59' />
     <tag k='point_relation' v='1' />
     <tag k='priority_category' v='free_parking' />
+  </node>
+  <node id='-162101' action='modify' lat='45.52023060428' lon='-122.68017813697'>
+    <tag k='activity' v='no_standing' />
+    <tag k='asset_type' v='sign' />
+    <tag k='bays_angle' v='parallel' />
+    <tag k='point_relation' v='3' />
+    <tag k='priority_category' v='no_standing' />
   </node>
   <node id='32201127' action='delete' timestamp='2011-08-03T23:15:55Z' uid='372357' user='PJ Houser' version='4' changeset='8915445' lat='45.5175729' lon='-122.6818085' />
   <node id='40378999' action='delete' timestamp='2019-09-03T06:14:37Z' uid='9465017' user='tguen' version='10' changeset='74021686' lat='45.5208491' lon='-122.6853109'>

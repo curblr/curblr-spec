@@ -10,7 +10,7 @@
       "name": "Portland Bureau of Transportation",
       "url": "https://www.portlandoregon.gov/transportation/"
     }
-  },
+},
   "type": "FeatureCollection",
   "features": [
     {
@@ -2772,10 +2772,232 @@
       "type": "Feature",
       "properties": {
         "location": {
+          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
+          "sideOfStreet": "left",
+          "shstLocationStart": 3,
+          "shstLocationEnd": 5.3,
+          "assetType": "sign",
+          "baysAngle": "parallel"
+        },
+        "regulations": [
+          {
+            "rule": {
+              "activity": "parking",
+              "priorityCategory": "paid parking",
+              "maxStay": 120,
+              "payment": true
+            },
+            "userClasses": [
+              {}
+            ],
+            "timeSpans": [
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "mo",
+                    "tu",
+                    "we",
+                    "th",
+                    "fr",
+                    "sa"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "08:00",
+                    "to": "19:00"
+                  }
+                ],
+                "designatedPeriods": [
+                  {
+                    "name": "holidays",
+                    "apply": "except during"
+                  }
+                ]
+              },
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "su"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "13:00",
+                    "to": "19:00"
+                  }
+                ],
+                "designatedPeriods": [
+                  {
+                    "name": "holidays",
+                    "apply": "except during"
+                  }
+                ]
+              }
+            ],
+            "payment": {
+              "rates": {
+                "fees": [
+                  0.5
+                ],
+                "durations": [
+                  15
+                ]
+              },
+              "methods": [
+                "pay_station",
+                "digital"
+              ],
+              "forms": [
+                "Visa",
+                "Mastercard",
+                "American Express",
+                "Smart Card",
+                "coins",
+                "Parking Kitty"
+              ],
+              "phone": "+15032785410",
+              "operator": "PBOT",
+              "deviceIds": [
+                "zone 1002"
+              ]
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.68021111387712,
+            45.5202675180879
+          ],
+          [
+            -122.68018312096223,
+            45.52025988771227
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": {
+          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
+          "sideOfStreet": "left",
+          "shstLocationStart": 23.7,
+          "shstLocationEnd": 66.9,
+          "assetType": "sign",
+          "baysAngle": "parallel"
+        },
+        "regulations": [
+          {
+            "rule": {
+              "activity": "parking",
+              "priorityCategory": "paid parking",
+              "maxStay": 120,
+              "payment": true
+            },
+            "userClasses": [
+              {}
+            ],
+            "timeSpans": [
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "mo",
+                    "tu",
+                    "we",
+                    "th",
+                    "fr",
+                    "sa"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "08:00",
+                    "to": "19:00"
+                  }
+                ],
+                "designatedPeriods": [
+                  {
+                    "name": "holidays",
+                    "apply": "except during"
+                  }
+                ]
+              },
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "su"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "13:00",
+                    "to": "19:00"
+                  }
+                ],
+                "designatedPeriods": [
+                  {
+                    "name": "holidays",
+                    "apply": "except during"
+                  }
+                ]
+              }
+            ],
+            "payment": {
+              "rates": {
+                "fees": [
+                  0.5
+                ],
+                "durations": [
+                  15
+                ]
+              },
+              "methods": [
+                "pay_station",
+                "digital"
+              ],
+              "forms": [
+                "Visa",
+                "Mastercard",
+                "American Express",
+                "Smart Card",
+                "coins",
+                "Parking Kitty"
+              ],
+              "phone": "+15032785410",
+              "operator": "PBOT",
+              "deviceIds": [
+                "zone 1002"
+              ]
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.67996393373316,
+            45.52020014082576
+          ],
+          [
+            -122.67944618166568,
+            45.52005900783434
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": {
           "shstRefId": "6d31859ef978766c20d3df2ac95805f4",
           "sideOfStreet": "left",
           "shstLocationStart": 27.3,
-          "shstLocationEnd": 38.8,
+          "shstLocationEnd": 41.5,
           "assetType": "sign",
           "baysAngle": "parallel"
         },
@@ -2873,8 +3095,8 @@
             45.52033193144504
           ],
           [
-            -122.68031498982374,
-            45.52029537471286
+            -122.68028177318658,
+            45.52028654426288
           ]
         ]
       }
@@ -4960,7 +5182,7 @@
         "location": {
           "shstRefId": "d8ac712de9b139a85e95797a192fa347",
           "sideOfStreet": "right",
-          "shstLocationStart": 7.7,
+          "shstLocationStart": 6.9,
           "shstLocationEnd": 29.9,
           "assetType": "sign",
           "baysAngle": "parallel"
@@ -4990,8 +5212,8 @@
         "type": "LineString",
         "coordinates": [
           [
-            -122.68015454163658,
-            45.52025209748221
+            -122.68016424936117,
+            45.520254743641146
           ],
           [
             -122.6798891488572,
@@ -5095,6 +5317,47 @@
         "location": {
           "shstRefId": "d8ac712de9b139a85e95797a192fa347",
           "sideOfStreet": "right",
+          "shstLocationStart": 3,
+          "shstLocationEnd": 6.9,
+          "assetType": "sign",
+          "baysAngle": "parallel"
+        },
+        "regulations": [
+          {
+            "rule": {
+              "activity": "no standing",
+              "priorityCategory": "no standing"
+            },
+            "userClasses": [
+              {}
+            ],
+            "timeSpans": [],
+            "payment": {
+              "rates": {}
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.68021111387712,
+            45.5202675180879
+          ],
+          [
+            -122.68016466740386,
+            45.52025485759236
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": {
+          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
+          "sideOfStreet": "right",
           "shstLocationStart": 48.2,
           "shstLocationEnd": 79.3,
           "assetType": "sign",
@@ -5130,47 +5393,6 @@
           [
             -122.67929884182118,
             45.520018211736314
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "location": {
-          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
-          "sideOfStreet": "right",
-          "shstLocationStart": 3,
-          "shstLocationEnd": 7.7,
-          "assetType": "sign",
-          "baysAngle": "parallel"
-        },
-        "regulations": [
-          {
-            "rule": {
-              "activity": "no parking",
-              "priorityCategory": "no parking"
-            },
-            "userClasses": [
-              {}
-            ],
-            "timeSpans": [],
-            "payment": {
-              "rates": {}
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.68021111387712,
-            45.5202675180879
-          ],
-          [
-            -122.68015547980029,
-            45.52025235320957
           ]
         ]
       }
@@ -5261,117 +5483,6 @@
           [
             -122.67996525808663,
             45.52020050182468
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "location": {
-          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
-          "sideOfStreet": "left",
-          "shstLocationStart": 23.7,
-          "shstLocationEnd": 66.9,
-          "assetType": "sign",
-          "baysAngle": "parallel"
-        },
-        "regulations": [
-          {
-            "rule": {
-              "activity": "parking",
-              "priorityCategory": "paid parking",
-              "maxStay": 120,
-              "payment": true
-            },
-            "userClasses": [
-              {}
-            ],
-            "timeSpans": [
-              {
-                "daysOfWeek": {
-                  "days": [
-                    "mo",
-                    "tu",
-                    "we",
-                    "th",
-                    "fr",
-                    "sa"
-                  ]
-                },
-                "timesOfDay": [
-                  {
-                    "from": "08:00",
-                    "to": "19:00"
-                  }
-                ],
-                "designatedPeriods": [
-                  {
-                    "name": "holidays",
-                    "apply": "except during"
-                  }
-                ]
-              },
-              {
-                "daysOfWeek": {
-                  "days": [
-                    "su"
-                  ]
-                },
-                "timesOfDay": [
-                  {
-                    "from": "13:00",
-                    "to": "19:00"
-                  }
-                ],
-                "designatedPeriods": [
-                  {
-                    "name": "holidays",
-                    "apply": "except during"
-                  }
-                ]
-              }
-            ],
-            "payment": {
-              "rates": {
-                "fees": [
-                  0.5
-                ],
-                "durations": [
-                  15
-                ]
-              },
-              "methods": [
-                "pay_station",
-                "digital"
-              ],
-              "forms": [
-                "Visa",
-                "Mastercard",
-                "American Express",
-                "Smart Card",
-                "coins",
-                "Parking Kitty"
-              ],
-              "phone": "+15032785410",
-              "operator": "PBOT",
-              "deviceIds": [
-                "zone 1002"
-              ]
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.67996393373316,
-            45.52020014082576
-          ],
-          [
-            -122.67944618166568,
-            45.52005900783434
           ]
         ]
       }
@@ -20535,7 +20646,7 @@
         "regulations": [
           {
             "rule": {
-              "activity": "parking",
+              "activity": "no parking",
               "priorityCategory": "temporary restriction"
             },
             "userClasses": [
@@ -23312,10 +23423,253 @@
       "type": "Feature",
       "properties": {
         "location": {
+          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
+          "sideOfStreet": "left",
+          "shstLocationStart": 3,
+          "shstLocationEnd": 5.3,
+          "assetType": "sign",
+          "baysAngle": "parallel"
+        },
+        "regulations": [
+          {
+            "rule": {
+              "activity": "parking",
+              "priorityCategory": "free parking"
+            },
+            "userClasses": [
+              {}
+            ],
+            "timeSpans": [
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "mo",
+                    "tu",
+                    "we",
+                    "th",
+                    "fr",
+                    "sa"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "00:00",
+                    "to": "08:00"
+                  },
+                  {
+                    "from": "19:00",
+                    "to": "23:59"
+                  }
+                ]
+              },
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "su"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "00:00",
+                    "to": "13:00"
+                  },
+                  {
+                    "from": "19:00",
+                    "to": "23:59"
+                  }
+                ]
+              }
+            ],
+            "payment": {
+              "rates": {}
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.68021111387712,
+            45.5202675180879
+          ],
+          [
+            -122.68018341372962,
+            45.52025996751556
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": {
+          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
+          "sideOfStreet": "left",
+          "shstLocationStart": 23.7,
+          "shstLocationEnd": 66.9,
+          "assetType": "sign",
+          "baysAngle": "parallel"
+        },
+        "regulations": [
+          {
+            "rule": {
+              "activity": "parking",
+              "priorityCategory": "free parking"
+            },
+            "userClasses": [
+              {}
+            ],
+            "timeSpans": [
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "mo",
+                    "tu",
+                    "we",
+                    "th",
+                    "fr",
+                    "sa"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "00:00",
+                    "to": "08:00"
+                  },
+                  {
+                    "from": "19:00",
+                    "to": "23:59"
+                  }
+                ]
+              },
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "su"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "00:00",
+                    "to": "13:00"
+                  },
+                  {
+                    "from": "19:00",
+                    "to": "23:59"
+                  }
+                ]
+              }
+            ],
+            "payment": {
+              "rates": {}
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.67996364345339,
+            45.52020006169983
+          ],
+          [
+            -122.67944725006419,
+            45.52005929907009
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": {
+          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
+          "sideOfStreet": "left",
+          "shstLocationStart": 3,
+          "shstLocationEnd": 67,
+          "assetType": "sign",
+          "baysAngle": "parallel"
+        },
+        "regulations": [
+          {
+            "rule": {
+              "activity": "parking",
+              "priorityCategory": "free parking"
+            },
+            "userClasses": [
+              {}
+            ],
+            "timeSpans": [
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "mo",
+                    "tu",
+                    "we",
+                    "th",
+                    "fr",
+                    "sa"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "00:00",
+                    "to": "08:00"
+                  },
+                  {
+                    "from": "19:00",
+                    "to": "23:59"
+                  }
+                ]
+              },
+              {
+                "daysOfWeek": {
+                  "days": [
+                    "su"
+                  ]
+                },
+                "timesOfDay": [
+                  {
+                    "from": "00:00",
+                    "to": "13:00"
+                  },
+                  {
+                    "from": "19:00",
+                    "to": "23:59"
+                  }
+                ]
+              }
+            ],
+            "payment": {
+              "rates": {}
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.68021111387712,
+            45.5202675180879
+          ],
+          [
+            -122.67944582511943,
+            45.52005891064309
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "location": {
           "shstRefId": "6d31859ef978766c20d3df2ac95805f4",
           "sideOfStreet": "left",
           "shstLocationStart": 27.3,
-          "shstLocationEnd": 38.8,
+          "shstLocationEnd": 41.5,
           "assetType": "sign",
           "baysAngle": "parallel"
         },
@@ -23383,8 +23737,8 @@
             45.520331853773385
           ],
           [
-            -122.6803146976519,
-            45.520295297040725
+            -122.68028177318658,
+            45.52028654426288
           ]
         ]
       }
@@ -25349,168 +25703,6 @@
           [
             -122.67879313287058,
             45.52087475712435
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "location": {
-          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
-          "sideOfStreet": "left",
-          "shstLocationStart": 23.7,
-          "shstLocationEnd": 66.9,
-          "assetType": "sign",
-          "baysAngle": "parallel"
-        },
-        "regulations": [
-          {
-            "rule": {
-              "activity": "parking",
-              "priorityCategory": "free parking"
-            },
-            "userClasses": [
-              {}
-            ],
-            "timeSpans": [
-              {
-                "daysOfWeek": {
-                  "days": [
-                    "mo",
-                    "tu",
-                    "we",
-                    "th",
-                    "fr",
-                    "sa"
-                  ]
-                },
-                "timesOfDay": [
-                  {
-                    "from": "00:00",
-                    "to": "08:00"
-                  },
-                  {
-                    "from": "19:00",
-                    "to": "23:59"
-                  }
-                ]
-              },
-              {
-                "daysOfWeek": {
-                  "days": [
-                    "su"
-                  ]
-                },
-                "timesOfDay": [
-                  {
-                    "from": "00:00",
-                    "to": "13:00"
-                  },
-                  {
-                    "from": "19:00",
-                    "to": "23:59"
-                  }
-                ]
-              }
-            ],
-            "payment": {
-              "rates": {}
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.67996364345339,
-            45.52020006169983
-          ],
-          [
-            -122.67944725006419,
-            45.52005929907009
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "location": {
-          "shstRefId": "d8ac712de9b139a85e95797a192fa347",
-          "sideOfStreet": "left",
-          "shstLocationStart": 3,
-          "shstLocationEnd": 67,
-          "assetType": "sign",
-          "baysAngle": "parallel"
-        },
-        "regulations": [
-          {
-            "rule": {
-              "activity": "parking",
-              "priorityCategory": "free parking"
-            },
-            "userClasses": [
-              {}
-            ],
-            "timeSpans": [
-              {
-                "daysOfWeek": {
-                  "days": [
-                    "mo",
-                    "tu",
-                    "we",
-                    "th",
-                    "fr",
-                    "sa"
-                  ]
-                },
-                "timesOfDay": [
-                  {
-                    "from": "00:00",
-                    "to": "08:00"
-                  },
-                  {
-                    "from": "19:00",
-                    "to": "23:59"
-                  }
-                ]
-              },
-              {
-                "daysOfWeek": {
-                  "days": [
-                    "su"
-                  ]
-                },
-                "timesOfDay": [
-                  {
-                    "from": "00:00",
-                    "to": "13:00"
-                  },
-                  {
-                    "from": "19:00",
-                    "to": "23:59"
-                  }
-                ]
-              }
-            ],
-            "payment": {
-              "rates": {}
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.68021111387712,
-            45.5202675180879
-          ],
-          [
-            -122.67944582511943,
-            45.52005891064309
           ]
         ]
       }
