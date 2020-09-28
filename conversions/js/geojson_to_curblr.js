@@ -44,6 +44,7 @@ for (var feature of input.features) {
         pp_payment_rate_fees: fees,
         pp_payment_rate_durations: durations,
         section: [shstLocationStart, shstLocationEnd],
+       // establishes some extra empty fields that will be used later to split up complex timespans into multiple diff properties / sets of properties
         effectiveDatesFrom,
         effectiveDatesTo,
         days,
