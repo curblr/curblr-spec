@@ -2,7 +2,9 @@
 
 ## Examining the data
 
-I downloaded [Sacramento's on-street parking data](https://data.cityofsacramento.org/datasets/0060469c57864becb76a036d23236143_0) and at first I thought we might be able to just add some columns to the data (using this [data schema](https://docs.google.com/spreadsheets/d/17E97gZJ0Tl7KZEejmm47_eKq5ESHVo-zo7xb1Fv_XA8/edit#gid=1371993522) and start converting it (there's a simple [script](https://github.com/sharedstreets/curblr/blob/master/conversions/js/geojson_to_curblr.js) we wrote for Portland that can act as a base). But it looks like this is a pretty complicated dataset with a lot of different parking types living in different columns, sometimes with multiple regulations for one feature. We could still add columns and do it that way, but I think it would be faster to just write a conversion script and not mess around with adding columns, so I'll show an example of how to do that. This uses javascript but you could do the same thing in Python or any other language of your choice... or maybe within the ArcGIS UI.
+I downloaded [Sacramento's on-street parking data](https://data.cityofsacramento.org/datasets/0060469c57864becb76a036d23236143_0) and at first I thought we might be able to just add some columns to the data (using this [data schema](https://docs.google.com/spreadsheets/d/17E97gZJ0Tl7KZEejmm47_eKq5ESHVo-zo7xb1Fv_XA8/edit#gid=1371993522)) and start converting it (there's a simple [script](https://github.com/sharedstreets/curblr/blob/master/conversions/js/geojson_to_curblr.js) we wrote for Portland that can act as a base). 
+
+But it looks like this is a pretty complicated dataset with a lot of different parking types living in different columns, sometimes with multiple regulations for one feature. We could still add columns and do it that way, but I think it would be faster to just write a conversion script and not mess around with adding columns, so I'll show an example of how to do that. This uses javascript but you could do the same thing in Python or any other language of your choice... or maybe within the ArcGIS UI.
 
 ## 1. Convert point data to street segments (lines) with linear referencing info
 
