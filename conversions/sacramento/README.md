@@ -28,7 +28,7 @@ Since parking space points are not all exactly 7 meters apart, some will overlap
 
 About 44k of the 45k features were matched successfully (it's normal to have a few that fall out - you'd have to check these to find out why and fix the problem, if necessary). There are three output files (matched, unmatched, and buffered - we are interested in the buffered one). The output file is linked [here](/sacramento_parking.buffered.geojson). If we load it into GIS and inspect it, it looks like this:
 
-<img src="../../images/sacramento_buffer.png" width="800">
+<img src="../../images/sacramento_buffered.png" width="800">
 
 Note that all original data fields have been renamed with a "pp_" prefix. Linear referencing properties have been added.
 
