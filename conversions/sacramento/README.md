@@ -8,13 +8,13 @@ I downloaded [Sacramento's on-street parking data](https://data.cityofsacramento
 
 The on-street parking data is organized as a collection of points that usually represent one parking space, spaced about 7 meters apart. Step 1 is to turn these points into sections of street with a length of 7 meters each. (You could set a length for each individual feature or type of feature, if you have more information about the spaces).
 
-<img src="images/sacramento_measure.png" width="800">
+<img src="../../images/sacramento_measure.png" width="800">
 
 First, take the on-street parking GIS data and export is as a GeoJSON file in the WGS84 coordinate system (EPSG 4326). Any GIS program should be able to do this. I've named mine `onstreetparking.geojson`
 
 Next, use the [SharedStreets command line interface](https://github.com/sharedstreets/sharedstreets-js) to convert the points into segments. Here's how the tool works to convert points into street segments using a buffer length:
 
-<img src="images/buffer_process.png" width="800">
+<img src="../../images/buffer_process.png" width="800">
 
 Quick note on the tool: the CLI runs on Mac and Linux systems but not on PCs. If that's a problem, reach out. We are planning to release a PC-friendly version in the fall/winter but may be able to help you find a solution in the meantime.
 
@@ -26,13 +26,13 @@ Since parking space points are not all exactly 7 meters apart, some will overlap
 
 About 44k of the 45k features were matched successfully (it's normal to have a few that fall out - you'd have to check these to find out why and fix the problem, if necessary). There are three output files (matched, unmatched, and buffered - we are interested in the buffered one). The output file is linked [here](/sacramento_parking.buffered.geojson). If we load it into GIS and inspect it, it looks like this:
 
-<img src="images/sacramento_buffer.png" width="800">
+<img src="../../images/sacramento_buffer.png" width="800">
 
 Note that all original data fields have been renamed with a "pp_" prefix. Linear referencing properties have been added.
 
 Because the parking spaces are matched to street centerlines, they appear in the middle of the road and it's visually hard to tell which side of the street the parking spaces are on. That's intentional. We recommend addressing this in map renderers rather than by changing the actual geometries of the data... but the CLI can add an offset to matched features if desired. This makes the output look more intuitive, though I wouldn't recommend constructing your feed this way. You can do this by adding `--offset-line=5` to your CLI command. Results look more like this:
 
-<img src="images/sacramento_offset.png" width="800">
+<img src="../../images/sacramento_offset.png" width="800">
 
 Again, that's just to make sure you know that we haven't lost track of which side of the street your parking spaces are on, and we'll be using the non-offset data in all steps going forward.
 
