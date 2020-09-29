@@ -2,7 +2,7 @@
 
 ## Examining the data
 
-I downloaded [Sacramento's on-street parking data](https://data.cityofsacramento.org/datasets/0060469c57864becb76a036d23236143_0) and at first I thought we might be able to just add some columns to the data (using this [data schema](https://docs.google.com/spreadsheets/d/17E97gZJ0Tl7KZEejmm47_eKq5ESHVo-zo7xb1Fv_XA8/edit#gid=1371993522)and start converting it (there's a simple [script](https://github.com/sharedstreets/curblr/blob/master/conversions/js/geojson_to_curblr.js) we wrote for Portland that can act as a base). But it looks like this is a pretty complicated dataset with a lot of different parking types living in different columns, sometimes with multiple regulations for one feature. We could still add columns and do it that way, but I think it would be faster to just write a conversion script and not mess around with adding columns, so I'll show an example of how to do that. This uses javascript but you could do the same thing in Python or any other language of your choice... or maybe within the ArcGIS UI.
+I downloaded [Sacramento's on-street parking data](https://data.cityofsacramento.org/datasets/0060469c57864becb76a036d23236143_0) and at first I thought we might be able to just add some columns to the data (using this [data schema](https://docs.google.com/spreadsheets/d/17E97gZJ0Tl7KZEejmm47_eKq5ESHVo-zo7xb1Fv_XA8/edit#gid=1371993522) and start converting it (there's a simple [script](https://github.com/sharedstreets/curblr/blob/master/conversions/js/geojson_to_curblr.js) we wrote for Portland that can act as a base). But it looks like this is a pretty complicated dataset with a lot of different parking types living in different columns, sometimes with multiple regulations for one feature. We could still add columns and do it that way, but I think it would be faster to just write a conversion script and not mess around with adding columns, so I'll show an example of how to do that. This uses javascript but you could do the same thing in Python or any other language of your choice... or maybe within the ArcGIS UI.
 
 ## 1. Convert point data to street segments (lines) with linear referencing info
 
@@ -48,7 +48,7 @@ I also looked to see:
 - Which original fields need to be transformed slightly? For example, "TIMELIMIT" has values like "90 Minutes" and "10 Hour", which have to be converted into a number of minutes to be used in CurbLR's `maxStay` property.
 - Which essential data is missing? Some common rules, like "Time Zone", need to be extrapolated into essential information such as `activity=parking` with a `maxStay` property. Another example, "TIMELIMIT = No Parking Anytime" + "PKGTYPE = Driveway" is converted into `activity=no_standing` since driveways shouldn't be used as a standing, loading, or parking area.
 
-The example script is included as [sacramento_geojson_to_curblr.js](/sacramento_geojson_to_curblr.js). It contains logic to handle a handful of common rules:
+The example script is included as [sacramento_geojson_to_curblr.js](sacramento_geojson_to_curblr.js). It contains logic to handle a handful of common rules:
 - No standing anytime (because of crosswalks, driveways, alleys, railway crossings)
 - Bus stops
 - No parking anytime
@@ -64,7 +64,7 @@ I ran the script on the data using the following command:
 
 `node sacramento_geojson_to_curblr.js sacramento_parking.buffered.geojson > sacramento_curblr_processed.geojson`
 
-The output contains about 9,000 features and is included as [sacramento_curblr_processed.geojson](/sacramento_curblr_processed.geojson).
+The output contains about 9,000 features and is included as [sacramento_curblr_processed.geojson](sacramento_curblr_processed.geojson).
 
 ## Add some metadata on top
 
@@ -87,6 +87,10 @@ Here's an example of a metadata block that you can drop in there and edit so it'
 },
 ```
 
-Drop that text in, save the file with the extension ".curblr.json", and you've got a CurbLR feed. This example feed is saved here as [sacramento_test.curblr.json](sacramento_test.curblr.json).
+Drop that text in, save the file with the extension ".curblr.json", and you've got a CurbLR feed. 
+
+## Final output: Sample CurbLR feed for Sacramento
+
+The example feed is saved here as [sacramento_test.curblr.json](sacramento_test.curblr.json).
 
 I can't promise this is perfect, but it will give you a good idea of one way that you could approach your data.
