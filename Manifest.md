@@ -33,9 +33,9 @@ The manifest JSON object may contain the following properties:
       "temporary restriction",
       "restricted standing",
       "standing",
-      "no parking",
       "restricted loading",
       "loading",
+      "no parking",
       "restricted parking",
       "paid parking",
       "free parking"
