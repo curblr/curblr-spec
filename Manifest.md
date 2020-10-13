@@ -21,6 +21,38 @@ The manifest JSON object may contain the following properties:
 | authority.url | Required | `string` (web link) | Link to the regulatory agency's domain | `https://vancouver.ca` |
 | authority.phone | Optional | `string` (`E.164 format`: + `country code` + `local area code` + `phone number`) | The phone number,  including country and area code, for the regulatory agency that could be contacted about parking regulations | `+15551231234` |
 
+# Sample manifest
+
+  ```json
+   "manifest": {
+    "createdDate": "2019-12-30T11:40:45Z",
+    "lastUpdatedDate": "2020-07-30T17:40:45Z",
+    "priorityHierarchy": [
+      "no standing",
+      "construction",
+      "temporary restriction",
+      "restricted standing",
+      "standing",
+      "no parking",
+      "restricted loading",
+      "loading",
+      "restricted parking",
+      "paid parking",
+      "free parking"
+    ],
+    "curblrVersion": "1.1.0",
+    "timeZone": "America/Los_Angeles",
+    "currency": "USD",
+    "unitHeightLength": "feet",
+    "unitWeight": "tons",
+    "authority": {
+      "name": "Portland Bureau of Transportation",
+      "url": "https://www.portlandoregon.gov/transportation/",
+      "phone": "+15551231234"
+    }
+  }
+ ```
+
 # Examples
 
 The links below show real world curb regulations translated into CurbLR.
