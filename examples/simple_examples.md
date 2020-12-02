@@ -35,7 +35,6 @@ No stopping is allowed by anyone at any time. Example location information is in
         "rule": {
           "activity": "no standing",
           "priorityCategory": "no standing",
-          "reason": "tow-away zone"
         }
       }
     ],
