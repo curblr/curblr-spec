@@ -158,7 +158,7 @@ Defines a `restriction` that allows anyone to park for up to two hours with paym
     "priorityCategory": "parking",
     "maxStay": 120,
     "noReturn": 30,
-    "payment" = true
+    "payment": true
   }
 }
 ```
