@@ -149,15 +149,16 @@ Defines a `regulation` that allows parking for handicap users with a 3 hour time
 }
 ```
 
-### Parking with time limit, users must leave for 30 minutes before being allowed to return
-Defines a `restriction` that allows anyone to park for up to two hours with payment, with a max stay of two hours, after which the user must leave for at least 30 mins
+### Paid parking with time limit, users must leave for 30 minutes before being allowed to return
+Defines a `restriction` that allows anyone to park for up to two hours with payment, with a max stay of two hours, after which the user must leave for at least 30 mins. Payment is required.
 ```json
 {
   "rule": {
     "activity": "parking",
     "priorityCategory": "parking",
     "maxStay": 120,
-    "noReturn": 30
+    "noReturn": 30,
+    "payment" = true
   }
 }
 ```
