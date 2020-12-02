@@ -120,7 +120,7 @@ Defines a parking regulation for large trucks that does not apply to smaller tru
   "regulation": {
     "rule": {
       "activity": "no parking",
-      "priorityCategoryy": "no parking"
+      "priorityCategory": "no parking"
     },
     "userClasses": [
       {
