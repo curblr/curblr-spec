@@ -390,7 +390,7 @@ Parking allowed only for resident permit holders Monday through Saturday, except
       {
         "rule": {
           "activity": "parking",
-          "priorityCategory": "parking"
+          "priorityCategory": "restricted parking"
         },
         "userClasses" : [
           {
