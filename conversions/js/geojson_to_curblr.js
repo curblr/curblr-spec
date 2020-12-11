@@ -487,10 +487,12 @@ for (var feature of input.features) {
             }],
             timeSpans:timespans,
             payment:{
-              rates:{
+              rates:[
+                {
                 fees,
                 durations,
-              },
+                }
+              ],
               methods,
               forms,
               phone,
